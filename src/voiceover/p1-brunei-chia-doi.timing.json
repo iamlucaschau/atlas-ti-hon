@@ -1,0 +1,168 @@
+{
+  "durationInSeconds": 74.80804166666667,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 2.4459999999999997,
+      "text": "Brunei từng làm chủ gần cả đảo Borneo."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 2.506375,
+      "end": 6.357374999999999,
+      "text": "Hôm nay, nó nhỏ hơn cả Thành phố Hồ Chí Minh, và còn bị cắt làm đôi."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "start": 6.607791666666667,
+      "end": 9.969791666666667,
+      "text": "Thế kỷ mười sáu, vua Brunei kiểm soát gần hết bờ biển của đảo."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 10.030041666666667,
+      "end": 11.635041666666668,
+      "text": "Nhưng rồi người châu Âu tới."
+    },
+    {
+      "id": "05",
+      "scene": "s3",
+      "start": 11.884791666666667,
+      "end": 16.701791666666665,
+      "text": "Năm một nghìn tám trăm bốn mươi mốt, một người Anh tên James Brooke được trao vùng Sarawak."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "start": 16.762208333333334,
+      "end": 19.401208333333333,
+      "text": "Rồi nhà Brooke cứ thế nới dần, từng mảng một."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 19.461666666666666,
+      "end": 21.313666666666666,
+      "text": "Phía bắc thì rơi vào tay một công ty Anh."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "start": 21.563333333333333,
+      "end": 26.891333333333332,
+      "text": "Năm một nghìn tám trăm chín mươi, Rajah Charles Brooke lấy luôn vùng Limbang nằm ngay giữa."
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "start": 26.951541666666664,
+      "end": 28.436541666666663,
+      "text": "Brunei bị cắt làm đôi."
+    },
+    {
+      "id": "10",
+      "scene": "s5",
+      "start": 28.686291666666662,
+      "end": 31.308291666666662,
+      "text": "Đất thì co lại, nhưng dưới chân lại có thứ khác."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "start": 31.368624999999994,
+      "end": 34.839625,
+      "text": "Năm một nghìn chín trăm hai mươi chín, Brunei tìm thấy dầu."
+    },
+    {
+      "id": "12",
+      "scene": "s6",
+      "start": 35.089999999999996,
+      "end": 39.142999999999994,
+      "text": "Rồi người ta tính lập ra nước Malaysia, và mời Brunei về chung nhà."
+    },
+    {
+      "id": "13",
+      "scene": "s6",
+      "start": 39.202999999999996,
+      "end": 40.340999999999994,
+      "text": "Brunei có vào không?"
+    },
+    {
+      "id": "14",
+      "scene": "s6",
+      "start": 40.49129166666666,
+      "end": 40.816291666666665,
+      "text": "Không."
+    },
+    {
+      "id": "15",
+      "scene": "s6",
+      "start": 41.116249999999994,
+      "end": 41.85124999999999,
+      "text": "Vì dầu."
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "start": 41.911333333333324,
+      "end": 45.789333333333325,
+      "text": "Kuala Lumpur muốn sau mười năm, tiền dầu phải nộp về ngân sách chung."
+    },
+    {
+      "id": "17",
+      "scene": "s6",
+      "start": 45.84891666666666,
+      "end": 47.26591666666666,
+      "text": "Brunei muốn giữ cho riêng mình."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "start": 47.32616666666666,
+      "end": 52.93016666666666,
+      "text": "Năm một nghìn chín trăm sáu mươi ba, ở Luân Đôn, Sultan Brunei ngồi ngay bàn đàm phán, nhưng không đặt bút."
+    },
+    {
+      "id": "19",
+      "scene": "s7",
+      "start": 53.18008333333333,
+      "end": 57.20208333333333,
+      "text": "Hôm nay, mỗi người Brunei làm ra gấp hơn hai lần rưỡi người Malaysia."
+    },
+    {
+      "id": "20",
+      "scene": "s7",
+      "start": 57.26229166666666,
+      "end": 62.38729166666666,
+      "text": "Chỉ phiền là muốn lái xe sang nửa kia đất nước, phải qua bốn trạm xuất nhập cảnh."
+    },
+    {
+      "id": "21",
+      "scene": "s8",
+      "start": 62.63729166666666,
+      "end": 68.03029166666666,
+      "text": "Năm hai nghìn hai mươi, Brunei mở một cây cầu vượt biển nối hai nửa, không phải đi qua Malaysia."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "start": 68.09054166666667,
+      "end": 69.81154166666667,
+      "text": "Cây cầu mở cửa ngày mười bảy tháng ba."
+    },
+    {
+      "id": "23",
+      "scene": "s8",
+      "start": 69.871625,
+      "end": 74.557625,
+      "text": "Đúng một trăm ba mươi năm, tính tới từng ngày, sau khi Brunei bị cắt làm đôi."
+    }
+  ]
+}

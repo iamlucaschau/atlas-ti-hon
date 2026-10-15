@@ -1,0 +1,175 @@
+{
+  "durationInSeconds": 70.70783333333334,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.884,
+      "text": "Việt Nam dự kiến chi khoảng sáu mươi bảy tỷ đô, chỉ để mua một ngày."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 3.9441666666666664,
+      "end": 4.591166666666666,
+      "text": "Nghe vô lý?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 4.651249999999999,
+      "end": 6.738249999999999,
+      "text": "Giả sử hai đoàn tàu cùng rời Hà Nội."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 6.988166666666666,
+      "end": 11.135166666666667,
+      "text": "Tàu Thống Nhất hôm nay: lên tàu buổi tối, ngủ hai đêm mới tới Sài Gòn."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 11.195416666666667,
+      "end": 14.339416666666667,
+      "text": "Tàu cao tốc nhanh nhất dự kiến chỉ mất khoảng năm tiếng rưỡi."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 14.399750000000001,
+      "end": 17.57275,
+      "text": "Ăn sáng phở Hà Nội, ăn trưa cơm tấm Sài Gòn."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 17.82241666666667,
+      "end": 19.748416666666667,
+      "text": "Nhưng cái giá thì không hề nhẹ."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 19.808750000000003,
+      "end": 22.104750000000003,
+      "text": "Tuyến dài hơn một nghìn rưỡi cây số."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 22.165000000000003,
+      "end": 25.624000000000002,
+      "text": "Theo vốn sơ bộ, mỗi mét đường tốn hơn một tỷ đồng."
+    },
+    {
+      "id": "10",
+      "scene": "s4",
+      "start": 25.8745,
+      "end": 26.933500000000002,
+      "text": "Sao lại đắt thế?"
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "start": 27.083041666666666,
+      "end": 28.063041666666667,
+      "text": "Vì toàn cầu."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 28.212666666666667,
+      "end": 30.564666666666668,
+      "text": "Khoảng sáu mươi phần trăm tuyến dự kiến đi trên cầu."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 30.624958333333332,
+      "end": 32.59095833333333,
+      "text": "Thêm khoảng mười phần trăm chui trong hầm."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 32.65116666666667,
+      "end": 37.24716666666667,
+      "text": "Để chạy ba trăm năm mươi cây số một giờ, phần lớn con đường được nhấc hẳn lên khỏi mặt đất."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "start": 37.49725,
+      "end": 40.43625,
+      "text": "Cuối năm hai nghìn hai mươi tư, Quốc hội vẫn bấm nút."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "start": 40.49675,
+      "end": 43.71075,
+      "text": "Bốn trăm bốn mươi ba trên bốn trăm năm mươi tư đại biểu tán thành."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 43.771,
+      "end": 46.746,
+      "text": "Nhưng nhiều chuyên gia vẫn hỏi: bao giờ hoàn vốn?"
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 46.8065,
+      "end": 51.1975,
+      "text": "Chính phủ thừa nhận, bốn năm đầu, doanh thu chỉ đủ bù chi phí vận hành."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 51.447208333333336,
+      "end": 52.83020833333334,
+      "text": "Giờ quay lại hai đoàn tàu."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 52.88975,
+      "end": 57.04675,
+      "text": "Khi tàu cao tốc đã tới Thủ Thiêm, tàu Thống Nhất còn chưa tới Vinh."
+    },
+    {
+      "id": "21",
+      "scene": "s7",
+      "start": 57.297125,
+      "end": 61.662125,
+      "text": "Trớ trêu là, tuyến Thống Nhất được nối liền từ năm một nghìn chín trăm ba mươi sáu."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "start": 61.722375,
+      "end": 67.048375,
+      "text": "Chuyến đầu tiên chạy hết tuyến, Toàn quyền Đông Dương cùng gia đình ngồi trên tàu khoảng bốn mươi tiếng."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 67.10879166666666,
+      "end": 68.24679166666667,
+      "text": "Chín mươi năm trôi qua."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "start": 68.54674999999999,
+      "end": 70.45774999999999,
+      "text": "Tàu chỉ nhanh hơn chưa tới mười tiếng."
+    }
+  ]
+}

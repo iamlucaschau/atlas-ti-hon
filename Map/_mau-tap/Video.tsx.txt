@@ -1,0 +1,91 @@
+/**
+ * TEMPLATE — copy to Map/<slug>/Video.tsx (drop the .txt), then search for "TODO".
+ * Atlas Tí Hon · P? <pillar> · <engine> (style I Toy Atlas): "<tiêu đề>".
+ * Script + sources: kich-ban-<slug>-FINAL.md, cong-2_so-nguon.md. Beats: beat-sheet.md.
+ * Every cue comes from the VO timing (at("NN", fraction) = frame where line NN is that far through).
+ * Soft loop: the VO ends on a whole sentence; the picture returns to the opening frame in the
+ * 0.7 s tail (export --loop --tail=0.7) and seamKeys makes the last frame equal the first.
+ * Full worked examples: Map/p1-brunei-chia-doi/Video.tsx (P1), Map/p4-malacca-kra/Video.tsx (P4).
+ */
+import { Audio } from "@remotion/media";
+import { AbsoluteFill, staticFile, useCurrentFrame } from "remotion";
+import timing from "../../src/voiceover/SLUG.timing.json"; // TODO slug
+import words from "../../src/voiceover/SLUG.words.json"; // TODO slug
+import { episodeDuration } from "../../src/series/pvr/episode";
+import { SafeGuide } from "../../src/series/pvr/safe";
+import { MusicBed, PILLAR_MUSIC, SfxCues, type SfxCue } from "../../src/series/pvr/sfx";
+import { KaraokeSubs } from "../../Style Library/subs";
+import {
+  ATLAS, Atlas, AtlasSub, beats, BigGold, camAt, CountryTag, DataCard, type Fill, type GeoCam, seamKeys, show, VnIslands, YearRibbon,
+} from "../../Style Library/I-toy-atlas/toy-atlas";
+
+const FPS = 30;
+const IMG = "images/SLUG/cut"; // TODO slug — Lucas's cut-outs (scripts/cutout.py)
+const { at } = beats(timing, FPS);
+const END = episodeDuration(timing, FPS);
+
+// Camera: one place per scene, fly only when the place changes (≥ 20 frames, eased, no shake).
+const VIEW = {
+  home: { lon: 106, lat: 16, zoom: 20 }, // TODO: opening frame = loop frame
+  // detail: { lon: …, lat: …, zoom: … },
+};
+const KEYS0: GeoCam[] = [
+  { at: 0, ...VIEW.home },
+  // { at: at("05") - 4, ...VIEW.detail },
+  // { at: at("NN", 0.6), ...VIEW.home }, // last key = opening place (soft loop)
+];
+const PUSH = 0.04; // slow push inside each beat (Lucas 2026-10-13)
+const PUSH_CAP = 0.08;
+const KEYS = seamKeys(KEYS0, END, PUSH, PUSH_CAP);
+
+// Story countries only; Vietnam + Hoàng Sa + Trường Sa in Vietnam's colour whenever the South China Sea is in frame.
+const FILLS: Fill[] = [
+  ...["Vietnam", "Paracel Is.", "Spratly Is."].map((name) => ({ name, color: ATLAS.c })),
+  // { name: "Thailand", color: ATLAS.d },
+];
+
+export const Scene: React.FC = () => {
+  const f = useCurrentFrame();
+  const cam = camAt(KEYS, f, PUSH, PUSH_CAP);
+  return (
+    <AbsoluteFill>
+      <Atlas cam={cam} fills={FILLS} f={f} />
+      <VnIslands cam={cam} f={f} color={ATLAS.c} />
+      {/* name + flag for every country the VO names or the map colours; outline flashes on the spoken name */}
+      <CountryTag cam={cam} f={f} name="Vietnam" label="VIỆT NAM" flag="vietnam" anchor={[105.8, 21]} from={at("01", 0.2)}
+        o={show(f, at("01", 0.2), at("02"))} glow={[at("01", 0.3)]} />
+
+      {/* ── 01–02 hook ── TODO */}
+      <BigGold text="HOOK" f={f} at={at("01", 0.2)} out={at("02")} y={330} size={120} />
+      <DataCard value="00" label="NHÃN" x={540} y={330} f={f} at={at("02", 0.3)} out={at("03")} />
+      <YearRibbon text="2026" f={f} at={at("02", 0.1)} out={at("03")} />
+
+      <SafeGuide />
+    </AbsoluteFill>
+  );
+};
+
+// On-screen subtitle text per line id: numbers as digits, *keywords* highlighted (≤ 1–2 per line).
+const CAPTIONS: Record<string, string> = {
+  // "01": "… *67 tỷ đô* …",
+};
+
+const CLICK = "click/mouse-click-351398.mp3";
+const W = "whoosh/simple-whoosh-382724.mp3";
+// [file, line id, fraction of the line, frame offset?, level dB?] — real Pixabay SFX only, max one per beat
+const SFX: SfxCue[] = [
+  [CLICK, "01", 0.2],
+  [W, "02", 0, -4],
+];
+
+export const Episode: React.FC = () => ( // TODO rename (e.g. P2DuongSatCaoToc) and register in src/Root.tsx
+  <AbsoluteFill style={{ backgroundColor: ATLAS.deep }}>
+    <Scene />
+    <KaraokeSubs timing={timing} words={words} captions={CAPTIONS} Skin={AtlasSub} oneLine maxWords={4} maxChars={20} />
+    <Audio name="VO" src={staticFile("voiceover/SLUG/vo.mp3")} /> {/* TODO slug */}
+    <MusicBed file={PILLAR_MUSIC.P1} /> {/* TODO pillar */}
+    <SfxCues timing={timing} cues={SFX} />
+  </AbsoluteFill>
+);
+
+export const episodeDurationFrames = (fps: number) => episodeDuration(timing, fps); // TODO rename

@@ -1,0 +1,170 @@
+{
+  "name": "p4-malacca-kra",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện hành trình và bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. \"Kẹt xe giờ cao điểm, nhưng là trên biển\" đọc có ý cười nhẹ; \"Vì khó có lời\" ngắn, dứt khoát. Đọc Malacca là \"Ma-lắc-ca\", Kra là \"Cra\", Suez là \"Su-ê\", Chumphon là \"Chum-phôn\", Ranong là \"Ra-nông\". Không cường điệu. Câu cuối cùng chưa kết thúc: giữ giọng treo lên như câu còn tiếp, không hạ giọng kết câu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Gần một phần ba lượng dầu chở bằng đường biển của thế giới phải chen qua một eo biển."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Ngay phía trên có một lối tắt, mà hơn ba trăm năm nay chưa ai đào."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Hình dung một con tàu dầu đi từ Trung Đông sang Đông Á."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Muốn vào Biển Đông, nó phải vòng xuống tận eo Malacca."
+    },
+    {
+      "id": "05",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Năm ngoái, hơn một trăm nghìn lượt tàu chen qua đây."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Chỗ hẹp nhất, gần Singapore, chỉ rộng khoảng hai, ba cây số."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Kẹt xe giờ cao điểm, nhưng là trên biển."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Trong khi đó, eo đất Kra của Thái Lan chỉ rộng hơn bốn mươi cây số."
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Đào một con kênh ở đây, tàu khỏi phải vòng qua Singapore."
+    },
+    {
+      "id": "10",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Ý tưởng này có từ thời vua Narai, thế kỷ mười bảy."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn tám trăm tám mươi ba, một đoàn kỹ sư Pháp nhân danh công ty kênh Suez tới tận nơi đo đạc."
+    },
+    {
+      "id": "12",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Nhưng Xiêm không cấp phép cho nước phương Tây nào."
+    },
+    {
+      "id": "13",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Vậy sao tới giờ vẫn chưa đào?"
+    },
+    {
+      "id": "14",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Vì khó có lời."
+    },
+    {
+      "id": "15",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Tốn hàng chục tỷ đô."
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Mà tàu chỉ về sớm được một đến ba ngày."
+    },
+    {
+      "id": "17",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Năm hai nghìn hai mươi ba, Thái Lan đổi cách: không đào kênh, mà nối hai cảng bằng đường sắt."
+    },
+    {
+      "id": "18",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Chính phủ nói dự án đáng đầu tư."
+    },
+    {
+      "id": "19",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Người dân Chumphon, Ranong thì xuống đường phản đối, lo mất biển, mất vườn sầu riêng."
+    },
+    {
+      "id": "20",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Nhưng lý do thật có lẽ nằm ở đây: phần lớn tàu vẫn phải ghé Singapore."
+    },
+    {
+      "id": "21",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Để giao hàng, lấy nhiên liệu, sửa chữa."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Lối tắt có ngắn mấy, đường vẫn dẫn về Singapore."
+    }
+  ]
+}

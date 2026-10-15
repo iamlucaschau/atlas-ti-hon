@@ -1,0 +1,189 @@
+{
+  "durationInSeconds": 67.46804166666666,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 1.315,
+      "text": "Ai cũng lo nước biển dâng."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 1.375375,
+      "end": 4.591375,
+      "text": "Nhưng miền Tây đang tự lún xuống, còn nhanh hơn thế."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "start": 4.8410416666666665,
+      "end": 7.542041666666666,
+      "text": "Đồng bằng sông Cửu Long là vựa lúa lớn nhất cả nước."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 7.601583333333333,
+      "end": 10.701583333333334,
+      "text": "Vậy mà trung bình, nó chỉ cao hơn mặt biển khoảng tám mươi phân."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 10.761333333333333,
+      "end": 12.125333333333334,
+      "text": "Chưa tới ngang hông một người lớn."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "start": 12.375125,
+      "end": 18.122125,
+      "text": "Con số này có từ năm hai nghìn mười chín, khi nhà nghiên cứu Hà Lan Philip Minderhoud dùng số đo ngoài thực địa để tính lại."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 18.182541666666665,
+      "end": 21.179541666666665,
+      "text": "Trước đó, nhiều nghiên cứu còn tưởng nó cao hơn hai mét rưỡi."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 21.239124999999998,
+      "end": 21.828124999999996,
+      "text": "Sai ở đâu?"
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 21.97820833333333,
+      "end": 22.78620833333333,
+      "text": "Ở cái thước."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 22.93633333333333,
+      "end": 25.15933333333333,
+      "text": "Bản đồ vệ tinh lấy mốc không khớp với mặt biển ở đây."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "start": 25.40945833333333,
+      "end": 26.49345833333333,
+      "text": "Giờ so hai tốc độ."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 26.553749999999997,
+      "end": 29.326749999999997,
+      "text": "Nước biển toàn cầu dâng chưa tới bốn li mỗi năm."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 29.386499999999998,
+      "end": 31.6695,
+      "text": "Đất miền Tây lún khoảng một phân mỗi năm."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 31.729541666666666,
+      "end": 33.140541666666664,
+      "text": "Có nơi hơn hai phân rưỡi."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 33.20079166666667,
+      "end": 34.308791666666664,
+      "text": "Nhanh gấp khoảng ba lần."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "start": 34.36841666666667,
+      "end": 37.19941666666667,
+      "text": "Nước biển còn chưa kịp tới, đất đã tự xuống đón."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 37.44895833333334,
+      "end": 40.31095833333334,
+      "text": "Thủ phạm số một nằm ngay dưới chân: nước ngầm."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 40.37145833333334,
+      "end": 42.804458333333336,
+      "text": "Bơm nước lên, các lớp đất bên dưới xẹp xuống."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "start": 42.86454166666667,
+      "end": 46.030541666666664,
+      "text": "Riêng chuyện này đã kéo đồng bằng xuống khoảng mười tám phân."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 46.28091666666667,
+      "end": 47.90391666666667,
+      "text": "Thủ phạm số hai: phù sa."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 47.96404166666667,
+      "end": 51.55504166666667,
+      "text": "Đập trên dòng Mekong giữ lại một phần, cát dưới lòng sông thì bị hút đi."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "start": 51.615,
+      "end": 53.649,
+      "text": "Phù sa về đồng bằng đã giảm khoảng một nửa."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 53.899166666666666,
+      "end": 56.44016666666666,
+      "text": "Đồng bằng càng thấp, nước mặn càng dễ lấn vào."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "start": 56.50004166666667,
+      "end": 59.873041666666666,
+      "text": "Mùa khô năm hai nghìn hai mươi là một đợt hạn mặn lịch sử."
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "start": 60.123375,
+      "end": 61.181375,
+      "text": "Và cú ngược đời?"
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "start": 61.381375000000006,
+      "end": 67.21837500000001,
+      "text": "Thứ kéo đồng bằng xuống nhiều nhất lại là nước ngọt ngay dưới chân, để uống, tưới ruộng, nuôi tôm cá."
+    }
+  ]
+}

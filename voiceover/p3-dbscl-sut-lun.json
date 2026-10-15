@@ -1,0 +1,198 @@
+{
+  "name": "p3-dbscl-sut-lun",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện địa lý hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số chậm hơn một nhịp. \"Sai ở đâu?\" hỏi nhẹ, \"Ở cái thước.\" ngắn, dứt khoát. \"Nước biển còn chưa kịp tới, đất đã tự xuống đón.\" và \"Và cú ngược đời?\" đọc có ý cười nhẹ; \"Thủ phạm số một, số hai\" nhấn như đang đếm. Đọc Minderhoud là \"Min-đơ-hao\", Mekong là \"Mê Kông\". Không hù doạ. Không cường điệu. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Ai cũng lo nước biển dâng."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Nhưng miền Tây đang tự lún xuống, còn nhanh hơn thế."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Đồng bằng sông Cửu Long là vựa lúa lớn nhất cả nước."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Vậy mà trung bình, nó chỉ cao hơn mặt biển khoảng tám mươi phân."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Chưa tới ngang hông một người lớn."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Con số này có từ năm hai nghìn mười chín, khi nhà nghiên cứu Hà Lan Philip Minderhoud dùng số đo ngoài thực địa để tính lại."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Trước đó, nhiều nghiên cứu còn tưởng nó cao hơn hai mét rưỡi."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.15,
+      "text": "Sai ở đâu?"
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.15,
+      "text": "Ở cái thước."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Bản đồ vệ tinh lấy mốc không khớp với mặt biển ở đây."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Giờ so hai tốc độ."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Nước biển toàn cầu dâng chưa tới bốn li mỗi năm."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Đất miền Tây lún khoảng một phân mỗi năm."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Có nơi hơn hai phân rưỡi."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Nhanh gấp khoảng ba lần."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Nước biển còn chưa kịp tới, đất đã tự xuống đón."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Thủ phạm số một nằm ngay dưới chân: nước ngầm."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Bơm nước lên, các lớp đất bên dưới xẹp xuống."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Riêng chuyện này đã kéo đồng bằng xuống khoảng mười tám phân."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Thủ phạm số hai: phù sa."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Đập trên dòng Mekong giữ lại một phần, cát dưới lòng sông thì bị hút đi."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Phù sa về đồng bằng đã giảm khoảng một nửa."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Đồng bằng càng thấp, nước mặn càng dễ lấn vào."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Mùa khô năm hai nghìn hai mươi là một đợt hạn mặn lịch sử."
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.2,
+      "text": "Và cú ngược đời?"
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Thứ kéo đồng bằng xuống nhiều nhất lại là nước ngọt ngay dưới chân, để uống, tưới ruộng, nuôi tôm cá."
+    }
+  ]
+}

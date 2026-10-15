@@ -1,0 +1,184 @@
+{
+  "name": "p2-duong-sat-cao-toc",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện kinh tế và bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc năm, con số và địa danh chậm hơn một nhịp. \"Nghe vô lý?\", \"phở Hà Nội, cơm tấm Sài Gòn\" và \"Vì toàn cầu.\" đọc có ý cười nhẹ; \"Vì toàn cầu.\" ngừng một nhịp trước chữ \"toàn cầu\". Phần tranh luận trung tính. \"Chín mươi năm trôi qua.\" chậm, ngừng sau câu. Không cường điệu. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu.",
+  "trimSilence": true,
+  "tempo": 1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Việt Nam dự kiến chi khoảng sáu mươi bảy tỷ đô, chỉ để mua một ngày."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Nghe vô lý?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Giả sử hai đoàn tàu cùng rời Hà Nội."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Tàu Thống Nhất hôm nay: lên tàu buổi tối, ngủ hai đêm mới tới Sài Gòn."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Tàu cao tốc nhanh nhất dự kiến chỉ mất khoảng năm tiếng rưỡi."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Ăn sáng phở Hà Nội, ăn trưa cơm tấm Sài Gòn."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Nhưng cái giá thì không hề nhẹ."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Tuyến dài hơn một nghìn rưỡi cây số."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Theo vốn sơ bộ, mỗi mét đường tốn hơn một tỷ đồng."
+    },
+    {
+      "id": "10",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "Sao lại đắt thế?"
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "Vì toàn cầu."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Khoảng sáu mươi phần trăm tuyến dự kiến đi trên cầu."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Thêm khoảng mười phần trăm chui trong hầm."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Để chạy ba trăm năm mươi cây số một giờ, phần lớn con đường được nhấc hẳn lên khỏi mặt đất."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Cuối năm hai nghìn hai mươi tư, Quốc hội vẫn bấm nút."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Bốn trăm bốn mươi ba trên bốn trăm năm mươi tư đại biểu tán thành."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Nhưng nhiều chuyên gia vẫn hỏi: bao giờ hoàn vốn?"
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Chính phủ thừa nhận, bốn năm đầu, doanh thu chỉ đủ bù chi phí vận hành."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Giờ quay lại hai đoàn tàu."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Khi tàu cao tốc đã tới Thủ Thiêm, tàu Thống Nhất còn chưa tới Vinh."
+    },
+    {
+      "id": "21",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Trớ trêu là, tuyến Thống Nhất được nối liền từ năm một nghìn chín trăm ba mươi sáu."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Chuyến đầu tiên chạy hết tuyến, Toàn quyền Đông Dương cùng gia đình ngồi trên tàu khoảng bốn mươi tiếng."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.3,
+      "text": "Chín mươi năm trôi qua."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Tàu chỉ nhanh hơn chưa tới mười tiếng."
+    }
+  ]
+}

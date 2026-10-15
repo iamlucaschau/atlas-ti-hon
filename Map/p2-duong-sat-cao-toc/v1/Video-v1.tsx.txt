@@ -1,0 +1,389 @@
+/**
+ * Map channel · P2 Tiền & bản đồ · Money+Maps (+ Journey Route), style I Toy Atlas:
+ * "67 tỷ đô cho một tuyến đường sắt: đổi lại được gì?"
+ * Script + sources: kich-ban-p2-duong-sat-cao-toc-FINAL.md, cong-2_so-nguon.md.
+ * Beats: beat-sheet.md (Gate 4, Lucas 2026-10-13). Every cue comes from the VO
+ * timing. Loop ending: line 17 runs into line 01 and the last frame is the
+ * opening frame (map + dotted route).
+ *
+ * Map rules (Lucas 2026-10-12): Hoàng Sa + Trường Sa in Vietnam's colour with
+ * labels whenever the whole coast is in frame; the route is a SCHEMATIC through
+ * the big cities (not the official alignment); no province borders.
+ */
+import { Audio } from "@remotion/media";
+import { AbsoluteFill, Easing, interpolate, staticFile, useCurrentFrame } from "remotion";
+import timing from "../../src/voiceover/p2-duong-sat-cao-toc.timing.json";
+import words from "../../src/voiceover/p2-duong-sat-cao-toc.words.json";
+import { episodeDuration } from "../../src/series/pvr/episode";
+import { SafeGuide } from "../../src/series/pvr/safe";
+import { SfxCues, type SfxCue } from "../../src/series/pvr/sfx";
+import { CLAMP, FONT, prog } from "../../Style Library/kit-common";
+import { KaraokeSubs } from "../../Style Library/subs";
+import {
+  Atlas, ATLAS, AtlasSub, BigGold, camAt, type Fill, Flag, type GeoCam, ImgSticker, MapLabel, PegImg,
+  Pulse, Route, routeHead, Sticker, toScreen, VnIslands, YearRibbon,
+} from "../../Style Library/I-toy-atlas/toy-atlas";
+
+const FPS = 30;
+const IMG = "images/p2-duong-sat-cao-toc/cut";
+const line = (id: string) => timing.lines.find((l) => l.id === id)!;
+/** Absolute frame where VO line `id` is k of the way through. */
+const at = (id: string, k = 0) => Math.round((line(id).start + (line(id).end - line(id).start) * k) * FPS);
+
+const VIEW = {
+  vn: { lon: 109.8, lat: 14.8, zoom: 19 },
+  hanoi: { lon: 105.85, lat: 20.6, zoom: 60 },
+  coast: { lon: 108.85, lat: 14.4, zoom: 48 },
+};
+const KEYS: GeoCam[] = [
+  { at: 0, ...VIEW.vn },
+  { at: at("03") - 4, ...VIEW.hanoi },
+  { at: at("06") - 4, ...VIEW.vn },
+  { at: at("09") - 2, ...VIEW.coast },
+  { at: at("11") - 2, ...VIEW.vn },
+];
+
+const VN = ATLAS.c;
+const FILLS: Fill[] = ["Vietnam", "Paracel Is.", "Spratly Is."].map((name) => ({ name, color: VN }));
+
+/** Schematic route through the big cities (NOT the official alignment). */
+const ROUTE: [number, number][] = [
+  [105.84, 20.92], [105.92, 20.54], [105.78, 19.8], [105.68, 18.68], [105.88, 18.3], [106.5, 17.45], [107.05, 16.8],
+  [107.55, 16.42], [108.1, 16.0], [108.4, 15.55], [108.7, 15.08], [108.95, 13.9], [109.15, 13.05], [109.08, 12.25],
+  [108.9, 11.6], [108.05, 11.0], [107.0, 10.82], [106.72, 10.78],
+];
+/** Fast-train stops on the schematic (vertex index): Ngọc Hồi, Vinh, Đà Nẵng, Nha Trang, Thủ Thiêm. Unlabelled. */
+const STOPS5 = [0, 3, 8, 13, ROUTE.length - 1];
+const HANOI: [number, number] = [105.85, 21.03];
+
+const show = (f: number, a: number, b = Infinity) => Math.min(prog(f, a, 5), b === Infinity ? 1 : 1 - prog(f, b, 5));
+const pts = (cam: GeoCam, ll: [number, number][]) => ll.map(([lo, la]) => toScreen(cam, lo, la));
+/** Fraction along a screen polyline at vertex i. */
+const vertexP = (ps: [number, number][], i: number) => {
+  const len = (a: number, b: number) => ps.slice(a + 1, b + 1).reduce((s, q, k) => s + Math.hypot(q[0] - ps[a + k][0], q[1] - ps[a + k][1]), 0);
+  return len(0, i) / len(0, ps.length - 1);
+};
+const count = (f: number, a: number, d: number, to: number, from = 0, digits = 0) =>
+  interpolate(f, [a, a + d], [from, to], CLAMP).toLocaleString("vi-VN", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+
+/** Solid line drawn on with p, dark edge under it. */
+const Track: React.FC<{ ps: [number, number][]; p: number; color?: string; w?: number; o?: number; dx?: number }> = ({
+  ps, p, color = ATLAS.gold, w = 10, o = 1, dx = 0,
+}) => {
+  const d = ps.map(([x, y], i) => `${i ? "L" : "M"} ${x + dx} ${y}`).join(" ");
+  const dash = { strokeDasharray: 1, strokeDashoffset: 1 - p };
+  return (
+    <svg width={1080} height={1920} style={{ position: "absolute", opacity: o }}>
+      <path d={d} fill="none" stroke={ATLAS.ink} strokeWidth={w + 7} strokeLinecap="round" strokeLinejoin="round" pathLength={1} style={dash} />
+      <path d={d} fill="none" stroke={color} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" pathLength={1} style={dash} />
+    </svg>
+  );
+};
+
+/** Rubber stamp slammed onto the screen (no camera shake: only the stamp moves). */
+const Stamp: React.FC<{ text: string; x: number; y: number; f: number; at: number; out?: number }> = ({ text, x, y, f, at: a, out }) => {
+  if (f < a) return null;
+  const s = interpolate(f, [a, a + 6], [1.9, 1], { ...CLAMP, easing: Easing.in(Easing.cubic) });
+  const w = text.length * 46 + 70;
+  return (
+    <svg width={1080} height={1920} style={{ position: "absolute", opacity: Math.min(prog(f, a, 3), out === undefined ? 1 : 1 - prog(f, out, 5)) }}>
+      <g style={{ translate: `${x}px ${y}px`, scale: s, rotate: "-10deg" }}>
+        <rect x={-w / 2} y={-50} width={w} height={100} rx={12} fill="rgba(247,242,232,0.85)" stroke={ATLAS.red} strokeWidth={9} />
+        <text y={24} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={68} fill={ATLAS.red} letterSpacing={4}>{text}</text>
+      </g>
+    </svg>
+  );
+};
+
+const Question: React.FC<{ x: number; y: number; f: number; at: number; out?: number }> = ({ x, y, f, at: a, out }) => (
+  <Sticker x={x} y={y} f={f} at={a} out={out} s={1.1}>
+    <circle r={40} fill={ATLAS.gold} stroke={ATLAS.ink} strokeWidth={5} />
+    <text y={22} textAnchor="middle" fontFamily={FONT} fontSize={64} fontWeight={800} fill={ATLAS.ink}>?</text>
+  </Sticker>
+);
+
+// bottom-left open sea (Gulf of Thailand / south of Cà Mau): the comparison bars
+const BAR = { x0: 205, max: 420, row1: 1185, row2: 1275, h: 58 };
+const BarRow: React.FC<{ y: number; len: number; color: string; dashed?: boolean }> = ({ y, len, color, dashed }) => (
+  <rect x={BAR.x0} y={y - BAR.h / 2} width={Math.max(0, len)} height={BAR.h} rx={10} fill={color} stroke={ATLAS.ink} strokeWidth={5}
+    strokeDasharray={dashed ? "14 8" : undefined} />
+);
+
+// scale on the open sea east of Hainan (clear of both archipelagos)
+const SCALE = { x: 790, y: 470, w: 260 };
+const panL: [number, number] = [SCALE.x - 0.32 * SCALE.w, SCALE.y + 0.1 * SCALE.w * 0.84];
+const panR: [number, number] = [SCALE.x + 0.32 * SCALE.w, SCALE.y + 0.1 * SCALE.w * 0.84];
+
+const Scene: React.FC = () => {
+  const f = useCurrentFrame();
+  const cam = camAt(KEYS, f);
+  const route = pts(cam, ROUTE);
+  // the islands show whenever the whole coast is in frame (not at Hà Nội / coast zooms)
+  const islandsO = 1 - (prog(f, at("03") - 6, 4) - prog(f, at("06") + 4, 6)) - (prog(f, at("09") - 4, 4) - prog(f, at("11") + 16, 6));
+  const [hx, hy] = toScreen(cam, ...HANOI);
+
+  // gold route: drawn in line 06 behind the new train, gone again in line 17 (loop frame = dotted route only)
+  const drawn = prog(f, at("06", 0.18), 70, Easing.inOut(Easing.cubic));
+  const goldO = 1 - prog(f, at("17"), 18);
+  const head = routeHead(route, drawn);
+
+  // payoff
+  const oldP = 0.32 * prog(f, at("15", 0.1), at("16") - at("15", 0.1), Easing.linear);
+  const newP = prog(f, at("16", 0.05), 42, Easing.inOut(Easing.quad));
+  const barsO = Math.min(prog(f, at("13"), 6), 1 - prog(f, at("14") - 4, 5)) + Math.min(prog(f, at("15", 0.2), 6), 1 - prog(f, at("17"), 16));
+  const stops = STOPS5.map((i) => vertexP(route, i));
+
+  return (
+    <AbsoluteFill>
+      <Atlas cam={cam} fills={FILLS} f={f} />
+      <VnIslands cam={cam} f={f} color={VN} o={islandsO} hsLabel={[40, 82]} tsLabel={[-10, -118]} />
+
+      {/* the route: dotted preview always, solid gold once drawn */}
+      <Route pts={route} p={1} />
+      {f >= at("06") && <Track ps={route} p={drawn} o={goldO} />}
+
+      {/* ── 01–02 hook: 67 tỷ đô, đổi lại được gì? ── */}
+      <ImgSticker src={`${IMG}/p-03-money-bags.png`} x={SCALE.x} y={SCALE.y - 10 + 40 * (1 - prog(f, at("01", 0.15), 8, Easing.in(Easing.quad)))}
+        w={260} f={f} at={at("01", 0.15)} out={at("02") - 2} />
+      <BigGold text="67 TỶ ĐÔ" f={f} at={at("01", 0.3)} out={at("02")} y={350} size={130} />
+      {f >= at("02") - 2 && f < at("03") && (
+        <>
+          <ImgSticker src={`${IMG}/p-07-scale.png`} x={SCALE.x} y={SCALE.y} w={SCALE.w} f={f} at={at("02") - 2} out={at("03") - 6} />
+          <ImgSticker src={`${IMG}/p-03-money-bags.png`} x={panL[0]} y={panL[1] - 36} w={110} f={f} at={at("02")} out={at("03") - 6} />
+          <Question x={panR[0]} y={panR[1] - 40} f={f} at={at("02", 0.3)} out={at("03") - 6} />
+        </>
+      )}
+      <BigGold text="ĐỔI LẠI ĐƯỢC GÌ?" f={f} at={at("02", 0.15)} out={at("03") - 6} y={350} size={84} />
+
+      {/* ── 03–05 Quốc hội, Hà Nội ── */}
+      {f >= at("03") - 4 && f < at("06") && (
+        <>
+          <Pulse x={hx} y={hy} f={f} />
+          <MapLabel text="HÀ NỘI" x={hx} y={hy + 85} o={show(f, at("03", 0.3), at("04") - 4)} />
+          <svg width={1080} height={1920} style={{ position: "absolute" }}>
+            <g style={{ translate: `${hx + 26}px ${hy - 170}px`, scale: 1.8 * prog(f, at("03", 0.5), 8) }}>
+              <Flag kind="vietnam" f={f} />
+            </g>
+          </svg>
+          <ImgSticker src={`${IMG}/p-05-assembly.png`} x={540} y={1090 - 10 * Math.abs(Math.sin((f - at("04")) / 5)) * show(f, at("04"), at("05"))}
+            w={470} f={f} at={at("03", 0.35)} out={at("05")} />
+          <ImgSticker src={`${IMG}/p-04-excavator.png`} x={540} y={1080} w={400} f={f} at={at("05", 0.2)} out={at("06") - 4} />
+        </>
+      )}
+      <YearRibbon text="2024" f={f} at={at("03")} out={at("05")} />
+      <BigGold text={`${count(f, at("04", 0.1), 40, 443)} / 454`} f={f} at={at("04", 0.1)} out={at("05")} y={470} size={120} />
+      <YearRibbon text="2035" f={f} at={at("05")} out={at("06") - 4} />
+
+      {/* ── 06–07 the route, Ngọc Hồi → Thủ Thiêm ── */}
+      {f >= at("06") && drawn > 0 && drawn < 1 && <ImgSticker src={`${IMG}/p-01-hsr-train.png`} x={head[0]} y={head[1] - 22} w={150} f={f} at={at("06", 0.18)} />}
+      <MapLabel text="NGỌC HỒI" x={route[0][0] + 170} y={route[0][1] + 10} o={show(f, at("06", 0.2), at("07"))} />
+      <MapLabel text="THỦ THIÊM" x={route[route.length - 1][0] + 40} y={route[route.length - 1][1] + 95} o={show(f, at("06", 0.85), at("07"))} />
+      <BigGold text="1.541 KM" f={f} at={at("07", 0.05)} out={at("07", 0.5)} y={350} size={130} />
+      {f >= at("07") && f < at("15") && (
+        <svg width={1080} height={1920} style={{ position: "absolute", opacity: 1 - prog(f, at("15") - 6, 6) }}>
+          {Array.from({ length: 23 }, (_, i) => {
+            const [x, y] = routeHead(route, i / 22);
+            const s = prog(f, at("07", 0.3) + i * 2, 5, Easing.out(Easing.back(2)));
+            return <circle key={i} cx={x} cy={y} r={9 * s} fill={ATLAS.white} stroke={ATLAS.ink} strokeWidth={3} />;
+          })}
+          {[0.06, 0.27, 0.5, 0.72, 0.94].map((p, i) => {
+            const [x, y] = routeHead(route, p);
+            const s = prog(f, at("07", 0.7) + i * 3, 5, Easing.out(Easing.back(2)));
+            return <rect key={i} x={x + 18 - 11 * s} y={y - 11 * s} width={22 * s} height={22 * s} fill={ATLAS.d} stroke={ATLAS.ink} strokeWidth={3} />;
+          })}
+        </svg>
+      )}
+      <BigGold text="23 GA · 5 GA HÀNG" f={f} at={at("07", 0.55)} out={at("08")} y={350} size={88} color={ATLAS.white} />
+
+      {/* ── 08 vì sao đắt ── */}
+      <ImgSticker src={`${IMG}/p-03-money-bags.png`} x={SCALE.x} y={SCALE.y - 20 * Math.abs(Math.sin((f - at("08")) / 4))} w={240} f={f} at={at("08")} out={at("09") - 4} />
+      <Question x={SCALE.x + 120} y={SCALE.y - 140} f={f} at={at("08", 0.3)} out={at("09") - 4} />
+
+      {/* ── 09–10 coast: double track, 350 km/h, 43,7 triệu đô / km ── */}
+      {f >= at("09") - 2 && f < at("11") && (() => {
+        const a = vertexP(route, 9);
+        const b = vertexP(route, 12);
+        const runP = a + (b - a) * prog(f, at("09", 0.3), 60, Easing.inOut(Easing.quad));
+        const [tx, ty] = routeHead(route, runP);
+        const o = Math.min(prog(f, at("09", 0.1), 8), 1 - prog(f, at("11") - 4, 4));
+        const streak = [0.006, 0.012, 0.018].map((d) => routeHead(route, runP - d * 2));
+        return (
+          <>
+            <svg width={1080} height={1920} style={{ position: "absolute", opacity: o }}>
+              {/* sleepers under the two rails */}
+              <path d={route.map(([x, y], i) => `${i ? "L" : "M"} ${x} ${y}`).join(" ")} fill="none" stroke={ATLAS.ink} strokeOpacity={0.7}
+                strokeWidth={46} strokeDasharray="6 12" />
+            </svg>
+            <Track ps={route} p={1} dx={-12} w={8} o={o} />
+            <Track ps={route} p={1} dx={12} w={8} o={o} />
+            {runP > a && runP < b && (
+              <>
+                <svg width={1080} height={1920} style={{ position: "absolute" }}>
+                  {streak.map(([x, y], i) => (
+                    <line key={i} x1={x - 40} y1={y - 30 - i * 14} x2={x + 40} y2={y - 30 - i * 14} stroke={ATLAS.white} strokeWidth={6} strokeLinecap="round" opacity={0.7 - i * 0.2} />
+                  ))}
+                </svg>
+                <ImgSticker src={`${IMG}/p-01-hsr-train.png`} x={tx} y={ty - 40} w={230} f={f} at={at("09", 0.3)} />
+              </>
+            )}
+            {(() => {
+              const [qx, qy] = toScreen(cam, 108.8, 15.12);
+              return (
+                <ImgSticker src={`${IMG}/p-03-money-bags.png`} x={qx + 150} y={qy - 50 + 60 * (1 - prog(f, at("10", 0.15), 8, Easing.in(Easing.quad)))}
+                  w={220} f={f} at={at("10", 0.15)} out={at("11") - 4} />
+              );
+            })()}
+          </>
+        );
+      })()}
+      <BigGold text="350 KM/H" f={f} at={at("09", 0.15)} out={at("10")} y={350} size={130} />
+      <BigGold text={`${count(f, at("10", 0.2), 30, 43.7, 0, 1)} TRIỆU ĐÔ / KM`} f={f} at={at("10", 0.2)} out={at("11")} y={350} size={80} />
+
+      {/* ── 11 sơ bộ ── */}
+      <BigGold text="67 TỶ ĐÔ" f={f} at={at("11", 0.05)} out={at("12") - 4} y={350} size={130} />
+      <Stamp text="SƠ BỘ" x={720} y={430} f={f} at={at("11", 0.45)} out={at("12") - 4} />
+
+      {/* ── 12 lo ngại: the scale, the money side heavier ── */}
+      {f >= at("12") - 2 && f < at("13") + 4 && (
+        <>
+          <ImgSticker src={`${IMG}/p-07-scale.png`} x={SCALE.x} y={SCALE.y} w={SCALE.w} f={f} at={at("12") - 2} out={at("13") - 2} />
+          <ImgSticker src={`${IMG}/p-03-money-bags.png`} x={panL[0]} y={panL[1] - 40 - 10 * prog(f, at("12", 0.4), 20)}
+            w={110 + 40 * prog(f, at("12", 0.4), 20)} f={f} at={at("12")} out={at("13") - 2} />
+          <ImgSticker src={`${IMG}/p-01-hsr-train.png`} x={panR[0]} y={panR[1] - 22} w={120} f={f} at={at("12", 0.15)} out={at("13") - 2} />
+        </>
+      )}
+      <BigGold text="NỢ CÔNG · HOÀN VỐN" f={f} at={at("12", 0.1)} out={at("13")} y={350} size={74} color={ATLAS.white} />
+
+      {/* ── 13 bốn năm đầu: revenue = operating cost ── */}
+      <BigGold text="4 NĂM ĐẦU" f={f} at={at("13", 0.05)} out={at("14")} y={350} size={120} />
+
+      {/* ── 14 Nhà nước hỗ trợ bảo trì hạ tầng ── */}
+      {f >= at("14") - 2 && f < at("15") && (() => {
+        const seg = route.slice(6, 11);
+        const [dx, dy] = toScreen(cam, 108.2, 16.05);
+        return (
+          <>
+            <Track ps={seg} p={1} color={ATLAS.white} w={12} o={show(f, at("14"), at("15") - 4) * (0.55 + 0.45 * Math.sin(f / 4))} />
+            <PegImg src={`${IMG}/p-08-worker.png`} x={dx - 170} y={dy + 120} h={230} flag="vietnam" f={f} at={at("14", 0.1)} o={1 - prog(f, at("15") - 4, 4)} />
+          </>
+        );
+      })()}
+      <BigGold text="BẢO TRÌ HẠ TẦNG" f={f} at={at("14", 0.1)} out={at("15") - 4} y={350} size={88} color={ATLAS.white} />
+
+      {/* ── 15–16 payoff: hơn 30 tiếng vs ~5,5 tiếng ── */}
+      {f >= at("15") && f < at("16") + 6 && (() => {
+        const [x, y] = routeHead(route, oldP);
+        return <ImgSticker src={`${IMG}/p-02-old-train.png`} x={x + 20} y={y - 20} w={150} f={f} at={at("15", 0.05)} out={at("16")} />;
+      })()}
+      {f >= at("15") && f < at("16") + 6 && (
+        <>
+          <ImgSticker src={`${IMG}/p-06-clock.png`} x={SCALE.x} y={SCALE.y} w={190} f={f} at={at("15", 0.15)} out={at("16")} />
+          <Sticker x={SCALE.x} y={SCALE.y + 18} f={f} at={at("15", 0.15)} out={at("16")}>
+            {/* hands race round: hours passing */}
+            <line x1={0} y1={0} x2={0} y2={-52} stroke={ATLAS.ink} strokeWidth={8} strokeLinecap="round" style={{ rotate: `${(f - at("15")) * 24}deg` }} />
+            <line x1={0} y1={0} x2={0} y2={-34} stroke={ATLAS.ink} strokeWidth={10} strokeLinecap="round" style={{ rotate: `${(f - at("15")) * 2}deg` }} />
+          </Sticker>
+        </>
+      )}
+      {f >= at("16") && f < at("17") + 20 && newP > 0 && (() => {
+        const [x, y] = routeHead(route, newP);
+        return (
+          <>
+            <svg width={1080} height={1920} style={{ position: "absolute", opacity: 1 - prog(f, at("17"), 16) }}>
+              {stops.map((p, i) => {
+                const [sx, sy] = routeHead(route, p);
+                const lit = prog(f, at("16", 0.05) + 42 * p, 4);
+                return <circle key={i} cx={sx} cy={sy} r={14 * lit} fill={ATLAS.gold} stroke={ATLAS.ink} strokeWidth={4} />;
+              })}
+            </svg>
+            {newP < 1 && <ImgSticker src={`${IMG}/p-01-hsr-train.png`} x={x} y={y - 22} w={160} f={f} at={at("16", 0.05)} />}
+            {stops.map((p, i) => {
+              const [sx, sy] = routeHead(route, p);
+              return f >= at("16", 0.05) + 42 * p && <Pulse key={i} x={sx} y={sy} f={f} o={1 - prog(f, at("17"), 12)} period={36} />;
+            })}
+          </>
+        );
+      })()}
+      <svg width={1080} height={1920} style={{ position: "absolute", opacity: Math.min(1, barsO) }}>
+        {f < at("14") ? (
+          <>
+            {/* line 13: doanh thu (money) = vận hành (train), the same length */}
+            <BarRow y={BAR.row1} len={BAR.max * 0.7 * prog(f, at("13", 0.3), 20)} color={ATLAS.b} />
+            <BarRow y={BAR.row2} len={BAR.max * 0.7 * prog(f, at("13", 0.45), 20)} color="#9AA3A6" />
+            <text x={BAR.x0 + BAR.max * 0.7 + 50} y={(BAR.row1 + BAR.row2) / 2 + 26} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={80}
+              fill={ATLAS.white} stroke={ATLAS.ink} strokeWidth={10} paintOrder="stroke" opacity={prog(f, at("13", 0.7), 6)}>=</text>
+          </>
+        ) : (
+          <>
+            <BarRow y={BAR.row1} len={BAR.max * prog(f, at("15", 0.25), 50)} color="#9AA3A6" />
+            {f >= at("15", 0.5) && (
+              <text x={BAR.x0 + 24} y={BAR.row1 + 20} fontFamily={FONT} fontWeight={800} fontSize={56} fill={ATLAS.white}
+                stroke={ATLAS.ink} strokeWidth={9} paintOrder="stroke">30+ GIỜ</text>
+            )}
+            <BarRow y={BAR.row2} len={((BAR.max * 5.5) / 32.5) * prog(f, at("16", 0.35), 10)} color={ATLAS.gold} dashed />
+            {f >= at("16", 0.45) && (
+              <text x={BAR.x0 + (BAR.max * 5.5) / 32.5 + 18} y={BAR.row2 + 20} fontFamily={FONT} fontWeight={800} fontSize={52} fill={ATLAS.gold}
+                stroke={ATLAS.ink} strokeWidth={9} paintOrder="stroke">~5,5 GIỜ · DỰ KIẾN</text>
+            )}
+          </>
+        )}
+      </svg>
+      {/* row icons */}
+      {f >= at("13") && f < at("14") && (
+        <>
+          <ImgSticker src={`${IMG}/p-03-money-bags.png`} x={130} y={BAR.row1} w={100} f={f} at={at("13", 0.25)} out={at("14") - 4} />
+          <ImgSticker src={`${IMG}/p-01-hsr-train.png`} x={130} y={BAR.row2} w={120} f={f} at={at("13", 0.4)} out={at("14") - 4} />
+        </>
+      )}
+      {f >= at("15") && f < at("17") + 20 && (
+        <>
+          <ImgSticker src={`${IMG}/p-02-old-train.png`} x={130} y={BAR.row1} w={120} f={f} at={at("15", 0.2)} out={at("17")} />
+          <ImgSticker src={`${IMG}/p-01-hsr-train.png`} x={130} y={BAR.row2} w={120} f={f} at={at("16", 0.3)} out={at("17")} />
+        </>
+      )}
+      <SafeGuide />
+    </AbsoluteFill>
+  );
+};
+
+const CAPTIONS: Record<string, string> = {
+  "01": "Việt Nam sẽ chi khoảng *67 tỷ đô* cho một tuyến đường sắt.",
+  "03": "Cuối năm 2024, Quốc hội đã quyết.",
+  "04": "443/454 đại biểu tán thành.",
+  "05": "Mục tiêu: hoàn thành năm 2035.",
+  "06": "Tuyến chạy từ *Ngọc Hồi*, Hà Nội, tới *Thủ Thiêm*, TP.HCM.",
+  "07": "Dài khoảng 1.541 km, với 23 ga hành khách và 5 ga hàng hoá.",
+  "09": "Tàu chạy tới 350 km/h, nên cần cả một đường đôi mới, khổ tiêu chuẩn.",
+  "10": "Tính ra, mỗi cây số tốn khoảng 43,7 triệu đô.",
+  "11": "Và đó mới là con số *sơ bộ*.",
+  "13": "Chính phủ cũng thừa nhận, 4 năm đầu, doanh thu chỉ đủ bù chi phí vận hành.",
+  "15": "Đổi lại, từ Hà Nội vào TP.HCM, tàu Thống Nhất hôm nay mất *hơn 30 tiếng*.",
+  "16": "Tàu nhanh nhất của tuyến mới chỉ dừng 5 ga, dự kiến mất khoảng 5,5 tiếng.",
+};
+
+const W = "whoosh/simple-whoosh-382724.mp3";
+const W2 = "whoosh/clean-whoosh-382726.mp3";
+const CLICK = "click/mouse-click-351398.mp3";
+const THUD = "deephit/impact-thud-291047.mp3";
+const SHUTTER = "shutter/shutter-click-3-494029.mp3";
+const SFX: SfxCue[] = [
+  [THUD, "01", 0.2, 0, -18], [CLICK, "02", 0.15],
+  [W, "03", 0, -4], [CLICK, "04", 0.1], [CLICK, "05", 0.2],
+  [W2, "06", 0, -4], [CLICK, "07", 0.3],
+  [CLICK, "08", 0.3], [W, "09", 0, -2], [W2, "09", 0.3], [THUD, "10", 0.2, 0, -18],
+  [W, "11", 0, -2], [SHUTTER, "11", 0.45],
+  [CLICK, "12", 0.1], [CLICK, "13", 0.3], [CLICK, "14", 0.1],
+  [CLICK, "15", 0.25], [W2, "16", 0.05],
+];
+
+export const P2DuongSatCaoToc: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: ATLAS.deep }}>
+    <Scene />
+    <KaraokeSubs timing={timing} words={words} captions={CAPTIONS} Skin={AtlasSub} oneLine maxWords={5} maxChars={22} />
+    <Audio name="VO" src={staticFile("voiceover/p2-duong-sat-cao-toc/vo.mp3")} />
+    <Audio name="Music" src={staticFile("audio/bed-bright.wav")} loop volume={0.2} />
+    <SfxCues timing={timing} cues={SFX} />
+  </AbsoluteFill>
+);
+
+export const p2DuongSatCaoTocDuration = (fps: number) => episodeDuration(timing, fps);

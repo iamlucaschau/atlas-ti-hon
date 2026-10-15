@@ -1,0 +1,327 @@
+/**
+ * Map channel · P4 Tuyến đường & hành trình · Journey Route (style I Toy Atlas):
+ * "Eo Malacca chật như vậy, sao Thái Lan không đào kênh Kra?"
+ * Script + sources: kich-ban-p4-malacca-kra-FINAL.md, cong-2_so-nguon.md. Beats: beat-sheet.md.
+ * Every cue comes from the VO timing. Loop: line 19 ("Còn hiện tại,") runs into line 01 and the
+ * last frame is the opening frame (South-East Asia, map + dotted route).
+ *
+ * Map rules: Vietnam (muted) + Hoàng Sa, Trường Sa with labels whenever the South China Sea is in
+ * frame (Lucas 2026-10-13, option A). Ship lane, canal and land bridge are SCHEMATIC.
+ */
+import { Audio } from "@remotion/media";
+import { AbsoluteFill, Easing, interpolate, staticFile, useCurrentFrame } from "remotion";
+import timing from "../../src/voiceover/p4-malacca-kra.timing.json";
+import words from "../../src/voiceover/p4-malacca-kra.words.json";
+import { episodeDuration } from "../../src/series/pvr/episode";
+import { SafeGuide } from "../../src/series/pvr/safe";
+import { MusicBed, PILLAR_MUSIC, SfxCues, type SfxCue } from "../../src/series/pvr/sfx";
+import { CLAMP, prog } from "../../Style Library/kit-common";
+import { KaraokeSubs } from "../../Style Library/subs";
+import {
+  ATLAS, Atlas, AtlasSub, beats, BigGold, camAt, DataCard, type Fill, type GeoCam, ImgSticker, MapLabel, PegImg, pts, Pulse, Question, Route, routeHead, show, Sticker, toScreen, Track, vertexP, VnIslands, YearRibbon,
+} from "../../Style Library/I-toy-atlas/toy-atlas";
+
+const FPS = 30;
+const IMG = "images/p4-malacca-kra/cut";
+const BAGS = "images/p2-duong-sat-cao-toc/cut/p-03-money-bags.png";
+const CRANE = "images/i-singapore/cut/i-10-port-crane.png";
+const { at } = beats(timing, FPS);
+
+const VIEW = {
+  sea: { lon: 104.5, lat: 8, zoom: 11 },
+  route: { lon: 88, lat: 14, zoom: 4.4 },
+  strait: { lon: 101.8, lat: 3.2, zoom: 45 },
+  narrow: { lon: 103.82, lat: 1.22, zoom: 300 },
+  kra: { lon: 99.0, lat: 10.1, zoom: 120 },
+  singapore: { lon: 103.8, lat: 1.32, zoom: 120 },
+};
+const KEYS: GeoCam[] = [
+  { at: 0, ...VIEW.sea },
+  { at: at("03") - 4, ...VIEW.route },
+  { at: at("05") - 4, ...VIEW.strait },
+  { at: at("06") - 2, ...VIEW.narrow },
+  { at: at("07") - 4, ...VIEW.kra },
+  { at: at("08") - 4, ...VIEW.sea },
+  { at: at("09") - 4, ...VIEW.kra },
+  { at: at("11") - 4, ...VIEW.sea },
+  { at: at("15") - 4, ...VIEW.singapore },
+  { at: at("17") - 4, ...VIEW.kra },
+  { at: at("18", 0.72), ...VIEW.sea },
+];
+const PUSH = 0.04;
+const PUSH_CAP = 0.08;
+
+const THAI = ATLAS.d;
+const SING = ATLAS.a;
+const VN_MUTED = "#E59A84";
+const FILLS: Fill[] = [
+  { name: "Thailand", color: THAI },
+  { name: "Singapore", color: SING },
+  ...["Vietnam", "Paracel Is.", "Spratly Is."].map((name) => ({ name, color: VN_MUTED })),
+];
+
+/** Schematic tanker lane: Hormuz → Arabian Sea → south of Sri Lanka → Malacca → Singapore → South China Sea → East Asia. */
+const LANE: [number, number][] = [
+  [56.4, 26.3], [58.6, 23.5], [62, 18], [72, 10], [80.6, 5.4], [88, 5.8], [94.5, 6.3], [97.5, 5.6], [99.6, 3.8],
+  [101.3, 2.4], [102.9, 1.3], [103.85, 1.18], [104.6, 1.6], [106, 4], [109.5, 9.5], [111.5, 13], [115, 18.5], [119.5, 22],
+];
+const I_MALACCA = 7; // lane vertex where the strait begins
+const I_PHILLIPS = 11;
+/** Schematic shortcut through the narrowest part of the Kra isthmus (Ranong → Chumphon). */
+const SHORTCUT: [number, number][] = [
+  [94.5, 6.3], [97.5, 9.2], [98.55, 9.97], [99.2, 10.45], [100.8, 10.0], [104.5, 8.0], [107, 8.5], [109.5, 9.5],
+];
+const RANONG: [number, number] = [98.6, 9.97];
+const CHUMPHON: [number, number] = [99.18, 10.48];
+const SINGAPORE: [number, number] = [103.82, 1.3];
+
+
+/** Ships sailing along a lane between fractions a..b, spaced out, looping. */
+const Fleet: React.FC<{ ps: [number, number][]; a: number; b: number; n: number; f: number; at: number; out: number; speed: number; w: number }> = ({
+  ps, a, b, n, f, at: start, out, speed, w,
+}) => {
+  if (f < start || f > out + 6) return null;
+  return (
+    <>
+      {Array.from({ length: n }, (_, i) => {
+        const t = (((f - start) * speed) / (b - a) + i / n) % 1;
+        const [x, y] = routeHead(ps, a + (b - a) * t);
+        return (
+          <ImgSticker key={i} src={`${IMG}/${i % 3 === 1 ? "t-02-container-ship" : "t-01-tanker"}.png`} x={x} y={y - w * 0.18} w={w} f={f}
+            at={start + i * 2} out={out} />
+        );
+      })}
+    </>
+  );
+};
+
+/** Double-headed measuring arrow between two screen points. */
+const Measure: React.FC<{ a: [number, number]; b: [number, number]; o: number; p: number }> = ({ a, b, o, p }) => {
+  const mx = a[0] + (b[0] - a[0]) * p;
+  const my = a[1] + (b[1] - a[1]) * p;
+  return (
+    <svg width={1080} height={1920} style={{ position: "absolute", opacity: o }}>
+      <line x1={a[0]} y1={a[1]} x2={mx} y2={my} stroke={ATLAS.ink} strokeWidth={14} strokeLinecap="round" />
+      <line x1={a[0]} y1={a[1]} x2={mx} y2={my} stroke={ATLAS.gold} strokeWidth={7} strokeLinecap="round" />
+      <circle cx={a[0]} cy={a[1]} r={12} fill={ATLAS.gold} stroke={ATLAS.ink} strokeWidth={4} />
+      {p >= 1 && <circle cx={b[0]} cy={b[1]} r={12} fill={ATLAS.gold} stroke={ATLAS.ink} strokeWidth={4} />}
+    </svg>
+  );
+};
+
+const Scene: React.FC = () => {
+  const f = useCurrentFrame();
+  const cam = camAt(KEYS, f, PUSH, PUSH_CAP);
+  const islandsO = interpolate(cam.zoom, [14, 20], [1, 0], CLAMP);
+  const lane = pts(cam, LANE);
+  const short = pts(cam, SHORTCUT);
+  const pMal = vertexP(lane, I_MALACCA);
+  const pPhil = vertexP(lane, I_PHILLIPS);
+  const [rx, ry] = toScreen(cam, ...RANONG);
+  const [cx, cy] = toScreen(cam, ...CHUMPHON);
+  const [sx, sy] = toScreen(cam, ...SINGAPORE);
+
+  // the shortcut: teased in the hook, drawn in 08, fades in 16, gone for the loop frame
+  const shortO = Math.max(show(f, at("02", 0.2), at("03") - 4) * (0.55 + 0.45 * Math.sin(f / 4)), Math.min(prog(f, at("08", 0.1), 8), 1 - prog(f, at("09") - 4, 4)));
+  const shortP = Math.max(show(f, at("02", 0.2), at("03") - 4), prog(f, at("08", 0.15), 40));
+
+  return (
+    <AbsoluteFill>
+      <Atlas cam={cam} fills={FILLS} f={f} />
+      <VnIslands cam={cam} f={f} color={VN_MUTED} o={islandsO} />
+
+      {/* the lane, always (dotted) */}
+      <Route pts={lane} p={1} />
+
+      {/* ── 01–02 hook ── */}
+      <Fleet ps={lane} a={pMal - 0.04} b={pPhil + 0.02} n={6} f={f} at={at("01", 0.05)} out={at("03") - 6} speed={0.0012} w={90} />
+      <DataCard value="~1/3" label="DẦU ĐI BIỂN THẾ GIỚI" x={540} y={330} f={f} at={at("01", 0.3)} out={at("02", 0.2)} />
+      {shortO > 0 && <Track ps={short} p={shortP} color={ATLAS.gold} w={8} o={shortO} />}
+      <BigGold text="LỐI TẮT?" f={f} at={at("02", 0.3)} out={at("03") - 4} y={330} size={110} />
+      <Question x={toScreen(cam, 99, 10.3)[0] + 90} y={toScreen(cam, 99, 10.3)[1] - 80} f={f} at={at("02", 0.4)} out={at("03") - 4} />
+
+      {/* ── 03–04 the journey: Gulf → Malacca → East Asia ── */}
+      {f >= at("03") && f < at("05") - 2 && (() => {
+        const p = prog(f, at("03", 0.2), at("04", 0.95) - at("03", 0.2), Easing.inOut(Easing.quad));
+        const [x, y] = routeHead(lane, p);
+        const [mx, my] = routeHead(lane, pMal + 0.02);
+        return (
+          <>
+            <Track ps={lane} p={p} color={ATLAS.white} w={6} o={1 - prog(f, at("05") - 6, 4)} />
+            <ImgSticker src={`${IMG}/t-01-tanker.png`} x={x} y={y - 22} w={130} f={f} at={at("03", 0.15)} out={at("05") - 6} />
+            <MapLabel text="MALACCA" x={mx - 150} y={my + 70} o={show(f, at("04", 0.3), at("05") - 6)} />
+          </>
+        );
+      })()}
+
+      {/* ── 05–06 the strait: the queue, the narrowest point ── */}
+      <Fleet ps={lane} a={pMal - 0.02} b={pPhil + 0.03} n={12} f={f} at={at("05")} out={at("06") - 2} speed={0.00045} w={120} />
+      <DataCard value="100.000+" label="LƯỢT TÀU · 2025" x={540} y={330} f={f} at={at("05", 0.35)} out={at("06") - 2} />
+      {f >= at("06") && f < at("07") - 2 && (() => {
+        const a = toScreen(cam, 103.79, 1.245);
+        const b = toScreen(cam, 103.79, 1.175);
+        const o = 1 - prog(f, at("07") - 6, 4);
+        return (
+          <>
+            <Fleet ps={lane} a={pPhil - 0.004} b={pPhil + 0.004} n={4} f={f} at={at("06")} out={at("07") - 6} speed={0.00004} w={150} />
+            <Measure a={a} b={b} o={o} p={prog(f, at("06", 0.3), 14)} />
+          </>
+        );
+      })()}
+      <DataCard value="~2–3 KM" label="CHỖ HẸP NHẤT" x={540} y={330} f={f} at={at("06", 0.45)} out={at("07") - 4} />
+
+      {/* ── 07 the isthmus ── */}
+      {f >= at("07") && f < at("08") - 2 && (
+        <Measure a={[rx, ry]} b={[cx, cy]} o={1 - prog(f, at("08") - 6, 4)} p={prog(f, at("07", 0.4), 16)} />
+      )}
+      <DataCard value="~40 KM" label="EO ĐẤT KRA" x={540} y={330} f={f} at={at("07", 0.55)} out={at("08") - 4} />
+
+      {/* ── 08 the shortcut vs the long way round ── */}
+      {f >= at("08") && f < at("09") - 2 && (() => {
+        const p = prog(f, at("08", 0.15), 40);
+        const [ax, ay] = routeHead(short, p);
+        const q = pMal + (vertexP(lane, 14) - pMal) * prog(f, at("08", 0.15), 40);
+        const [bx, by] = routeHead(lane, q);
+        return (
+          <>
+            <ImgSticker src={`${IMG}/t-01-tanker.png`} x={ax} y={ay - 18} w={100} f={f} at={at("08", 0.1)} out={at("09") - 4} />
+            <ImgSticker src={`${IMG}/t-01-tanker.png`} x={bx} y={by - 18} w={100} f={f} at={at("08", 0.1)} out={at("09") - 4} />
+          </>
+        );
+      })()}
+
+      {/* ── 09–10 since 1677, not one metre ── */}
+      <YearRibbon text="1677" f={f} at={at("09", 0.25)} out={at("10")} />
+      <PegImg src={`${IMG}/t-03-king-narai.png`} x={rx - 170} y={ry + 330} h={330} f={f} at={at("09", 0.3)} o={1 - prog(f, at("10"), 4)} />
+      <ImgSticker src={`${IMG}/t-04-old-map.png`} x={cx + 120} y={cy + 260} w={300} f={f} at={at("09", 0.45)} out={at("10")} />
+      {f >= at("10") - 2 && f < at("11") && (
+        <ImgSticker src={`${IMG}/t-07-excavator-canal.png`} x={(rx + cx) / 2 + 40} y={(ry + cy) / 2 + 90 - 8 * Math.abs(Math.sin((f - at("10")) / 6)) * (f < at("10", 0.4) ? 1 : 0)}
+          w={300} f={f} at={at("10", 0.05)} out={at("11") - 4} />
+      )}
+      <BigGold text="0 MÉT" f={f} at={at("10", 0.55)} out={at("11") - 4} y={330} size={130} />
+
+      {/* ── 11–14 three reasons ── */}
+      <Question x={340} y={620} f={f} at={at("11")} out={at("12")} s={1.6} />
+      <ImgSticker src={BAGS} x={340} y={620 + 40 * (1 - prog(f, at("12", 0.1), 8, Easing.in(Easing.quad)))} w={240} f={f} at={at("12", 0.1)} out={at("13")} />
+      <BigGold text="HÀNG CHỤC TỶ ĐÔ" f={f} at={at("12", 0.2)} out={at("13")} y={330} size={84} />
+      <Sticker x={340} y={620} f={f} at={at("13", 0.1)} out={at("14")} s={1.4}>
+        {/* calendar */}
+        <rect x={-70} y={-60} width={140} height={130} rx={14} fill={ATLAS.white} stroke={ATLAS.ink} strokeWidth={6} />
+        <rect x={-70} y={-60} width={140} height={36} rx={14} fill={ATLAS.red} stroke={ATLAS.ink} strokeWidth={6} />
+        {[-36, 0, 36].map((x, i) => (
+          <rect key={i} x={x - 12} y={-6 + (i % 2) * 34} width={24} height={24} rx={4} fill={i <= Math.floor(((f - at("13")) / 10) % 3) ? ATLAS.gold : "#DDD"}
+            stroke={ATLAS.ink} strokeWidth={3} />
+        ))}
+      </Sticker>
+      <BigGold text="1–3 NGÀY" f={f} at={at("13", 0.25)} out={at("14")} y={330} size={120} />
+      <Sticker x={250} y={620} f={f} at={at("14", 0.2)} out={at("15") - 4} s={1.5}>
+        {/* leaf: environment */}
+        <path d="M -40 40 C -40 -20 0 -55 50 -50 C 55 0 20 45 -40 40 Z" fill={ATLAS.b} stroke={ATLAS.ink} strokeWidth={6} />
+        <path d="M -40 40 L 30 -30" stroke={ATLAS.ink} strokeWidth={5} />
+      </Sticker>
+      <Sticker x={430} y={620} f={f} at={at("14", 0.55)} out={at("15") - 4} s={1.5}>
+        {/* shield: security */}
+        <path d="M 0 -55 L 45 -38 L 40 15 C 35 40 15 52 0 58 C -15 52 -35 40 -40 15 L -45 -38 Z" fill={ATLAS.a} stroke={ATLAS.ink} strokeWidth={6} />
+        <path d="M -18 0 L -4 16 L 22 -16" fill="none" stroke={ATLAS.white} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
+      </Sticker>
+
+      {/* ── 15–16 twist: everyone still calls at Singapore ── */}
+      {f >= at("15") - 4 && f < at("17") - 2 && (() => {
+        const o = 1 - prog(f, at("17") - 6, 4);
+        const items: [string, number, number, number][] = [
+          [CRANE, -230, -170, 220], [`${IMG}/t-02-container-ship.png`, 170, -230, 260], [`${IMG}/t-05-fuel.png`, -250, 190, 170],
+        ];
+        return (
+          <AbsoluteFill style={{ opacity: o }}>
+            <Pulse x={sx} y={sy} f={f} color={ATLAS.gold} />
+            {items.map(([src, dx, dy, w], i) => (
+              <ImgSticker key={i} src={src} x={sx + dx} y={sy + dy} w={w} f={f} at={at("15", 0.3 + i * 0.15)} />
+            ))}
+            <Sticker x={sx + 230} y={sy + 190} f={f} at={at("15", 0.75)} s={1.4}>
+              {/* wrench: repairs */}
+              <g style={{ rotate: "-35deg" }}>
+                <rect x={-12} y={-40} width={24} height={90} rx={10} fill="#B9C3C2" stroke={ATLAS.ink} strokeWidth={5} />
+                <path d="M -30 -60 A 30 30 0 1 0 30 -60 L 14 -60 L 14 -40 L -14 -40 L -14 -60 Z" fill="#B9C3C2" stroke={ATLAS.ink} strokeWidth={5} />
+              </g>
+            </Sticker>
+            {/* ships turning into the port */}
+            {[0, 1].map((i) => {
+              const t = prog(f, at("16") + i * 12, 40, Easing.out(Easing.quad));
+              return (
+                <ImgSticker key={i} src={`${IMG}/${i ? "t-01-tanker" : "t-02-container-ship"}.png`} x={interpolate(t, [0, 1], [i ? 980 : 100, sx + (i ? 120 : -120)])}
+                  y={interpolate(t, [0, 1], [sy + 420, sy + 120])} w={200} f={f} at={at("16") + i * 12} />
+              );
+            })}
+          </AbsoluteFill>
+        );
+      })()}
+      <BigGold text="SINGAPORE" f={f} at={at("15", 0.2)} out={at("17") - 4} y={330} size={120} color={ATLAS.white} />
+
+      {/* ── 17–18 the 2023 land bridge ── */}
+      <YearRibbon text="2023" f={f} at={at("17", 0.2)} out={at("18", 0.12)} />
+      {f >= at("17") && f < at("18", 0.75) && (() => {
+        const o = 1 - prog(f, at("18", 0.68), 5);
+        const p = prog(f, at("18", 0.05), 40, Easing.inOut(Easing.quad));
+        return (
+          <AbsoluteFill style={{ opacity: o }}>
+            <ImgSticker src={CRANE} x={rx - 90} y={ry - 30} w={170} f={f} at={at("17", 0.4)} />
+            <ImgSticker src={CRANE} x={cx + 90} y={cy - 30} w={170} f={f} at={at("17", 0.55)} />
+            <svg width={1080} height={1920} style={{ position: "absolute" }}>
+              {/* rail + pipeline across the isthmus (schematic) */}
+              <line x1={rx} y1={ry} x2={rx + (cx - rx) * prog(f, at("17", 0.6), 20)} y2={ry + (cy - ry) * prog(f, at("17", 0.6), 20)}
+                stroke={ATLAS.ink} strokeWidth={16} strokeLinecap="round" />
+              <line x1={rx} y1={ry} x2={rx + (cx - rx) * prog(f, at("17", 0.6), 20)} y2={ry + (cy - ry) * prog(f, at("17", 0.6), 20)}
+                stroke="#B9C3C2" strokeWidth={6} strokeDasharray="14 10" />
+              <line x1={rx + 18} y1={ry + 22} x2={rx + 18 + (cx - rx) * prog(f, at("17", 0.75), 20)} y2={ry + 22 + (cy - ry) * prog(f, at("17", 0.75), 20)}
+                stroke="#333" strokeWidth={8} strokeDasharray="4 8" strokeLinecap="round" />
+            </svg>
+            {p > 0 && (
+              <ImgSticker src={`${IMG}/t-06-freight-train.png`} x={rx + (cx - rx) * p} y={ry + (cy - ry) * p - 26} w={260} f={f} at={at("18", 0.05)} />
+            )}
+          </AbsoluteFill>
+        );
+      })()}
+      <BigGold text="CẦU ĐẤT LIỀN" f={f} at={at("18", 0.2)} out={at("18", 0.7)} y={330} size={110} />
+      <SafeGuide />
+    </AbsoluteFill>
+  );
+};
+
+const CAPTIONS: Record<string, string> = {
+  "01": "Gần *1/3* lượng dầu chở bằng đường biển của thế giới phải chen qua một eo biển.",
+  "02": "Ngay phía trên có một *lối tắt*, mà gần *350 năm* nay chưa ai đào.",
+  "05": "Năm 2025, hơn *100.000* lượt tàu chen qua đây.",
+  "06": "Chỗ hẹp nhất, gần Singapore, chỉ rộng khoảng *2, 3 km*.",
+  "07": "Trong khi đó, ở miền Nam Thái Lan, eo đất Kra chỉ rộng hơn *40 km*.",
+  "09": "Ý tưởng này có từ năm *1677*, thời vua Narai.",
+  "12": "Thứ 1, tốn *hàng chục tỷ đô*.",
+  "13": "Thứ 2, lối tắt chỉ tiết kiệm khoảng *1–3 ngày* đi biển.",
+  "14": "Thứ 3, lo ngại về môi trường và an ninh.",
+  "15": "Nhưng lý do oái oăm nhất: phần lớn tàu vẫn phải ghé *Singapore*, để giao hàng, lấy nhiên liệu, sửa chữa.",
+  "17": "Năm 2023, Thái Lan lại đưa ra phương án mới.",
+  "18": "Không đào kênh, mà xây *cầu đất liền*: cảng, đường sắt và đường ống dầu.",
+};
+
+const W = "whoosh/simple-whoosh-382724.mp3";
+const W2 = "whoosh/clean-whoosh-382726.mp3";
+const CLICK = "click/mouse-click-351398.mp3";
+const THUD = "deephit/impact-thud-291047.mp3";
+const SFX: SfxCue[] = [
+  [CLICK, "01", 0.3], [CLICK, "02", 0.3],
+  [W, "03", 0, -4], [W2, "05", 0, -4], [CLICK, "05", 0.35], [W, "06", 0, -2], [CLICK, "06", 0.45],
+  [W2, "07", 0, -4], [CLICK, "07", 0.55], [W, "08", 0, -4], [W2, "09", 0, -4], [CLICK, "09", 0.25], [CLICK, "10", 0.55],
+  [W, "11", 0, -4], [THUD, "12", 0.12, 0, -18], [CLICK, "13", 0.25], [CLICK, "14", 0.2], [CLICK, "14", 0.55],
+  [W2, "15", 0, -4], [CLICK, "15", 0.3], [CLICK, "15", 0.6], [W, "17", 0, -4], [CLICK, "17", 0.2], [W2, "18", 0.72],
+];
+
+export const P4MalaccaKra: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: ATLAS.deep }}>
+    <Scene />
+    <KaraokeSubs timing={timing} words={words} captions={CAPTIONS} Skin={AtlasSub} oneLine maxWords={4} maxChars={22} />
+    <Audio name="VO" src={staticFile("voiceover/p4-malacca-kra/vo.mp3")} />
+    <MusicBed file={PILLAR_MUSIC.P4} />
+    <SfxCues timing={timing} cues={SFX} />
+  </AbsoluteFill>
+);
+
+export const p4MalaccaKraDuration = (fps: number) => episodeDuration(timing, fps);

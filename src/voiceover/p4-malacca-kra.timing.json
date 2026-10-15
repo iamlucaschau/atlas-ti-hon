@@ -1,0 +1,160 @@
+{
+  "durationInSeconds": 70.272625,
+  "loop": true,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.8739999999999997,
+      "text": "Gần một phần ba lượng dầu chở bằng đường biển của thế giới phải chen qua một eo biển."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 3.9336666666666664,
+      "end": 7.764666666666667,
+      "text": "Ngay phía trên có một lối tắt, mà hơn ba trăm năm nay chưa ai đào."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "start": 8.014708333333333,
+      "end": 10.846708333333332,
+      "text": "Hình dung một con tàu dầu đi từ Trung Đông sang Đông Á."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 10.906749999999999,
+      "end": 13.63675,
+      "text": "Muốn vào Biển Đông, nó phải vòng xuống tận eo Malacca."
+    },
+    {
+      "id": "05",
+      "scene": "s3",
+      "start": 13.88675,
+      "end": 16.43475,
+      "text": "Năm ngoái, hơn một trăm nghìn lượt tàu chen qua đây."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "start": 16.494625,
+      "end": 19.975625,
+      "text": "Chỗ hẹp nhất, gần Singapore, chỉ rộng khoảng hai, ba cây số."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 20.036083333333334,
+      "end": 23.014083333333335,
+      "text": "Kẹt xe giờ cao điểm, nhưng là trên biển."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "start": 23.264208333333332,
+      "end": 26.74020833333333,
+      "text": "Trong khi đó, eo đất Kra của Thái Lan chỉ rộng hơn bốn mươi cây số."
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "start": 26.800416666666667,
+      "end": 29.556416666666667,
+      "text": "Đào một con kênh ở đây, tàu khỏi phải vòng qua Singapore."
+    },
+    {
+      "id": "10",
+      "scene": "s5",
+      "start": 29.806875,
+      "end": 32.580875,
+      "text": "Ý tưởng này có từ thời vua Narai, thế kỷ mười bảy."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "start": 32.64058333333333,
+      "end": 38.172583333333336,
+      "text": "Năm một nghìn tám trăm tám mươi ba, một đoàn kỹ sư Pháp nhân danh công ty kênh Suez tới tận nơi đo đạc."
+    },
+    {
+      "id": "12",
+      "scene": "s5",
+      "start": 38.23295833333333,
+      "end": 40.36995833333333,
+      "text": "Nhưng Xiêm không cấp phép cho nước phương Tây nào."
+    },
+    {
+      "id": "13",
+      "scene": "s6",
+      "start": 40.620041666666665,
+      "end": 42.07604166666667,
+      "text": "Vậy sao tới giờ vẫn chưa đào?"
+    },
+    {
+      "id": "14",
+      "scene": "s6",
+      "start": 42.136125,
+      "end": 43.223125,
+      "text": "Vì khó có lời."
+    },
+    {
+      "id": "15",
+      "scene": "s6",
+      "start": 43.28333333333333,
+      "end": 44.43933333333333,
+      "text": "Tốn hàng chục tỷ đô."
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "start": 44.49916666666667,
+      "end": 46.713166666666666,
+      "text": "Mà tàu chỉ về sớm được một đến ba ngày."
+    },
+    {
+      "id": "17",
+      "scene": "s7",
+      "start": 46.963208333333334,
+      "end": 52.441208333333336,
+      "text": "Năm hai nghìn hai mươi ba, Thái Lan đổi cách: không đào kênh, mà nối hai cảng bằng đường sắt."
+    },
+    {
+      "id": "18",
+      "scene": "s7",
+      "start": 52.50091666666667,
+      "end": 54.39891666666667,
+      "text": "Chính phủ nói dự án đáng đầu tư."
+    },
+    {
+      "id": "19",
+      "scene": "s7",
+      "start": 54.459291666666665,
+      "end": 59.43629166666666,
+      "text": "Người dân Chumphon, Ranong thì xuống đường phản đối, lo mất biển, mất vườn sầu riêng."
+    },
+    {
+      "id": "20",
+      "scene": "s8",
+      "start": 59.68620833333333,
+      "end": 64.23720833333333,
+      "text": "Nhưng lý do thật có lẽ nằm ở đây: phần lớn tàu vẫn phải ghé Singapore."
+    },
+    {
+      "id": "21",
+      "scene": "s8",
+      "start": 64.29683333333334,
+      "end": 66.72883333333334,
+      "text": "Để giao hàng, lấy nhiên liệu, sửa chữa."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "start": 66.78920833333333,
+      "end": 70.02220833333334,
+      "text": "Lối tắt có ngắn mấy, đường vẫn dẫn về Singapore."
+    }
+  ]
+}

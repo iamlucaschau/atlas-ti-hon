@@ -1,0 +1,128 @@
+{
+  "name": "i-singapore",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trung tính, trầm vừa và đáng tin, như người kể chuyện lịch sử hấp dẫn. Mở đầu nhanh, gọn và tò mò; phần giải thích rõ ràng; đọc năm, con số và địa danh chậm hơn một nhịp. Không cường điệu, không hét. Câu cuối cùng chưa kết thúc: giữ giọng treo lên như câu còn tiếp, không hạ giọng kết câu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Malaysia từng đuổi Singapore ra khỏi đất nước."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Vậy vì sao hôm nay, Singapore lại giàu gấp hơn bảy lần?"
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn tám trăm mười chín, người Anh trả cho Sultan Hussein năm nghìn đô la Tây Ban Nha mỗi năm, để lập một thương cảng trên hòn đảo nhỏ này."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Vị trí của nó là vàng: ngay cửa eo biển Malacca, tuyến tàu buôn giữa Ấn Độ Dương và Biển Đông."
+    },
+    {
+      "id": "05",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn chín trăm sáu mươi ba, Singapore gia nhập Malaysia."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Nhưng chưa đầy hai năm, mâu thuẫn chính trị và bạo loạn sắc tộc bùng lên."
+    },
+    {
+      "id": "07",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Ngày chín tháng tám năm một nghìn chín trăm sáu mươi lăm, Quốc hội Malaysia bỏ phiếu một trăm hai mươi sáu trên không, tách Singapore ra."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Lý Quang Diệu bật khóc trên truyền hình."
+    },
+    {
+      "id": "09",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Một hòn đảo chưa đầy sáu trăm cây số vuông."
+    },
+    {
+      "id": "10",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Không tài nguyên."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Đến nước ngọt cũng phải mua từ Malaysia."
+    },
+    {
+      "id": "12",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Nên Singapore dồn hết vào thứ duy nhất họ có: vị trí."
+    },
+    {
+      "id": "13",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Cảng biển, nhà máy, ngân hàng."
+    },
+    {
+      "id": "14",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Họ còn lấn biển, nới rộng hòn đảo thêm khoảng một phần tư."
+    },
+    {
+      "id": "15",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Năm hai nghìn hai mươi tư, mỗi người dân Singapore làm ra hơn chín mươi nghìn đô la."
+    },
+    {
+      "id": "16",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Người Malaysia, chưa tới mười hai nghìn."
+    }
+  ]
+}

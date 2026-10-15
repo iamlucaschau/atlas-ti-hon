@@ -1,0 +1,177 @@
+{
+  "name": "p1-brunei-chia-doi",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện lịch sử và bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số, năm và địa danh chậm hơn một nhịp. \"Brunei có vào không?\" hỏi nhẹ; \"Không. Vì dầu.\" ngắn, dứt khoát, ngừng một nhịp sau \"Không.\" \"Chỉ phiền là…\" đọc có ý cười nhẹ. Hai câu cuối chậm lại một chút và hạ giọng kết câu. Đọc Brunei là \"Bru-nây\", Borneo là \"Boóc-nê-ô\", Sarawak là \"Xa-ra-oắc\", Limbang là \"Lim-bang\", James Brooke là \"Giêm Brúc\", Charles Brooke là \"Sác-lơ Brúc\", Rajah là \"Ra-gia\", Kuala Lumpur là \"Kua-la Lăm-pơ\", Sultan là \"Xun-tan\". Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Brunei từng làm chủ gần cả đảo Borneo."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Hôm nay, nó nhỏ hơn cả Thành phố Hồ Chí Minh, và còn bị cắt làm đôi."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Thế kỷ mười sáu, vua Brunei kiểm soát gần hết bờ biển của đảo."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Nhưng rồi người châu Âu tới."
+    },
+    {
+      "id": "05",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn tám trăm bốn mươi mốt, một người Anh tên James Brooke được trao vùng Sarawak."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Rồi nhà Brooke cứ thế nới dần, từng mảng một."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Phía bắc thì rơi vào tay một công ty Anh."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn tám trăm chín mươi, Rajah Charles Brooke lấy luôn vùng Limbang nằm ngay giữa."
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Brunei bị cắt làm đôi."
+    },
+    {
+      "id": "10",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Đất thì co lại, nhưng dưới chân lại có thứ khác."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Năm một nghìn chín trăm hai mươi chín, Brunei tìm thấy dầu."
+    },
+    {
+      "id": "12",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Rồi người ta tính lập ra nước Malaysia, và mời Brunei về chung nhà."
+    },
+    {
+      "id": "13",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.15,
+      "text": "Brunei có vào không?"
+    },
+    {
+      "id": "14",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.3,
+      "text": "Không."
+    },
+    {
+      "id": "15",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Vì dầu."
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Kuala Lumpur muốn sau mười năm, tiền dầu phải nộp về ngân sách chung."
+    },
+    {
+      "id": "17",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Brunei muốn giữ cho riêng mình."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Năm một nghìn chín trăm sáu mươi ba, ở Luân Đôn, Sultan Brunei ngồi ngay bàn đàm phán, nhưng không đặt bút."
+    },
+    {
+      "id": "19",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Hôm nay, mỗi người Brunei làm ra gấp hơn hai lần rưỡi người Malaysia."
+    },
+    {
+      "id": "20",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Chỉ phiền là muốn lái xe sang nửa kia đất nước, phải qua bốn trạm xuất nhập cảnh."
+    },
+    {
+      "id": "21",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Năm hai nghìn hai mươi, Brunei mở một cây cầu vượt biển nối hai nửa, không phải đi qua Malaysia."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Cây cầu mở cửa ngày mười bảy tháng ba."
+    },
+    {
+      "id": "23",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Đúng một trăm ba mươi năm, tính tới từng ngày, sau khi Brunei bị cắt làm đôi."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "<slug>",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc năm, con số và địa danh chậm hơn một nhịp. <câu đùa / câu trả lời ngắn đọc thế nào>. <phát âm tên riêng>. Không cường điệu. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": { "sentence": 0.06, "paragraph": 0.12, "scene": 0.25 },
+  "batchBy": "take",
+  "lines": []
+}

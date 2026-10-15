@@ -1,0 +1,119 @@
+{
+  "durationInSeconds": 55.15079166666667,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 2.4389999999999996,
+      "text": "Malaysia từng đuổi Singapore ra khỏi đất nước."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 2.4988333333333332,
+      "end": 5.172833333333333,
+      "text": "Vậy vì sao hôm nay, Singapore lại giàu gấp hơn bảy lần?"
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "start": 5.4228749999999994,
+      "end": 12.906875,
+      "text": "Năm một nghìn tám trăm mười chín, người Anh trả cho Sultan Hussein năm nghìn đô la Tây Ban Nha mỗi năm, để lập một thương cảng trên hòn đảo nhỏ này."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 12.967374999999999,
+      "end": 18.694375,
+      "text": "Vị trí của nó là vàng: ngay cửa eo biển Malacca, tuyến tàu buôn giữa Ấn Độ Dương và Biển Đông."
+    },
+    {
+      "id": "05",
+      "scene": "s3",
+      "start": 18.944333333333333,
+      "end": 22.098333333333333,
+      "text": "Năm một nghìn chín trăm sáu mươi ba, Singapore gia nhập Malaysia."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "start": 22.158791666666666,
+      "end": 25.514791666666667,
+      "text": "Nhưng chưa đầy hai năm, mâu thuẫn chính trị và bạo loạn sắc tộc bùng lên."
+    },
+    {
+      "id": "07",
+      "scene": "s4",
+      "start": 25.764458333333334,
+      "end": 32.128458333333334,
+      "text": "Ngày chín tháng tám năm một nghìn chín trăm sáu mươi lăm, Quốc hội Malaysia bỏ phiếu một trăm hai mươi sáu trên không, tách Singapore ra."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "start": 32.188125,
+      "end": 33.941125,
+      "text": "Lý Quang Diệu bật khóc trên truyền hình."
+    },
+    {
+      "id": "09",
+      "scene": "s5",
+      "start": 34.191208333333336,
+      "end": 36.648208333333336,
+      "text": "Một hòn đảo chưa đầy sáu trăm cây số vuông."
+    },
+    {
+      "id": "10",
+      "scene": "s5",
+      "start": 36.707750000000004,
+      "end": 37.75475,
+      "text": "Không tài nguyên."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "start": 37.81495833333334,
+      "end": 39.937958333333334,
+      "text": "Đến nước ngọt cũng phải mua từ Malaysia."
+    },
+    {
+      "id": "12",
+      "scene": "s6",
+      "start": 40.18804166666667,
+      "end": 43.19904166666667,
+      "text": "Nên Singapore dồn hết vào thứ duy nhất họ có: vị trí."
+    },
+    {
+      "id": "13",
+      "scene": "s6",
+      "start": 43.259125000000004,
+      "end": 45.46212500000001,
+      "text": "Cảng biển, nhà máy, ngân hàng."
+    },
+    {
+      "id": "14",
+      "scene": "s6",
+      "start": 45.52179166666667,
+      "end": 48.55279166666667,
+      "text": "Họ còn lấn biển, nới rộng hòn đảo thêm khoảng một phần tư."
+    },
+    {
+      "id": "15",
+      "scene": "s7",
+      "start": 48.80283333333334,
+      "end": 52.79583333333334,
+      "text": "Năm hai nghìn hai mươi tư, mỗi người dân Singapore làm ra hơn chín mươi nghìn đô la."
+    },
+    {
+      "id": "16",
+      "scene": "s7",
+      "start": 52.85608333333334,
+      "end": 54.90108333333334,
+      "text": "Người Malaysia, chưa tới mười hai nghìn."
+    }
+  ]
+}
