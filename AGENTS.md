@@ -26,6 +26,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 | Kiểm tra code | `npm run lint` (sau mỗi thay đổi) |
 | Ảnh kiểm tra 1 khung | `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35` |
 | Render tập | `npx remotion render <id> out/<slug>-raw.mp4 --crf=18` rồi master (Bible / `04_QUY-TRINH` §6) |
+| Soát khung hình sau render | `python -P scripts/review.py <slug>` → xem hết `out/review/<slug>/sheet-*.png`, tự sửa rồi render lại (`04_QUY-TRINH` §6) |
 | Ảnh bìa | `npx remotion still Cover-<slug> out/cover.png` → JPG < 2 MB vào `Map/<slug>/cover.jpg` |
 | Giọng đọc | `node scripts/episode.mjs prep "Map/<slug>"` → `npm run voiceover -- voiceover/<slug>.json` → `node scripts/episode.mjs export "Map/<slug>" --loop --tail=0.7` → `python -P scripts/words.py <slug> vi` |
 | Kiểm tra key TTS | `npm run tts:check` (không tốn quota) |
@@ -85,7 +86,8 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 2. Ảnh kiểm tra các nhịp mới (`--props='{"safeGuide":true}'`), sửa đè hình / tràn vùng an toàn.
 3. Khung cuối = khung đầu (render `--frame=<cuối>` và `--frame=0`, so).
 4. Render + master + bản lặp 2 vòng; đo `ebur128` (≈ −14 LUFS, đỉnh ≤ −1,5 dB).
-5. Xoá ảnh/khung thử trong `out/`.
+5. **Soát từng khung bản render** (`python -P scripts/review.py <slug>`, xem hết mọi tờ): chỗ nào xấu / chưa đạt thì **tự sửa**, render + master lại, soát lại tới khi sạch; báo Lucas đã sửa gì (Lucas 2026-10-16).
+6. Xoá ảnh/khung thử trong `out/` (cả `out/review/`).
 
 ## Bản quyền & bảo mật
 

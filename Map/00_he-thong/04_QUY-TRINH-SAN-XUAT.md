@@ -111,6 +111,16 @@ printf "file '../Map/<slug>/<slug>.mp4'\nfile '../Map/<slug>/<slug>.mp4'\n" > ou
 ```
 MP4 trong `Map/` không lên git (`.gitignore`).
 
+**Soát khung hình sau render (bắt buộc, Lucas 2026-10-16).** Có bản master rồi, Luis tự soát toàn bộ video **trước khi** báo Lucas; chỗ nào xấu / chưa đạt thì tự sửa, render + master lại, soát lại tới khi sạch:
+```bash
+python -P scripts/review.py <slug>
+```
+- Tách khung mỗi 0,5 s thành tờ soát `out/review/<slug>/sheet-NN.png` (6 × 3 ảnh, có giờ + số khung, viền vùng an toàn). Xem **hết mọi tờ**.
+- Script tự báo: đoạn đứng yên > 2 s (`freezedetect`) và độ lệch khung cuối ↔ khung đầu (≈ 1–2 % là chỉ dòng phụ đề đầu).
+- Soát theo bảng §5, thêm: đè hình / đè chữ; nhãn bị cắt hoặc mờ ở mép; chữ hay đạo cụ lấn ra ngoài vùng an toàn; hai lớp chồng lúc chuyển cảnh; đạo cụ còn sót sang beat sau; nhãn nước thiếu ở beat gọi tên; khung trống lâu khi lời còn đọc.
+- Ảnh nghi vấn → render đúng khung đó cỡ lớn (`npx remotion still … --frame=<n> --props='{"safeGuide":true}'`), sửa `Video.tsx`, kiểm lại khung đó, rồi render cả tập.
+- Báo Lucas: số lỗi tìm được, đã sửa gì, chỗ nào còn để lại và vì sao. Xoá `out/review/` sau khi xong.
+
 **Gói xuất bản** (`Map/<slug>/xuat-ban.md`, khung: `Map/_mau-tap/xuat-ban.md`; tiêu đề, mô tả, hashtag theo công thức ~10 tag, ảnh bìa từ `Map/covers.tsx`, bình luận ghim, caption TikTok/Reels — `06_NHAN-DIEN-KENH.md` §5–§6). Ghi chú cũ bên dưới vẫn đúng trừ số hashtag:
 1. **3–7 tiêu đề** (mẫu A–E; tiêu đề chính = câu hỏi hook; có thể thêm cờ 🇻🇳 / 🤯 cho Facebook/YouTube, thử A/B).
 2. **Mô tả 5 phần:** (1) đoạn kể chuyện 2–3 câu kết bằng câu hỏi; (2) hashtag chủ đề; (3) giới thiệu kênh 1–2 câu (khi có tên); (4) **danh sách nguồn đầy đủ** (SRC-… + link + ngày truy cập) + "Bản đồ: Natural Earth"; (5) hashtag ngách (#bando #lichsu #diali #kinhte …).

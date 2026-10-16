@@ -166,7 +166,7 @@ const Coins: React.FC<{ f: number }> = ({ f }) => {
 
 /** Balance (vector, so it can tilt): viaduct pan vs embankment pan. Both sides drawn the same size. */
 const Balance: React.FC<{ f: number }> = ({ f }) => {
-  const o = show(f, at("19", 0.05), at("21"));
+  const o = show(f, at("19", 0.05), at("20", 0.95));
   if (o <= 0) return null;
   const tilt = interpolate(f, [at("19", 0.2), at("19", 0.6), at("20", 0.2), at("20", 0.7)], [0, -13, -13, -3], { ...CLAMP, easing: Easing.inOut(Easing.quad) });
   const cx = 540;
@@ -305,7 +305,7 @@ export const Scene: React.FC = () => {
       <ImgSticker src={`${IMG}/c-02-sand-pile.png`} x={px} y={py - 40} w={interpolate(f, [at("04", 0.2), at("04", 0.9)], [130, 230], CLAMP)}
         f={f} at={at("02", 0.6)} out={at("07")} />
       <DataCard value={`${count(f, at("03", 0.15), 24, 700)} KM`} label="CÒN PHẢI LÀM" x={540} y={330} f={f} at={at("03", 0.1)} out={at("04", 0.3)} />
-      <ImgSticker src={`${IMG}/c-01-dump-truck.png`} x={interpolate(f, [at("04"), at("04", 0.35)], [px - 420, px - 190], { ...CLAMP, easing: Easing.out(Easing.cubic) })}
+      <ImgSticker src={`${IMG}/c-01-dump-truck.png`} x={interpolate(f, [at("04"), at("04", 0.35)], [px - 330, px - 150], { ...CLAMP, easing: Easing.out(Easing.cubic) })}
         y={py - 70} w={240} f={f} at={at("04")} out={at("05")} />
       <BigGold text="100+ TRIỆU M³" f={f} at={at("04", 0.5)} out={at("05", 0.9)} y={330} size={96} />
       <Question x={px + 160} y={py - 60} f={f} at={at("05")} out={at("06", 0.4)} s={1.4} />
@@ -382,7 +382,7 @@ export const Scene: React.FC = () => {
       <Question x={mx - 40} y={my - 150} f={f} at={at("15", 0.3)} out={at("16")} s={1.4} />
       {f >= at("15", 0.5) && f < at("18") + 6 && <Pulse x={mx} y={my} f={f} o={1 - prog(f, at("18"), 5)} />}
       {f >= at("16") && f < at("18") && (
-        <ImgSticker src={`${IMG}/c-05-sea-sand-barge.png`} x={mx + (sx - mx) * barge} y={my + (sy - my) * barge - 40} w={240} f={f} at={at("16")} out={at("17", 0.5)} />
+        <ImgSticker src={`${IMG}/c-05-sea-sand-barge.png`} x={mx + (sx - mx) * barge} y={my + (sy - my) * barge - 40} w={240} f={f} at={at("16")} out={at("17", 0.05)} />
       )}
       <Stamp text="CÓ DÙNG" x={560} y={330} f={f} at={at("16", 0.2)} out={at("17")} color={ATLAS.b} />
       <ImgSticker src={`${IMG}/c-06-sand-washing.png`} x={540} y={820} w={380} f={f} at={at("17", 0.15)} out={at("18")} />

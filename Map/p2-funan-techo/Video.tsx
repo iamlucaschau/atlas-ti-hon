@@ -123,7 +123,7 @@ export const Scene: React.FC = () => {
   const f = useCurrentFrame();
   const cam = camAt(KEYS, f, PUSH, PUSH_CAP);
   const islandsO = interpolate(cam.zoom, [22, 30], [1, 0], CLAMP);
-  const endO = 1 - prog(f, at("22", 0.6), 10);
+  const endO = 1 - prog(f, at("22", 0.8), 10);
 
   const bassac = pts(cam, BASSAC);
   const canal = pts(cam, CANAL);
@@ -146,7 +146,8 @@ export const Scene: React.FC = () => {
   const nameP = interpolate(f, [at("11"), at("11", 0.85)], [0.18, 0.375], { ...CLAMP, easing: Easing.inOut(Easing.quad) });
   const [nx, ny] = routeHead(bassac, nameP);
   // tags: hidden whenever two other text blocks are on screen (05 VN only; 07, 15–16 none)
-  const khO = Math.max(show(f, at("01", 0.1), at("02", 0.4)), show(f, at("09"), at("11")));
+  const khO = show(f, at("01", 0.1), at("02", 0.4));
+  const khBassacO = show(f, at("10"), at("11"));
   const vnRegionO = show(f, at("05", 0.5), at("07"));
   const vnBassacO = show(f, at("12", 0.3), at("14"));
 
@@ -161,6 +162,7 @@ export const Scene: React.FC = () => {
       {/* ── 01–04 hook: > 1 bn USD; an unnamed river; "Đường ra biển." ── */}
       <CountryTag cam={cam} f={f} name="Cambodia" label="CAMPUCHIA" flag="cambodia" anchor={[104.45, 11.85]} from={at("01", 0.1)} o={khO}
         glow={[at("01", 0.05), at("05", 0.3), at("10", 0.1), at("15", 0.1)]} />
+      <CountryTag cam={cam} f={f} name="Cambodia" label="CAMPUCHIA" flag="cambodia" anchor={[105.5, 11.55]} from={at("10")} o={khBassacO} />
       <CountryTag cam={cam} f={f} name="Vietnam" label="VIỆT NAM" flag="vietnam" anchor={[106.55, 11.35]} from={at("05", 0.5)} o={vnRegionO}
         glow={[at("05", 0.6), at("12", 0.2), at("13", 0.2)]} />
       <CountryTag cam={cam} f={f} name="Vietnam" label="VIỆT NAM" flag="vietnam" anchor={[105.55, 10.45]} from={at("12")} o={vnBassacO} />
@@ -185,10 +187,6 @@ export const Scene: React.FC = () => {
       <DataCard value="~1/3" label="THEO CAMPUCHIA" x={540} y={330} f={f} at={at("05", 0.3)} out={at("06")} />
       {canalO > 0 && <Track ps={canal} p={canalP} color={ATLAS.white} w={10} o={canalO} glow={ending * 0.8} f={f} />}
       <BigGold text={`${count(f, at("06", 0.1), 24, 180)} KM`} f={f} at={at("06", 0.1)} out={at("07")} y={330} size={120} />
-      {(() => {
-        const [x, y] = routeHead(canal, 0.5);
-        return <ImgSticker src={OLD.digger} x={x + 150} y={y + 20} w={200} f={f} at={at("06", 0.3)} out={at("08")} />;
-      })()}
       {f >= at("06", 0.4) && f < at("07", 0.9) && (() => {
         const p = prog(f, at("06", 0.4), at("07", 0.8) - at("06", 0.4));
         const [x, y] = routeHead(canal, p);

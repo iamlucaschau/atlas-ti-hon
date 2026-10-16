@@ -167,3 +167,4 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 | 2026-10-14 | Tên nước + cờ + viền sáng cho mọi nước được gọi tên / tô màu (`CountryTag`) | Lucas |
 | 2026-10-14 | 7 luật kịch bản sau so sánh đối thủ: đáp câu hỏi treo 1–3 chữ, ≥ 1 khoảnh khắc người, 1–2 câu đùa, hai phe, 1 số/câu, twist là nhịp cuối, kho câu thay thế | Lucas |
 | 2026-10-13 | Phụ đề tối đa 4 chữ/dòng; từ khoá + con số vàng nhạt, chữ đang đọc vàng đậm + to 10 % | Lucas |
+| 2026-10-16 | Thêm bước **soát từng khung bản render** (`scripts/review.py`): Luis tự sửa chỗ xấu / chưa đạt, render lại rồi mới giao (`04_QUY-TRINH-SAN-XUAT.md` §6) | Lucas |

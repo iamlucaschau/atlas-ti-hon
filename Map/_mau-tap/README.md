@@ -9,7 +9,7 @@ Sao chép thư mục này thành `Map/p<pillar>-<ten-ngan>/` (vd. `Map/p2-cau-ca
 | 3 Script | kịch bản 7 luật + spec | `kich-ban-<slug>-FINAL.md`, `01_EPISODE-SPEC_<slug>.md` | `03_…` (Cổng 3), Bible §3–§4, §7 |
 | — | lồng tiếng (sau khi duyệt Cổng 3) | `voiceover/<slug>.json` → `vo-timestamps.md` | `04_QUY-TRINH-SAN-XUAT.md` §1 |
 | 4 Visual | beat sheet + bộ prompt ảnh; Lucas tạo ảnh | `beat-sheet.md`, `image-prompts.md` | `04_…` §2–§3 |
-| 5 Production | `Video.tsx` → kiểm tra khung → render + master + bản lặp → ảnh bìa → gói xuất bản | `Video.tsx`, `<slug>.mp4`, `cover.jpg`, `xuat-ban.md` | `04_…` §4–§6, `06_NHAN-DIEN-KENH.md` |
+| 5 Production | `Video.tsx` → kiểm tra khung → render + master + bản lặp → **soát từng khung (`scripts/review.py`), tự sửa, render lại** → ảnh bìa → gói xuất bản | `Video.tsx`, `<slug>.mp4`, `cover.jpg`, `xuat-ban.md` | `04_…` §4–§6, `06_NHAN-DIEN-KENH.md` |
 
 File trong thư mục này:
 - `Video.tsx.txt` — khung code (đổi tên thành `Video.tsx`, tìm `TODO`).
