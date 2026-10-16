@@ -1,0 +1,177 @@
+{
+  "name": "p2-cat-mien-tay",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. \"Sao lại thiếu?\" và \"Vậy còn cát biển?\" hỏi nhẹ; \"Ba lý do.\" và \"Có dùng rồi.\" ngắn, dứt khoát. \"Một,\" \"Hai,\" \"Ba,\" đọc như đếm, ngừng nhẹ sau mỗi số. \"Như rút sổ tiết kiệm…\" đọc có ý cười nhẹ. \"Một bên…\" và \"Bên kia…\" giọng trung tính như nhau. Đọc Mekong là \"Mê Kông\". Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Miền Tây là xứ của sông nước và phù sa."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Vậy mà làm cao tốc ở đây, lại thiếu cát."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Vùng này còn khoảng bảy trăm cây số cao tốc phải làm."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Nếu đắp nền kiểu cũ, cần hơn một trăm triệu khối cát."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Sao lại thiếu?"
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Ba lý do."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Một, đất dưới chân quá mềm."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Muốn đường không lún, phải đắp cát thật dày, rồi chất thêm cát lên cho nền lún trước."
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Hai, cát đủ chuẩn đắp đường chỉ còn ở vài khúc sông thượng nguồn."
+    },
+    {
+      "id": "10",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Các đập trên dòng Mekong lại giữ bớt phù sa ở phía trên."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Ba, sông bồi không kịp."
+    },
+    {
+      "id": "12",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Các nhà khoa học từng thả máy dò xuống đáy sông Mekong, và thấy những hố hút cát sâu hơn tám mét."
+    },
+    {
+      "id": "13",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Họ tính ra, cát bị hút lên nhanh gấp năm đến chín lần lượng sông bồi lại."
+    },
+    {
+      "id": "14",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Như rút sổ tiết kiệm nhanh hơn hẳn tiền gửi vào."
+    },
+    {
+      "id": "15",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.15,
+      "text": "Vậy còn cát biển?"
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Có dùng rồi."
+    },
+    {
+      "id": "17",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Nhưng cát biển mặn, phải rửa trước khi đắp."
+    },
+    {
+      "id": "18",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Nên giờ có lối khác: đưa cao tốc lên cầu cạn, bớt hẳn cát."
+    },
+    {
+      "id": "19",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Một bên tính lúc xây: cầu cạn đắt gấp một phẩy sáu đến một phẩy bảy lần."
+    },
+    {
+      "id": "20",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Bên kia tính cả vòng đời: chỉ đắt hơn khoảng mười đến mười bốn phần trăm, lại ít lún."
+    },
+    {
+      "id": "21",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Trớ trêu là, chính lớp cát dưới lòng sông cũng đang đỡ lấy bờ sông."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Lòng sông chỉ cần tụt khoảng hai mét, nhiều đoạn bờ Mekong đã có thể sụp."
+    },
+    {
+      "id": "23",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Con đường cần cát để đứng vững, và đồng bằng cũng vậy."
+    }
+  ]
+}
