@@ -36,6 +36,28 @@ const lufs = (file) => {
   return m ? Number(m[1]) : null;
 };
 
+const HEADERS = { "User-Agent": "Mozilla/5.0", Referer: "https://pixabay.com/" };
+
+/**
+ * Download url → file; returns an error string or null. Node's fetch gives up connecting after 10 s,
+ * and incompetech.com (Kevin MacLeod beds) often takes ~20 s (2026-10-18), so a network error is
+ * retried once with curl (shipped with Windows 10+, macOS and Linux) and a 60 s connect timeout.
+ */
+const download = async (url, file) => {
+  try {
+    const res = await fetch(url, { headers: HEADERS });
+    if (!res.ok) return `HTTP ${res.status}`;
+    fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));
+    return null;
+  } catch (err) {
+    const r = spawnSync("curl", ["-sSL", "--fail", "--connect-timeout", "60", "--max-time", "600",
+      "-A", HEADERS["User-Agent"], "-e", HEADERS.Referer, "-o", file, url], { encoding: "utf8" });
+    if (r.status === 0) return null;
+    fs.rmSync(file, { force: true });
+    return `${err.cause?.code ?? err.message}; curl: ${(r.stderr || r.error?.message || `exit ${r.status}`).trim()}`;
+  }
+};
+
 const catalogFile = path.join(OUT, "catalog.json");
 const catalog = fs.existsSync(catalogFile) ? JSON.parse(fs.readFileSync(catalogFile, "utf8")) : [];
 const upsert = (entry) => {
@@ -49,12 +71,11 @@ for (const [category, id, titleBy, seconds, url, pageUrl] of list) {
   const file = path.join(OUT, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   if (!fs.existsSync(file)) {
-    const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0", Referer: "https://pixabay.com/" } });
-    if (!res.ok) {
-      console.warn(`✗ ${rel}: HTTP ${res.status}`);
+    const error = await download(url, file);
+    if (error) {
+      console.warn(`✗ ${rel}: ${error}`);
       continue;
     }
-    fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));
   }
   upsert({
     file: `sfx/${rel}`,

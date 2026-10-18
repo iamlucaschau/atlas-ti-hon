@@ -18,6 +18,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Windows consoles default to cp1252 and cannot print → ⚠ –; keep the output UTF-8 everywhere.
+sys.stdout.reconfigure(encoding="utf-8")
+
 import numpy as np
 from PIL import Image, ImageDraw
 

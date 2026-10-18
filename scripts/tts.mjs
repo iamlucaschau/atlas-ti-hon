@@ -99,6 +99,30 @@ const isRetryable = (status) =>
 let nextKey = 0;
 /** Keys whose daily quota is used up, per model: "model|index". */
 const exhausted = new Set();
+/** Keys the API rejects (invalid / revoked), skipped for the whole run: index. */
+const invalid = new Set();
+
+/**
+ * Before spending quota, ask the free models endpoint whether each key is accepted (same call as
+ * `check`) and skip the rejected ones for the run. 2026-10-18: a revoked key answered the TTS call
+ * with a bare "400 Bad Request" and stopped the build instead of failing over.
+ */
+const markInvalidKeys = async (keys) => {
+  await Promise.all(
+    keys.map(async (key, i) => {
+      try {
+        const res = await fetch(`${API}/models?pageSize=1`, { headers: { "x-goog-api-key": key } });
+        if ([400, 401, 403].includes(res.status)) {
+          invalid.add(i);
+          console.warn(`  ! key #${i + 1}: rejected (HTTP ${res.status}), skipped for this run — fix it in gemini_key.txt`);
+        }
+      } catch {
+        // network trouble: keep the key, the TTS call will retry
+      }
+    }),
+  );
+  if (invalid.size === keys.length) throw new Error("Every key was rejected. Run `npm run tts:check`.");
+};
 /** Earliest time (ms) each key may be retried after a per-minute limit. */
 const coolDown = new Map();
 
@@ -146,7 +170,7 @@ const synthesize = async (keys, { text, voice, style, model, key }) => {
 
   let lastError;
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
-    const usable = order.filter((i) => !exhausted.has(`${model}|${i}`));
+    const usable = order.filter((i) => !exhausted.has(`${model}|${i}`) && !invalid.has(i));
     if (!usable.length) {
       throw new Error(
         `Daily quota for ${model} is used up on every key. Last error: ${lastError}`,
@@ -193,7 +217,9 @@ const synthesize = async (keys, { text, voice, style, model, key }) => {
 
     const msg = json.error?.message ?? res.statusText;
     lastError = `key #${i + 1}: HTTP ${res.status} ${msg}`;
-    const badKey = res.status === 400 && /api.?key/i.test(msg);
+    // the reason can sit in the body (error.details[].reason "API_KEY_INVALID") while the message is generic
+    const badKey = res.status === 400 && /api.?key|API_KEY_INVALID/i.test(`${msg} ${JSON.stringify(json)}`);
+    if (badKey) invalid.add(i);
     if (!isRetryable(res.status) && !badKey) throw new Error(lastError);
 
     if (res.status === 429) {
@@ -732,6 +758,7 @@ const main = async () => {
   console.log(`Gemini TTS: ${keys.length} key(s) loaded from ${source}\n`);
 
   if (cmd === "check") return cmdCheck(keys);
+  if (["say", "build", "music"].includes(cmd)) await markInvalidKeys(keys);
   if (cmd === "say") return cmdSay(keys, args);
   if (cmd === "build") return cmdBuild(keys, args);
   if (cmd === "music") return cmdMusic(keys, args);

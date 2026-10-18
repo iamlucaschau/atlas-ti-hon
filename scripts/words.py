@@ -24,6 +24,9 @@ import sys
 import wave
 from pathlib import Path
 
+# Windows consoles default to cp1252 and cannot print → ⚠ –; keep the output UTF-8 everywhere.
+sys.stdout.reconfigure(encoding="utf-8")
+
 # spelled-out numbers in the script come back from Whisper as digits ("hai nghìn" -> "2000")
 NUMBER_WORDS = set("một hai ba bốn năm sáu bảy tám chín mười mươi mốt tư lăm trăm nghìn ngàn triệu tỷ linh lẻ không rưỡi phẩy "
                    "one two three four five six seven eight nine ten hundred thousand million billion".split())
