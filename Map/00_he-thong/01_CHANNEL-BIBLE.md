@@ -109,11 +109,12 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
   |---|---|---|
   | P1 Lịch sử | Historical Documentary Music — Tunetank (hồi hộp, dồn) | History — Tatamusic (êm) |
   | P2 Tiền & bản đồ | Explainer — AtlasAudio (tươi, explainer) | This Light Inspiration — moodmode |
-  | P3 Địa lý hiện tượng | Science Documentary — Lexin_Music (khám phá) | Documentary Nature — leberch |
-  | P4 Hành trình | Cinematic Documentary — Lexin_Music (nhịp đập) | Travel Adventure — leberch |
+  | P3 Địa lý hiện tượng | Documentary Nature — leberch (khám phá, êm) | *(trống — cần chọn bài mới)* |
+  | P4 Hành trình | Travel Adventure — leberch (phiêu lưu, êm) | *(trống — cần chọn bài mới)* |
   | P5 Kỳ lạ & kỷ lục | Mystery Quirky — leberch (tò mò, tinh nghịch) | The Smallest Detective — Tomas_Herudek |
 
   YouTube đôi khi gắn Content ID nhầm cho nhạc Pixabay → khiếu nại kèm link trang Pixabay của bài (cột `source` trong `public/sfx/catalog.json`).
+  **Đã loại:** Cinematic Documentary — Lexin_Music (Pixabay 115669): tập P4 bị chặn toàn cầu 2026-10-17, Content ID "Seaside Morning — Aleksey Chistilin" (Elite Alliance Music). Không dùng lại. Science Documentary — Lexin_Music (Pixabay 169621) cũng bỏ để phòng ngừa (cùng tác giả). Tránh nhạc của Lexin_Music.
 - SFX thật Pixabay: whoosh mỗi cú bay, click khi sticker hiện, deep hit ở con số chốt; không pop/ding hoạt hình; master −14 LUFS / −1,5 dBTP.
 
 ## 7. Cấu trúc bắt buộc mọi tập
@@ -167,3 +168,4 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 | 2026-10-14 | Tên nước + cờ + viền sáng cho mọi nước được gọi tên / tô màu (`CountryTag`) | Lucas |
 | 2026-10-14 | 7 luật kịch bản sau so sánh đối thủ: đáp câu hỏi treo 1–3 chữ, ≥ 1 khoảnh khắc người, 1–2 câu đùa, hai phe, 1 số/câu, twist là nhịp cuối, kho câu thay thế | Lucas |
 | 2026-10-13 | Phụ đề tối đa 4 chữ/dòng; từ khoá + con số vàng nhạt, chữ đang đọc vàng đậm + to 10 % | Lucas |
+| 2026-10-18 | Nhạc P4: loại Cinematic Documentary (Lexin_Music) vì dính Content ID "Seaside Morning", lên bài dự phòng Travel Adventure (leberch); P3 đổi phòng ngừa sang Documentary Nature (leberch) | Lucas |

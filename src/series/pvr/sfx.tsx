@@ -82,7 +82,9 @@ export const MusicBed: React.FC<{ file: string; level?: number; duck?: (f: numbe
 export const PILLAR_MUSIC = {
   P1: "sfx/music/p1-historical-documentary-music-349042.mp3",
   P2: "sfx/music/p2-explainer-explainer-music-576633.mp3",
-  P3: "sfx/music/p3-science-documentary-169621.mp3",
-  P4: "sfx/music/p4-cinematic-documentary-115669.mp3",
+  // Lexin_Music beds dropped 2026-10-18: P4's Cinematic Documentary got a YouTube Content ID claim
+  // ("Seaside Morning", Elite Alliance Music); P3's Science Documentary swapped too as a precaution.
+  P3: "sfx/music/p3-documentary-nature-516419.mp3",
+  P4: "sfx/music/p4-travel-adventure-586187.mp3",
   P5: "sfx/music/p5-mystery-quirky-355604.mp3",
 } as const;
