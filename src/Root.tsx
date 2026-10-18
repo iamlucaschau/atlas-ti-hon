@@ -6,6 +6,7 @@ import { P2DuongSatCaoToc, p2DuongSatCaoTocDuration } from "../Map/p2-duong-sat-
 import { P3DbsclSutLun, p3DbsclSutLunDuration } from "../Map/p3-dbscl-sut-lun/Video";
 import { P4MalaccaKra, p4MalaccaKraDuration } from "../Map/p4-malacca-kra/Video";
 import { P5TrungQuocMuiGio, p5TrungQuocMuiGioDuration } from "../Map/p5-trung-quoc-mui-gio/Video";
+import { P1TayNguyenCoBien, p1TayNguyenCoBienDuration } from "../Map/p1-tay-nguyen-co-bien/Video";
 import { Cover, COVERS } from "../Map/covers";
 
 /** Every episode is 1080×1920 @ 30 fps; its length comes from the voiceover timing. New episode: add one <Composition> here + one entry in Map/covers.tsx. */
@@ -16,6 +17,7 @@ const EPISODES = [
   { id: "Map-P3-DbsclSutLun", component: P3DbsclSutLun, duration: p3DbsclSutLunDuration },
   { id: "Map-P4-MalaccaKra", component: P4MalaccaKra, duration: p4MalaccaKraDuration },
   { id: "Map-P5-TrungQuocMuiGio", component: P5TrungQuocMuiGio, duration: p5TrungQuocMuiGioDuration },
+  { id: "Map-P1-TayNguyenCoBien", component: P1TayNguyenCoBien, duration: p1TayNguyenCoBienDuration },
 ];
 
 export const RemotionRoot: React.FC = () => (

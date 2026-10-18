@@ -74,10 +74,14 @@ python -P scripts/cutout.py public/images/<slug> public/images/<slug>/cut 38 <fi
 1. Sao chép `Map/_mau-tap/Video.tsx.txt` → `Map/<slug>/Video.tsx` (tìm `TODO`); đổi import timing/words, `VIEW` (các điểm camera), `KEYS0` (cú bay theo `at("id")`, phím cuối = nơi mở đầu), `FILLS` (màu lãnh thổ), `CountryTag` cho mọi nước được gọi tên, các lớp nhân vật / sticker / số, `CAPTIONS` (chữ số + `*từ khoá*`), `SFX`. Xem cách làm từng loại cảnh trong các tập đã có.
 2. Nước cần zoom sâu (đảo, thành phố): thêm vào `FINE` trong `toy-atlas.tsx` để dùng hình học 10m.
 3. Đăng ký trong `src/Root.tsx`: thêm một dòng vào mảng `EPISODES` (id `Map-P<x>-<TenTap>`), và một mục vào `COVERS` trong `Map/covers.tsx`.
-4. Kiểm tra:
+4. Kiểm tra bằng vòng duyệt hình (skill `review-loop`): lint, bản nháp + contact sheet một ô mỗi câu đọc, xem hết, sửa, lặp lại.
 ```bash
 npm run lint
 ```
+```bash
+npm run draft -- <slug>
+```
+Soi thêm: `npm run sheet -- <slug> --at 0.9` (cuối mỗi câu), `--from <s> --to <s> --every 0.2` (tua cú bay), hoặc một khung thật:
 ```bash
 npx remotion still <CompositionId> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35
 ```
@@ -91,24 +95,19 @@ npx remotion still <CompositionId> out/check.png --frame=<n> --props='{"safeGuid
 | Chữ | mỗi khối ≤ 5 chữ, ≤ 2 khối + phụ đề, ≥ 48 px, Bricolage |
 | Phụ đề | 1 dòng, ≤ 4 chữ / 20 ký tự, ~1 s mỗi cụm; các chữ không dính nhau; từ khoá vàng nhạt, chữ đang đọc vàng đậm + to 10 % |
 | Chuyển động | bay chỉ khi đổi nơi (≥ 22 frame, không blur/rung); không đoạn nào đứng yên hoàn toàn > 2 s |
-| Âm thanh | nhạc ~11 dB dưới giọng; SFX thật; master −14 LUFS / −1,5 dBTP |
+| Âm thanh | nhạc nền `MusicBed` −28 LUFS (~14 dB dưới giọng, Bible §6); SFX thật; master −14 LUFS / −1,5 dBTP |
 | Nối vòng mềm | lời kết bằng câu trọn vẹn; khung cuối = khung đầu (`seamKeys`); xem bản lặp 2 vòng |
 | Tên nước | mỗi nước được gọi tên / tô màu có nhãn + cờ (`CountryTag`), viền loé đúng lúc lời đọc nói tên |
 | Bản đồ | không tô màu nước ngoài câu chuyện; không nhãn vùng tranh chấp |
 
 ## 6. Render + gói xuất bản (Cổng 5)
 
+Một lệnh, chạy được cả trên Windows (PowerShell) lẫn macOS/Linux:
 ```bash
-npx remotion render <CompositionId> out/<slug>-raw.mp4 --crf=18
+npm run final -- <slug>
 ```
-```bash
-ffmpeg -y -i out/<slug>-raw.mp4 -c:v copy -af "loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.72:level=false" -c:a aac -b:a 256k -movflags +faststart "Map/<slug>/<slug>.mp4"
-```
-*(2026-10-13: loudnorm một lượt + AAC 192k cho đỉnh +0,3 dBFS; thêm `alimiter` và AAC 256k → đỉnh −2,0 dBTP. Kiểm: `ffmpeg -i <file> -af ebur128=peak=true -f null -`.)*
-Bản xem thử lặp 2 vòng (kiểm chỗ nối vòng):
-```bash
-printf "file '../Map/<slug>/<slug>.mp4'\nfile '../Map/<slug>/<slug>.mp4'\n" > out/concat.txt && ffmpeg -y -f concat -safe 0 -i out/concat.txt -c copy "Map/<slug>/<slug>-loop-preview-x2.mp4"
-```
+Lệnh này: render `out/<slug>-raw.mp4` (`--crf=18`) → master vào `Map/<slug>/<slug>.mp4` (`loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.72:level=false`, AAC 256k, `+faststart`) → bản lặp 2 vòng `Map/<slug>/<slug>-loop-preview-x2.mp4` → đo bằng `ebur128` và so khung cuối với frame 0 (SSIM), in ✓/✗ và thoát mã 1 nếu trượt (−14 ±1 LUFS, đỉnh ≤ −1,5 dBFS, SSIM phần trên phụ đề ≥ 0,90) → xoá bản raw (`--keep-raw` để giữ). Code: `scripts/build.mjs`.
+*(2026-10-13: loudnorm một lượt + AAC 192k cho đỉnh +0,3 dBFS; thêm `alimiter` và AAC 256k → đỉnh −2,0 dBTP. 2026-10-18: gom thành `npm run final`, thay lệnh `printf` chỉ chạy được trong bash.)*
 MP4 trong `Map/` không lên git (`.gitignore`).
 
 **Gói xuất bản** (`Map/<slug>/xuat-ban.md`, khung: `Map/_mau-tap/xuat-ban.md`; tiêu đề, mô tả, hashtag theo công thức ~10 tag, ảnh bìa từ `Map/covers.tsx`, bình luận ghim, caption TikTok/Reels — `06_NHAN-DIEN-KENH.md` §5–§6). Ghi chú cũ bên dưới vẫn đúng trừ số hashtag:

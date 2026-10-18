@@ -31,6 +31,9 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
+    "draft": "node scripts/build.mjs --draft",
+    "final": "node scripts/build.mjs",
+    "sheet": "node scripts/sheet.mjs",
     "tts": "node scripts/tts.mjs",
     "tts:check": "node scripts/tts.mjs check",
     "voiceover": "node scripts/tts.mjs build"

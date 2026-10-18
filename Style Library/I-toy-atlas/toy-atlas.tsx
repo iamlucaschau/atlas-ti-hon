@@ -100,6 +100,11 @@ const byName = new Map(COUNTRIES.map((c) => [c.name, c]));
 
 /** Base-projection point (zoom 1, origin at lon 0 / lat 0). */
 const base = (lon: number, lat: number) => baseProj([lon, lat]) as [number, number];
+/** Base-projection SVG path of any GeoJSON (for extra map layers drawn through `Atlas`'s `layer`, e.g. provinces). */
+export const projectGeo = (g: Feature<Geometry, object>) => basePath(g) ?? "";
+export const baseXY = base;
+/** A country's base-projection path ("" if unknown), e.g. to mask land out of a coast glow. */
+export const countryPath = (name: string) => byName.get(name)?.d ?? "";
 
 // ------------------------------------------------------------------ camera
 
@@ -171,8 +176,13 @@ export type Fill = {
  * The map: ocean, shallow-water halo, neutral land with relief, story
  * countries in their side colours. Other countries stay neutral and
  * unlabelled (no ownership colouring of places outside the story).
+ * - `skip`: countries not drawn at all, because `layer` draws them in finer detail (e.g. Vietnam by province).
+ * - `layer(z)`: extra shapes in base-projection space, drawn on top of the countries with the same
+ *   camera; it can use the relief filter (`url(#ta-relief)`). Strokes there should be divided by `z`.
  */
-export const Atlas: React.FC<{ cam: GeoCam; fills?: Fill[]; f?: number }> = ({ cam, fills = [], f = 0 }) => {
+export const Atlas: React.FC<{
+  cam: GeoCam; fills?: Fill[]; f?: number; skip?: string[]; layer?: (z: number) => React.ReactNode;
+}> = ({ cam, fills = [], f = 0, skip = [], layer }) => {
   const [cx, cy] = base(cam.lon, cam.lat);
   const z = cam.zoom;
   // view bounds in degrees (rough) to skip far countries
@@ -180,7 +190,7 @@ export const Atlas: React.FC<{ cam: GeoCam; fills?: Fill[]; f?: number }> = ({ c
   const near = (c: Country) =>
     c.bounds[1][0] > cam.lon - half && c.bounds[0][0] < cam.lon + half &&
     c.bounds[1][1] > cam.lat - half && c.bounds[0][1] < cam.lat + half;
-  const visible = COUNTRIES.filter(near);
+  const visible = COUNTRIES.filter((c) => near(c) && !skip.includes(c.name));
   const sw = 1.6 / z; // strokes stay ~1.6 px at any zoom
   return (
     <AbsoluteFill style={{ backgroundColor: ATLAS.deep }}>
@@ -250,6 +260,7 @@ export const Atlas: React.FC<{ cam: GeoCam; fills?: Fill[]; f?: number }> = ({ c
           <g fill="none" stroke={ATLAS.ink} strokeOpacity={0.75} strokeWidth={sw}>
             {visible.map((c) => <path key={c.name} d={c.d} />)}
           </g>
+          {layer?.(z)}
         </g>
         <radialGradient id="ta-vig" cx="50%" cy="45%" r="72%">
           <stop offset="55%" stopColor="#000" stopOpacity={0} />
@@ -509,9 +520,11 @@ const TRUONG_SA: [number, number][] = [
  * so it moves with the camera, and faded in only while the pin is inside the safe stage (so it
  * appears in the shots the camera goes to, never as a fixed overlay). Fill "Paracel Is." /
  * "Spratly Is." with the same colour in `fills` too.
+ * `colorTs`: a different dot colour for Trường Sa, when a map colours Vietnam by province (Hoàng Sa
+ * belongs to Đà Nẵng, Trường Sa to Khánh Hoà; Lucas 2026-10-18).
  */
-export const VnIslands: React.FC<{ cam: GeoCam; f: number; color: string; o?: number; labels?: boolean }> = ({
-  cam, f, color, o = 1, labels = true,
+export const VnIslands: React.FC<{ cam: GeoCam; f: number; color: string; colorTs?: string; o?: number; labels?: boolean }> = ({
+  cam, f, color, colorTs = color, o = 1, labels = true,
 }) => {
   const group = (pts: [number, number][]) => pts.map(([lo, la]) => toScreen(cam, lo, la));
   const centre = (ps: [number, number][]) => [ps.reduce((a, p) => a + p[0], 0) / ps.length, ps.reduce((a, p) => a + p[1], 0) / ps.length];
@@ -532,7 +545,7 @@ export const VnIslands: React.FC<{ cam: GeoCam; f: number; color: string; o?: nu
     <AbsoluteFill style={{ opacity: o }}>
       <svg width={CANVAS.width} height={CANVAS.height} style={{ position: "absolute" }}>
         {[...hs, ...ts].map(([x, y], i) => (
-          <circle key={i} cx={x} cy={y} r={4} fill={color} />
+          <circle key={i} cx={x} cy={y} r={4} fill={i < hs.length ? color : colorTs} />
         ))}
         {labels && pins.map(({ text, c: [x, y], above }) => {
           // fade in while the pin is inside the safe stage, out as the camera leaves

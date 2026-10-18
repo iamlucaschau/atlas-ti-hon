@@ -1,0 +1,203 @@
+{
+  "durationInSeconds": 70.86404166666667,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 2.836,
+      "text": "Năm tỉnh Tây Nguyên vốn không có một mét bờ biển nào."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 2.8960833333333333,
+      "end": 4.506083333333334,
+      "text": "Giờ, tỉnh nào cũng có biển."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 4.566,
+      "end": 5.385,
+      "text": "Sao lại thế?"
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 5.444541666666666,
+      "end": 6.316541666666666,
+      "text": "Vì gộp tỉnh."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 6.566708333333333,
+      "end": 9.807708333333332,
+      "text": "Giữa năm hai nghìn hai mươi lăm, Việt Nam vẽ lại bản đồ hành chính."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 9.867291666666667,
+      "end": 11.559291666666667,
+      "text": "Cả nước có sáu mươi ba tỉnh thành."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 11.619458333333334,
+      "end": 13.270458333333334,
+      "text": "Gộp lại, còn ba mươi tư."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 13.52025,
+      "end": 15.11425,
+      "text": "Kon Tum nhập vào Quảng Ngãi."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 15.174333333333333,
+      "end": 16.616333333333333,
+      "text": "Gia Lai cặp với Bình Định."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 16.676208333333335,
+      "end": 18.182208333333335,
+      "text": "Đắk Lắk ghép với Phú Yên."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 18.24191666666667,
+      "end": 20.81791666666667,
+      "text": "Còn Lâm Đồng nhận thêm Đắk Nông và Bình Thuận."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "start": 20.878416666666666,
+      "end": 22.762416666666667,
+      "text": "Tỉnh nào cũng được một khúc bờ biển."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 23.012333333333334,
+      "end": 23.914333333333335,
+      "text": "Không phải tình cờ."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 23.973958333333336,
+      "end": 28.029958333333337,
+      "text": "Đề án của Chính phủ ghi rõ: ưu tiên ghép tỉnh miền núi với tỉnh có biển."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 28.08966666666667,
+      "end": 31.23166666666667,
+      "text": "Ông Huỳnh Thành, cựu đại biểu Quốc hội của Gia Lai, từng ví von."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "start": 31.29116666666667,
+      "end": 34.47816666666667,
+      "text": "Các tỉnh Tây Nguyên tách nhập với nhau mãi, chỉ cùng ôm nhau kêu khổ."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 34.72770833333334,
+      "end": 37.03170833333334,
+      "text": "Bên núi có đất rộng, có nông sản."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 37.09125000000001,
+      "end": 38.19525000000001,
+      "text": "Bên biển có cảng."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "start": 38.255458333333344,
+      "end": 40.736458333333346,
+      "text": "Như Gia Lai, giờ có cảng Quy Nhơn ngay trong tỉnh."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 40.986166666666676,
+      "end": 44.70416666666668,
+      "text": "Nhìn cả nước, trước khi gộp có ba mươi lăm tỉnh không có biển."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 44.76379166666668,
+      "end": 46.41779166666667,
+      "text": "Giờ chỉ còn mười ba."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "start": 46.66775000000001,
+      "end": 49.358750000000015,
+      "text": "Người ủng hộ nói, tỉnh mới có thêm không gian để lớn."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 49.41841666666668,
+      "end": 53.52941666666668,
+      "text": "Người lo thì nhắc, tỉnh rộng ra, có xã cách trung tâm tỉnh cả trăm cây số."
+    },
+    {
+      "id": "24",
+      "scene": "s8",
+      "start": 53.77929166666668,
+      "end": 57.62929166666668,
+      "text": "Lâm Đồng giờ là tỉnh rộng nhất nước, hơn hai mươi bốn nghìn cây số vuông."
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "start": 57.688958333333346,
+      "end": 60.07295833333335,
+      "text": "Đà Lạt với Mũi Né thành người chung tỉnh."
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "start": 60.132833333333345,
+      "end": 63.14683333333335,
+      "text": "Sáng ngắm sương, chiều tắm biển, chưa cần ra khỏi tỉnh."
+    },
+    {
+      "id": "27",
+      "scene": "s9",
+      "start": 63.39683333333335,
+      "end": 67.69583333333335,
+      "text": "Còn Gia Lai, tỉnh của phố núi Pleiku, giờ đặt trung tâm hành chính ở Quy Nhơn."
+    },
+    {
+      "id": "28",
+      "scene": "s9",
+      "start": 67.75587500000002,
+      "end": 70.61387500000002,
+      "text": "Tỉnh mang tên cao nguyên, giờ có thủ phủ bên bờ biển."
+    }
+  ]
+}

@@ -16,6 +16,7 @@
 | Vì sao Đông Timor tách khỏi Indonesia? | ✔ | TB | ý tưởng |
 | Vì sao Transylvania thuộc Romania? | | TB (tranh luận Hung–Ro) | ý tưởng (mẫu V2) |
 | Vì sao Constantinople không thuộc Hy Lạp? | | TB | ý tưởng (playbook) |
+| Vì sao Tây Nguyên bỗng có biển? (63 → 34 tỉnh, NQ 202/2025/QH15) | ✔ | TB (chính sách; Hoàng Sa, Trường Sa thuộc tỉnh có gộp) | **Đã làm** (`Map/p1-tay-nguyen-co-bien/`, 5 cổng duyệt 2026-10-18) |
 
 ## P2 — Tiền & bản đồ (30%, ưu tiên Việt Nam; luôn ≥ 2 nguồn, ghi loại giá)
 
@@ -29,6 +30,10 @@
 | Giá thuê văn phòng TP.HCM so với Gangnam — so cùng loại giá chưa? | C (dễ bị bẻ) | playbook EP05 — **phải ghi rõ loại giá** |
 | Vì sao vốn FDI đổ về một số tỉnh vệ tinh của TP.HCM và Hà Nội? | TB | ý tưởng |
 | Hai bên eo Malacca: vì sao cảng Singapore vượt lên? | T | ý tưởng (nối tiếp tập Singapore) |
+| Bắc Ninh: vì sao một tỉnh nhỏ xuất khẩu nhiều như một quốc gia? (cụm Samsung, gần Nội Bài + cảng Hải Phòng) | TB (gọi tên doanh nghiệp: chỉ nguồn công khai) | ý tưởng 2026-10-18, chấm sơ bộ 37,5 |
+| Sân bay Long Thành: vì sao xây sân bay mới ở Đồng Nai thay vì mở rộng Tân Sơn Nhất? | TB (không nói giá đất quanh sân bay) | ý tưởng 2026-10-18, chấm sơ bộ 36 |
+| Cái Mép – Thị Vải: vì sao tàu container lớn nhất cập cảng ở Vũng Tàu cũ, không vào cảng Sài Gòn? (độ sâu luồng sông) | T | ý tưởng 2026-10-18, chấm sơ bộ 36 |
+| Thâm Quyến: từ làng chài thành siêu đô thị — vì sao chọn đúng chỗ sát Hồng Kông? | T | ý tưởng 2026-10-18, chấm sơ bộ 35 |
 
 ## P3 — Địa lý giải thích hiện tượng (20%)
 

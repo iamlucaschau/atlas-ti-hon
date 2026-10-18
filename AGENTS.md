@@ -24,8 +24,10 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 | --- | --- |
 | Mở Studio (xem trước) | `npm run dev` → http://localhost:3000 (`.claude/launch.json`: `remotion-studio`) |
 | Kiểm tra code | `npm run lint` (sau mỗi thay đổi) |
+| Bản nháp + contact sheet | `npm run draft -- <slug>` → `out/<slug>-draft.mp4` (nửa cỡ, có vùng an toàn) + `out/sheets/<slug>-lines-N.png` (một ô mỗi câu đọc) |
+| Soi thêm khung | `npm run sheet -- <slug> --at 0.9` · `--from 30 --to 32 --every 0.2` · `<giây> <giây>` |
 | Ảnh kiểm tra 1 khung | `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35` |
-| Render tập | `npx remotion render <id> out/<slug>-raw.mp4 --crf=18` rồi master (Bible / `04_QUY-TRINH` §6) |
+| Render tập | `npm run final -- <slug>` → render, master, bản lặp 2 vòng vào `Map/<slug>/`, đo LUFS / đỉnh / chỗ nối vòng (thoát mã 1 nếu trượt) |
 | Ảnh bìa | `npx remotion still Cover-<slug> out/cover.png` → JPG < 2 MB vào `Map/<slug>/cover.jpg` |
 | Giọng đọc | `node scripts/episode.mjs prep "Map/<slug>"` → `npm run voiceover -- voiceover/<slug>.json` → `node scripts/episode.mjs export "Map/<slug>" --loop --tail=0.7` → `python -P scripts/words.py <slug> vi` |
 | Kiểm tra key TTS | `npm run tts:check` (không tốn quota) |
@@ -41,7 +43,8 @@ Map/_mau-tap/         khung một tập mới (README + file mẫu + Video.tsx.t
 Map/<slug>/           một tập: cong-2_so-nguon, kich-ban-…-FINAL, spec, beat-sheet, image-prompts, Video.tsx, vo-timestamps, xuat-ban, cover.jpg (+ mp4, vo.mp3 chỉ trên máy)
 Map/covers.tsx        ảnh bìa của mọi tập (khung + hook 2 tầng + vòng đỏ)
 Map/cong-1_*.md       hồ sơ Cổng 1 · Map/phan-tich-doi-thu/ phân tích 20 video đối thủ (BAO-CAO, BOC-TACH, SO-SANH)
-Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas, camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub…
+Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas (skip, layer), camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub…
+Style Library/I-toy-atlas/vn-provinces.tsx  Việt Nam theo tỉnh: VN2025 (34 tỉnh, OCHA/HDX) · VN2024 (63 tỉnh, Natural Earth), ProvinceMap (tô, loang, viền loé, viền biển), ProvinceTag, CityPin — dùng qua `<Atlas skip={["Vietnam"]} layer={…} />`
 Style Library/kit-common.ts, subs.tsx     font Bricolage Grotesque, easing, phụ đề karaoke
 src/Root.tsx          đăng ký mọi tập (thư mục Episodes) và ảnh bìa (Covers)
 src/series/pvr/       episode.ts (thời lượng), sfx.tsx (Sfx, MusicBed, PILLAR_MUSIC), safe.tsx (SafeGuide), theme.ts (1080×1920, SAFE)
@@ -51,7 +54,7 @@ public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voic
 scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
 ```
 
-ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Cover-<slug>`.
+ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Cover-<slug>`.
 
 ## Luật Remotion (không được phá)
 
@@ -63,7 +66,7 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 ## Luật kênh (tóm tắt — chi tiết ở Bible)
 
 - **Vùng an toàn 9:16:** mọi chữ, số, mặt người, hình chính trong **x 60–940, y 220–1440**; kiểm bằng `--props='{"safeGuide":true}'`.
-- **Camera:** chỉ bay khi đổi nơi (≥ 20 frame, ease in-out, không rung, không blur) + đẩy chậm ≤ 4 % / 3 s trong mỗi beat; không zoom giật, không rung máy. Khung không đứng yên > 2 s.
+- **Camera:** chỉ bay khi đổi nơi (≥ 22 frame, ease in-out, không rung, không blur) + đẩy chậm ≤ ~5 % / 3 s trong mỗi beat; không zoom giật, không rung máy. Khung không đứng yên > 2 s.
 - **Chữ:** mỗi khối ≤ 5 chữ, ≤ 2 khối cùng lúc ngoài phụ đề, ≥ 48 px (nhãn Hoàng Sa / Trường Sa 42 px), Bricolage Grotesque 700–800. Phụ đề karaoke 1 dòng ≤ 4 chữ / 20 ký tự.
 - **7 luật kịch bản** (Bible §3 mục 6–11, `Map/phan-tich-doi-thu/SO-SANH-KICH-BAN.md`): câu hỏi treo đáp ngay 1–3 chữ · ≥ 1 khoảnh khắc người (nhân vật thật + việc cụ thể, có nguồn) · 1–2 câu đùa sau con số nặng · chủ đề tranh luận có 2 phe · 1 con số mới mỗi câu · twist là nhịp nội dung cuối · không lặp câu cửa miệng ("oái oăm", "thử…", "Vì sao?") trong 3 tập liền.
 - **Nối vòng mềm:** lời kết bằng câu trọn vẹn (không vế bỏ lửng); hình vẫn lặp liền: `seamKeys` + `export --loop --tail=0.7`; khung cuối = khung đầu.
@@ -82,9 +85,9 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 ## Kiểm tra trước khi giao
 
 1. `npm run lint` đạt.
-2. Ảnh kiểm tra các nhịp mới (`--props='{"safeGuide":true}'`), sửa đè hình / tràn vùng an toàn.
-3. Khung cuối = khung đầu (render `--frame=<cuối>` và `--frame=0`, so).
-4. Render + master + bản lặp 2 vòng; đo `ebur128` (≈ −14 LUFS, đỉnh ≤ −1,5 dB).
+2. Vòng duyệt hình (skill `review-loop`): `npm run draft -- <slug>`, xem **mọi** contact sheet, sửa đè hình / tràn vùng an toàn, lặp tới khi một lượt sạch.
+3. `npm run final -- <slug>`: mọi dòng ✓ (≈ −14 LUFS, đỉnh ≤ −1,5 dB, khung cuối ≈ khung đầu).
+4. Nhờ Lucas nghe bản `-loop-preview-x2.mp4` (Luis không nghe được).
 5. Xoá ảnh/khung thử trong `out/`.
 
 ## Bản quyền & bảo mật

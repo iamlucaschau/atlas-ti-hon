@@ -14,6 +14,7 @@ import { Scene as RailScene } from "./p2-duong-sat-cao-toc/Video";
 import { Scene as DeltaScene } from "./p3-dbscl-sut-lun/Video";
 import { Scene as KraScene } from "./p4-malacca-kra/Video";
 import { Scene as ClockScene } from "./p5-trung-quoc-mui-gio/Video";
+import { Scene as HighlandsScene } from "./p1-tay-nguyen-co-bien/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -94,6 +95,9 @@ export const COVERS: CoverSpec[] = [
     mark: { x: 460, y: 970, r: 110, arrowFrom: [820, 1230] } },
   // Kashgar, winter: the sun only rises around 10:00 Beijing time (C7)
   { slug: "p5-trung-quoc-mui-gio", Scene: ClockScene, frame: 760, hook: [{ text: "10 GIỜ SÁNG", punch: true }, { text: "MẶT TRỜI MỚI MỌC" }], y: 240 },
+  // every old Tây Nguyên province is now inside a province with a coast (C3, C4) — line 12: the new coasts glow; ring on Gia Lai's
+  { slug: "p1-tay-nguyen-co-bien", Scene: HighlandsScene, frame: 640, hook: [{ text: "TÂY NGUYÊN" }, { text: "CÓ BIỂN?", punch: true }], y: 230,
+    mark: { x: 670, y: 720, r: 105, arrowFrom: [900, 1110] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

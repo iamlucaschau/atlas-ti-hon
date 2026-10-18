@@ -1,0 +1,212 @@
+{
+  "name": "p1-tay-nguyen-co-bien",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc năm, con số và địa danh chậm hơn một nhịp. \"Sao lại thế?\" hỏi nhẹ, tò mò; \"Vì gộp tỉnh.\" ngắn, dứt khoát, ngừng một nhịp sau đó. Bốn câu ghép tỉnh đọc đều nhịp như điểm danh. \"chỉ cùng ôm nhau kêu khổ\" và \"Sáng ngắm sương, chiều tắm biển\" đọc có ý cười nhẹ. Hai câu về người ủng hộ và người lo đọc trung tính, cùng một giọng. Đọc Đắk Lắk là \"Đắc Lắc\", Đắk Nông là \"Đắc Nông\", Kon Tum là \"Con Tum\", Pleiku là \"Plây-cu\". Không cường điệu. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Năm tỉnh Tây Nguyên vốn không có một mét bờ biển nào."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Giờ, tỉnh nào cũng có biển."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Sao lại thế?"
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Vì gộp tỉnh."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Giữa năm hai nghìn hai mươi lăm, Việt Nam vẽ lại bản đồ hành chính."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Cả nước có sáu mươi ba tỉnh thành."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Gộp lại, còn ba mươi tư."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Kon Tum nhập vào Quảng Ngãi."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Gia Lai cặp với Bình Định."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Đắk Lắk ghép với Phú Yên."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Còn Lâm Đồng nhận thêm Đắk Nông và Bình Thuận."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Tỉnh nào cũng được một khúc bờ biển."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Không phải tình cờ."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Đề án của Chính phủ ghi rõ: ưu tiên ghép tỉnh miền núi với tỉnh có biển."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Ông Huỳnh Thành, cựu đại biểu Quốc hội của Gia Lai, từng ví von."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Các tỉnh Tây Nguyên tách nhập với nhau mãi, chỉ cùng ôm nhau kêu khổ."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Bên núi có đất rộng, có nông sản."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Bên biển có cảng."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Như Gia Lai, giờ có cảng Quy Nhơn ngay trong tỉnh."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Nhìn cả nước, trước khi gộp có ba mươi lăm tỉnh không có biển."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Giờ chỉ còn mười ba."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Người ủng hộ nói, tỉnh mới có thêm không gian để lớn."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Người lo thì nhắc, tỉnh rộng ra, có xã cách trung tâm tỉnh cả trăm cây số."
+    },
+    {
+      "id": "24",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Lâm Đồng giờ là tỉnh rộng nhất nước, hơn hai mươi bốn nghìn cây số vuông."
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Đà Lạt với Mũi Né thành người chung tỉnh."
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Sáng ngắm sương, chiều tắm biển, chưa cần ra khỏi tỉnh."
+    },
+    {
+      "id": "27",
+      "scene": "s9",
+      "take": "t09",
+      "gapAfter": 0.06,
+      "text": "Còn Gia Lai, tỉnh của phố núi Pleiku, giờ đặt trung tâm hành chính ở Quy Nhơn."
+    },
+    {
+      "id": "28",
+      "scene": "s9",
+      "take": "t09",
+      "gapAfter": 0.25,
+      "text": "Tỉnh mang tên cao nguyên, giờ có thủ phủ bên bờ biển."
+    }
+  ]
+}
