@@ -47,7 +47,7 @@ export const SfxCues: React.FC<{
 };
 
 /**
- * Licensed music bed from the catalog (public/sfx/music, Pixabay Content License), levelled from
+ * Licensed music bed from the catalog (public/sfx/music; Kevin MacLeod CC BY 4.0 since 2026-10-17), levelled from
  * its measured loudness to `level` LUFS (−28 ≈ the old bed-bright at volume 0.2, ~14 dB under
  * the VO before mastering). Short fades at both ends keep the loop seam soft; `duck(frame)`
  * (0–1) dips it, e.g. under a climax. Tracks are longer than the episodes, so no loop.
@@ -78,13 +78,24 @@ export const MusicBed: React.FC<{ file: string; level?: number; duck?: (f: numbe
   );
 };
 
-/** Map channel: one music bed per pillar (Lucas 2026-10-14; alternates in Map/00_he-thong/01_CHANNEL-BIBLE.md §6). */
+/**
+ * Map channel: one music bed per pillar. Lucas 2026-10-17: Kevin MacLeod (incompetech.com), CC BY 4.0 —
+ * every episode description must credit the track ("Title" Kevin MacLeod (incompetech.com) + licence line,
+ * Bible §6). Replaced the Pixabay beds: all of them are "Content ID Registered" and the P4 episode was blocked
+ * worldwide (2026-10-17). Alternates per pillar: PILLAR_MUSIC_ALT.
+ */
 export const PILLAR_MUSIC = {
-  P1: "sfx/music/p1-historical-documentary-music-349042.mp3",
-  P2: "sfx/music/p2-explainer-explainer-music-576633.mp3",
-  // Lexin_Music beds dropped 2026-10-18: P4's Cinematic Documentary got a YouTube Content ID claim
-  // ("Seaside Morning", Elite Alliance Music); P3's Science Documentary swapped too as a precaution.
-  P3: "sfx/music/p3-documentary-nature-516419.mp3",
-  P4: "sfx/music/p4-travel-adventure-586187.mp3",
-  P5: "sfx/music/p5-mystery-quirky-355604.mp3",
+  P1: "sfx/music/p1-heroic-age-km.mp3",
+  P2: "sfx/music/p2-wallpaper-km.mp3",
+  P3: "sfx/music/p3-floating-cities-km.mp3",
+  P4: "sfx/music/p4-ascending-the-vale-km.mp3",
+  P5: "sfx/music/p5-investigations-km.mp3",
+} as const;
+
+export const PILLAR_MUSIC_ALT = {
+  P1: "sfx/music/p1-lightless-dawn-km.mp3",
+  P2: "sfx/music/p2-inspired-km.mp3",
+  P3: "sfx/music/p3-ether-vox-km.mp3",
+  P4: "sfx/music/p4-crossing-the-chasm-km.mp3",
+  P5: "sfx/music/p5-sneaky-snitch-km.mp3",
 } as const;

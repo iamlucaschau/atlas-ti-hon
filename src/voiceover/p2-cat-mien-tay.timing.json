@@ -1,0 +1,168 @@
+{
+  "durationInSeconds": 68.356875,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 2.161,
+      "text": "Miền Tây là xứ của sông nước và phù sa."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 2.2209166666666667,
+      "end": 4.588916666666666,
+      "text": "Vậy mà làm cao tốc ở đây, lại thiếu cát."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "start": 4.8388333333333335,
+      "end": 7.325833333333334,
+      "text": "Vùng này còn khoảng bảy trăm cây số cao tốc phải làm."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 7.386291666666667,
+      "end": 10.638291666666667,
+      "text": "Nếu đắp nền kiểu cũ, cần hơn một trăm triệu khối cát."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 10.6985,
+      "end": 11.4315,
+      "text": "Sao lại thiếu?"
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 11.581,
+      "end": 12.244,
+      "text": "Ba lý do."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 12.494166666666667,
+      "end": 14.490166666666667,
+      "text": "Một, đất dưới chân quá mềm."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 14.54975,
+      "end": 19.27175,
+      "text": "Muốn đường không lún, phải đắp cát thật dày, rồi chất thêm cát lên cho nền lún trước."
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "start": 19.52133333333333,
+      "end": 22.99733333333333,
+      "text": "Hai, cát đủ chuẩn đắp đường chỉ còn ở vài khúc sông thượng nguồn."
+    },
+    {
+      "id": "10",
+      "scene": "s4",
+      "start": 23.057291666666664,
+      "end": 26.143291666666663,
+      "text": "Các đập trên dòng Mekong lại giữ bớt phù sa ở phía trên."
+    },
+    {
+      "id": "11",
+      "scene": "s5",
+      "start": 26.39308333333333,
+      "end": 27.96808333333333,
+      "text": "Ba, sông bồi không kịp."
+    },
+    {
+      "id": "12",
+      "scene": "s5",
+      "start": 28.028374999999997,
+      "end": 32.674375,
+      "text": "Các nhà khoa học từng thả máy dò xuống đáy sông Mekong, và thấy những hố hút cát sâu hơn tám mét."
+    },
+    {
+      "id": "13",
+      "scene": "s5",
+      "start": 32.734249999999996,
+      "end": 36.85424999999999,
+      "text": "Họ tính ra, cát bị hút lên nhanh gấp năm đến chín lần lượng sông bồi lại."
+    },
+    {
+      "id": "14",
+      "scene": "s5",
+      "start": 36.91379166666666,
+      "end": 39.302791666666664,
+      "text": "Như rút sổ tiết kiệm nhanh hơn hẳn tiền gửi vào."
+    },
+    {
+      "id": "15",
+      "scene": "s6",
+      "start": 39.553083333333326,
+      "end": 40.599083333333326,
+      "text": "Vậy còn cát biển?"
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "start": 40.74862499999999,
+      "end": 41.52062499999999,
+      "text": "Có dùng rồi."
+    },
+    {
+      "id": "17",
+      "scene": "s6",
+      "start": 41.58087499999999,
+      "end": 43.62787499999999,
+      "text": "Nhưng cát biển mặn, phải rửa trước khi đắp."
+    },
+    {
+      "id": "18",
+      "scene": "s7",
+      "start": 43.87833333333332,
+      "end": 47.24133333333332,
+      "text": "Nên giờ có lối khác: đưa cao tốc lên cầu cạn, bớt hẳn cát."
+    },
+    {
+      "id": "19",
+      "scene": "s7",
+      "start": 47.30174999999999,
+      "end": 51.51974999999999,
+      "text": "Một bên tính lúc xây: cầu cạn đắt gấp một phẩy sáu đến một phẩy bảy lần."
+    },
+    {
+      "id": "20",
+      "scene": "s7",
+      "start": 51.57941666666666,
+      "end": 56.72941666666666,
+      "text": "Bên kia tính cả vòng đời: chỉ đắt hơn khoảng mười đến mười bốn phần trăm, lại ít lún."
+    },
+    {
+      "id": "21",
+      "scene": "s8",
+      "start": 56.97937499999999,
+      "end": 60.83237499999999,
+      "text": "Trớ trêu là, chính lớp cát dưới lòng sông cũng đang đỡ lấy bờ sông."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "start": 60.89212499999999,
+      "end": 64.82312499999999,
+      "text": "Lòng sông chỉ cần tụt khoảng hai mét, nhiều đoạn bờ Mekong đã có thể sụp."
+    },
+    {
+      "id": "23",
+      "scene": "s8",
+      "start": 64.88270833333333,
+      "end": 68.10670833333333,
+      "text": "Con đường cần cát để đứng vững, và đồng bằng cũng vậy."
+    }
+  ]
+}

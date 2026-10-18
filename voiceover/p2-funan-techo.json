@@ -1,0 +1,219 @@
+{
+  "name": "p2-funan-techo",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Giọng trung tính, không đứng về phía nào. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu thứ hai của đoạn mở đầu hạ giọng nhẹ, để ngỏ tò mò. \"Vì sao phải đào?\" và \"Và cú ngược đời?\" hỏi nhẹ; \"Đường ra biển.\" và \"Độ sâu.\" ngắn, dứt khoát. \"bằng mọi giá\" đọc như trích dẫn, trung tính. \"Còn chảy qua biên giới…\" không nhấn; ngừng một nhịp trước \"Thành sông Hậu.\" \"Lùa tàu ấy vào kênh…\" có ý cười nhẹ. Đọc Campuchia là \"Cam-pu-chia\", Phnom Penh là \"Nôm Pênh\", Bassac là \"Ba-xắc\", Kep là \"Kép\", Hun Manet là \"Hun Ma-nét\", Mê Kông. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Campuchia đang chi hơn một tỷ đô để đào một con kênh ra biển."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Nước cho con kênh ấy lấy từ một dòng sông mà người miền Tây nào cũng biết."
+    },
+    {
+      "id": "03",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Vì sao phải đào?"
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Đường ra biển."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Theo chính phủ Campuchia, khoảng một phần ba hàng hoá của họ phải xuôi Mê Kông qua Việt Nam."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Kênh mới dài một trăm tám mươi cây số, cắt thẳng xuống biển Kep."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Mục tiêu là hạ tỉ lệ ấy còn khoảng một phần mười."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Ngày khởi công, Thủ tướng Hun Manet tuyên bố: kênh sẽ được xây bằng mọi giá."
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Kênh bắt đầu từ sông Bassac."
+    },
+    {
+      "id": "10",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.2,
+      "text": "Còn chảy qua biên giới, sông Bassac đổi tên."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Thành sông Hậu."
+    },
+    {
+      "id": "12",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.15,
+      "text": "Vậy kênh lấy bao nhiêu nước?"
+    },
+    {
+      "id": "13",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Rất ít."
+    },
+    {
+      "id": "14",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Đúng thông báo, chỉ vài mét khối mỗi giây."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Mùa khô, sông Hậu vẫn chảy vài trăm khối mỗi giây."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Tức chưa tới hai phần trăm."
+    },
+    {
+      "id": "17",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.15,
+      "text": "Còn nếu vượt thông báo, lấy thêm nước tưới?"
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Khác hẳn."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Một chuyên gia Việt Nam tính, sông Hậu mùa khô có thể hụt năm đến mười ba phần trăm."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Phía Campuchia nói hạ lưu gần như không bị ảnh hưởng."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Phía Việt Nam đề nghị chia sẻ thông tin, đánh giá kỹ tác động."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Campuchia hẹn kênh xong khoảng năm hai nghìn hai mươi tám, hai mươi chín."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Báo chí độc lập thì ghi: đầu năm nay, trang tiến độ chính thức vẫn báo số không."
+    },
+    {
+      "id": "24",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.15,
+      "text": "Và cú ngược đời?"
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.2,
+      "text": "Độ sâu."
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Kênh chỉ sâu chừng năm mét rưỡi, vừa cho sà lan và tàu nhỏ."
+    },
+    {
+      "id": "27",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Còn cảng Cái Mép đón được tàu container hai trăm nghìn tấn."
+    },
+    {
+      "id": "28",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Lùa tàu ấy vào kênh thì như lùa voi qua ngõ hẻm."
+    },
+    {
+      "id": "29",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Nhiều nhà phân tích cho rằng, kênh mở thêm một cửa ra biển, nhưng chưa thay được cánh cửa cũ."
+    }
+  ]
+}

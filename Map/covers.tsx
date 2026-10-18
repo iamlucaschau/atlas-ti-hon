@@ -11,6 +11,8 @@ import { ATLAS } from "../Style Library/I-toy-atlas/toy-atlas";
 import { Scene as SingaporeScene } from "./i-singapore/Video";
 import { Scene as BruneiScene } from "./p1-brunei-chia-doi/Video";
 import { Scene as RailScene } from "./p2-duong-sat-cao-toc/Video";
+import { Scene as SandScene } from "./p2-cat-mien-tay/Video";
+import { Scene as CanalScene } from "./p2-funan-techo/Video";
 import { Scene as DeltaScene } from "./p3-dbscl-sut-lun/Video";
 import { Scene as KraScene } from "./p4-malacca-kra/Video";
 import { Scene as ClockScene } from "./p5-trung-quoc-mui-gio/Video";
@@ -88,7 +90,11 @@ export const COVERS: CoverSpec[] = [
     mark: { x: 560, y: 860, r: 120, arrowFrom: [900, 1200] } },
   // ~67 bn USD, "to buy one day" (C6, C8, C9)
   { slug: "p2-duong-sat-cao-toc", Scene: RailScene, frame: 20, hook: [{ text: "67 TỶ ĐÔ", punch: true }, { text: "ĐỂ MUA 1 NGÀY?" }], y: 240 },
+  // the delta of rivers is short of sand for its expressways (C2, C3) — ring on the sand pile
+  { slug: "p2-cat-mien-tay", Scene: SandScene, frame: 262, hook: [{ text: "XỨ SÔNG NƯỚC" }, { text: "LẠI KHÁT CÁT", punch: true }], y: 960,
+    mark: { x: 420, y: 545, r: 140, arrowFrom: [820, 880] } },
   // ~0.8 m above sea level, sinking ~1 cm/yr (C1, C3)
+  { slug: "p2-funan-techo", Scene: CanalScene, frame: 835, hook: [{ text: "KÊNH CAMPUCHIA" }, { text: "LẤY NƯỚC SÔNG HẬU?", punch: true }], y: 230 },
   { slug: "p3-dbscl-sut-lun", Scene: DeltaScene, frame: 178, hook: [{ text: "MIỀN TÂY CHỈ CAO" }, { text: "80 CM", punch: true }, { text: "VÀ ĐANG LÚN" }], y: 220 },
   // nearly a third of seaborne oil squeezes through Malacca (C1) — ring on the strait
   { slug: "p4-malacca-kra", Scene: KraScene, frame: 30, hook: [{ text: "GẦN 1/3 DẦU ĐI BIỂN" }, { text: "CHEN QUA ĐÂY", punch: true }], y: 230,

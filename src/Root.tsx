@@ -3,6 +3,8 @@ import { PVR } from "./series/pvr/theme";
 import { ISingapore, iSingaporeDuration } from "../Map/i-singapore/Video";
 import { P1BruneiChiaDoi, p1BruneiChiaDoiDuration } from "../Map/p1-brunei-chia-doi/Video";
 import { P2DuongSatCaoToc, p2DuongSatCaoTocDuration } from "../Map/p2-duong-sat-cao-toc/Video";
+import { P2CatMienTay, p2CatMienTayDuration } from "../Map/p2-cat-mien-tay/Video";
+import { P2FunanTecho, p2FunanTechoDuration } from "../Map/p2-funan-techo/Video";
 import { P3DbsclSutLun, p3DbsclSutLunDuration } from "../Map/p3-dbscl-sut-lun/Video";
 import { P4MalaccaKra, p4MalaccaKraDuration } from "../Map/p4-malacca-kra/Video";
 import { P5TrungQuocMuiGio, p5TrungQuocMuiGioDuration } from "../Map/p5-trung-quoc-mui-gio/Video";
@@ -14,6 +16,8 @@ const EPISODES = [
   { id: "Map-Singapore", component: ISingapore, duration: iSingaporeDuration },
   { id: "Map-P1-BruneiChiaDoi", component: P1BruneiChiaDoi, duration: p1BruneiChiaDoiDuration },
   { id: "Map-P2-DuongSatCaoToc", component: P2DuongSatCaoToc, duration: p2DuongSatCaoTocDuration },
+  { id: "Map-P2-CatMienTay", component: P2CatMienTay, duration: p2CatMienTayDuration },
+  { id: "Map-P2-FunanTecho", component: P2FunanTecho, duration: p2FunanTechoDuration },
   { id: "Map-P3-DbsclSutLun", component: P3DbsclSutLun, duration: p3DbsclSutLunDuration },
   { id: "Map-P4-MalaccaKra", component: P4MalaccaKra, duration: p4MalaccaKraDuration },
   { id: "Map-P5-TrungQuocMuiGio", component: P5TrungQuocMuiGio, duration: p5TrungQuocMuiGioDuration },

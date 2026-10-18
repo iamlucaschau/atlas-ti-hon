@@ -28,6 +28,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 | Soi thêm khung | `npm run sheet -- <slug> --at 0.9` · `--from 30 --to 32 --every 0.2` · `<giây> <giây>` |
 | Ảnh kiểm tra 1 khung | `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35` |
 | Render tập | `npm run final -- <slug>` → render, master, bản lặp 2 vòng vào `Map/<slug>/`, đo LUFS / đỉnh / chỗ nối vòng (thoát mã 1 nếu trượt) |
+| Soát khung hình sau render | `python -P scripts/review.py <slug>` → xem hết `out/review/<slug>/sheet-*.png`, tự sửa rồi render lại (`04_QUY-TRINH` §6) |
 | Ảnh bìa | `npx remotion still Cover-<slug> out/cover.png` → JPG < 2 MB vào `Map/<slug>/cover.jpg` |
 | Giọng đọc | `node scripts/episode.mjs prep "Map/<slug>"` → `npm run voiceover -- voiceover/<slug>.json` → `node scripts/episode.mjs export "Map/<slug>" --loop --tail=0.7` → `python -P scripts/words.py <slug> vi` |
 | Kiểm tra key TTS | `npm run tts:check` (không tốn quota) |
@@ -73,7 +74,7 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 - **Tên nước:** mọi nước được gọi tên hoặc tô màu có `CountryTag` (tên + cờ + viền loé khi đọc tên); nước nền không nhãn.
 - **Hoàng Sa, Trường Sa:** khung có cả bờ biển Việt Nam / Biển Đông → chấm đảo màu Việt Nam (`VnIslands`); tên kiểu ghim chỉ hiện khi camera tới gần. Lãnh thổ tranh chấp: dừng ở Cổng 2 cho Lucas chọn cách vẽ.
 - **Số liệu:** không nguồn = không dùng; ghi loại số liệu (GDP/người ≠ thu nhập); video đối thủ, transcript không phải nguồn.
-- **Âm thanh:** chỉ SFX thật (Pixabay, `public/sfx/catalog.json`, `<Sfx>`/`SfxCues`, mức −15 LUFS), tối đa 1 SFX mỗi beat; không SFX tổng hợp/cartoon. Nhạc nền theo pillar `MusicBed` (`PILLAR_MUSIC`, −28 LUFS). Master: `loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.72:level=false`, AAC 256k.
+- **Âm thanh:** chỉ SFX thật (Pixabay, `public/sfx/catalog.json`, `<Sfx>`/`SfxCues`, mức −15 LUFS), tối đa 1 SFX mỗi beat; không SFX tổng hợp/cartoon. Nhạc nền theo pillar `MusicBed` (`PILLAR_MUSIC`, −28 LUFS) — **Kevin MacLeod CC BY 4.0, ghi công bắt buộc trong mô tả** (2026-10-17; **không** dùng nhạc Pixabay: đều có Content ID, tập P4 từng bị chặn). Master: `loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.72:level=false`, AAC 256k.
 
 ## Giọng đọc (Gemini TTS)
 
@@ -87,8 +88,9 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 1. `npm run lint` đạt.
 2. Vòng duyệt hình (skill `review-loop`): `npm run draft -- <slug>`, xem **mọi** contact sheet, sửa đè hình / tràn vùng an toàn, lặp tới khi một lượt sạch.
 3. `npm run final -- <slug>`: mọi dòng ✓ (≈ −14 LUFS, đỉnh ≤ −1,5 dB, khung cuối ≈ khung đầu).
-4. Nhờ Lucas nghe bản `-loop-preview-x2.mp4` (Luis không nghe được).
-5. Xoá ảnh/khung thử trong `out/`.
+4. **Soát từng khung bản render** (`python -P scripts/review.py <slug>`, xem hết mọi tờ): chỗ nào xấu / chưa đạt thì **tự sửa**, render + master lại, soát lại tới khi sạch; báo Lucas đã sửa gì (Lucas 2026-10-16).
+5. Nhờ Lucas nghe bản `-loop-preview-x2.mp4` (Luis không nghe được). Mô tả có dòng ghi công nhạc Kevin MacLeod (Bible §6).
+6. Xoá ảnh/khung thử trong `out/` (cả `out/review/`, `out/sheets/`).
 
 ## Bản quyền & bảo mật
 

@@ -103,18 +103,17 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
 - **Giọng:** Gemini TTS, nam, `Orus`, model `gemini-3.8-flash-tts`, **tempo 1.1** (Lucas 2026-10-13; 1.2 nghe kém tự nhiên, 1.0 hơi chậm), ~235–240 wpm, khoảng nghỉ ngắn `{sentence 0.06, paragraph 0.12, scene 0.25}` cho nhịp nhanh.
 - Chỉ dẫn giọng mặc định: *"Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trung tính, trầm vừa và đáng tin, như người kể chuyện lịch sử hấp dẫn. Mở đầu nhanh, gọn và tò mò; giải thích rõ ràng; đọc năm, con số và địa danh chậm hơn một nhịp. Không cường điệu, không hét. Câu cuối chưa kết thúc: giữ giọng treo lên."*
 - **Giọng kể "vui vừa phải"** (Lucas 2026-10-13): cảnh đời thường, chơi chữ nhẹ, tối đa 1–2 câu khẩu ngữ/lóng mỗi video; số liệu vẫn chuẩn; phần tranh luận vẫn trung tính.
-- **Nhạc nền theo pillar** (Lucas 2026-10-14): nhạc Pixabay có giấy phép (dùng trong video, không cần ghi công, không phân phối lại file; `public/sfx/music/`, nguồn trong `scripts/music-list.json`). `<MusicBed file={PILLAR_MUSIC.Px} />` tự cân về **−28 LUFS** (~14 dB dưới giọng trước master), fade 0,3 s hai đầu cho mượt chỗ nối vòng, `duck` để lắng ở cao trào.
+- **Nhạc nền theo pillar** (Lucas 2026-10-17, thay bộ Pixabay 2026-10-14): nhạc **Kevin MacLeod (incompetech.com), CC BY 4.0** — dùng được cả YouTube lẫn mạng khác, **bắt buộc ghi công** trong mô tả mỗi tập: `"Tên bài" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/` (caption TikTok/Reels ghi gọn). File ở `public/sfx/music/*-km.mp3` (không commit, nguồn trong `scripts/music-list-kevinmacleod.json`). `<MusicBed file={PILLAR_MUSIC.Px} />` tự cân về **−28 LUFS**, fade 0,3 s hai đầu, `duck` để lắng ở cao trào.
 
-  | Pillar | Bài chính | Bài dự phòng |
+  | Pillar | Bài chính (`PILLAR_MUSIC`) | Bài dự phòng (`PILLAR_MUSIC_ALT`) |
   |---|---|---|
-  | P1 Lịch sử | Historical Documentary Music — Tunetank (hồi hộp, dồn) | History — Tatamusic (êm) |
-  | P2 Tiền & bản đồ | Explainer — AtlasAudio (tươi, explainer) | This Light Inspiration — moodmode |
-  | P3 Địa lý hiện tượng | Documentary Nature — leberch (khám phá, êm) | *(trống — cần chọn bài mới)* |
-  | P4 Hành trình | Travel Adventure — leberch (phiêu lưu, êm) | *(trống — cần chọn bài mới)* |
-  | P5 Kỳ lạ & kỷ lục | Mystery Quirky — leberch (tò mò, tinh nghịch) | The Smallest Detective — Tomas_Herudek |
+  | P1 Lịch sử | Heroic Age (dàn nhạc, hồi hộp) | Lightless Dawn |
+  | P2 Tiền & bản đồ | Wallpaper (nhẹ, tươi) | Inspired |
+  | P3 Địa lý hiện tượng | Floating Cities (ambient, khám phá) | Ether Vox |
+  | P4 Hành trình | Ascending the Vale (màu châu Á) | Crossing the Chasm |
+  | P5 Kỳ lạ & kỷ lục | Investigations (tò mò) | Sneaky Snitch |
 
-  YouTube đôi khi gắn Content ID nhầm cho nhạc Pixabay → khiếu nại kèm link trang Pixabay của bài (cột `source` trong `public/sfx/catalog.json`).
-  **Đã loại:** Cinematic Documentary — Lexin_Music (Pixabay 115669): tập P4 bị chặn toàn cầu 2026-10-17, Content ID "Seaside Morning — Aleksey Chistilin" (Elite Alliance Music). Không dùng lại. Science Documentary — Lexin_Music (Pixabay 169621) cũng bỏ để phòng ngừa (cùng tác giả). Tránh nhạc của Lexin_Music.
+  **Content ID:** nhạc Kevin MacLeod cũng đã đăng ký Content ID; khiếu nại thường do **thiếu ghi công** → thêm dòng ghi công vào mô tả rồi kháng nghị (gỡ trong ~72 giờ), nhiều video thì dùng form gỡ hàng loạt trên trang incompetech "YouTube Content ID" hoặc email help@incompetech.com. **Không** dùng lại nhạc Pixabay: 2026-10-17 cả 10 bài cũ đều "Content ID Registered", tập P4 bị chặn toàn cầu (khiếu nại "Seaside Morning" — Aleksey Chistilin / Elite Alliance Music); dò 120 bài Pixabay chỉ 2 bài chưa đăng ký. **Trước khi chọn nhạc mới:** kiểm trang bài có "Content ID" / chính sách khiếu nại của tác giả, và đưa dòng ghi công vào `xuat-ban.md`.
 - SFX thật Pixabay: whoosh mỗi cú bay, click khi sticker hiện, deep hit ở con số chốt; không pop/ding hoạt hình; master −14 LUFS / −1,5 dBTP.
 
 ## 7. Cấu trúc bắt buộc mọi tập
@@ -168,4 +167,6 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 | 2026-10-14 | Tên nước + cờ + viền sáng cho mọi nước được gọi tên / tô màu (`CountryTag`) | Lucas |
 | 2026-10-14 | 7 luật kịch bản sau so sánh đối thủ: đáp câu hỏi treo 1–3 chữ, ≥ 1 khoảnh khắc người, 1–2 câu đùa, hai phe, 1 số/câu, twist là nhịp cuối, kho câu thay thế | Lucas |
 | 2026-10-13 | Phụ đề tối đa 4 chữ/dòng; từ khoá + con số vàng nhạt, chữ đang đọc vàng đậm + to 10 % | Lucas |
-| 2026-10-18 | Nhạc P4: loại Cinematic Documentary (Lexin_Music) vì dính Content ID "Seaside Morning", lên bài dự phòng Travel Adventure (leberch); P3 đổi phòng ngừa sang Documentary Nature (leberch) | Lucas |
+| 2026-10-17 | Đổi nhạc nền 5 pillar sang **Kevin MacLeod (CC BY 4.0, có ghi công)** sau khi tập P4 bị chặn toàn cầu vì Content ID nhạc Pixabay (§6) | Lucas |
+| 2026-10-16 | Thêm bước **soát từng khung bản render** (`scripts/review.py`): Luis tự sửa chỗ xấu / chưa đạt, render lại rồi mới giao (`04_QUY-TRINH-SAN-XUAT.md` §6) | Lucas |
+| 2026-10-18 | Ranh giới tỉnh: **OCHA/HDX COD-AB v02** (34 tỉnh, CC BY-IGO) trong kit `vn-provinces.tsx`; khi tô màu theo tỉnh, chấm Hoàng Sa / Trường Sa cùng màu Đà Nẵng / Khánh Hoà (§8.9; tập Tây Nguyên, Cổng 2) | Lucas |

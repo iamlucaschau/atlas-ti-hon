@@ -727,5 +727,95 @@
     "seconds": 97,
     "lufs": -7.8,
     "source": "https://pixabay.com/music/traditional-jazz-the-smallest-detective-funny-cartoon-playful-mysterious-music-495789/"
+  },
+  {
+    "file": "sfx/music/p1-heroic-age-km.mp3",
+    "category": "music",
+    "title": "p1 Heroic Age",
+    "author": "Kevin MacLeod",
+    "seconds": 97,
+    "lufs": -12.1,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p1-lightless-dawn-km.mp3",
+    "category": "music",
+    "title": "p1 Lightless Dawn",
+    "author": "Kevin MacLeod",
+    "seconds": 380,
+    "lufs": -24.3,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p2-wallpaper-km.mp3",
+    "category": "music",
+    "title": "p2 Wallpaper",
+    "author": "Kevin MacLeod",
+    "seconds": 220,
+    "lufs": -11.2,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p2-inspired-km.mp3",
+    "category": "music",
+    "title": "p2 Inspired",
+    "author": "Kevin MacLeod",
+    "seconds": 286,
+    "lufs": -12.8,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p3-floating-cities-km.mp3",
+    "category": "music",
+    "title": "p3 Floating Cities",
+    "author": "Kevin MacLeod",
+    "seconds": 184,
+    "lufs": -19.8,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p3-ether-vox-km.mp3",
+    "category": "music",
+    "title": "p3 Ether Vox",
+    "author": "Kevin MacLeod",
+    "seconds": 206,
+    "lufs": -14.1,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p4-ascending-the-vale-km.mp3",
+    "category": "music",
+    "title": "p4 Ascending the Vale",
+    "author": "Kevin MacLeod",
+    "seconds": 248,
+    "lufs": -18.9,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p4-crossing-the-chasm-km.mp3",
+    "category": "music",
+    "title": "p4 Crossing the Chasm",
+    "author": "Kevin MacLeod",
+    "seconds": 197,
+    "lufs": -12.8,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p5-investigations-km.mp3",
+    "category": "music",
+    "title": "p5 Investigations",
+    "author": "Kevin MacLeod",
+    "seconds": 94,
+    "lufs": -18.7,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/music/p5-sneaky-snitch-km.mp3",
+    "category": "music",
+    "title": "p5 Sneaky Snitch",
+    "author": "Kevin MacLeod",
+    "seconds": 137,
+    "lufs": -17.5,
+    "source": "https://incompetech.com/music/royalty-free/music.html"
   }
 ]
