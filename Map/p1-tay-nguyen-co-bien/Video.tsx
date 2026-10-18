@@ -94,6 +94,7 @@ const FAR: [number, number][] = [[107.62, 13.62], [108.4, 13.75], QUY_NHON];
 const byName = (set: Province[], name: string) => set.find((p) => p.name === name)!;
 const DA_NANG = byName(VN2025, "Đà Nẵng");
 const KHANH_HOA = byName(VN2025, "Khánh Hòa");
+const ISLAND_PROVINCES = [DA_NANG.name, KHANH_HOA.name];
 
 /** Visible from a (fade in over fin frames) until b (fade out over fout). */
 const win = (f: number, a: number, b = Infinity, fin = 8, fout = 8) => Math.min(prog(f, a, fin), b === Infinity ? 1 : 1 - prog(f, b, fout));
@@ -161,7 +162,12 @@ export const Scene: React.FC = () => {
     ...NEW4.map((name) => ({ name, v: f < at("15") ? flashAt(f, [at("13", 0.2)]) : 0 })),
     { name: "Lâm Đồng", v: flashAt(f, [at("24", 0.1)]) },
     // [PHE 1] every merged province flashes once
-    ...VN2025.map((p) => ({ name: p.name, v: f >= at("22") && f < at("23") ? flashAt(f, [at("22", 0.15)]) * 0.7 : 0 })),
+    // (Đà Nẵng and Khánh Hoà left out: their Hoàng Sa / Trường Sa parts would ring every island in gold)
+    ...VN2025.filter((p) => !ISLAND_PROVINCES.includes(p.name)).map((p) => ({
+      name: p.name, v: f >= at("22") && f < at("23") ? flashAt(f, [at("22", 0.15)]) * 0.7 : 0,
+    })),
+    // line 27: Gia Lai named again
+    { name: "Gia Lai", v: flashAt(f, [at("27", 0.05)]) },
   ];
   const coastFills = (set: Province[]): ProvFill[] => set.map((p) => ({ name: p.name, color: p.coastal ? COAST : INLAND }));
 
@@ -247,8 +253,8 @@ export const Scene: React.FC = () => {
       )}
 
       {/* ── 17–19 land + port: coffee at Pleiku, port at Quy Nhơn, the truck goes down ── */}
-      <CityPin cam={cam} f={f} label="PLEIKU" at={PLEIKU} from={at("17", 0.05)} o={show(f, at("17", 0.05), at("20") - 4) * (f >= at("27") ? 0 : 1)} side="above" />
-      <ImgSticker src={`${IMG}/g-01-coffee-sacks.png`} x={pk[0] + 30} y={pk[1] + 150} w={230} f={f} at={at("17", 0.2)} out={at("19", 0.2)} />
+      <CityPin cam={cam} f={f} label="PLEIKU" at={PLEIKU} from={at("17", 0.35)} o={show(f, at("17", 0.35), at("20") - 4) * (f >= at("27") ? 0 : 1)} side="above" />
+      <ImgSticker src={`${IMG}/g-01-coffee-sacks.png`} x={pk[0] + 30} y={pk[1] + 150} w={230} f={f} at={at("17", 0.4)} out={at("19", 0.2)} />
       <ImgSticker src={OLD_IMG("i-singapore", "i-10-port-crane.png")} x={qn[0] - 30} y={qn[1] - 120} w={170} f={f} at={at("18", 0.1)} out={at("20") - 4} />
       <ImgSticker src={OLD_IMG("p4-malacca-kra", "t-02-container-ship.png")} x={qn[0] + 40} y={qn[1] + 110} w={190} f={f} at={at("18", 0.3)} out={at("20") - 4} />
       {f >= at("19") && f < at("20") && (() => {
@@ -314,6 +320,7 @@ export const Scene: React.FC = () => {
       })()}
 
       {/* ── 27–28 [TWIST] Gia Lai's administrative centre sits by the sea ── */}
+      {f >= at("27", 0.15) && f < at("27", 0.7) && <Pulse x={pk[0]} y={pk[1]} f={f} o={1 - prog(f, at("27", 0.6), 6)} />}
       <CityPin cam={cam} f={f} label="PLEIKU" at={PLEIKU} from={at("27", 0.1)} o={0.55 * show(f, at("27", 0.1), at("28", 0.5))} side="above" />
       <ImgSticker src={OLD_IMG("p4-malacca-kra", "t-11-gov-building.png")} x={qn[0] - 40} y={qn[1] - 130} w={180} f={f} at={at("27", 0.7)} out={at("28", 0.5)} />
       {f >= at("27", 0.7) && f < at("28", 0.6) && <Pulse x={qn[0]} y={qn[1]} f={f} color={ATLAS.red} o={1 - prog(f, at("28", 0.5), 6)} />}

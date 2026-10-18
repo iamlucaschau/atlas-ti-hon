@@ -22,6 +22,7 @@
 > - Tuổi Trẻ (2/4/2025): ý kiến ông Huỳnh Thành, nguyên phó trưởng đoàn chuyên trách Đoàn ĐBQH tỉnh Gia Lai, và ông Vũ Hoàng Hà, nguyên Bí thư Tỉnh uỷ Bình Định
 > - Mekong ASEAN (14/5/2025): ĐBQH Nguyễn Quốc Hận về khoảng cách từ xã tới trung tâm hành chính tỉnh; Pháp Luật TP.HCM
 > - Tạp chí Công Thương, Thời báo Tài chính Việt Nam: trung tâm hành chính tỉnh Gia Lai mới đặt tại Quy Nhơn; VnEconomy (23/9/2025): cảng Quy Nhơn
+> - Nhạc: "Heroic Age" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/
 > - Ranh giới tỉnh: OCHA/HDX, Viet Nam Subnational Administrative Boundaries (COD-AB v02, CC BY-IGO); ranh giới 63 tỉnh cũ và bản đồ nền: Natural Earth. **Đường xe Pleiku – Quy Nhơn là sơ đồ minh hoạ.**
 >
 > #Shorts #AtlasTiHon #BanDo #DiaLy #VietNam #TayNguyen #SapNhapTinh #GiaLai #LamDong
@@ -46,9 +47,12 @@ Gộp 63 tỉnh còn 34, tỉnh nào ở Tây Nguyên cũng được một khúc
 Tỉnh bạn sau khi gộp có biển không? 👇
 
 #AtlasTiHon #BanDo #DiaLy #TayNguyen #SapNhapTinh #VietNam
+
+Nhạc: "Heroic Age" Kevin MacLeod (incompetech.com), CC BY 4.0
 ```
 
 ## Trước khi đăng (còn mở)
 
 - [ ] Lucas nghe bản `-loop-preview-x2.mp4` (phát âm Đắk Lắk, Pleiku; hai câu đùa; chỗ nối vòng).
 - [ ] Chủ đề chính sách: đọc lại mô tả, giữ trung tính.
+- [x] 2026-10-18: render lại với nhạc nền "Heroic Age" (Kevin MacLeod, CC BY 4.0) — **dòng ghi công bắt buộc có trong mô tả YouTube và caption mạng khác**; nhạc Pixabay cũ có Content ID.

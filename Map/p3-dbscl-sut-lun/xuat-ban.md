@@ -24,6 +24,7 @@
 > - WWF (2018), UNESCO–SEI — phù sa sông Mekong giảm
 > - SGGP, VnEconomy — hạn mặn 2019–2020; VnEconomy — sản lượng lúa ĐBSCL
 > - "Nhanh gấp ~3 lần" = 11 mm ÷ 3,7 mm (phép tính).
+> - Nhạc: "Floating Cities" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/
 > - Bản đồ: Natural Earth. **Vùng đồng bằng, dòng sông và vệt nước mặn trên bản đồ là minh hoạ**, không phải bản đồ độ cao hay ranh giới chính thức.
 >
 > #Shorts #AtlasTiHon #BanDo #DiaLy #MoiTruong #KhiHau #VietNam #MienTay #Mekong
@@ -50,6 +51,8 @@ Miền Tây chỉ cao hơn mặt biển khoảng 80 cm… và đang lún 😟
 Nhà bạn có dùng giếng khoan không? 👇
 
 #AtlasTiHon #BanDo #DiaLy #MoiTruong #MienTay #Mekong
+
+Nhạc: "Floating Cities" Kevin MacLeod (incompetech.com), CC BY 4.0
 ```
 
 TikTok có thể thêm `#HocCungTikTok`. Tối đa ~6 hashtag trên các nền tảng này.
@@ -58,3 +61,4 @@ TikTok có thể thêm `#HocCungTikTok`. Tối đa ~6 hashtag trên các nền t
 
 - [ ] C10: số lúa gạo cả năm của Tổng cục Thống kê (câu "vựa lúa lớn nhất cả nước").
 - [ ] Tên kênh + câu giới thiệu kênh.
+- [x] 2026-10-18: render lại với nhạc nền "Floating Cities" (Kevin MacLeod, CC BY 4.0) — **dòng ghi công bắt buộc có trong mô tả YouTube và caption mạng khác**; nhạc Pixabay cũ có Content ID.

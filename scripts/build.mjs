@@ -15,8 +15,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { FPS, ROOT, episode, ffmpeg, ffmpegLog, probe, rel, remotion, run } from "./ep-lib.mjs";
 
-/** Master chain, Bible §6 / 04_QUY-TRINH-SAN-XUAT §6. */
-const MASTER_AF = "loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.72:level=false";
+/**
+ * Master chain, Bible §6 / 04_QUY-TRINH-SAN-XUAT §6. Limiter 0.66 (was 0.72, Lucas 2026-10-18): short SFX are
+ * boosted up to +12 dB to reach −15 LUFS and clip the raw mix; with 0.72 the P3 master came out at −0.9 dBTP after AAC.
+ */
+const MASTER_AF = "loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.66:level=false";
 const TARGET_LUFS = -14;
 const LUFS_TOLERANCE = 1;
 const MAX_PEAK = -1.5; // dBFS, measured with ebur128 true peak

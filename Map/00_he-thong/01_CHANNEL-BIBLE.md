@@ -170,3 +170,4 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 | 2026-10-17 | Đổi nhạc nền 5 pillar sang **Kevin MacLeod (CC BY 4.0, có ghi công)** sau khi tập P4 bị chặn toàn cầu vì Content ID nhạc Pixabay (§6) | Lucas |
 | 2026-10-16 | Thêm bước **soát từng khung bản render** (`scripts/review.py`): Luis tự sửa chỗ xấu / chưa đạt, render lại rồi mới giao (`04_QUY-TRINH-SAN-XUAT.md` §6) | Lucas |
 | 2026-10-18 | Ranh giới tỉnh: **OCHA/HDX COD-AB v02** (34 tỉnh, CC BY-IGO) trong kit `vn-provinces.tsx`; khi tô màu theo tỉnh, chấm Hoàng Sa / Trường Sa cùng màu Đà Nẵng / Khánh Hoà (§8.9; tập Tây Nguyên, Cổng 2) | Lucas |
+| 2026-10-18 | Chuỗi master: hạ `alimiter` **0,72 → 0,66** (đỉnh sau AAC luôn ≤ −1,5 dBTP; SFX ngắn được kéo tới +12 dB làm bản thô chạm 0 dBFS) | Lucas |
