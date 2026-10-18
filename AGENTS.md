@@ -15,6 +15,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 - Quy trình **5 cổng**; hết mỗi cổng **dừng lại chờ "Duyệt Cổng N"**. Việc nhỏ, hiển nhiên (sửa lỗi đè hình, chỉnh vị trí, lỗi lint) thì tự làm, không hỏi; chỉ hỏi ở cổng hoặc khi thay đổi ảnh hưởng toàn kênh.
 - Khi Lucas hỏi "bạn hiểu ý mình chứ" → tóm lại cách hiểu + các lựa chọn, **chưa làm** cho tới khi Lucas nói làm.
 - **Ảnh nhân vật / đạo cụ do Lucas tạo** trong app (Gemini / ChatGPT) từ bộ prompt Luis viết (Free Tier Gemini API không có quota ảnh). Luis tách nền, vẽ bản đồ, cờ, số, chữ bằng vector.
+- **Hiển thị trong chat (Lucas 2026-10-19):** gợi ý chủ đề (Cổng 1), kịch bản (Cổng 3) và prompt ảnh (Cổng 4) phải **in thẳng trong câu trả lời** để Lucas đọc ngay, không chỉ ghi vào file. Khi gửi prompt ảnh, **tạo sẵn thư mục `public/images/<slug>/`** để Lucas dán ảnh vào.
 - **Commit / push chỉ khi Lucas bảo.** Trước khi commit: `git status --short` là **một bước riêng**, đọc kết quả; thấy thư mục mới, video, mp3, key hay tài liệu bên thứ ba → **dừng lại hỏi**. Không bao giờ push đè (`--force`) khi chưa được Lucas đồng ý. (Sự cố 2026-10-15: video đối thủ lỡ bị push.)
 - Báo cáo thật: lỗi, cảnh báo, chỗ chưa chắc đều nói rõ; số liệu nào chưa kiểm chứng thì ghi ⚠️.
 
@@ -45,7 +46,7 @@ Map/<slug>/           một tập: cong-2_so-nguon, kich-ban-…-FINAL, spec, be
 Map/covers.tsx        ảnh bìa của mọi tập (khung + hook 2 tầng + vòng đỏ)
 Map/cong-1_*.md       hồ sơ Cổng 1 · Map/phan-tich-doi-thu/ phân tích 20 video đối thủ (BAO-CAO, BOC-TACH, SO-SANH)
 Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas (skip, layer), camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub…
-Style Library/I-toy-atlas/vn-provinces.tsx  Việt Nam theo tỉnh: VN2025 (34 tỉnh, OCHA/HDX) · VN2024 (63 tỉnh, Natural Earth), ProvinceMap (tô, loang, viền loé, viền biển), ProvinceTag, CityPin — dùng qua `<Atlas skip={["Vietnam"]} layer={…} />`
+Style Library/I-toy-atlas/vn-provinces.tsx  Việt Nam theo tỉnh: VN2025 (34 tỉnh, OCHA/HDX) · VN2024 (63 tỉnh, Natural Earth), ProvinceMap (tô, loang, viền loé, viền biển), ProvinceTag, CityPin, provinceBorder + BorderLine (ranh giới chung hai tỉnh) — dùng qua `<Atlas skip={["Vietnam"]} layer={…} />`
 Style Library/kit-common.ts, subs.tsx     font Bricolage Grotesque, easing, phụ đề karaoke
 src/Root.tsx          đăng ký mọi tập (thư mục Episodes) và ảnh bìa (Covers)
 src/series/pvr/       episode.ts (thời lượng), sfx.tsx (Sfx, MusicBed, PILLAR_MUSIC), safe.tsx (SafeGuide), theme.ts (1080×1920, SAFE)
@@ -55,7 +56,7 @@ public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voic
 scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
 ```
 
-ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Cover-<slug>`.
+ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Cover-<slug>`.
 
 ## Luật Remotion (không được phá)
 

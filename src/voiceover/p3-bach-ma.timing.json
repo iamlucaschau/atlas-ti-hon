@@ -1,0 +1,175 @@
+{
+  "durationInSeconds": 69.44629166666667,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.093,
+      "text": "Tháng lạnh nhất, Hà Nội trung bình chỉ khoảng mười sáu độ."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 3.1527916666666664,
+      "end": 5.093791666666666,
+      "text": "Sài Gòn vẫn hơn hai mươi lăm độ."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 5.154125,
+      "end": 6.646125,
+      "text": "Thủ phạm là một dãy núi."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 6.7063749999999995,
+      "end": 7.301374999999999,
+      "text": "Dãy nào?"
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "start": 7.36125,
+      "end": 8.06225,
+      "text": "Bạch Mã."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 8.311791666666666,
+      "end": 11.846791666666666,
+      "text": "Bạch Mã là nhánh núi chạy ngang ra sát biển, giữa Huế và Đà Nẵng."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 11.906749999999999,
+      "end": 17.59975,
+      "text": "Năm một nghìn tám trăm hai mươi sáu, vua Minh Mạng cho xây một cửa ải trên đỉnh đèo Hải Vân, ngay đầu dãy núi."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "start": 17.65983333333333,
+      "end": 19.200833333333332,
+      "text": "Cửa ải canh đường Bắc Nam."
+    },
+    {
+      "id": "09",
+      "scene": "s2",
+      "start": 19.260624999999997,
+      "end": 21.426624999999998,
+      "text": "Còn dãy núi thì canh cả gió."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 21.676666666666662,
+      "end": 24.418666666666663,
+      "text": "Mùa đông, gió mùa đông bắc từ phương Bắc tràn xuống."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 24.47858333333333,
+      "end": 27.26158333333333,
+      "text": "Càng đi về phía nam, gió càng yếu và bớt lạnh."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "start": 27.321791666666662,
+      "end": 29.35879166666666,
+      "text": "Tới Bạch Mã, nó gần như dừng lại."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 29.609249999999996,
+      "end": 32.08324999999999,
+      "text": "Vì thế phía bắc có mùa đông lạnh hai, ba tháng."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 32.14362499999999,
+      "end": 34.74762499999999,
+      "text": "Phía nam chỉ có hai mùa: mưa và khô."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 34.80716666666666,
+      "end": 38.42716666666666,
+      "text": "Người Hà Nội đã lôi áo phao ra, người Sài Gòn vẫn áo thun."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "start": 38.67679166666666,
+      "end": 40.39379166666666,
+      "text": "Nhưng gió mùa đông bắc không chỉ mang rét."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 40.454249999999995,
+      "end": 46.07525,
+      "text": "Gió ẩm từ biển thổi vào, gặp núi sát bờ, cùng với bão và không khí lạnh, mưa trút xuống miền Trung."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 46.13504166666666,
+      "end": 49.249041666666656,
+      "text": "Mùa mưa ở đây đến muộn, từ tháng tám tới tháng mười hai."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 49.498708333333326,
+      "end": 52.349708333333325,
+      "text": "Riêng tháng mười, Huế mưa gần tám trăm li."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 52.409499999999994,
+      "end": 54.439499999999995,
+      "text": "Gần bằng nửa lượng mưa cả năm của Hà Nội."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 54.49983333333333,
+      "end": 57.46783333333333,
+      "text": "Ở Huế, áo mưa mới là áo khoác mùa đông."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "start": 57.527499999999996,
+      "end": 59.713499999999996,
+      "text": "Cùng lúc ấy, Sài Gòn đã vào mùa khô."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 59.96304166666666,
+      "end": 65.52804166666667,
+      "text": "Mà nơi được coi là mưa nhiều nhất nước, lại chính là đỉnh Bạch Mã, mỗi năm gần mười nghìn li."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "start": 65.58762499999999,
+      "end": 69.19662499999998,
+      "text": "Một bức tường, chặn rét cho miền Nam, và hứng mưa nhiều nhất nước."
+    }
+  ]
+}

@@ -17,6 +17,7 @@ import { Scene as DeltaScene } from "./p3-dbscl-sut-lun/Video";
 import { Scene as KraScene } from "./p4-malacca-kra/Video";
 import { Scene as ClockScene } from "./p5-trung-quoc-mui-gio/Video";
 import { Scene as HighlandsScene } from "./p1-tay-nguyen-co-bien/Video";
+import { Scene as BachMaScene } from "./p3-bach-ma/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -104,6 +105,9 @@ export const COVERS: CoverSpec[] = [
   // every old Tây Nguyên province is now inside a province with a coast (C3, C4) — line 12: the new coasts glow; ring on Gia Lai's
   { slug: "p1-tay-nguyen-co-bien", Scene: HighlandsScene, frame: 640, hook: [{ text: "TÂY NGUYÊN" }, { text: "CÓ BIỂN?", punch: true }], y: 230,
     mark: { x: 670, y: 720, r: 105, arrowFrom: [900, 1110] } },
+  // monthly means 16 °C (Hà Nội) ↔ > 25 °C (Sài Gòn), the Bạch Mã ridge in between (C1, C2, C4) — ring on the Bạch Mã ridge between the cold and warm halves
+  { slug: "p3-bach-ma", Scene: BachMaScene, frame: 1000, hook: [{ text: "MỘT DÃY NÚI" }, { text: "CHIA ĐÔI MÙA ĐÔNG", punch: true }], y: 230,
+    mark: { x: 385, y: 680, r: 95, arrowFrom: [700, 880] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

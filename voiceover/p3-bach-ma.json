@@ -1,0 +1,184 @@
+{
+  "name": "p3-bach-ma",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc năm, con số và địa danh chậm hơn một nhịp. \"Dãy nào?\" hỏi nhẹ; \"Bạch Mã.\" ngắn, chắc, ngừng một nhịp sau đó. Hai câu \"canh đường Bắc Nam… canh cả gió\" đọc có ý cười nhẹ, nhấn chữ \"canh\". Câu về áo phao, áo thun và câu về áo mưa đọc vui. \"li\" là mi-li-mét. Không cường điệu. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Tháng lạnh nhất, Hà Nội trung bình chỉ khoảng mười sáu độ."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Sài Gòn vẫn hơn hai mươi lăm độ."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Thủ phạm là một dãy núi."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Dãy nào?"
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Bạch Mã."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Bạch Mã là nhánh núi chạy ngang ra sát biển, giữa Huế và Đà Nẵng."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn tám trăm hai mươi sáu, vua Minh Mạng cho xây một cửa ải trên đỉnh đèo Hải Vân, ngay đầu dãy núi."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Cửa ải canh đường Bắc Nam."
+    },
+    {
+      "id": "09",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Còn dãy núi thì canh cả gió."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Mùa đông, gió mùa đông bắc từ phương Bắc tràn xuống."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Càng đi về phía nam, gió càng yếu và bớt lạnh."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Tới Bạch Mã, nó gần như dừng lại."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Vì thế phía bắc có mùa đông lạnh hai, ba tháng."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Phía nam chỉ có hai mùa: mưa và khô."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Người Hà Nội đã lôi áo phao ra, người Sài Gòn vẫn áo thun."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Nhưng gió mùa đông bắc không chỉ mang rét."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Gió ẩm từ biển thổi vào, gặp núi sát bờ, cùng với bão và không khí lạnh, mưa trút xuống miền Trung."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Mùa mưa ở đây đến muộn, từ tháng tám tới tháng mười hai."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Riêng tháng mười, Huế mưa gần tám trăm li."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Gần bằng nửa lượng mưa cả năm của Hà Nội."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Ở Huế, áo mưa mới là áo khoác mùa đông."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Cùng lúc ấy, Sài Gòn đã vào mùa khô."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Mà nơi được coi là mưa nhiều nhất nước, lại chính là đỉnh Bạch Mã, mỗi năm gần mười nghìn li."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Một bức tường, chặn rét cho miền Nam, và hứng mưa nhiều nhất nước."
+    }
+  ]
+}

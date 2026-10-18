@@ -45,6 +45,9 @@
 | Vì sao phần lớn dân Mỹ sống phía đông một đường kẻ? | | T | ý tưởng (playbook) |
 | Vì sao bờ Thái Bình Dương của Colombia gần như trống? | | T | ý tưởng (playbook) |
 | Vì sao máy bay không bay qua Tây Tạng? | ✔ | T | ý tưởng (playbook) |
+| Bức tường Bạch Mã: chặn rét cho miền Nam, trút mưa xuống miền Trung (ghép "Sài Gòn 2 mùa" + "miền Trung lũ") | ✔ | T | **Đã làm** (`Map/p3-bach-ma/`, 5 cổng duyệt 2026-10-19) |
+| Vì sao Sa Pa có tuyết, còn gần như cả Đông Nam Á thì không? | ✔ | T | ý tưởng 2026-10-18, 35,5 (hoặc làm chi tiết trong tập Bạch Mã) |
+| Vịnh Hạ Long: vì sao có gần 2.000 hòn đảo đá vôi? | ✔ | T | ý tưởng 2026-10-18, 34 |
 
 ## P4 — Tuyến đường & hành trình (10%)
 

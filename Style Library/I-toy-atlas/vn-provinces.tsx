@@ -13,7 +13,7 @@
 import { geoBounds, geoCentroid } from "d3-geo";
 import type { FeatureCollection, Geometry } from "geojson";
 import { interpolate } from "remotion";
-import { feature, neighbors } from "topojson-client";
+import { feature, mesh, neighbors } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import { CANVAS, CLAMP, FONT, pop, SAFE } from "../kit-common";
 import topo2024 from "./geo/vn-provinces-2024.topo.json";
@@ -52,6 +52,38 @@ const load = (topo: unknown): Province[] => {
 
 export const VN2024 = load(topo2024);
 export const VN2025 = load(topo2025);
+
+/**
+ * The border shared by two 2025 provinces (e.g. Huế | Đà Nẵng = the Bạch Mã ridge out to the Hải Vân pass),
+ * from the same HDX topology: `d` is its base-projection path, `ll` its lon/lat points west → east.
+ */
+export const provinceBorder = (a: string, b: string) => {
+  const t = topo2025 as unknown as Topology;
+  const m = mesh(t, t.objects.provinces as GeometryCollection, (x, y) => {
+    const n = [(x.properties as Props).name, (y.properties as Props).name];
+    return n.includes(a) && n.includes(b) && a !== b;
+  });
+  if (!m.coordinates.length) throw new Error(`No shared border between ${a} and ${b}`);
+  const ll = m.coordinates.flat() as [number, number][];
+  if (ll[0][0] > ll[ll.length - 1][0]) ll.reverse();
+  return { d: projectGeo({ type: "Feature", properties: {}, geometry: m }), ll };
+};
+
+/**
+ * A border drawn on in map space (inside `Atlas`'s `layer`): white core over a gold glow; `p` 0→1 draws it
+ * from its first point, `glow` 0–1 brightens it (e.g. while the VO names it).
+ */
+export const BorderLine: React.FC<{ z: number; d: string; p?: number; glow?: number; o?: number }> = ({ z, d, p = 1, glow = 0, o = 1 }) => {
+  if (o <= 0 || p <= 0) return null;
+  const dash = { strokeDasharray: 1, strokeDashoffset: 1 - p };
+  return (
+    <g opacity={o} fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d={d} pathLength={1} style={dash} stroke={ATLAS.gold} strokeOpacity={0.45 + 0.55 * glow} strokeWidth={(16 + 10 * glow) / z} />
+      <path d={d} pathLength={1} style={dash} stroke={ATLAS.ink} strokeWidth={8 / z} />
+      <path d={d} pathLength={1} style={dash} stroke={ATLAS.white} strokeWidth={4.5 / z} />
+    </g>
+  );
+};
 
 /** A colour for one province; `wipe` floods `color` in from a point over `wipe.from` (like `Fill` for countries). */
 export type ProvFill = { name: string; color: string; wipe?: { from: string; lon: number; lat: number; p: number; r?: number } };
