@@ -93,7 +93,7 @@ export const COVERS: CoverSpec[] = [
   { slug: "p2-cat-mien-tay", Scene: SandScene, frame: 262, hook: [{ text: "XỨ SÔNG NƯỚC" }, { text: "LẠI KHÁT CÁT", punch: true }], y: 960,
     mark: { x: 420, y: 545, r: 140, arrowFrom: [820, 880] } },
   // ~0.8 m above sea level, sinking ~1 cm/yr (C1, C3)
-  { slug: "p2-funan-techo", Scene: CanalScene, frame: 1000, hook: [{ text: "KÊNH CAMPUCHIA" }, { text: "LẤY NƯỚC SÔNG HẬU?", punch: true }], y: 230 },
+  { slug: "p2-funan-techo", Scene: CanalScene, frame: 835, hook: [{ text: "KÊNH CAMPUCHIA" }, { text: "LẤY NƯỚC SÔNG HẬU?", punch: true }], y: 230 },
   { slug: "p3-dbscl-sut-lun", Scene: DeltaScene, frame: 178, hook: [{ text: "MIỀN TÂY CHỈ CAO" }, { text: "80 CM", punch: true }, { text: "VÀ ĐANG LÚN" }], y: 220 },
   // nearly a third of seaborne oil squeezes through Malacca (C1) — ring on the strait
   { slug: "p4-malacca-kra", Scene: KraScene, frame: 30, hook: [{ text: "GẦN 1/3 DẦU ĐI BIỂN" }, { text: "CHEN QUA ĐÂY", punch: true }], y: 230,

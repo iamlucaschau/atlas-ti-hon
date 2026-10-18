@@ -1,5 +1,5 @@
 {
-  "durationInSeconds": 65.52883333333334,
+  "durationInSeconds": 72.91816666666666,
   "loop": true,
   "tail": 0.7,
   "lines": [
@@ -21,141 +21,190 @@
       "id": "03",
       "scene": "s2",
       "start": 6.500958333333333,
-      "end": 7.382958333333333,
+      "end": 7.410958333333333,
       "text": "Vì sao phải đào?"
     },
     {
       "id": "04",
       "scene": "s2",
-      "start": 7.53325,
-      "end": 8.440249999999999,
+      "start": 7.561375,
+      "end": 8.286375,
       "text": "Đường ra biển."
     },
     {
       "id": "05",
       "scene": "s2",
-      "start": 8.500416666666666,
-      "end": 13.768416666666667,
-      "text": "Theo chính phủ Campuchia, khoảng một phần ba hàng hoá của họ phải xuôi Mê Kông qua Việt Nam rồi mới ra biển."
+      "start": 8.34675,
+      "end": 12.57575,
+      "text": "Theo chính phủ Campuchia, khoảng một phần ba hàng hoá của họ phải xuôi Mê Kông qua Việt Nam."
     },
     {
       "id": "06",
       "scene": "s2",
-      "start": 13.828791666666666,
-      "end": 17.069791666666667,
+      "start": 12.63525,
+      "end": 16.05625,
       "text": "Kênh mới dài một trăm tám mươi cây số, cắt thẳng xuống biển Kep."
     },
     {
       "id": "07",
       "scene": "s2",
-      "start": 17.130041666666667,
-      "end": 19.715041666666668,
+      "start": 16.11675,
+      "end": 18.76775,
       "text": "Mục tiêu là hạ tỉ lệ ấy còn khoảng một phần mười."
     },
     {
       "id": "08",
       "scene": "s3",
-      "start": 19.965125,
-      "end": 24.184125,
+      "start": 19.017958333333333,
+      "end": 23.236958333333334,
       "text": "Ngày khởi công, Thủ tướng Hun Manet tuyên bố: kênh sẽ được xây bằng mọi giá."
     },
     {
       "id": "09",
       "scene": "s4",
-      "start": 24.434208333333334,
-      "end": 26.282208333333333,
+      "start": 23.487041666666666,
+      "end": 25.013041666666666,
       "text": "Kênh bắt đầu từ sông Bassac."
     },
     {
       "id": "10",
       "scene": "s4",
-      "start": 26.34241666666667,
-      "end": 30.59941666666667,
-      "text": "Phía Campuchia nói kênh chỉ lấy nước sông này, và hạ lưu gần như không bị ảnh hưởng."
+      "start": 25.072541666666666,
+      "end": 27.206541666666666,
+      "text": "Còn chảy qua biên giới, sông Bassac đổi tên."
     },
     {
       "id": "11",
       "scene": "s4",
-      "start": 30.659000000000002,
-      "end": 32.68,
-      "text": "Còn chảy qua biên giới, sông Bassac đổi tên."
-    },
-    {
-      "id": "12",
-      "scene": "s4",
-      "start": 32.879875000000006,
-      "end": 33.885875000000006,
+      "start": 27.407,
+      "end": 28.153,
       "text": "Thành sông Hậu."
     },
     {
+      "id": "12",
+      "scene": "s5",
+      "start": 28.403458333333333,
+      "end": 29.724458333333335,
+      "text": "Vậy kênh lấy bao nhiêu nước?"
+    },
+    {
       "id": "13",
-      "scene": "s4",
-      "start": 33.94633333333334,
-      "end": 38.293333333333344,
-      "text": "Việt Nam vì thế đề nghị chia sẻ thông tin, đánh giá kỹ tác động lên nguồn nước miền Tây."
+      "scene": "s5",
+      "start": 29.874708333333334,
+      "end": 30.474708333333336,
+      "text": "Rất ít."
     },
     {
       "id": "14",
       "scene": "s5",
-      "start": 38.543625000000006,
-      "end": 40.802625000000006,
-      "text": "Tháng tư năm nay, đoạn dài nhất bắt đầu thi công."
+      "start": 30.535041666666668,
+      "end": 32.617041666666665,
+      "text": "Đúng thông báo, chỉ vài mét khối mỗi giây."
     },
     {
       "id": "15",
       "scene": "s5",
-      "start": 40.86295833333334,
-      "end": 44.482958333333336,
-      "text": "Phía Campuchia nói kênh xong khoảng năm hai nghìn hai mươi tám, hai mươi chín."
+      "start": 32.677458333333334,
+      "end": 35.274458333333335,
+      "text": "Mùa khô, sông Hậu vẫn chảy vài trăm khối mỗi giây."
     },
     {
       "id": "16",
       "scene": "s5",
-      "start": 44.54320833333334,
-      "end": 48.90220833333334,
-      "text": "Còn báo chí độc lập ghi nhận: đầu năm nay, trang tiến độ chính thức vẫn báo số không."
+      "start": 35.334625,
+      "end": 36.958625000000005,
+      "text": "Tức chưa tới hai phần trăm."
     },
     {
       "id": "17",
       "scene": "s6",
-      "start": 49.15220833333334,
-      "end": 50.233208333333344,
-      "text": "Và cú ngược đời?"
+      "start": 37.20820833333334,
+      "end": 39.273208333333336,
+      "text": "Còn nếu vượt thông báo, lấy thêm nước tưới?"
     },
     {
       "id": "18",
       "scene": "s6",
-      "start": 50.38354166666667,
-      "end": 51.001541666666675,
-      "text": "Độ sâu."
+      "start": 39.42358333333334,
+      "end": 40.14858333333334,
+      "text": "Khác hẳn."
     },
     {
       "id": "19",
       "scene": "s6",
-      "start": 51.201750000000004,
-      "end": 54.61975,
-      "text": "Kênh chỉ sâu chừng năm mét rưỡi, vừa cho sà lan và tàu nhỏ."
+      "start": 40.20879166666667,
+      "end": 44.96079166666667,
+      "text": "Một chuyên gia Việt Nam tính, sông Hậu mùa khô có thể hụt năm đến mười ba phần trăm."
     },
     {
       "id": "20",
       "scene": "s6",
-      "start": 54.679625,
-      "end": 57.876625000000004,
-      "text": "Còn cảng Cái Mép đón được tàu container hai trăm nghìn tấn."
+      "start": 45.021125000000005,
+      "end": 47.509125000000004,
+      "text": "Phía Campuchia nói hạ lưu gần như không bị ảnh hưởng."
     },
     {
       "id": "21",
       "scene": "s6",
-      "start": 57.936625,
-      "end": 60.425625,
-      "text": "Lùa tàu ấy vào kênh thì như lùa voi qua ngõ hẻm."
+      "start": 47.568875000000006,
+      "end": 50.693875000000006,
+      "text": "Phía Việt Nam đề nghị chia sẻ thông tin, đánh giá kỹ tác động."
     },
     {
       "id": "22",
-      "scene": "s6",
-      "start": 60.485375,
-      "end": 65.278375,
-      "text": "Nên nhiều nhà phân tích cho rằng, kênh mở thêm một cửa ra biển, nhưng chưa thay được cánh cửa cũ."
+      "scene": "s7",
+      "start": 50.943583333333336,
+      "end": 54.31158333333334,
+      "text": "Campuchia hẹn kênh xong khoảng năm hai nghìn hai mươi tám, hai mươi chín."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 54.371500000000005,
+      "end": 58.4665,
+      "text": "Báo chí độc lập thì ghi: đầu năm nay, trang tiến độ chính thức vẫn báo số không."
+    },
+    {
+      "id": "24",
+      "scene": "s8",
+      "start": 58.71600000000001,
+      "end": 59.67800000000001,
+      "text": "Và cú ngược đời?"
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "start": 59.827583333333344,
+      "end": 60.42958333333334,
+      "text": "Độ sâu."
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "start": 60.62962500000001,
+      "end": 63.561625000000014,
+      "text": "Kênh chỉ sâu chừng năm mét rưỡi, vừa cho sà lan và tàu nhỏ."
+    },
+    {
+      "id": "27",
+      "scene": "s8",
+      "start": 63.62112500000001,
+      "end": 66.10512500000002,
+      "text": "Còn cảng Cái Mép đón được tàu container hai trăm nghìn tấn."
+    },
+    {
+      "id": "28",
+      "scene": "s8",
+      "start": 66.16554166666668,
+      "end": 68.42054166666668,
+      "text": "Lùa tàu ấy vào kênh thì như lùa voi qua ngõ hẻm."
+    },
+    {
+      "id": "29",
+      "scene": "s8",
+      "start": 68.48004166666668,
+      "end": 72.66804166666668,
+      "text": "Nhiều nhà phân tích cho rằng, kênh mở thêm một cửa ra biển, nhưng chưa thay được cánh cửa cũ."
     }
   ]
 }

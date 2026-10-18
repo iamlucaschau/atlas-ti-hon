@@ -22,6 +22,7 @@
 > - WWF (2018) — phù sa sông Mekong giảm do đập
 > - Tuổi Trẻ (28/06/2024), Nông nghiệp & Môi trường — khai thác cát biển ở Sóc Trăng (cũ) cho cao tốc; VnExpress (11/09/2026) — cát biển phải rửa mặn
 > - VOV, Đại biểu Nhân dân, Saigon Times — cao tốc Châu Đốc – Cần Thơ – Sóc Trăng thiếu cát
+> - Nhạc: "Wallpaper" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/
 > - Bản đồ: Natural Earth. **Mạng lưới cao tốc, dòng sông, vị trí mỏ cát biển, khúc sông có cát đủ chuẩn và các mặt cắt là sơ đồ minh hoạ**, không phải hướng tuyến hay toạ độ chính thức.
 >
 > #Shorts #AtlasTiHon #BanDo #DiaLy #KinhTe #HaTang #VietNam #MienTay #Mekong #CaoToc
@@ -46,6 +47,8 @@ Cát ở hạ lưu Mekong đang bị hút nhanh gấp 5–9 lần lượng sông
 Bạn chọn đắp nền hay cầu cạn? 👇
 
 #AtlasTiHon #BanDo #DiaLy #MienTay #Mekong #CaoToc
+
+Nhạc: "Wallpaper" Kevin MacLeod (incompetech.com), CC BY 4.0
 ```
 
 TikTok có thể thêm `#HocCungTikTok`.
@@ -54,3 +57,5 @@ TikTok có thể thêm `#HocCungTikTok`.
 
 - [ ] Nếu tìm được bản công khai Công văn 8069/BXD-KTQLXD, thay nguồn báo bằng văn bản gốc.
 - [ ] Bản đồ có Campuchia (tô màu + cờ) ở khung hạ lưu Mekong — Lucas xem lại một lần trước khi đăng.
+
+- [x] 2026-10-17: đổi nhạc nền sang "Wallpaper" (Kevin MacLeod, CC BY 4.0) — **dòng ghi công bắt buộc có trong mô tả YouTube và caption mạng khác**; nhạc Pixabay cũ có Content ID (tập P4 bị chặn toàn cầu 17/10).

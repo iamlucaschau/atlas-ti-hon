@@ -24,6 +24,7 @@
 > - U.S. Department of State, FRUS 1883 (công văn lãnh sự Bangkok 11/1882, 16/1/1883): đoàn kỹ sư nhân danh công ty kênh Suez khảo sát eo Kra, Xiêm chưa cấp nhượng quyền; luận văn ĐH Chulalongkorn về kênh Kra (Rama IV – 1939)
 > - ISEAS – Yusof Ishak Institute (2021); Journal of Shipping and Trade (2016): thời gian tiết kiệm, vai trò Singapore, lý do chưa xây
 > - Bangkok Post, Thai PBS World, Pattaya Mail: đề xuất cầu đất liền 2023, quan điểm Chính phủ Thái và phản đối của người dân Chumphon, Ranong (2023–2024)
+> - Nhạc: "Ascending the Vale" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/
 > - Bản đồ: Natural Earth. **Tuyến tàu, tuyến kênh và đường sắt cầu đất liền là sơ đồ minh hoạ.**
 >
 > #Shorts #AtlasTiHon #BanDo #DiaLy #HangHai #GiaoThuong #DongNamA #Malacca #ThaiLan #Singapore
@@ -50,6 +51,8 @@ Ngay phía trên có một lối tắt hơn 300 năm chưa ai đào. Vì sao?
 Nếu là Thái Lan, bạn có đào không? 👇
 
 #AtlasTiHon #BanDo #DiaLy #HangHai #Malacca #ThaiLan
+
+Nhạc: "Ascending the Vale" Kevin MacLeod (incompetech.com), CC BY 4.0
 ```
 
 TikTok có thể thêm `#HocCungTikTok`. Tối đa ~6 hashtag trên các nền tảng này.
@@ -59,3 +62,5 @@ TikTok có thể thêm `#HocCungTikTok`. Tối đa ~6 hashtag trên các nền t
 - [ ] Kiểm lại trạng thái dự án cầu đất liền mới nhất (sau 2024) — video chỉ nói "đề xuất năm 2023".
 - [ ] Tên kênh + câu giới thiệu kênh.
 - [ ] Lời đọc nói "năm ngoái" (= 2025): đăng trong năm 2026. Đăng từ 2027 → sửa lời thành "năm 2025" và lồng tiếng lại cảnh 3.
+
+- [x] 2026-10-17: đổi nhạc nền sang "Ascending the Vale" (Kevin MacLeod, CC BY 4.0) — **dòng ghi công bắt buộc có trong mô tả YouTube và caption mạng khác**; nhạc Pixabay cũ có Content ID (tập P4 bị chặn toàn cầu 17/10).
