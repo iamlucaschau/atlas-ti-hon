@@ -1,0 +1,189 @@
+{
+  "durationInSeconds": 74.699375,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.6199999999999997,
+      "text": "Năm hai nghìn không trăm mười sáu, Việt Nam dừng điện hạt nhân vì tiền."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 3.6804166666666664,
+      "end": 6.068416666666666,
+      "text": "Tám năm sau, làm lại, vì điện."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 6.128166666666667,
+      "end": 7.770166666666666,
+      "text": "Tám năm ấy đã đổi điều gì?"
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 8.019708333333334,
+      "end": 9.505708333333335,
+      "text": "Nhìn hai điểm trên bản đồ."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 9.565291666666667,
+      "end": 12.527291666666667,
+      "text": "Ở Ninh Thuận, hai khu đất đã được chọn cho hai nhà máy."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 12.586875000000001,
+      "end": 15.103875,
+      "text": "Cách hơn nghìn cây số về phía bắc, là Hà Nội."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 15.354041666666667,
+      "end": 18.243041666666667,
+      "text": "Lần đầu, cái giá ước khoảng hai trăm nghìn tỷ đồng."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 18.302583333333335,
+      "end": 20.690583333333336,
+      "text": "Kế toán nào đọc cũng phải đếm số không hai lần."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 20.750125,
+      "end": 26.167125,
+      "text": "Năm dừng dự án, Bộ trưởng Mai Tiến Dũng đứng trước báo chí: không phải vì công nghệ, mà vì kinh tế."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 26.227,
+      "end": 29.998,
+      "text": "Gió, mặt trời đã rẻ hơn, và tiền cần cho hạ tầng."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "start": 30.248125,
+      "end": 31.703125,
+      "text": "Điều gì kéo dự án quay lại?"
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 31.762666666666668,
+      "end": 32.620666666666665,
+      "text": "Cơn khát điện."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 32.680625,
+      "end": 36.189625,
+      "text": "Mùa hè năm hai nghìn hai mươi ba, miền Bắc cắt điện luân phiên."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 36.24975,
+      "end": 40.485749999999996,
+      "text": "Ngân hàng Thế giới ước thiệt hại khoảng một tỷ bốn trăm triệu đô, chỉ trong hai tháng."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "start": 40.73558333333333,
+      "end": 44.03558333333333,
+      "text": "Lúc căng nhất, miền Bắc ước thiếu hơn bốn nghìn mê-ga-oát."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "start": 44.095708333333334,
+      "end": 47.970708333333334,
+      "text": "Hai nhà máy Ninh Thuận, theo quy hoạch: bốn đến sáu nghìn tư mê-ga-oát."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 48.03058333333333,
+      "end": 49.105583333333335,
+      "text": "Ngang cỡ cái lỗ ấy."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "start": 49.355291666666666,
+      "end": 52.730291666666666,
+      "text": "Phe ủng hộ nói: đó là an ninh năng lượng, lại ít khói than."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 52.79029166666667,
+      "end": 56.49929166666667,
+      "text": "Phe lo ngại hỏi: tiền đâu, công nghệ của ai, an toàn ra sao?"
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 56.55954166666667,
+      "end": 57.911541666666665,
+      "text": "Và ván cược vẫn còn mở."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 57.97179166666667,
+      "end": 59.43579166666667,
+      "text": "Nhật đã rút khỏi nhà máy thứ hai."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "start": 59.495958333333334,
+      "end": 60.616958333333336,
+      "text": "Nga ký nhà máy thứ nhất."
+    },
+    {
+      "id": "23",
+      "scene": "s6",
+      "start": 60.677458333333334,
+      "end": 61.902458333333335,
+      "text": "Giá mới vẫn đang thẩm định."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "start": 62.1525,
+      "end": 67.2335,
+      "text": "Trớ trêu là, đúng mùa hè cắt điện ấy, Ninh Thuận vừa huỷ lệnh thu hồi đất cho điện hạt nhân."
+    },
+    {
+      "id": "25",
+      "scene": "s7",
+      "start": 67.29383333333334,
+      "end": 70.58583333333334,
+      "text": "Hơn nghìn hộ dân, sau mười ba năm, mới được sửa nhà."
+    },
+    {
+      "id": "26",
+      "scene": "s7",
+      "start": 70.64612500000001,
+      "end": 74.44912500000001,
+      "text": "Mười sáu tháng sau, dự án quay lại, và họ lại chuẩn bị rời đi."
+    }
+  ]
+}

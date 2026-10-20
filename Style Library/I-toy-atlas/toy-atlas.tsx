@@ -377,7 +377,7 @@ export const MapLabel: React.FC<{ text: string; x: number; y: number; o?: number
 
 /** Five-point star, unit radius (flag stars). */
 const STAR = "M0,-1 L0.2245,-0.309 L0.951,-0.309 L0.3633,0.118 L0.5878,0.809 L0,0.382 L-0.5878,0.809 L-0.3633,0.118 L-0.951,-0.309 L-0.2245,-0.309 Z";
-export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia";
+export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia";
 
 export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kind, w = 64, f = 0 }) => {
   const h = w * 0.62;
@@ -455,6 +455,19 @@ export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kin
             <path fill="#FFFFFF" d={`M${w * 0.3} ${h * 0.66} L${w * 0.7} ${h * 0.66} L${w * 0.7} ${h * 0.58} L${w * 0.64} ${h * 0.58}
               L${w * 0.62} ${h * 0.44} L${w * 0.58} ${h * 0.58} L${w * 0.53} ${h * 0.58} L${w * 0.5} ${h * 0.34} L${w * 0.47} ${h * 0.58}
               L${w * 0.42} ${h * 0.58} L${w * 0.38} ${h * 0.44} L${w * 0.36} ${h * 0.58} L${w * 0.3} ${h * 0.58} Z`} />
+          </g>
+        )}
+        {kind === "japan" && (
+          <g>
+            <rect width={w} height={h} fill="#FFFFFF" />
+            <circle cx={w / 2} cy={h / 2} r={h * 0.3} fill="#BC002D" />
+          </g>
+        )}
+        {kind === "russia" && (
+          <g>
+            <rect width={w} height={h / 3} fill="#FFFFFF" />
+            <rect y={h / 3} width={w} height={h / 3} fill="#0039A6" />
+            <rect y={(h * 2) / 3} width={w} height={h / 3} fill="#D52B1E" />
           </g>
         )}
         <rect width={w} height={h} fill="none" stroke={ATLAS.ink} strokeWidth={2} />

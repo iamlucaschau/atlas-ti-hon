@@ -19,6 +19,7 @@ import { Scene as ClockScene } from "./p5-trung-quoc-mui-gio/Video";
 import { Scene as HighlandsScene } from "./p1-tay-nguyen-co-bien/Video";
 import { Scene as BachMaScene } from "./p3-bach-ma/Video";
 import { Scene as AirportScene } from "./p2-long-thanh/Video";
+import { Scene as NuclearScene } from "./p2-dien-hat-nhan/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -112,6 +113,9 @@ export const COVERS: CoverSpec[] = [
   // phase 1 ~110.000 tỷ (C11), the investor's break-even assumes the international passengers move over (C17) — line 28: the passengers follow the first flight's trail; ring on Long Thành
   { slug: "p2-long-thanh", Scene: AirportScene, frame: 2020, hook: [{ text: "SÂN BAY 110 NGHÌN TỶ" }, { text: "ĐANG CHỜ KHÁCH", punch: true }], y: 230,
     mark: { x: 866, y: 850, r: 105, arrowFrom: [540, 940] } },
+  // stopped for money in 2016 (C7, C8), restarted in 2024 (C12) to answer the 2023 power shortfall (C1, C31) — line 15: the dark north, the pit; ring on Ninh Thuận
+  { slug: "p2-dien-hat-nhan", Scene: NuclearScene, frame: 828, hook: [{ text: "DỪNG VÌ TIỀN" }, { text: "LÀM LẠI VÌ ĐIỆN", punch: true }], y: 230,
+    mark: { x: 600, y: 1025, r: 55, arrowFrom: [640, 1290] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */
