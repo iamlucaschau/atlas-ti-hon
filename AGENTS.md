@@ -28,7 +28,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 | Bản nháp + contact sheet | `npm run draft -- <slug>` → `out/<slug>-draft.mp4` (nửa cỡ, có vùng an toàn) + `out/sheets/<slug>-lines-N.png` (một ô mỗi câu đọc) |
 | Soi thêm khung | `npm run sheet -- <slug> --at 0.9` · `--from 30 --to 32 --every 0.2` · `<giây> <giây>` |
 | Ảnh kiểm tra 1 khung | `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35` |
-| Render tập | `npm run final -- <slug>` → render, master, bản lặp 2 vòng vào `Map/<slug>/`, đo LUFS / đỉnh / chỗ nối vòng (thoát mã 1 nếu trượt) |
+| Render tập | `npm run final -- <slug>` → render, master vào `Map/<slug>/<slug>.mp4`, đo LUFS / đỉnh / chỗ nối vòng (thoát mã 1 nếu trượt). Chỉ render video chính; bản lặp 2 vòng chỉ khi thêm `--loop-preview` (Lucas 2026-10-20) |
 | Soát khung hình sau render | `python -P scripts/review.py <slug>` → xem hết `out/review/<slug>/sheet-*.png`, tự sửa rồi render lại (`04_QUY-TRINH` §6) |
 | Ảnh bìa | `npx remotion still Cover-<slug> out/cover.png` → JPG < 2 MB vào `Map/<slug>/cover.jpg` |
 | Giọng đọc | `node scripts/episode.mjs prep "Map/<slug>"` → `npm run voiceover -- voiceover/<slug>.json` → `node scripts/episode.mjs export "Map/<slug>" --loop --tail=0.7` → `python -P scripts/words.py <slug> vi` |
@@ -56,7 +56,7 @@ public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voic
 scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
 ```
 
-ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Cover-<slug>`.
+ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Cover-<slug>`.
 
 ## Luật Remotion (không được phá)
 
@@ -90,7 +90,7 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 2. Vòng duyệt hình (skill `review-loop`): `npm run draft -- <slug>`, xem **mọi** contact sheet, sửa đè hình / tràn vùng an toàn, lặp tới khi một lượt sạch.
 3. `npm run final -- <slug>`: mọi dòng ✓ (≈ −14 LUFS, đỉnh ≤ −1,5 dB, khung cuối ≈ khung đầu).
 4. **Soát từng khung bản render** (`python -P scripts/review.py <slug>`, xem hết mọi tờ): chỗ nào xấu / chưa đạt thì **tự sửa**, render + master lại, soát lại tới khi sạch; báo Lucas đã sửa gì (Lucas 2026-10-16).
-5. Nhờ Lucas nghe bản `-loop-preview-x2.mp4` (Luis không nghe được). Mô tả có dòng ghi công nhạc Kevin MacLeod (Bible §6).
+5. Nhờ Lucas nghe video chính `Map/<slug>/<slug>.mp4` (Luis không nghe được). Mô tả có dòng ghi công nhạc Kevin MacLeod (Bible §6).
 6. Xoá ảnh/khung thử trong `out/` (cả `out/review/`, `out/sheets/`).
 
 ## Bản quyền & bảo mật

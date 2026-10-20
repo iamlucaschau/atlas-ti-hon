@@ -17,7 +17,7 @@ Luis không xem được video, nhưng xem được khung hình. **Không bao gi
    - `npm run sheet -- <slug> 12.3 14.8` — đúng những giây cần xem.
    - Một khung độ phân giải thật: `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35`.
 4. Sửa, rồi quay lại bước 1. Dừng khi một lượt đầy đủ không thấy lỗi.
-5. Cuối: `npm run final -- <slug>` (render → master → bản lặp 2 vòng → đo). Mọi dòng phải là ✓; lệnh thoát mã 1 khi có ✗.
+5. Cuối: `npm run final -- <slug>` (render → master → đo; chỉ video chính). Mọi dòng phải là ✓; lệnh thoát mã 1 khi có ✗.
 
 Việc nhỏ, hiển nhiên (đè hình, lệch vị trí, tràn vùng an toàn) thì tự sửa, không hỏi. Thay đổi đụng tới kịch bản, số liệu, cách vẽ lãnh thổ hay luật kênh thì dừng lại hỏi Lucas.
 
@@ -51,7 +51,7 @@ Việc nhỏ, hiển nhiên (đè hình, lệch vị trí, tràn vùng an toàn)
 
 **Âm thanh (số đo của `npm run final`)**
 - Loudness −14 ±1 LUFS, true peak ≤ −1,5 dBFS.
-- Luis không nghe được: SFX lệch nhịp, nhạc lấn giọng, chỗ nối vòng bị khựng thì **nhờ Lucas nghe bản `-loop-preview-x2.mp4`**.
+- Luis không nghe được: SFX lệch nhịp, nhạc lấn giọng, chỗ nối vòng bị khựng thì **nhờ Lucas nghe video chính `Map/<slug>/<slug>.mp4`** (không còn tạo bản lặp 2 vòng, Lucas 2026-10-20).
 
 ## Báo cáo
 

@@ -17,12 +17,12 @@ Xem `Map/_mau-tap/README.md` (5 cổng: Concept → Evidence → Script → Visu
 
 `Map/00_he-thong/`: Channel Bible (luật kênh), prompt các cổng, quy trình sản xuất, kho chủ đề, nhận diện kênh (logo, banner, mô tả, hashtag, caption).
 
-## 10 tập đã làm
+## 11 tập đã làm
 
 | Pillar | Tập | ID |
 |---|---|---|
 | P1 Vì sao bản đồ như thế này | Brunei bị cắt làm đôi · Singapore bị đuổi khỏi Malaysia · Tây Nguyên bỗng có biển | `Map-P1-BruneiChiaDoi` · `Map-Singapore` · `Map-P1-TayNguyenCoBien` |
-| P2 Tiền & bản đồ | Đường sắt cao tốc 67 tỷ đô (v3) · Xứ sông nước lại khát cát · Con kênh lấy nước sông Hậu (Funan Techo, v3) | `Map-P2-DuongSatCaoToc` · `Map-P2-CatMienTay` · `Map-P2-FunanTecho` |
+| P2 Tiền & bản đồ | Đường sắt cao tốc 67 tỷ đô (v3) · Xứ sông nước lại khát cát · Con kênh lấy nước sông Hậu (Funan Techo, v3) · Cuộc giành khách: sân bay Long Thành | `Map-P2-DuongSatCaoToc` · `Map-P2-CatMienTay` · `Map-P2-FunanTecho` · `Map-P2-LongThanh` |
 | P3 Địa lý giải thích hiện tượng | Miền Tây lún (v2) · Bức tường Bạch Mã | `Map-P3-DbsclSutLun` · `Map-P3-BachMa` |
 | P4 Tuyến đường & hành trình | Malacca – kênh Kra (v2) | `Map-P4-MalaccaKra` |
 | P5 Kỳ lạ & kỷ lục | Trung Quốc một múi giờ (v2) | `Map-P5-TrungQuocMuiGio` |

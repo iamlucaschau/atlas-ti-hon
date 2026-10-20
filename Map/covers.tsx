@@ -18,6 +18,7 @@ import { Scene as KraScene } from "./p4-malacca-kra/Video";
 import { Scene as ClockScene } from "./p5-trung-quoc-mui-gio/Video";
 import { Scene as HighlandsScene } from "./p1-tay-nguyen-co-bien/Video";
 import { Scene as BachMaScene } from "./p3-bach-ma/Video";
+import { Scene as AirportScene } from "./p2-long-thanh/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -108,6 +109,9 @@ export const COVERS: CoverSpec[] = [
   // monthly means 16 °C (Hà Nội) ↔ > 25 °C (Sài Gòn), the Bạch Mã ridge in between (C1, C2, C4) — ring on the Bạch Mã ridge between the cold and warm halves
   { slug: "p3-bach-ma", Scene: BachMaScene, frame: 1000, hook: [{ text: "MỘT DÃY NÚI" }, { text: "CHIA ĐÔI MÙA ĐÔNG", punch: true }], y: 230,
     mark: { x: 385, y: 680, r: 95, arrowFrom: [700, 880] } },
+  // phase 1 ~110.000 tỷ (C11), the investor's break-even assumes the international passengers move over (C17) — line 28: the passengers follow the first flight's trail; ring on Long Thành
+  { slug: "p2-long-thanh", Scene: AirportScene, frame: 2035, hook: [{ text: "SÂN BAY 110 NGHÌN TỶ" }, { text: "ĐANG CHỜ KHÁCH", punch: true }], y: 230,
+    mark: { x: 866, y: 850, r: 105, arrowFrom: [540, 940] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

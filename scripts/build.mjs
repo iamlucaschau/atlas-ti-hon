@@ -4,11 +4,11 @@
  *
  *   npm run draft -- p4-malacca-kra    half-size render with the safe-zone overlay → out/<slug>-draft.mp4,
  *                                      then contact sheets (scripts/sheet.mjs) for the review loop
- *   npm run final -- p4-malacca-kra    full render → master (Bible §6) → Map/<slug>/<slug>.mp4
- *                                      + Map/<slug>/<slug>-loop-preview-x2.mp4, then checks loudness,
- *                                      true peak and the loop seam (last frame vs frame 0); exits 1 if one fails
+ *   npm run final -- p4-malacca-kra    full render → master (Bible §6) → Map/<slug>/<slug>.mp4, then checks
+ *                                      loudness, true peak and the loop seam (last frame vs frame 0); exits 1 if one fails
  *
- * Options: --keep-raw (keep out/<slug>-raw.mp4)  --no-loop-preview
+ * Options: --keep-raw (keep out/<slug>-raw.mp4)
+ *          --loop-preview (also write Map/<slug>/<slug>-loop-preview-x2.mp4; off by default since Lucas 2026-10-20)
  *          --check-only (final: only re-run the checks on the existing Map/<slug>/<slug>.mp4)
  */
 import fs from "node:fs";
@@ -88,7 +88,7 @@ const finalRender = (ep) => {
   ffmpeg(["-i", raw, "-c:v", "copy", "-af", MASTER_AF, "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", master]);
   console.log(`✓ ${rel(master)} (${(fs.statSync(master).size / 1024 / 1024).toFixed(1)} MB)`);
 
-  if (!flag("--no-loop-preview")) {
+  if (flag("--loop-preview")) {
     const list = path.join(ROOT, "out", "concat.txt");
     const line = `file '${master.replace(/\\/g, "/").replace(/'/g, "'\\''")}'\n`;
     fs.writeFileSync(list, line + line);

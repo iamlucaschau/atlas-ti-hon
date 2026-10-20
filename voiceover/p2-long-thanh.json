@@ -1,0 +1,212 @@
+{
+  "name": "p2-long-thanh",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Giọng trung tính, không đứng về phía nào. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. \"Ai bắt bạn đi xa bốn mươi cây số?\" và \"Sao không mở rộng luôn Tân Sơn Nhất?\" hỏi nhẹ; \"Một khoản nợ.\" và \"Hết chỗ.\" ngắn, chắc, ngừng một nhịp sau đó. \"Cuộc bỏ phiếu cất cánh khá êm.\" đọc có ý cười nhẹ. \"Đường băng có rồi. Khách thì chưa chắc.\" nhịp nhanh, tương phản. Đọc Vietnam Airlines là \"Việt Nam Ai-lai\", ACV là \"A Xê Vê\", héc-ta là \"héc ta\". Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Cuối năm nay, chuyến Vietnam Airlines từ Sài Gòn đi Bắc Kinh dự kiến cất cánh ở Đồng Nai."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Ai bắt bạn đi xa bốn mươi cây số?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Một khoản nợ."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Giai đoạn đầu của Long Thành tốn gần một trăm mười nghìn tỷ, một phần là tiền vay."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Muốn trả nợ thì cần khách."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Mà khách đang ở Tân Sơn Nhất: năm ngoái, hơn bốn mươi hai triệu lượt."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Sao không mở rộng luôn Tân Sơn Nhất?"
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Hết chỗ."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Sân bay nằm lọt giữa phố, lại dùng chung với quân đội."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Thêm một đường băng là phải giải toả nhà dân."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Phe mở rộng muốn lấy sân golf ngay trong sân bay."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Phe kia bảo phải ra chỗ rộng."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Năm hai nghìn không trăm mười lăm, Quốc hội chọn xây mới."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Bốn trăm hai mươi tám trên bốn trăm sáu mươi mốt phiếu."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Cuộc bỏ phiếu cất cánh khá êm."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Long Thành rộng năm nghìn héc-ta."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Gấp hơn sáu lần Tân Sơn Nhất."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Đường băng có rồi."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Khách thì chưa chắc."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Chủ đầu tư ACV muốn dời hết chuyến quốc tế sang đây."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Vietnam Airlines muốn giữ chặng Đông Nam Á."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Giai đoạn đầu, hãng dự kiến chuyển bốn đường bay, có Bắc Kinh."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Chiều mười lăm tháng mười hai năm ngoái, cơ trưởng Trần Tuấn Hưng đáp chiếc máy bay đầu tiên xuống Long Thành."
+    },
+    {
+      "id": "24",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Con số quan trọng nhất nằm trong bảng tính của chủ đầu tư."
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Long Thành có thể thu đủ bù chi sau một, hai năm."
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Nếu chín phần mười khách quốc tế rời Tân Sơn Nhất."
+    },
+    {
+      "id": "27",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Chiếc máy bay đầu tiên ấy cũng cất cánh từ Tân Sơn Nhất."
+    },
+    {
+      "id": "28",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Giờ, tới lượt khách quốc tế bay theo."
+    }
+  ]
+}

@@ -106,7 +106,7 @@ Một lệnh, chạy được cả trên Windows (PowerShell) lẫn macOS/Linux:
 ```bash
 npm run final -- <slug>
 ```
-Lệnh này: render `out/<slug>-raw.mp4` (`--crf=18`) → master vào `Map/<slug>/<slug>.mp4` (`loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.66:level=false`, AAC 256k, `+faststart`) → bản lặp 2 vòng `Map/<slug>/<slug>-loop-preview-x2.mp4` → đo bằng `ebur128` và so khung cuối với frame 0 (SSIM), in ✓/✗ và thoát mã 1 nếu trượt (−14 ±1 LUFS, đỉnh ≤ −1,5 dBFS, SSIM phần trên phụ đề ≥ 0,90) → xoá bản raw (`--keep-raw` để giữ). Code: `scripts/build.mjs`.
+Lệnh này: render `out/<slug>-raw.mp4` (`--crf=18`) → master vào `Map/<slug>/<slug>.mp4` (`loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.66:level=false`, AAC 256k, `+faststart`) → đo bằng `ebur128` và so khung cuối với frame 0 (SSIM), in ✓/✗ và thoát mã 1 nếu trượt (−14 ±1 LUFS, đỉnh ≤ −1,5 dBFS, SSIM phần trên phụ đề ≥ 0,90) → xoá bản raw (`--keep-raw` để giữ). Chỉ render video chính (Lucas 2026-10-20); bản lặp 2 vòng `<slug>-loop-preview-x2.mp4` chỉ khi thêm `--loop-preview`. Code: `scripts/build.mjs`.
 *(2026-10-13: loudnorm một lượt + AAC 192k cho đỉnh +0,3 dBFS; thêm `alimiter` và AAC 256k → đỉnh −2,0 dBTP. 2026-10-18: gom thành `npm run final`, thay lệnh `printf` chỉ chạy được trong bash; hạ `alimiter` 0,72 → 0,66 vì SFX ngắn được kéo tới +12 dB làm bản thô chạm 0 dBFS, P3 với nhạc mới ra đỉnh −0,9 dBTP sau AAC — Lucas duyệt.)*
 MP4 trong `Map/` không lên git (`.gitignore`).
 

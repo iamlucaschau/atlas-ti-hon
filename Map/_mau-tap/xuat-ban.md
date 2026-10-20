@@ -1,6 +1,6 @@
 # Gói xuất bản — "<tiêu đề>"
 
-*Cổng 5 (<ngày>). Kênh **Atlas Tí Hon**. Video: `<slug>.mp4` (9:16, −14 LUFS). Bản lặp: `<slug>-loop-preview-x2.mp4`.*
+*Cổng 5 (<ngày>). Kênh **Atlas Tí Hon**. Video: `<slug>.mp4` (9:16, −14 LUFS).*
 
 ## 1. Tiêu đề (thử A/B)
 

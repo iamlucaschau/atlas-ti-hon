@@ -1,0 +1,203 @@
+{
+  "durationInSeconds": 68.94558333333333,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 4.8,
+      "text": "Cuối năm nay, chuyến Vietnam Airlines từ Sài Gòn đi Bắc Kinh dự kiến cất cánh ở Đồng Nai."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 4.860124999999999,
+      "end": 6.657124999999999,
+      "text": "Ai bắt bạn đi xa bốn mươi cây số?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 6.716749999999999,
+      "end": 7.4777499999999995,
+      "text": "Một khoản nợ."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 7.727333333333332,
+      "end": 11.844333333333331,
+      "text": "Giai đoạn đầu của Long Thành tốn gần một trăm mười nghìn tỷ, một phần là tiền vay."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 11.904333333333332,
+      "end": 13.201333333333332,
+      "text": "Muốn trả nợ thì cần khách."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 13.261499999999998,
+      "end": 17.103499999999997,
+      "text": "Mà khách đang ở Tân Sơn Nhất: năm ngoái, hơn bốn mươi hai triệu lượt."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 17.353291666666664,
+      "end": 18.838291666666663,
+      "text": "Sao không mở rộng luôn Tân Sơn Nhất?"
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 18.89845833333333,
+      "end": 19.161458333333332,
+      "text": "Hết chỗ."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 19.221124999999997,
+      "end": 22.611124999999998,
+      "text": "Sân bay nằm lọt giữa phố, lại dùng chung với quân đội."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 22.67158333333333,
+      "end": 24.74058333333333,
+      "text": "Thêm một đường băng là phải giải toả nhà dân."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "start": 24.990666666666662,
+      "end": 27.577666666666662,
+      "text": "Phe mở rộng muốn lấy sân golf ngay trong sân bay."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 27.637499999999996,
+      "end": 29.418499999999995,
+      "text": "Phe kia bảo phải ra chỗ rộng."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 29.478333333333328,
+      "end": 32.53633333333333,
+      "text": "Năm hai nghìn không trăm mười lăm, Quốc hội chọn xây mới."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 32.59641666666666,
+      "end": 34.98741666666666,
+      "text": "Bốn trăm hai mươi tám trên bốn trăm sáu mươi mốt phiếu."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 35.0475,
+      "end": 36.8205,
+      "text": "Cuộc bỏ phiếu cất cánh khá êm."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "start": 37.07058333333333,
+      "end": 38.88458333333333,
+      "text": "Long Thành rộng năm nghìn héc-ta."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 38.944125,
+      "end": 40.382125,
+      "text": "Gấp hơn sáu lần Tân Sơn Nhất."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "start": 40.632125,
+      "end": 41.599125,
+      "text": "Đường băng có rồi."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 41.65891666666667,
+      "end": 42.92191666666667,
+      "text": "Khách thì chưa chắc."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 42.98225,
+      "end": 45.83925,
+      "text": "Chủ đầu tư ACV muốn dời hết chuyến quốc tế sang đây."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 45.89908333333334,
+      "end": 47.95608333333334,
+      "text": "Vietnam Airlines muốn giữ chặng Đông Nam Á."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "start": 48.01591666666667,
+      "end": 51.13491666666667,
+      "text": "Giai đoạn đầu, hãng dự kiến chuyển bốn đường bay, có Bắc Kinh."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 51.385083333333334,
+      "end": 56.16308333333333,
+      "text": "Chiều mười lăm tháng mười hai năm ngoái, cơ trưởng Trần Tuấn Hưng đáp chiếc máy bay đầu tiên xuống Long Thành."
+    },
+    {
+      "id": "24",
+      "scene": "s8",
+      "start": 56.41291666666667,
+      "end": 59.07091666666667,
+      "text": "Con số quan trọng nhất nằm trong bảng tính của chủ đầu tư."
+    },
+    {
+      "id": "25",
+      "scene": "s8",
+      "start": 59.13070833333333,
+      "end": 61.69470833333333,
+      "text": "Long Thành có thể thu đủ bù chi sau một, hai năm."
+    },
+    {
+      "id": "26",
+      "scene": "s8",
+      "start": 61.7545,
+      "end": 64.1585,
+      "text": "Nếu chín phần mười khách quốc tế rời Tân Sơn Nhất."
+    },
+    {
+      "id": "27",
+      "scene": "s8",
+      "start": 64.21883333333334,
+      "end": 66.70583333333333,
+      "text": "Chiếc máy bay đầu tiên ấy cũng cất cánh từ Tân Sơn Nhất."
+    },
+    {
+      "id": "28",
+      "scene": "s8",
+      "start": 66.76575,
+      "end": 68.69575,
+      "text": "Giờ, tới lượt khách quốc tế bay theo."
+    }
+  ]
+}
