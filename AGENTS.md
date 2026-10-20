@@ -15,7 +15,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 - Quy trình **5 cổng**; hết mỗi cổng **dừng lại chờ "Duyệt Cổng N"**. Việc nhỏ, hiển nhiên (sửa lỗi đè hình, chỉnh vị trí, lỗi lint) thì tự làm, không hỏi; chỉ hỏi ở cổng hoặc khi thay đổi ảnh hưởng toàn kênh.
 - Khi Lucas hỏi "bạn hiểu ý mình chứ" → tóm lại cách hiểu + các lựa chọn, **chưa làm** cho tới khi Lucas nói làm.
 - **Ảnh nhân vật / đạo cụ do Lucas tạo** trong app (Gemini / ChatGPT) từ bộ prompt Luis viết (Free Tier Gemini API không có quota ảnh). Luis tách nền, vẽ bản đồ, cờ, số, chữ bằng vector.
-- **Hiển thị trong chat (Lucas 2026-10-19):** gợi ý chủ đề (Cổng 1), kịch bản (Cổng 3) và prompt ảnh (Cổng 4) phải **in thẳng trong câu trả lời** để Lucas đọc ngay, không chỉ ghi vào file. Khi gửi prompt ảnh, **tạo sẵn thư mục `public/images/<slug>/`** để Lucas dán ảnh vào.
+- **Hiển thị trong chat (Lucas 2026-10-19):** gợi ý chủ đề (Cổng 1), kịch bản (Cổng 3) và prompt ảnh (Cổng 4) phải **in thẳng trong câu trả lời** để Lucas đọc ngay, không chỉ ghi vào file. Khi gửi prompt ảnh, **tạo sẵn thư mục `public/images/<slug>/`** để Lucas dán ảnh vào. Render cuối xong (`npm run final`) thì **gửi luôn video `Map/<slug>/<slug>.mp4` vào chat** để Lucas xem (Lucas 2026-10-20).
 - **Commit / push chỉ khi Lucas bảo.** Trước khi commit: `git status --short` là **một bước riêng**, đọc kết quả; thấy thư mục mới, video, mp3, key hay tài liệu bên thứ ba → **dừng lại hỏi**. Không bao giờ push đè (`--force`) khi chưa được Lucas đồng ý. (Sự cố 2026-10-15: video đối thủ lỡ bị push.)
 - Báo cáo thật: lỗi, cảnh báo, chỗ chưa chắc đều nói rõ; số liệu nào chưa kiểm chứng thì ghi ⚠️.
 

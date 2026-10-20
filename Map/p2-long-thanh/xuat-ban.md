@@ -1,6 +1,6 @@
 # Gói xuất bản — "Cuộc giành khách: sân bay Long Thành"
 
-*Cổng 5 — **Lucas duyệt 2026-10-20**. Kênh **Atlas Tí Hon**. Video: `p2-long-thanh.mp4` (9:16, −14 LUFS). **Đăng trong năm 2026** (lời đọc nói "năm ngoái" = 2025); nên đăng trước ngày khai thác thương mại dự kiến cuối tháng 12/2026.*
+*Cổng 5 — **Lucas duyệt 2026-10-20** (bản v2: sửa phần hình, cùng lời đọc). Kênh **Atlas Tí Hon**. Video: `p2-long-thanh.mp4` (9:16, −14 LUFS). **Đăng trong năm 2026** (lời đọc nói "năm ngoái" = 2025); nên đăng trước ngày khai thác thương mại dự kiến cuối tháng 12/2026.*
 
 ## 1. Tiêu đề (thử A/B)
 
@@ -25,7 +25,7 @@
 > - "Hoà vốn hoặc lợi nhuận sau 1–2 năm hoạt động" với giả định 90 % khách quốc tế chuyển từ Tân Sơn Nhất (TGĐ ACV, ĐHĐCĐ 31/5/2024) — Vietstock, The Leader, Tin nhanh chứng khoán. **Đây là dự tính của chủ đầu tư, không phải thời gian hoàn vốn đầu tư.**
 > - Khai thác thương mại dự kiến cuối 12/2026 (ACV) — Dân trí (4/10/2026)
 > - Nhạc: "Wallpaper" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/
-> - Ranh giới tỉnh 2025: OCHA/HDX, Viet Nam Subnational Administrative Boundaries (COD-AB v02, CC BY-IGO); bản đồ nền: Natural Earth. **Hai khung sân bay vẽ minh hoạ theo diện tích quy hoạch (791 ha ↔ 5.000 ha); đường băng, mái nhà, khu quân sự, sân golf, chấm khách và đường bay 40 km là sơ đồ minh hoạ.**
+> - Ranh giới tỉnh 2025: OCHA/HDX, Viet Nam Subnational Administrative Boundaries (COD-AB v02, CC BY-IGO); bản đồ nền và vùng đô thị (minh hoạ, dữ liệu cũ): Natural Earth. **Hai khung sân bay vẽ minh hoạ theo diện tích quy hoạch (791 ha ↔ 5.000 ha); đường băng, mái nhà, khu quân sự, sân golf, chấm khách, thanh kéo co, đồng hồ 9/10 và đường bay 40 km là sơ đồ minh hoạ.**
 >
 > #Shorts #AtlasTiHon #BanDo #LongThanh #TanSonNhat #SanBay #HangKhong #DongNai #TPHCM
 

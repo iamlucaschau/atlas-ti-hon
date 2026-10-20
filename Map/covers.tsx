@@ -110,7 +110,7 @@ export const COVERS: CoverSpec[] = [
   { slug: "p3-bach-ma", Scene: BachMaScene, frame: 1000, hook: [{ text: "MỘT DÃY NÚI" }, { text: "CHIA ĐÔI MÙA ĐÔNG", punch: true }], y: 230,
     mark: { x: 385, y: 680, r: 95, arrowFrom: [700, 880] } },
   // phase 1 ~110.000 tỷ (C11), the investor's break-even assumes the international passengers move over (C17) — line 28: the passengers follow the first flight's trail; ring on Long Thành
-  { slug: "p2-long-thanh", Scene: AirportScene, frame: 2035, hook: [{ text: "SÂN BAY 110 NGHÌN TỶ" }, { text: "ĐANG CHỜ KHÁCH", punch: true }], y: 230,
+  { slug: "p2-long-thanh", Scene: AirportScene, frame: 2020, hook: [{ text: "SÂN BAY 110 NGHÌN TỶ" }, { text: "ĐANG CHỜ KHÁCH", punch: true }], y: 230,
     mark: { x: 866, y: 850, r: 105, arrowFrom: [540, 940] } },
 ];
 

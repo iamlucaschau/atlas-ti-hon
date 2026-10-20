@@ -517,8 +517,8 @@ export const CountryTag: React.FC<{
 };
 
 /** Main islands of Hoàng Sa and Trường Sa (approximate positions), drawn as dots: at country zoom the real shapes are sub-pixel. */
-const HOANG_SA: [number, number][] = [[112.33, 16.83], [111.61, 16.53], [111.2, 15.78], [112.73, 16.67], [111.5, 17.08], [111.7, 16.45], [112.0, 16.0]];
-const TRUONG_SA: [number, number][] = [
+export const HOANG_SA: [number, number][] = [[112.33, 16.83], [111.61, 16.53], [111.2, 15.78], [112.73, 16.67], [111.5, 17.08], [111.7, 16.45], [112.0, 16.0]];
+export const TRUONG_SA: [number, number][] = [
   [111.92, 8.64], [114.33, 11.43], [114.36, 10.38], [114.33, 9.88], [114.37, 10.18], [112.92, 7.89], [114.48, 10.38],
   [114.28, 11.05], [115.53, 9.9], [113.85, 8.85], [116.3, 9.73],
 ];

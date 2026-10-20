@@ -85,3 +85,18 @@ Vector: khung sân bay, đường băng, chấm khách, đường bay, thẻ n�
 ## Ảnh bìa (ý tưởng)
 
 Khung `vung`: TSN nhỏ đông nghịt, Long Thành lớn trống, dòng chấm vàng chảy sang; hook 2 tầng **"SÂN BAY 110 NGHÌN TỶ"** / **"ĐANG CHỜ KHÁCH"**, vòng đỏ quanh Long Thành.
+
+## v2 — sửa phần hình, giữ nguyên lời đọc (Lucas duyệt 2026-10-20)
+
+Sau khi Luis tự chấm bản đầu 7,3/10 (bản đồ 6/10), Lucas duyệt làm mục 1, 2, 3, 4, 5, 7:
+
+| Mục | Thay đổi | Câu |
+|---|---|---|
+| 1 Định vị | Thẻ định vị Việt Nam nhỏ góc trên phải (Việt Nam + Hoàng Sa, Trường Sa màu Việt Nam, ô vàng ở TP.HCM) ở khung đầu / cuối; màu hai tỉnh dịu lại | 01, 28 |
+| 2 "Lọt giữa phố" | Vùng đô thị TP.HCM (Natural Earth Urban Areas 10m, `geo/ne-urban-hcm.json`) tô xám + khối nhà đồ chơi; viền loé ở câu 09 | mọi khung |
+| 3 Gấp 6 lần | Thay 6 ô xám trong Long Thành bằng: khung 5.000 ha rời Long Thành, bay sang đặt chồng lên Tân Sơn Nhất giữa thành phố (camera `city`) + nhãn "NẾU ĐẶT VÀO SÀI GÒN" | 16–17 |
+| 4 Giành khách | Thanh kéo co ở vùng dưới (Tân Sơn Nhất ↔ Long Thành), nút vàng bị ACV kéo sang phải rồi VNA kéo lại; chấm khách to hơn | 20–22 |
+| 5 Twist | Bảng tính chỉ giữ ở câu 24–25; câu 26 đồng hồ vòng quanh Tân Sơn Nhất đầy tới 9/10, câu 28 cạn dần khi 9 chấm khách bay theo vệt chuyến bay đầu tiên | 24–28 |
+| 7 Khung đầu | Máy bay đậu trên Tân Sơn Nhất + "BẮC KINH ↑" ngay từ frame 0 (và quay lại ở khung cuối để nối vòng) | 01, 28 |
+
+Camera v2: `vung` → `lt` (04) → `tsn` (06) → `vung` (13) → `city` (16 giữa câu) → `vung` (18) → `lt` (23) → `vung` (24 cuối câu).
