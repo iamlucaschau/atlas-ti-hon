@@ -90,7 +90,7 @@ Chi tiết + code: `Style Library/I-toy-atlas/README.md`. Tóm tắt những đi
 | Nền than chì/navy + amber `#F5A524` | Bản đồ Natural Earth có vân địa hình, biển xanh, lãnh thổ màu theo phe |
 | Font Be Vietnam Pro | **Bricolage Grotesque** 700–800 (có bộ tiếng Việt), mọi chữ ≥ 48 px |
 | Phụ đề IN HOA 2–5 từ, 2 dòng | **Karaoke 1 dòng, ≤ 4 chữ / 20 ký tự** (Lucas 2026-10-13); từ khoá + con số vàng nhạt suốt cụm, chữ đang đọc vàng đậm và to hơn 10 % (`AtlasSub`); tối đa 1–2 cụm từ khoá `*…*` mỗi câu |
-| Push / pan nhẹ mỗi beat | **Bay khi đổi nơi** (ease, ≥ 22 frame, không blur/rung) + **đẩy chậm mỗi beat** (Lucas 2026-10-13): camera tiến rất chậm, đều về chủ thể, ≤ ~5 % zoom mỗi 3 s, không rung, không giật, không "thở", không zoom đột ngột; **trong khung luôn có chuyển động** (biển, cờ, quân cờ, tàu, sticker, viền phát sáng) |
+| Push / pan nhẹ mỗi beat | **Bay khi đổi nơi** (ease, ≥ 22 frame, không blur/rung) + **đẩy chậm mỗi beat** (Lucas 2026-10-13): camera tiến rất chậm, đều về chủ thể, ≤ ~5 % zoom mỗi 3 s, không rung, không giật, không "thở", không zoom đột ngột; **trong khung luôn có chuyển động** (biển, cờ, quân cờ, tàu, sticker, viền phát sáng). **Mở đầu phải có chuyển động camera (Lucas 2026-10-21, góp ý công cụ dự báo: "5 giây đầu là bản đồ đứng yên + chữ"):** frame 0 là khung rộng (khung nối vòng), và **ngay từ frame 1** camera bay vào nơi hook nhắc tới (một cú "đổi nơi" ~0,8–1 s, ease in-out); 2 giây đầu không được chỉ có chữ hiện trên bản đồ đứng yên |
 | Logo dấu phẩy amber | Bỏ (thương hiệu chốt sau cùng tên kênh) |
 | Minh hoạ vector + paper collage | **Quân cờ chibi + sticker đạo cụ** từ bộ prompt ảnh (Lucas tạo), tách nền bằng `scripts/cutout.py` |
 
@@ -162,6 +162,7 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 | 2026-10-14 | Nhạc nền Pixabay theo pillar (10 bài, mỗi pillar 1 chính + 1 dự phòng), −28 LUFS | Lucas |
 | 2026-10-14 | Hoàng Sa, Trường Sa hiển thị kiểu nhãn chỉ dẫn lề phải, chữ 42 px (ngoại lệ luật 48 px cho nhãn nền bản đồ) | Lucas |
 | 2026-10-14 | Thay bằng kiểu ghim bản đồ (chấm đỏ + tên trắng), tên chỉ hiện ở cảnh camera tới; bỏ cột lề phải | Lucas |
+| 2026-10-21 | Mở đầu mỗi tập: camera bay ngay từ frame 1 vào nơi hook nhắc tới (2 giây đầu không được là bản đồ đứng yên) | Lucas |
 | 2026-10-14 | Tên kênh: **Atlas Tí Hon** (tiếng Anh sau: Tiny Atlas); nhận diện ở `06_NHAN-DIEN-KENH.md` | Lucas |
 | 2026-10-14 | Nối vòng mềm: bỏ vế bỏ lửng cuối kịch bản, kết bằng câu trọn vẹn; hình vẫn lặp liền (áp dụng lại cho cả 5 tập) | Lucas |
 | 2026-10-14 | Tên nước + cờ + viền sáng cho mọi nước được gọi tên / tô màu (`CountryTag`) | Lucas |

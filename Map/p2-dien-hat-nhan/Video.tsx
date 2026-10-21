@@ -38,9 +38,13 @@ const SITE2: LL = [109.18, 11.68]; // Vĩnh Hải — Ninh Thuận 2 (approximat
 const VIEW = {
   vn: { lon: 108.6, lat: 16.2, zoom: 19 },
   nt: { lon: 109.05, lat: 11.62, zoom: 330 },
+  /** hook (Bible 2026-10-21): fly in on Ninh Thuận from frame 1, out again for the two-pin question */
+  hook: { lon: 108.75, lat: 12.15, zoom: 62 },
 };
 const KEYS0: GeoCam[] = [
   { at: 0, ...VIEW.vn },
+  { at: 1, ...VIEW.hook },
+  { at: at("03") - 6, ...VIEW.vn },
   { at: at("05") - 4, ...VIEW.nt },
   { at: at("06") - 4, ...VIEW.vn },
   { at: at("09") - 4, ...VIEW.nt },
@@ -136,7 +140,7 @@ export const Scene: React.FC = () => {
       <Stamp text="TẠM DỪNG" x={nt[0] - 40} y={nt[1] - 130} f={f} at={at("01", 0.45)} out={at("02", 0.15)} />
       <YearRibbon text="2024" f={f} at={at("02", 0.1)} out={at("03", 0.3)} />
       <Stamp text="LÀM LẠI" x={nt[0] - 40} y={nt[1] - 130} f={f} at={at("02", 0.55)} out={at("03", 0.6)} color={GREEN} />
-      <Question x={(nt[0] + hn[0]) / 2 + 60} y={(nt[1] + hn[1]) / 2} f={f} at={at("03", 0.2)} out={at("04", 0.4)} s={1.4} />
+      <Question x={(nt[0] + hn[0]) / 2 + 60} y={(nt[1] + hn[1]) / 2} f={f} at={at("03", 0.6)} out={at("04", 0.4)} s={1.4} />
       {f >= at("04") && f < at("05") && (
         <>
           <Pulse x={hn[0]} y={hn[1]} f={f} color={ATLAS.white} o={1 - prog(f, at("05") - 6, 5)} />

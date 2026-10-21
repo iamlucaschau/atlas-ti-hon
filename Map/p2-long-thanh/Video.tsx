@@ -55,6 +55,9 @@ const VIEW = {
 const MOVE_AT = at("16", 0.55);
 const KEYS0: GeoCam[] = [
   { at: 0, ...VIEW.vung },
+  // hook (Bible 2026-10-21): fly in on Tân Sơn Nhất from frame 1, back out as the plane hops to Đồng Nai
+  { at: 1, lon: TSN[0] + 0.03, lat: TSN[1] + 0.04, zoom: 1300 },
+  { at: at("01", 0.6), ...VIEW.vung },
   { at: at("04") - 4, ...VIEW.lt },
   { at: at("06") - 4, ...VIEW.tsn },
   { at: at("13") - 4, ...VIEW.vung },
@@ -264,7 +267,7 @@ export const Scene: React.FC = () => {
   // ── loop frame (v2 item 7): plane on Tân Sơn Nhất pointing to Bắc Kinh, Long Thành named, Vietnam locator ──
   const tail = prog(f, at("28", 0.72), 10);
   const hookO = Math.max(1 - prog(f, at("01", 0.75), 6), tail);
-  const ltNameO = Math.max(1 - prog(f, at("01", 0.15), 6), tail);
+  const ltNameO = Math.max(1 - prog(f, 1, 5), tail);
   const locO = Math.max(1 - prog(f, at("01", 0.8), 6), tail);
 
   // passenger dots (bigger in the overview, v2 item 4)

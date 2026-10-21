@@ -2,12 +2,15 @@
 
 *Cổng 5 — **Lucas duyệt 2026-10-20**. Kênh **Atlas Tí Hon**. Video: `p2-dien-hat-nhan.mp4` (9:16, −14 LUFS). **Đăng trong năm 2026** (lời đọc dùng mốc 2025–2026 cho đối tác); trước khi đăng kiểm lại: đối tác Ninh Thuận 2, tiến độ bồi thường, tổng vốn mới.*
 
-## 1. Tiêu đề (thử A/B)
+## 1. Tiêu đề (thử A/B — cập nhật 2026-10-21 theo điểm của công cụ gợi ý tiêu đề Lucas dùng)
 
-1. **Điện hạt nhân: canh bạc hay lời giải cho cơn khát điện?** ⚛️ *(chính)*
-2. Dừng vì tiền, làm lại vì điện: điện hạt nhân Việt Nam
-3. Tám năm ấy đã đổi điều gì?
-4. Đúng mùa hè thiếu điện, Ninh Thuận lại huỷ đất điện hạt nhân
+| # | Tiêu đề | Điểm công cụ | Nhận xét của Luis |
+|---|---|---|---|
+| A | **Sự thật về dự án điện hạt nhân 200.000 tỷ của Việt Nam** ⚡ *(chính)* | 85 | điểm cao nhất; "200.000 tỷ" là **ước tính năm 2008 cho cả hai nhà máy** — đúng với video (thẻ "ƯỚC TÍNH 2008"), mô tả đã ghi rõ |
+| B | Cú quay xe lịch sử của điện hạt nhân Việt Nam ⚛️ | 83 | đúng mạch "dừng 2016 → làm lại 2024" |
+| C | Tại sao Việt Nam dừng rồi lại muốn làm điện hạt nhân? | 80 | chính xác nhất với câu hỏi của video |
+| D | Điện hạt nhân: canh bạc hay lời giải cho cơn khát điện? | 79 | tiêu đề cũ (Cổng 2) |
+| — | ~~Việt Nam có thực sự cần điện hạt nhân lúc này?~~ | 81 | **không dùng**: video không trả lời câu này, kênh không phán |
 
 ## 2. Mô tả
 

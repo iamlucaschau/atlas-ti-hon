@@ -69,7 +69,7 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 ## Luật kênh (tóm tắt — chi tiết ở Bible)
 
 - **Vùng an toàn 9:16:** mọi chữ, số, mặt người, hình chính trong **x 60–940, y 220–1440**; kiểm bằng `--props='{"safeGuide":true}'`.
-- **Camera:** chỉ bay khi đổi nơi (≥ 22 frame, ease in-out, không rung, không blur) + đẩy chậm ≤ ~5 % / 3 s trong mỗi beat; không zoom giật, không rung máy. Khung không đứng yên > 2 s.
+- **Camera:** chỉ bay khi đổi nơi (≥ 22 frame, ease in-out, không rung, không blur) + đẩy chậm ≤ ~5 % / 3 s trong mỗi beat; không zoom giật, không rung máy. Khung không đứng yên > 2 s. **Mở đầu:** frame 0 = khung rộng (khung nối vòng), từ frame 1 camera bay ngay vào nơi hook nhắc tới — 2 giây đầu không được là bản đồ đứng yên + chữ (Lucas 2026-10-21).
 - **Chữ:** mỗi khối ≤ 5 chữ, ≤ 2 khối cùng lúc ngoài phụ đề, ≥ 48 px (nhãn Hoàng Sa / Trường Sa 42 px), Bricolage Grotesque 700–800. Phụ đề karaoke 1 dòng ≤ 4 chữ / 20 ký tự.
 - **7 luật kịch bản** (Bible §3 mục 6–11, `Map/phan-tich-doi-thu/SO-SANH-KICH-BAN.md`): câu hỏi treo đáp ngay 1–3 chữ · ≥ 1 khoảnh khắc người (nhân vật thật + việc cụ thể, có nguồn) · 1–2 câu đùa sau con số nặng · chủ đề tranh luận có 2 phe · 1 con số mới mỗi câu · twist là nhịp nội dung cuối · không lặp câu cửa miệng ("oái oăm", "thử…", "Vì sao?") trong 3 tập liền.
 - **Nối vòng mềm:** lời kết bằng câu trọn vẹn (không vế bỏ lửng); hình vẫn lặp liền: `seamKeys` + `export --loop --tail=0.7`; khung cuối = khung đầu.

@@ -46,6 +46,9 @@ const PAC = { lon: 172, lat: 31, zoom: 1.75 };
 const VNV = { lon: 107.2, lat: 13.2, zoom: 16 };
 const KEYS0: GeoCam[] = [
   { at: 0, ...PAC },
+  // hook (Bible 2026-10-21): fly in on Sài Gòn as the straight line starts, back out to the whole Pacific
+  { at: 1, lon: 125, lat: 21, zoom: 3.4 },
+  { at: at("01", 0.55), ...PAC },
   { at: at("05") - 4, ...VNV },
   { at: at("06") - 4, ...PAC },
 ];
@@ -225,7 +228,7 @@ export const Scene: React.FC = () => {
         <RouteLine ps={rlS} p={redP} color={RED} dash="22 14" o={redO * interpolate(cam.zoom, [3, 8], [1, 0.25], CLAMP)} glow={red12} />
         <RouteLine ps={gcS} p={blueP} color={BLUE} glow={blueGlow} o={interpolate(cam.zoom, [3, 8], [1, 0.25], CLAMP)} />
         <Pin x={sgn[0]} y={sgn[1]} label="TÂN SƠN NHẤT" o={Math.max(f < at("01", 0.3) ? 1 : 1 - prog(f, at("01", 0.3), 5), show(f, at("05", 0.2), at("07")), prog(f, at("21", 0.7), 10))} side="right" color={ATLAS.gold} />
-        <Pin x={sfo[0]} y={sfo[1]} label="SAN FRANCISCO" o={Math.max(f < at("01", 0.3) ? 1 : 1 - prog(f, at("01", 0.3), 5), show(f, at("06", 0.8), at("07")), prog(f, at("21", 0.7), 10))} side="left" color={ATLAS.gold} />
+        <Pin x={sfo[0]} y={sfo[1]} label="SAN FRANCISCO" o={Math.max(1 - prog(f, 1, 5), show(f, at("06", 0.8), at("07")), prog(f, at("21", 0.7), 10))} side="left" color={ATLAS.gold} />
         <MapLabel text="ALASKA" x={aleut[0]} y={aleut[1] - 60} o={show(f, at("04", 0.2), at("05"))} size={56} />
         <MapLabel text="QUẦN ĐẢO ALEUT" x={aleut[0]} y={aleut[1] - 60} o={show(f, at("13", 0.45), at("14") - 2)} size={48} />
         {planeO > 0 && (
