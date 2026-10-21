@@ -1,0 +1,168 @@
+{
+  "durationInSeconds": 71.43358333333333,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 4.242,
+      "text": "Có một chỗ, từ biển sang tới biên giới Lào chưa đầy năm mươi cây số."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 4.3023333333333325,
+      "end": 4.6853333333333325,
+      "text": "Ở đâu?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 4.745499999999999,
+      "end": 5.609499999999999,
+      "text": "Quảng Bình."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 5.859666666666666,
+      "end": 10.001666666666665,
+      "text": "Hình dung thế này: chưa đầy năm mươi cây số, gần bằng một đường chạy marathon."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 10.062083333333332,
+      "end": 13.666083333333333,
+      "text": "Sáng tắm biển, trưa đã chạm biên giới Lào, nếu đôi chân chịu nổi."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "start": 13.915833333333332,
+      "end": 18.520833333333332,
+      "text": "Trong khi từ bắc vào nam, đất liền Việt Nam dài khoảng một nghìn sáu trăm năm mươi cây số."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 18.580416666666665,
+      "end": 20.573416666666663,
+      "text": "Dài gấp hơn ba mươi lần chỗ hẹp nhất."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "start": 20.823416666666667,
+      "end": 22.43541666666667,
+      "text": "Thứ gì bóp eo đất này lại?"
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "start": 22.495166666666666,
+      "end": 23.439166666666665,
+      "text": "Dãy Trường Sơn."
+    },
+    {
+      "id": "10",
+      "scene": "s4",
+      "start": 23.499125,
+      "end": 27.679125,
+      "text": "Ở đây, núi chạy sát xuống gần biển, và biên giới nằm ngay trên dãy núi."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "start": 27.739166666666666,
+      "end": 31.628166666666665,
+      "text": "Đất dốc từ tây sang đông, khoảng tám mươi lăm phần trăm là đồi núi."
+    },
+    {
+      "id": "12",
+      "scene": "s5",
+      "start": 31.878666666666668,
+      "end": 32.65466666666667,
+      "text": "Hệ quả?"
+    },
+    {
+      "id": "13",
+      "scene": "s5",
+      "start": 32.714625,
+      "end": 34.951625,
+      "text": "Mọi con đường Bắc Nam đều phải chen qua đây."
+    },
+    {
+      "id": "14",
+      "scene": "s5",
+      "start": 35.011624999999995,
+      "end": 38.443625,
+      "text": "Quốc lộ, đường sắt, đường Hồ Chí Minh, cùng một cái eo."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "start": 38.50408333333333,
+      "end": 41.075083333333325,
+      "text": "Thời chiến, cái eo ấy bị ném bom ác liệt."
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "start": 41.32545833333333,
+      "end": 44.24345833333333,
+      "text": "Đường đo ấy chạm biển gần Đồng Hới, cửa sông Nhật Lệ."
+    },
+    {
+      "id": "17",
+      "scene": "s6",
+      "start": 44.303916666666666,
+      "end": 47.57391666666667,
+      "text": "Ở bến đò bên sông, có một bà mẹ sáu mươi tuổi vẫn chèo đò."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "start": 47.634166666666665,
+      "end": 51.927166666666665,
+      "text": "Mẹ Suốt đưa bộ đội, thương binh, vũ khí qua sông, ngay giữa những trận bom."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 51.98766666666666,
+      "end": 57.03966666666666,
+      "text": "Năm một nghìn chín trăm sáu mươi lăm, nhà thơ Tố Hữu gặp mẹ, rồi viết một bài thơ mang tên mẹ."
+    },
+    {
+      "id": "20",
+      "scene": "s7",
+      "start": 57.28945833333333,
+      "end": 61.52645833333333,
+      "text": "Nhưng từ tháng bảy năm hai nghìn hai mươi lăm, tỉnh Quảng Bình không còn trên bản đồ hành chính."
+    },
+    {
+      "id": "21",
+      "scene": "s7",
+      "start": 61.586416666666665,
+      "end": 64.66341666666666,
+      "text": "Quảng Bình nhập với Quảng Trị, tỉnh mới mang tên Quảng Trị."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "start": 64.72325,
+      "end": 67.59025,
+      "text": "Oái oăm ở chỗ, tỉnh lỵ mới lại đặt ở Đồng Hới."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 67.65058333333333,
+      "end": 71.18358333333333,
+      "text": "Tên tỉnh có thể đổi, còn Việt Nam vẫn thắt lại ở đúng chỗ ấy."
+    }
+  ]
+}

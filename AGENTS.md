@@ -57,7 +57,7 @@ public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voic
 scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
 ```
 
-ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Cover-<slug>`.
+ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Cover-<slug>`.
 
 ## Luật Remotion (không được phá)
 

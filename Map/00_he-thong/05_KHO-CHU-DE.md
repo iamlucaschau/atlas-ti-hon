@@ -66,6 +66,7 @@
 
 | Chủ đề | Rủi ro | Trạng thái |
 |---|---|---|
+| Chỗ hẹp nhất Việt Nam: chưa đầy 50 km từ biển sang Lào (Quảng Bình, sáp nhập 2025) | T | **Đã làm** (`Map/p5-cho-hep-nhat/`, 5 cổng duyệt 2026-10-21) |
 | Vì sao Tây Ban Nha có những biên giới kỳ lạ nhất châu Âu? | T | ý tưởng (playbook) |
 | Hòn đảo đổi quốc tịch mỗi 6 tháng (đảo Pheasant) | T | ý tưởng |
 | Thị trấn nơi biên giới cắt ngang cả quán cà phê (Baarle) | T | ý tưởng |

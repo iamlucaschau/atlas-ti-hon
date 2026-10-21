@@ -21,6 +21,7 @@ import { Scene as BachMaScene } from "./p3-bach-ma/Video";
 import { Scene as AirportScene } from "./p2-long-thanh/Video";
 import { Scene as NuclearScene } from "./p2-dien-hat-nhan/Video";
 import { Scene as FlightScene } from "./p4-duong-bay-cong/Video";
+import { Scene as NarrowScene } from "./p5-cho-hep-nhat/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -120,6 +121,9 @@ export const COVERS: CoverSpec[] = [
   // on a flat map the straight line Saigon → USA is the longer route (C5, C6); the shortest arcs up near Alaska (C3, C4) — line 04; ring on the top of the curve
   { slug: "p4-duong-bay-cong", Scene: FlightScene, frame: 172, hook: [{ text: "ĐƯỜNG THẲNG" }, { text: "LẠI XA HƠN", punch: true }], y: 230,
     mark: { x: 585, y: 615, r: 80, arrowFrom: [820, 900] } },
+  // from the sea to the Lao border is less than 50 km (C1); the ruler across the waist, Lào tagged — line 01; ring on the ruler
+  { slug: "p5-cho-hep-nhat", Scene: NarrowScene, frame: 74, hook: [{ text: "BIỂN SANG LÀO" }, { text: "< 50 KM", punch: true }], y: 230,
+    mark: { x: 527, y: 752, r: 180, arrowFrom: [820, 1100] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

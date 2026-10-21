@@ -1,0 +1,177 @@
+{
+  "name": "p5-cho-hep-nhat",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu mở đầu nói như tiết lộ một bí mật nhỏ. \"Ở đâu?\" hỏi nhẹ; \"Quảng Bình.\" ngắn, chắc, ngừng một nhịp. \"Thứ gì bóp eo đất này lại?\" hỏi tò mò; \"Dãy Trường Sơn.\" chắc. \"nếu đôi chân chịu nổi\" đọc có ý cười nhẹ. Đoạn về Mẹ Suốt hạ giọng, chậm hơn, trang trọng, không cười. \"Oái oăm ở chỗ\" hơi nhướn giọng. Đọc marathon là \"ma-ra-tông\". Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Có một chỗ, từ biển sang tới biên giới Lào chưa đầy năm mươi cây số."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Ở đâu?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Quảng Bình."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Hình dung thế này: chưa đầy năm mươi cây số, gần bằng một đường chạy marathon."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Sáng tắm biển, trưa đã chạm biên giới Lào, nếu đôi chân chịu nổi."
+    },
+    {
+      "id": "06",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Trong khi từ bắc vào nam, đất liền Việt Nam dài khoảng một nghìn sáu trăm năm mươi cây số."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Dài gấp hơn ba mươi lần chỗ hẹp nhất."
+    },
+    {
+      "id": "08",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Thứ gì bóp eo đất này lại?"
+    },
+    {
+      "id": "09",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Dãy Trường Sơn."
+    },
+    {
+      "id": "10",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Ở đây, núi chạy sát xuống gần biển, và biên giới nằm ngay trên dãy núi."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Đất dốc từ tây sang đông, khoảng tám mươi lăm phần trăm là đồi núi."
+    },
+    {
+      "id": "12",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Hệ quả?"
+    },
+    {
+      "id": "13",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Mọi con đường Bắc Nam đều phải chen qua đây."
+    },
+    {
+      "id": "14",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Quốc lộ, đường sắt, đường Hồ Chí Minh, cùng một cái eo."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Thời chiến, cái eo ấy bị ném bom ác liệt."
+    },
+    {
+      "id": "16",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Đường đo ấy chạm biển gần Đồng Hới, cửa sông Nhật Lệ."
+    },
+    {
+      "id": "17",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Ở bến đò bên sông, có một bà mẹ sáu mươi tuổi vẫn chèo đò."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Mẹ Suốt đưa bộ đội, thương binh, vũ khí qua sông, ngay giữa những trận bom."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Năm một nghìn chín trăm sáu mươi lăm, nhà thơ Tố Hữu gặp mẹ, rồi viết một bài thơ mang tên mẹ."
+    },
+    {
+      "id": "20",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Nhưng từ tháng bảy năm hai nghìn hai mươi lăm, tỉnh Quảng Bình không còn trên bản đồ hành chính."
+    },
+    {
+      "id": "21",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Quảng Bình nhập với Quảng Trị, tỉnh mới mang tên Quảng Trị."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Oái oăm ở chỗ, tỉnh lỵ mới lại đặt ở Đồng Hới."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Tên tỉnh có thể đổi, còn Việt Nam vẫn thắt lại ở đúng chỗ ấy."
+    }
+  ]
+}
