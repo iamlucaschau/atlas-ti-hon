@@ -20,6 +20,7 @@ import { Scene as HighlandsScene } from "./p1-tay-nguyen-co-bien/Video";
 import { Scene as BachMaScene } from "./p3-bach-ma/Video";
 import { Scene as AirportScene } from "./p2-long-thanh/Video";
 import { Scene as NuclearScene } from "./p2-dien-hat-nhan/Video";
+import { Scene as FlightScene } from "./p4-duong-bay-cong/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -116,6 +117,9 @@ export const COVERS: CoverSpec[] = [
   // stopped for money in 2016 (C7, C8), restarted in 2024 (C12) to answer the 2023 power shortfall (C1, C31) — line 15: the dark north, the pit; ring on Ninh Thuận
   { slug: "p2-dien-hat-nhan", Scene: NuclearScene, frame: 828, hook: [{ text: "DỪNG VÌ TIỀN" }, { text: "LÀM LẠI VÌ ĐIỆN", punch: true }], y: 230,
     mark: { x: 600, y: 1025, r: 55, arrowFrom: [640, 1290] } },
+  // on a flat map the straight line Saigon → USA is the longer route (C5, C6); the shortest arcs up near Alaska (C3, C4) — line 04; ring on the top of the curve
+  { slug: "p4-duong-bay-cong", Scene: FlightScene, frame: 172, hook: [{ text: "ĐƯỜNG THẲNG" }, { text: "LẠI XA HƠN", punch: true }], y: 230,
+    mark: { x: 585, y: 615, r: 80, arrowFrom: [820, 900] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

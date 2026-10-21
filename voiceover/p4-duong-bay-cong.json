@@ -1,0 +1,163 @@
+{
+  "name": "p4-duong-bay-cong",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu mở đầu nói như tiết lộ một bí mật nhỏ. \"Đường nào ngắn hơn?\" hỏi nhẹ; \"Đường cong.\" ngắn, chắc, ngừng một nhịp. \"Rất tiện.\" và \"Không ai muốn thế.\" đọc có ý cười nhẹ. \"Nhưng chi tiết lạ nhất là\" hạ giọng như kể chuyện bên lề. Đọc Vietnam Airlines là \"Việt Nam Ai-lai\", San Francisco là \"Xan Phran-xít-xcô\", Mercator là \"Mẹc-ca-to\", Aleut là \"A-lê-út\", Greenland là \"Grin-lần\". Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Trên bản đồ, đường thẳng từ Sài Gòn sang Mỹ lại là đường xa hơn."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Đường nào ngắn hơn?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Đường cong."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Một đường cong vòng lên gần Alaska."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Cuối năm hai nghìn hai mươi mốt, Vietnam Airlines mở chuyến bay thẳng thường lệ đầu tiên từ Việt Nam sang Mỹ."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Tân Sơn Nhất tới San Francisco, gần mười bốn tiếng, không dừng."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Lỗi nằm ở tấm bản đồ quen thuộc."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn năm trăm sáu mươi chín, ông Mercator trải quả địa cầu lên một tờ giấy phẳng, để thuỷ thủ dễ đi biển."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Trên đó, kẻ một đường thẳng là giữ được một hướng la bàn."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Rất tiện."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Nhưng không phải đường ngắn nhất."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Đi theo đường thẳng trên bản đồ, quãng đường khoảng mười ba nghìn bốn trăm cây số."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Đường ngắn nhất thì đi ngang Nhật Bản, vòng lên gần quần đảo Aleut của Alaska, chỉ khoảng mười hai nghìn sáu trăm."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Chênh khoảng tám trăm năm mươi cây số."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Tức gần thêm một tiếng ngồi ghế máy bay."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Không ai muốn thế."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Cuộn bản đồ lại thành quả địa cầu, đường cong ấy hoá ra thẳng nhất."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Chuyến bay thật cũng đi qua Nhật Bản, vòng lên phía bắc, còn lại tuỳ gió và vùng trời mỗi ngày."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Nhưng chi tiết lạ nhất là, cũng tấm bản đồ ấy làm Greenland trông to gần bằng châu Phi."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Thật ra, châu Phi lớn gấp khoảng mười bốn lần."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Trên một quả cầu, đường thẳng nhất luôn là một đường cong."
+    }
+  ]
+}

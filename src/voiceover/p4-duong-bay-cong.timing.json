@@ -1,0 +1,154 @@
+{
+  "durationInSeconds": 65.54345833333333,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.9709999999999996,
+      "text": "Trên bản đồ, đường thẳng từ Sài Gòn sang Mỹ lại là đường xa hơn."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 4.0307916666666666,
+      "end": 4.741791666666667,
+      "text": "Đường nào ngắn hơn?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 4.801291666666667,
+      "end": 5.389291666666667,
+      "text": "Đường cong."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 5.449125,
+      "end": 7.591125,
+      "text": "Một đường cong vòng lên gần Alaska."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 7.841083333333334,
+      "end": 13.324083333333334,
+      "text": "Cuối năm hai nghìn hai mươi mốt, Vietnam Airlines mở chuyến bay thẳng thường lệ đầu tiên từ Việt Nam sang Mỹ."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 13.384208333333333,
+      "end": 17.202208333333335,
+      "text": "Tân Sơn Nhất tới San Francisco, gần mười bốn tiếng, không dừng."
+    },
+    {
+      "id": "07",
+      "scene": "s3",
+      "start": 17.452166666666667,
+      "end": 19.414166666666667,
+      "text": "Lỗi nằm ở tấm bản đồ quen thuộc."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 19.474,
+      "end": 25.315,
+      "text": "Năm một nghìn năm trăm sáu mươi chín, ông Mercator trải quả địa cầu lên một tờ giấy phẳng, để thuỷ thủ dễ đi biển."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 25.375291666666666,
+      "end": 28.423291666666664,
+      "text": "Trên đó, kẻ một đường thẳng là giữ được một hướng la bàn."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 28.483249999999998,
+      "end": 29.250249999999998,
+      "text": "Rất tiện."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 29.31058333333333,
+      "end": 30.43158333333333,
+      "text": "Nhưng không phải đường ngắn nhất."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 30.681416666666664,
+      "end": 34.522416666666665,
+      "text": "Đi theo đường thẳng trên bản đồ, quãng đường khoảng mười ba nghìn bốn trăm cây số."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 34.582166666666666,
+      "end": 40.213166666666666,
+      "text": "Đường ngắn nhất thì đi ngang Nhật Bản, vòng lên gần quần đảo Aleut của Alaska, chỉ khoảng mười hai nghìn sáu trăm."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 40.273125,
+      "end": 42.000125,
+      "text": "Chênh khoảng tám trăm năm mươi cây số."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 42.06,
+      "end": 43.892,
+      "text": "Tức gần thêm một tiếng ngồi ghế máy bay."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "start": 43.951708333333336,
+      "end": 44.96670833333334,
+      "text": "Không ai muốn thế."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 45.21716666666667,
+      "end": 48.72016666666667,
+      "text": "Cuộn bản đồ lại thành quả địa cầu, đường cong ấy hoá ra thẳng nhất."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 48.78,
+      "end": 54.057,
+      "text": "Chuyến bay thật cũng đi qua Nhật Bản, vòng lên phía bắc, còn lại tuỳ gió và vùng trời mỗi ngày."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 54.30679166666667,
+      "end": 59.32479166666667,
+      "text": "Nhưng chi tiết lạ nhất là, cũng tấm bản đồ ấy làm Greenland trông to gần bằng châu Phi."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 59.38516666666667,
+      "end": 62.05516666666667,
+      "text": "Thật ra, châu Phi lớn gấp khoảng mười bốn lần."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 62.114958333333334,
+      "end": 65.29395833333334,
+      "text": "Trên một quả cầu, đường thẳng nhất luôn là một đường cong."
+    }
+  ]
+}

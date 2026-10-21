@@ -377,7 +377,7 @@ export const MapLabel: React.FC<{ text: string; x: number; y: number; o?: number
 
 /** Five-point star, unit radius (flag stars). */
 const STAR = "M0,-1 L0.2245,-0.309 L0.951,-0.309 L0.3633,0.118 L0.5878,0.809 L0,0.382 L-0.5878,0.809 L-0.3633,0.118 L-0.951,-0.309 L-0.2245,-0.309 Z";
-export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia";
+export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia" | "usa";
 
 export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kind, w = 64, f = 0 }) => {
   const h = w * 0.62;
@@ -461,6 +461,17 @@ export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kin
           <g>
             <rect width={w} height={h} fill="#FFFFFF" />
             <circle cx={w / 2} cy={h / 2} r={h * 0.3} fill="#BC002D" />
+          </g>
+        )}
+        {kind === "usa" && (
+          <g>
+            {Array.from({ length: 13 }, (_, i) => (
+              <rect key={i} y={(i * h) / 13} width={w} height={h / 13} fill={i % 2 === 0 ? "#B22234" : "#FFFFFF"} />
+            ))}
+            <rect width={w * 0.4} height={(h * 7) / 13} fill="#3C3B6E" />
+            {Array.from({ length: 12 }, (_, i) => (
+              <circle key={i} cx={w * (0.05 + 0.1 * (i % 4))} cy={h * (0.07 + 0.13 * Math.floor(i / 4))} r={h * 0.025} fill="#FFFFFF" />
+            ))}
           </g>
         )}
         {kind === "russia" && (
