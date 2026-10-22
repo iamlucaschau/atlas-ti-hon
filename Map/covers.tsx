@@ -23,6 +23,7 @@ import { Scene as NuclearScene } from "./p2-dien-hat-nhan/Video";
 import { Scene as FlightScene } from "./p4-duong-bay-cong/Video";
 import { Scene as NarrowScene } from "./p5-cho-hep-nhat/Video";
 import { Scene as LaoSeaScene } from "./p4-lao-ra-bien/Video";
+import { Scene as HcmWorldsScene } from "./p5-tphcm-ba-the-gioi/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -128,6 +129,8 @@ export const COVERS: CoverSpec[] = [
   // Laos has no sea but holds 60 % of a seaport in Hà Tĩnh (C7) — line 13, the crow-flies line Vientiane → Vũng Áng; ring on the port
   { slug: "p4-lao-ra-bien", Scene: LaoSeaScene, frame: 918, hook: [{ text: "KHÔNG CÓ BIỂN" }, { text: "CẢNG Ở HÀ TĨNH", punch: true }], y: 230,
     mark: { x: 808, y: 790, r: 50, arrowFrom: [640, 1080] } },
+  // one city, three worlds (C1): the three faces smiling together on the gold new city — line 16
+  { slug: "p5-tphcm-ba-the-gioi", Scene: HcmWorldsScene, frame: 1478, hook: [{ text: "TP.HCM MỚI" }, { text: "3 THẾ GIỚI", punch: true }], y: 150 },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

@@ -572,11 +572,16 @@ const cmdBuild = async (keys, args) => {
   const lines = new Array(script.lines.length);
   let failed = 0;
 
-  const optsFor = (line) => ({
-    voice: line.voice ?? script.voice ?? DEFAULTS.voice,
-    style: line.style ?? script.style ?? DEFAULTS.style,
-    model: line.model ?? script.model ?? DEFAULTS.model,
-  });
+  // a line spoken by a character ("who", Bible §6) takes that role's voice + style from `cast`
+  const optsFor = (line) => {
+    const role = line.who ? script.cast?.[line.who] : undefined;
+    if (line.who && !role) throw new Error(`Line ${line.id}: no "${line.who}" in the script's cast`);
+    return {
+      voice: line.voice ?? role?.voice ?? script.voice ?? DEFAULTS.voice,
+      style: line.style ?? role?.style ?? script.style ?? DEFAULTS.style,
+      model: line.model ?? script.model ?? DEFAULTS.model,
+    };
+  };
 
   // Units of work: one request each. With "batchBy" (e.g. "scene"),
   // consecutive lines sharing that field and the same voice/style/model are

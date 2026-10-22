@@ -938,3 +938,187 @@ export const vertexP = (ps: [number, number][], i: number) => {
 /** Count-up text: from → to between frames a and a + d, formatted vi-VN. */
 export const count = (f: number, a: number, d: number, to: number, from = 0, digits = 0) =>
   interpolate(f, [a, a + d], [from, to], CLAMP).toLocaleString("vi-VN", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+
+// ------------------------------------------------------------------ talking places (Bible §5, Lucas 2026-10-22)
+
+export type FaceMood = "neutral" | "happy" | "smug" | "angry" | "worried" | "surprised" | "sad" | "wink";
+
+/**
+ * Mouth opening 0–1 at frame f while a VO line is spoken: one open-close per word, from the
+ * line's word start times (`words.json`, seconds) and its end. 0 outside the line.
+ */
+export const talkOpen = (f: number, fps: number, starts: number[], end: number) => {
+  const t = f / fps;
+  if (!starts.length || t < starts[0] || t > end) return 0;
+  let k = 0;
+  while (k + 1 < starts.length && starts[k + 1] <= t) k++;
+  const s = starts[k];
+  const e = Math.max(s + 0.08, k + 1 < starts.length ? starts[k + 1] : end);
+  return Math.sin(Math.PI * Math.min(1, (t - s) / (e - s))) ** 0.7;
+};
+
+/** Brow heights per mood, relative to the eye top: left outer, left inner, right inner, right outer. */
+const BROWS: Record<FaceMood, [number, number, number, number]> = {
+  neutral: [-10, -10, -10, -10],
+  happy: [-16, -12, -12, -16],
+  smug: [-8, -8, -20, -4],
+  angry: [-18, 2, 2, -18],
+  worried: [-6, -20, -20, -6],
+  surprised: [-26, -24, -24, -26],
+  sad: [-4, -16, -16, -4],
+  wink: [-14, -12, -12, -10],
+};
+
+/**
+ * A cartoon face on a country / province (`MapFace`): eyes, brows, mouth in ink and white, centred on
+ * (x, y) in screen space; `s` 1 ≈ 150 px wide. It pops in at `at`, blinks on its own, and moves its
+ * mouth while `talk` (0–1, see `talkOpen`) is > 0. Use on 1–3 beats per episode; never on
+ * Hoàng Sa / Trường Sa or disputed areas.
+ */
+export const MapFace: React.FC<{
+  x: number; y: number; f: number; mood?: FaceMood; talk?: number; s?: number; at?: number; out?: number;
+  look?: [number, number]; seed?: number;
+  /** name tag under the face (≥ 48 px on screen at any `s`), e.g. which province is talking */
+  label?: string; labelColor?: string;
+}> = ({ x, y, f, mood = "neutral", talk = 0, s = 1, at = -100, out, look = [0, 0], seed = 0, label, labelColor = ATLAS.white }) => {
+  const k = pop(f, at);
+  const o = out === undefined ? 1 : 1 - prog(f, out, 6);
+  if (k <= 0 || o <= 0) return null;
+  const INK = ATLAS.ink;
+  // blink: 4 frames every ~3.4 s, offset by seed
+  const cyc = (f + seed * 37) % 102;
+  const blink = cyc < 4 ? 1 - Math.sin((Math.PI * cyc) / 4) : 1;
+  const EX = 36; // eye centre offset from the middle
+  const RX = 24;
+  const RY = 29;
+  const eye = (side: -1 | 1) => {
+    const cx = side * EX;
+    if (mood === "wink" && side === 1) {
+      return <path key={side} d={`M ${cx - RX} 2 Q ${cx} -14 ${cx + RX} 2`} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" />;
+    }
+    const ry = RY * (mood === "surprised" ? 1.12 : mood === "smug" ? 0.72 : 1) * blink;
+    const pr = mood === "surprised" ? 8 : 11;
+    const px = cx + look[0] * 8 - side * 3;
+    const py = look[1] * 8 + (mood === "sad" ? 6 : 2);
+    return (
+      <g key={side}>
+        <ellipse cx={cx} cy={0} rx={RX} ry={Math.max(2, ry)} fill={ATLAS.white} stroke={INK} strokeWidth={5} />
+        {ry > 8 && <circle cx={px} cy={py} r={pr} fill={INK} />}
+        {ry > 8 && <circle cx={px + 4} cy={py - 4} r={3} fill={ATLAS.white} />}
+        {mood === "smug" && <path d={`M ${cx - RX - 2} ${-ry * 0.2} L ${cx + RX + 2} ${-ry * 0.2}`} stroke={INK} strokeWidth={5} />}
+      </g>
+    );
+  };
+  const [lo, li, ri, ro] = BROWS[mood];
+  const top = -RY - 8;
+  const MY = 62; // mouth centre below the eyes
+  let mouth: React.ReactNode;
+  if (talk > 0.02) {
+    const h = 6 + 30 * talk;
+    const w = mood === "angry" ? 46 : 36;
+    mouth = (
+      <g>
+        <ellipse cx={0} cy={MY} rx={w / 2} ry={h / 2} fill="#5A1E1E" stroke={INK} strokeWidth={5} />
+        {h > 14 && <ellipse cx={0} cy={MY + h * 0.25} rx={w * 0.28} ry={h * 0.18} fill="#D9534F" />}
+      </g>
+    );
+  } else if (mood === "happy" || mood === "wink") {
+    mouth = (
+      <g>
+        <path d={`M -30 ${MY - 8} Q 0 ${MY + 30} 30 ${MY - 8} Z`} fill="#5A1E1E" stroke={INK} strokeWidth={5} strokeLinejoin="round" />
+        <path d={`M -14 ${MY + 8} Q 0 ${MY + 2} 14 ${MY + 8} Q 0 ${MY + 16} -14 ${MY + 8} Z`} fill="#D9534F" />
+      </g>
+    );
+  } else if (mood === "smug") {
+    mouth = <path d={`M -22 ${MY + 2} Q 6 ${MY + 10} 26 ${MY - 8}`} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" />;
+  } else if (mood === "angry") {
+    mouth = (
+      <g>
+        <rect x={-26} y={MY - 10} width={52} height={22} rx={8} fill={ATLAS.white} stroke={INK} strokeWidth={5} />
+        <path d={`M -26 ${MY + 1} L 26 ${MY + 1} M -9 ${MY - 10} L -9 ${MY + 12} M 9 ${MY - 10} L 9 ${MY + 12}`} stroke={INK} strokeWidth={3} />
+      </g>
+    );
+  } else if (mood === "worried") {
+    mouth = <path d={`M -24 ${MY + 4} Q -12 ${MY - 6} 0 ${MY + 4} Q 12 ${MY + 12} 24 ${MY + 2}`} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" />;
+  } else if (mood === "surprised") {
+    mouth = <ellipse cx={0} cy={MY + 4} rx={13} ry={17} fill="#5A1E1E" stroke={INK} strokeWidth={5} />;
+  } else if (mood === "sad") {
+    mouth = <path d={`M -24 ${MY + 10} Q 0 ${MY - 12} 24 ${MY + 10}`} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" />;
+  } else {
+    mouth = <path d={`M -18 ${MY + 2} Q 0 ${MY + 8} 18 ${MY + 2}`} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" />;
+  }
+  // small extras: anger mark, sweat drop
+  const extra =
+    mood === "angry" ? (
+      <path d="M 78 -82 Q 88 -82 88 -92 M 96 -92 Q 96 -82 106 -82 M 106 -74 Q 96 -74 96 -64 M 88 -64 Q 88 -74 78 -74"
+        fill="none" stroke={ATLAS.red} strokeWidth={6} strokeLinecap="round" />
+    ) : mood === "worried" ? (
+      <path d="M 96 -60 Q 106 -42 96 -34 Q 86 -42 96 -60 Z" fill="#8FD3F4" stroke={INK} strokeWidth={4} />
+    ) : null;
+  // a gentle bob so a held face never freezes; a little bounce while talking
+  const bob = 3 * Math.sin(f / 10 + seed) - 6 * talk;
+  return (
+    <svg width={CANVAS.width} height={CANVAS.height} style={{ position: "absolute", opacity: o }}>
+      <defs>
+        <filter id="mf-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation={4} /></filter>
+      </defs>
+      <g style={{ translate: `${x}px ${y + bob}px`, scale: s * k }}>
+        <g style={{ scale: "1 1" }}>
+        {/* soft shadow so the face reads on any fill colour */}
+        <g opacity={0.25} filter="url(#mf-blur)">
+          <ellipse cx={-EX + 3} cy={5} rx={RX + 4} ry={(RY + 4) * blink} fill="#000" />
+          {mood !== "wink" && <ellipse cx={EX + 3} cy={5} rx={RX + 4} ry={(RY + 4) * blink} fill="#000" />}
+        </g>
+        <g stroke={INK} strokeWidth={12} strokeLinecap="round" fill="none">
+          <path d={`M ${-EX - 26} ${top + lo} Q ${-EX} ${top + Math.min(lo, li) - 6} ${-EX + 22} ${top + li}`} />
+          <path d={`M ${EX - 22} ${top + ri} Q ${EX} ${top + Math.min(ri, ro) - 6} ${EX + 26} ${top + ro}`} />
+        </g>
+        {eye(-1)}
+        {eye(1)}
+        <g style={{ scale: 1.45, translate: `0px ${-MY * 0.3}px` }}>{mouth}</g>
+        {extra}
+        </g>
+      </g>
+      {label && (
+        <text x={x} y={y + bob + 152 * s * k} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={50} fill={labelColor}
+          stroke={INK} strokeWidth={10} strokeLinejoin="round" paintOrder="stroke" letterSpacing={1} opacity={k}>
+          {label}
+        </text>
+      )}
+    </svg>
+  );
+};
+
+// ------------------------------------------------------------------ promise title (Bible §5, Lucas 2026-10-22)
+
+/**
+ * The "number promise" (`PromiseTitle`): 2–3 lines tilted ~8°, sliding up from below and staggered,
+ * shown ~2–3 s in seconds 4–12 ("3 THẾ GIỚI" / "MỘT TỈNH"). The first line is the big gold number.
+ * Up to 8 words in all (exception to the ≤ 5-word rule); nothing else on screen meanwhile but the map.
+ */
+export const PromiseTitle: React.FC<{
+  lines: string[]; x?: number; y: number; f: number; at: number; out?: number; tilt?: number; size?: number;
+}> = ({ lines, x = CX, y, f, at, out, tilt = -8, size = 120 }) => {
+  const o = out === undefined ? 1 : 1 - prog(f, out, 6);
+  if (f < at || o <= 0) return null;
+  const small = Math.round(size * 0.5);
+  // baseline of each line: the big first line, then the small ones below it
+  const base = lines.map((_, i) => (i === 0 ? size * 0.8 : size * 0.8 + i * small * 1.15));
+  return (
+    <svg width={CANVAS.width} height={CANVAS.height} style={{ position: "absolute", opacity: o }}>
+      <g style={{ translate: `${x}px ${y}px`, rotate: `${tilt}deg` }}>
+        {lines.map((text, i) => {
+          const big = i === 0;
+          const p = prog(f, at + i * 4, 12, Easing.out(Easing.back(1.4)));
+          return (
+            <text key={i} x={0} y={base[i] + 140 * (1 - p)} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={big ? size : small}
+              fill={big ? ATLAS.gold : ATLAS.white} stroke={ATLAS.ink} strokeWidth={big ? 16 : 11} strokeLinejoin="round" paintOrder="stroke"
+              letterSpacing={big ? 2 : 1} opacity={Math.min(1, p * 1.6)}>
+              {text}
+            </text>
+          );
+        })}
+      </g>
+    </svg>
+  );
+};

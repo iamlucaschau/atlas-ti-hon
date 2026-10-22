@@ -7,6 +7,8 @@
  *   npm run final -- p4-malacca-kra    full render → master (Bible §6) → Map/<slug>/<slug>.mp4, then checks
  *                                      loudness, true peak and the loop seam (last frame vs frame 0); exits 1 if one fails
  *
+ * Before rendering, the geo check (scripts/geo-check.mjs) verifies the episode's PLACES; a wrong one stops the build.
+ *
  * Options: --keep-raw (keep out/<slug>-raw.mp4)
  *          --loop-preview (also write Map/<slug>/<slug>-loop-preview-x2.mp4; off by default since Lucas 2026-10-20)
  *          --check-only (final: only re-run the checks on the existing Map/<slug>/<slug>.mp4)
@@ -14,6 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { FPS, ROOT, episode, ffmpeg, ffmpegLog, probe, rel, remotion, run } from "./ep-lib.mjs";
+import { geoCheck } from "./geo-check.mjs";
 
 /**
  * Master chain, Bible §6 / 04_QUY-TRINH-SAN-XUAT §6. Limiter 0.66 (was 0.72, Lucas 2026-10-18): short SFX are
@@ -104,6 +107,9 @@ const finalRender = (ep) => {
 try {
   const ep = episode(args.find((a) => !a.startsWith("--")));
   console.log(`${ep.slug} → ${ep.id} (${draft ? "draft" : "final"})\n`);
+  // labels, faces and props must sit in their province (Lucas 2026-10-22); stops before rendering
+  if (geoCheck(ep.slug)) throw new Error("geo check failed: fix PLACES in Video.tsx before rendering");
+  console.log("");
   (draft ? draftRender : finalRender)(ep);
 } catch (err) {
   console.error(`✗ ${err.message}`);

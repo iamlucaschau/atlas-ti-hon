@@ -1,0 +1,187 @@
+{
+  "name": "p5-tphcm-ba-the-gioi",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu mở đầu nói như tiết lộ một bí mật nhỏ. \"Thế giới thứ nhất?\" hỏi nhẹ; \"Sài Gòn.\" ngắn, chắc. \"Trớ trêu là\" hơi nhướn giọng. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "cast": {
+    "saigon": {
+      "voice": "Leda",
+      "style": "Giọng nữ trẻ người Sài Gòn, giọng miền Nam Việt Nam đặc trưng, ngọt, lanh lợi, vui vẻ lạc quan, nói tự nhiên như người dân đang trò chuyện. Không cường điệu, không chế giễu."
+    },
+    "binhduong": {
+      "voice": "Aoede",
+      "style": "Giọng nữ trẻ người miền Bắc Việt Nam, giọng Bắc mộc mạc, chân chất, hơi tự hào, như một cô công nhân từ ngoài Bắc vào miền Nam làm việc đang kể chuyện. Nói tự nhiên, không cường điệu."
+    },
+    "vungtau": {
+      "voice": "Puck",
+      "style": "Giọng nam trẻ người Vũng Tàu, giọng miền Nam Việt Nam đặc trưng, hào sảng, thân thiện, mời mọc như dân biển. Nói tự nhiên, không cường điệu, không chế giễu."
+    }
+  },
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Nhiều người nghĩ TP.HCM chỉ có kẹt xe."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Thật ra, giờ nó là ba thế giới."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Từ tháng bảy năm hai nghìn hai mươi lăm, Sài Gòn, Bình Dương và Bà Rịa Vũng Tàu nhập làm một."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Thế giới thứ nhất?"
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Sài Gòn."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn sáu trăm chín mươi tám, Nguyễn Hữu Cảnh vào Nam lập phủ Gia Định, dựng dinh ở vùng đất này."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.12,
+      "text": "Giờ đây, nơi này là phố xá, cà phê và xe máy."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Kẹt xe chút xíu thôi mà, ráng chút là tới à!",
+      "who": "saigon"
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Chạy lên phía bắc, thế giới thứ hai: Bình Dương."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Gần ba mươi khu công nghiệp nối nhau."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.12,
+      "text": "Hơn một nửa người dân ở đây từ nơi khác tới."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Em quê ngoài Bắc, vào đây làm công nhân, giờ thành người Bình Dương luôn rồi!",
+      "who": "binhduong"
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Xuôi xuống biển, thế giới thứ ba: Bà Rịa Vũng Tàu."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.12,
+      "text": "Từ năm một nghìn chín trăm tám mươi sáu, dầu được hút lên từ mỏ Bạch Hổ, mỏ dầu lớn nhất nước."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Mệt thì xuống đây hóng gió, biển mát, hải sản tươi nè!",
+      "who": "vungtau"
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Gộp lại, thành phố mới có hơn mười bốn triệu dân."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Và làm ra gần một phần tư nền kinh tế cả nước."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Trớ trêu là, thành phố đông dân nhất nước lại có một hòn đảo mới có điện lưới."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Đặc khu Côn Đảo, cách Vũng Tàu gần hai trăm cây số."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Phải đến tháng chín năm hai nghìn hai mươi lăm, điện lưới quốc gia mới ra tới đảo."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Bằng một đường cáp ngầm gần tám mươi cây số dưới biển."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Ba thế giới trên đất liền, một hòn đảo ngoài khơi, giờ chung một cái tên."
+    }
+  ]
+}

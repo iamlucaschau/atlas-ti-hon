@@ -47,6 +47,7 @@ Tài liệu nguồn (tham khảo, không sửa): `Map/master-map-explainer-playb
 | **Cause-and-Effect** | địa lý giải thích kết quả nhìn thấy | nghịch lý → định vị → 2–4 nguyên nhân → tương tác → hệ quả | nhãn đánh số, mũi tên, lớp phủ địa hình/khí hậu |
 | **Journey Route** | người / vật / tuyến đi qua địa lý | ràng buộc cực đoan → điểm xuất phát → chướng ngại leo thang → vượt qua → quy mô cuối | `Route` + tàu, mốc kiểm tra, thẻ quãng đường/thời gian |
 | **Region Reveal** | nhóm, thành viên, vùng lọt thỏm | ngộ nhận → từng mảnh → gộp lại → twist → tóm quan hệ | tô vùng, nhấn biên giới, nhãn |
+| ↳ khuôn **"Một tỉnh, N thế giới"** (Lucas 2026-10-22, #18) | tỉnh / thành (nhất là tỉnh mới sau sáp nhập 2025) có 3 vùng khác hẳn nhau | phá ngộ nhận → **hứa con số** ("3 thế giới", `PromiseTitle`) → mỗi vùng: hạ cánh, 2 đặc điểm có nguồn, **vùng tự nói 1 câu** (`MapFace` + giọng nhân vật) → twist có nguồn | tỉnh mới `VN2025` + vùng con `VN2024`, `MapFace`, `PromiseTitle`; N = 3 để giữ 60–75 s |
 
 **Mẫu hook tiếng Việt** (câu đầu tiên, ≤ 3 s; hook = nghịch lý có thật, tốt nhất kèm 1 con số đã kiểm chứng):
 - **A — Vì sao + nghịch lý:** "Vì sao [X] lại [điều trái kỳ vọng]?"
@@ -96,11 +97,26 @@ Chi tiết + code: `Style Library/I-toy-atlas/README.md`. Tóm tắt những đi
 
 **Tên nước + cờ + viền sáng** (Lucas 2026-10-14): nước nào được lời đọc gọi tên hoặc được tô màu thì có nhãn tên (52 px) kèm cờ cắm trên lãnh thổ khi lần đầu vào khung, nhãn đi theo camera; viền vàng–trắng của nước đó loé 2 lần khi lời đọc nói tên (`CountryTag`). Nước nền không nhãn; nhãn tạm ẩn khi khung đã đủ 2 chữ hoặc nhãn đè lên đạo cụ.
 
+**Vùng đất có mặt — `MapFace`** (Lucas 2026-10-22, #16): mắt, mày, miệng vector đặt lên một nước / tỉnh / vùng, 8 biểu cảm (`neutral`, `happy`, `smug`, `angry`, `worried`, `surprised`, `sad`, `wink`), chớp mắt tự động, miệng mấp máy theo thời gian từng chữ khi vùng đó nói (`talkOpen` từ `words.json`). Dùng ở **1–3 nhịp mỗi tập** (thường là lúc vùng tự nói), không để suốt video; mặt nằm trong vùng an toàn, không che nhãn tên; **không đặt mặt lên Hoàng Sa, Trường Sa hay vùng tranh chấp**; biểu cảm không chế giễu.
+
+**Chữ hứa con số — `PromiseTitle`** (Lucas 2026-10-22, #19): 2–3 dòng, nghiêng ~8°, trượt vào từ dưới, hiện ~2–3 s trong giây 4–12, dòng đầu là con số to vàng ("3 THẾ GIỚI"). **Ngoại lệ luật ≤ 5 chữ: tối đa 8 chữ** cho khối này; lúc nó hiện, khung không có thẻ số nào khác.
+
 Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn chỉ cho địa danh của beat đó; thẻ số liệu gắn với bản đồ; không dùng ảnh vệ tinh làm nền chính; nguồn ở description, không trên màn hình (trừ attribution bắt buộc).
 
 ## 6. Chuẩn âm thanh & giọng
 
 - **Giọng:** Gemini TTS, nam, `Orus`, model `gemini-3.8-flash-tts`, **tempo 1.1** (Lucas 2026-10-13; 1.2 nghe kém tự nhiên, 1.0 hơi chậm), ~235–240 wpm, khoảng nghỉ ngắn `{sentence 0.06, paragraph 0.12, scene 0.25}` cho nhịp nhanh.
+- **Giọng nhân vật — "vùng đất tự nói"** (Lucas 2026-10-22, đề xuất #17 từ bóc tách Geo Nexus): 1–3 câu ngắn (≤ 8 s) mỗi tập, do một nước / tỉnh / vùng "nói" (có `MapFace`), câu riêng một dòng trong `voiceover/<slug>.json` với `"who"` trỏ tới bảng `cast`. Nội dung **tích cực, đúng từ địa phương, không chê bai vùng miền**; không cho nhân vật nói số liệu (số liệu vẫn do người dẫn đọc). Giọng đã nghe và duyệt:
+
+  | Vai | Giọng Gemini | Chỉ dẫn (rút gọn) |
+  |---|---|---|
+  | Nam Bộ — nam trẻ | `Puck` | nam trẻ Sài Gòn, thân thiện, hào sảng |
+  | Nam Bộ — nữ trẻ | `Leda` | nữ trẻ Sài Gòn, ngọt, lanh lợi |
+  | Huế — nữ | `Kore` | nữ Huế, nhẹ nhàng, chậm rãi |
+  | Bắc Bộ (Hà Nội) — nữ | `Aoede` | nữ Hà Nội, điềm đạm, hóm hỉnh |
+  | Bắc Trung Bộ (Quảng Bình…) — nam | `Orus` + chỉ dẫn giọng vùng | giọng người dẫn đổi sắc thái; **không dùng `Fenrir`** (nghe giả) |
+
+  Câu thử gốc: `out/voice-test/` (không commit). Vùng chưa có giọng duyệt → thu thử 1 câu cho Lucas nghe trước.
 - Chỉ dẫn giọng mặc định: *"Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trung tính, trầm vừa và đáng tin, như người kể chuyện lịch sử hấp dẫn. Mở đầu nhanh, gọn và tò mò; giải thích rõ ràng; đọc năm, con số và địa danh chậm hơn một nhịp. Không cường điệu, không hét. Câu cuối chưa kết thúc: giữ giọng treo lên."*
 - **Giọng kể "vui vừa phải"** (Lucas 2026-10-13): cảnh đời thường, chơi chữ nhẹ, tối đa 1–2 câu khẩu ngữ/lóng mỗi video; số liệu vẫn chuẩn; phần tranh luận vẫn trung tính.
 - **Nhạc nền theo pillar** (Lucas 2026-10-17, thay bộ Pixabay 2026-10-14): nhạc **Kevin MacLeod (incompetech.com), CC BY 4.0** — dùng được cả YouTube lẫn mạng khác, **bắt buộc ghi công** trong mô tả mỗi tập: `"Tên bài" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/` (caption TikTok/Reels ghi gọn). File ở `public/sfx/music/*-km.mp3` (không commit, nguồn trong `scripts/music-list-kevinmacleod.json`). `<MusicBed file={PILLAR_MUSIC.Px} />` tự cân về **−28 LUFS**, fade 0,3 s hai đầu, `duck` để lắng ở cao trào.
@@ -162,6 +178,7 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 | 2026-10-14 | Nhạc nền Pixabay theo pillar (10 bài, mỗi pillar 1 chính + 1 dự phòng), −28 LUFS | Lucas |
 | 2026-10-14 | Hoàng Sa, Trường Sa hiển thị kiểu nhãn chỉ dẫn lề phải, chữ 42 px (ngoại lệ luật 48 px cho nhãn nền bản đồ) | Lucas |
 | 2026-10-14 | Thay bằng kiểu ghim bản đồ (chấm đỏ + tên trắng), tên chỉ hiện ở cảnh camera tới; bỏ cột lề phải | Lucas |
+| 2026-10-22 | Sau bóc tách 11 Reels Geo Nexus: duyệt #16 `MapFace` (vùng đất có mặt), #17 giọng nhân vật (bảng giọng §6; bỏ Fenrir), #18 khuôn "Một tỉnh, N thế giới", #19 `PromiseTitle` (chữ hứa con số, ngoại lệ luật ≤ 5 chữ) | Lucas |
 | 2026-10-21 | Mở đầu mỗi tập: camera bay ngay từ frame 1 vào nơi hook nhắc tới (2 giây đầu không được là bản đồ đứng yên) | Lucas |
 | 2026-10-14 | Tên kênh: **Atlas Tí Hon** (tiếng Anh sau: Tiny Atlas); nhận diện ở `06_NHAN-DIEN-KENH.md` | Lucas |
 | 2026-10-14 | Nối vòng mềm: bỏ vế bỏ lửng cuối kịch bản, kết bằng câu trọn vẹn; hình vẫn lặp liền (áp dụng lại cho cả 5 tập) | Lucas |

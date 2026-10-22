@@ -1,0 +1,161 @@
+{
+  "durationInSeconds": 71.19325,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 2.4219999999999997,
+      "text": "Nhiều người nghĩ TP.HCM chỉ có kẹt xe."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 2.48175,
+      "end": 5.04075,
+      "text": "Thật ra, giờ nó là ba thế giới."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 5.100333333333333,
+      "end": 10.185333333333332,
+      "text": "Từ tháng bảy năm hai nghìn hai mươi lăm, Sài Gòn, Bình Dương và Bà Rịa Vũng Tàu nhập làm một."
+    },
+    {
+      "id": "04",
+      "scene": "s2",
+      "start": 10.435583333333334,
+      "end": 11.368583333333333,
+      "text": "Thế giới thứ nhất?"
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 11.42875,
+      "end": 12.190750000000001,
+      "text": "Sài Gòn."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 12.251208333333334,
+      "end": 17.903208333333335,
+      "text": "Năm một nghìn sáu trăm chín mươi tám, Nguyễn Hữu Cảnh vào Nam lập phủ Gia Định, dựng dinh ở vùng đất này."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 17.963583333333332,
+      "end": 21.64258333333333,
+      "text": "Giờ đây, nơi này là phố xá, cà phê và xe máy."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "start": 21.762958333333334,
+      "end": 24.739958333333334,
+      "text": "Kẹt xe chút xíu thôi mà, ráng chút là tới à!"
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 24.990333333333332,
+      "end": 27.883333333333333,
+      "text": "Chạy lên phía bắc, thế giới thứ hai: Bình Dương."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 27.943624999999997,
+      "end": 29.653624999999998,
+      "text": "Gần ba mươi khu công nghiệp nối nhau."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 29.713375,
+      "end": 32.065374999999996,
+      "text": "Hơn một nửa người dân ở đây từ nơi khác tới."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "start": 32.18508333333333,
+      "end": 36.26408333333333,
+      "text": "Em quê ngoài Bắc, vào đây làm công nhân, giờ thành người Bình Dương luôn rồi!"
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 36.514041666666664,
+      "end": 39.80204166666666,
+      "text": "Xuôi xuống biển, thế giới thứ ba: Bà Rịa Vũng Tàu."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 39.86220833333333,
+      "end": 45.16920833333333,
+      "text": "Từ năm một nghìn chín trăm tám mươi sáu, dầu được hút lên từ mỏ Bạch Hổ, mỏ dầu lớn nhất nước."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 45.28874999999999,
+      "end": 48.516749999999995,
+      "text": "Mệt thì xuống đây hóng gió, biển mát, hải sản tươi nè!"
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "start": 48.76662499999999,
+      "end": 51.75962499999999,
+      "text": "Gộp lại, thành phố mới có hơn mười bốn triệu dân."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 51.81962499999999,
+      "end": 54.31362499999999,
+      "text": "Và làm ra gần một phần tư nền kinh tế cả nước."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "start": 54.56391666666666,
+      "end": 58.59991666666666,
+      "text": "Trớ trêu là, thành phố đông dân nhất nước lại có một hòn đảo mới có điện lưới."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 58.66020833333332,
+      "end": 61.311208333333326,
+      "text": "Đặc khu Côn Đảo, cách Vũng Tàu gần hai trăm cây số."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 61.370791666666655,
+      "end": 65.15479166666665,
+      "text": "Phải đến tháng chín năm hai nghìn hai mươi lăm, điện lưới quốc gia mới ra tới đảo."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 65.21445833333333,
+      "end": 67.54845833333333,
+      "text": "Bằng một đường cáp ngầm gần tám mươi cây số dưới biển."
+    },
+    {
+      "id": "22",
+      "scene": "s6",
+      "start": 67.608875,
+      "end": 70.942875,
+      "text": "Ba thế giới trên đất liền, một hòn đảo ngoài khơi, giờ chung một cái tên."
+    }
+  ]
+}

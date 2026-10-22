@@ -9,6 +9,7 @@ Luis không xem được video, nhưng xem được khung hình. **Không bao gi
 
 ## Vòng lặp
 
+0. **Kiểm địa lý (tự chạy trước mỗi `draft` / `final`):** mọi nhãn, mặt (`MapFace`), đạo cụ gắn vào bản đồ phải khai trong `export const PLACES` của `Video.tsx` (`{ ll: [lon, lat], in: "<tên tỉnh 2024>" }`, `year: 2025` nếu theo tỉnh mới, `in: "sea"` nếu ngoài biển). `node scripts/geo-check.mjs <slug>` báo ✗ khi một điểm nằm ngoài tỉnh đã khai, và lệnh render dừng lại. Đặt toạ độ bằng máy kiểm, **không ước lượng** (Lucas 2026-10-22: bản v1 tập TP.HCM để nhãn "SÀI GÒN" trên Bình Dương, "BÌNH DƯƠNG" trên Bình Phước).
 1. `npm run draft -- <slug>` → render nửa kích thước có lớp vùng an toàn đỏ (`safeGuide`) vào `out/<slug>-draft.mp4`, rồi tự cắt contact sheet: ô đầu là frame 0, mỗi ô sau là **một câu lời đọc** ở giữa câu (nhãn `<id câu> - <giây>`), ô cuối là khung cuối.
 2. Mở **từng** `out/sheets/<slug>-lines-N.png` và đi qua checklist bên dưới. Ô tile rộng 300 px ≈ cỡ video trong feed điện thoại: chữ nào khó đọc ở đây là khó đọc trên điện thoại.
 3. Soi kỹ chỗ đáng ngờ:
@@ -40,6 +41,9 @@ Việc nhỏ, hiển nhiên (đè hình, lệch vị trí, tràn vùng an toàn)
 - Khung có bờ biển Việt Nam / Biển Đông thì có chấm đảo Hoàng Sa, Trường Sa (`VnIslands`).
 - Không tô màu nước ngoài câu chuyện; không nhãn vùng tranh chấp ngoài cách Lucas đã chọn ở Cổng 2.
 - Thẻ số đúng con số trong sổ nhận định (Cổng 2), đúng đơn vị.
+- **Nhãn, mặt, đạo cụ nằm đúng lãnh thổ** (geo check ✓ **và** nhìn lại trên sheet: nhãn nằm giữa vùng, không trên ranh giới, không ngoài vùng).
+- **Mỗi vùng / tỉnh được lời đọc nhắc tới đều có tên trên hình** lúc được nhắc; khi nhiều vùng gộp lại, vẫn biết vùng nào là vùng nào (nhãn dưới mặt, thẻ tên).
+- **Câu nhân vật nói** (giọng khác người dẫn) có dấu hiệu ai đang nói (thẻ tên trên phụ đề / bóng thoại).
 
 **Nhịp & camera**
 - Hình khớp lời: ô của câu nào thì hình đang nói về đúng thứ câu đó nói.

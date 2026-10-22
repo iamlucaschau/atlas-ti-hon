@@ -10,7 +10,7 @@
  *   "before" shots only. Three NE region names were fixed by ISO code (VN-39, -53, -66).
  * Both simplified to ~150 m with mapshaper (`geo/*.topo.json`); properties { id, name, coastal }.
  */
-import { geoBounds, geoCentroid } from "d3-geo";
+import { geoBounds, geoCentroid, geoContains } from "d3-geo";
 import type { FeatureCollection, Geometry } from "geojson";
 import { interpolate } from "remotion";
 import { feature, mesh, neighbors } from "topojson-client";
@@ -33,9 +33,27 @@ export type Province = Props & { d: string; span: number; c: [number, number]; p
 /** Pastels mixed from the ATLAS side colours; a greedy colouring needs at most 6 on a planar map. */
 const PASTEL = ["#E8C77A", "#A9CF8E", "#9FC3E6", "#E7A99A", "#C9B3E0", "#F0D9A8"];
 
-const load = (topo: unknown): Province[] => {
+/**
+ * Natural Earth 10m puts Côn Đảo (south of 9° N, east of 106.3° E) inside Sóc Trăng's MultiPolygon; until
+ * 1/7/2025 it belonged to Bà Rịa - Vũng Tàu (found by the geo check, Lucas 2026-10-22). Moves those rings over.
+ */
+const fixConDao = (fc: FeatureCollection<Geometry, Props>) => {
+  const st = fc.features.find((f) => f.properties.name === "Sóc Trăng");
+  const vt = fc.features.find((f) => f.properties.name === "Bà Rịa - Vũng Tàu");
+  if (!st || !vt || st.geometry.type !== "MultiPolygon" || vt.geometry.type !== "MultiPolygon") return;
+  const isConDao = (poly: number[][][]) => {
+    const [lon, lat] = geoCentroid({ type: "Polygon", coordinates: poly });
+    return lat < 9 && lon > 106.3;
+  };
+  const moved = st.geometry.coordinates.filter(isConDao);
+  st.geometry.coordinates = st.geometry.coordinates.filter((p) => !isConDao(p));
+  vt.geometry.coordinates = [...vt.geometry.coordinates, ...moved];
+};
+
+const load = (topo: unknown, fix?: (fc: FeatureCollection<Geometry, Props>) => void): Province[] => {
   const t = topo as Topology;
   const fc = feature(t, t.objects.provinces) as FeatureCollection<Geometry, Props>;
+  fix?.(fc);
   const near = neighbors((t.objects.provinces as GeometryCollection).geometries);
   const colour: number[] = [];
   fc.features.forEach((_, i) => {
@@ -50,7 +68,20 @@ const load = (topo: unknown): Province[] => {
   });
 };
 
-export const VN2024 = load(topo2024);
+export const VN2024 = load(topo2024, fixConDao);
+const FC2024 = (() => {
+  const t = topo2024 as unknown as Topology;
+  const fc = feature(t, t.objects.provinces) as FeatureCollection<Geometry, Props>;
+  fixConDao(fc);
+  return fc;
+})();
+const FC2025 = (() => {
+  const t = topo2025 as unknown as Topology;
+  return feature(t, t.objects.provinces) as FeatureCollection<Geometry, Props>;
+})();
+/** Name of the province (2024 or 2025 set) containing a lon/lat point, or "" at sea / abroad. */
+export const provinceAt = (ll: [number, number], year: 2024 | 2025 = 2024) =>
+  ((year === 2024 ? FC2024 : FC2025).features.find((f) => geoContains(f, ll))?.properties.name ?? "");
 export const VN2025 = load(topo2025);
 
 /**

@@ -132,10 +132,14 @@ const prep = (dir) => {
     tempo: existing.tempo ?? 1,
     ...(existing.gaps && { gaps: existing.gaps }),
     batchBy: "take",
-    // keep hand-tuned pauses (e.g. a beat after "Không.") for lines whose text did not change
+    // character voices (Bible §6, 2026-10-22): `cast` maps a role to a voice + style; lines name it with "who"
+    ...(existing.cast && { cast: existing.cast }),
+    // keep hand-tuned pauses (e.g. a beat after "Không.") and a line's character voice while its text is unchanged
     lines: out.map((l) => {
       const old = existing.lines?.find((x) => x.id === l.id && x.text === l.text);
-      return old ? { ...l, gapAfter: old.gapAfter } : l;
+      if (!old) return l;
+      const keep = Object.fromEntries(["who", "voice", "style"].filter((k) => old[k] !== undefined).map((k) => [k, old[k]]));
+      return { ...l, gapAfter: old.gapAfter, ...keep };
     }),
   };
   fs.writeFileSync(voPath, JSON.stringify(json, null, 2) + "\n");

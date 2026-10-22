@@ -26,6 +26,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 | Mở Studio (xem trước) | `npm run dev` → http://localhost:3000 (`.claude/launch.json`: `remotion-studio`) |
 | Kiểm tra code | `npm run lint` (sau mỗi thay đổi) |
 | Bản nháp + contact sheet | `npm run draft -- <slug>` → `out/<slug>-draft.mp4` (nửa cỡ, có vùng an toàn) + `out/sheets/<slug>-lines-N.png` (một ô mỗi câu đọc) |
+| Kiểm địa lý | `node scripts/geo-check.mjs <slug>` — nhãn / mặt / đạo cụ khai trong `PLACES` của `Video.tsx` có nằm đúng tỉnh không; tự chạy trước `draft` / `final`, sai thì dừng (Lucas 2026-10-22) |
 | Soi thêm khung | `npm run sheet -- <slug> --at 0.9` · `--from 30 --to 32 --every 0.2` · `<giây> <giây>` |
 | Ảnh kiểm tra 1 khung | `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35` |
 | Render tập | `npm run final -- <slug>` → render, master vào `Map/<slug>/<slug>.mp4`, đo LUFS / đỉnh / chỗ nối vòng (thoát mã 1 nếu trượt). Chỉ render video chính; bản lặp 2 vòng chỉ khi thêm `--loop-preview` (Lucas 2026-10-20) |
@@ -45,7 +46,7 @@ Map/_mau-tap/         khung một tập mới (README + file mẫu + Video.tsx.t
 Map/<slug>/           một tập: cong-2_so-nguon, kich-ban-…-FINAL, spec, beat-sheet, image-prompts, Video.tsx, vo-timestamps, xuat-ban, cover.jpg (+ mp4, vo.mp3 chỉ trên máy)
 Map/covers.tsx        ảnh bìa của mọi tập (khung + hook 2 tầng + vòng đỏ)
 Map/cong-1_*.md       hồ sơ Cổng 1 · Map/phan-tich-doi-thu/ phân tích 20 video đối thủ (BAO-CAO, BOC-TACH, SO-SANH)
-Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas (skip, layer), camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub…
+Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas (skip, layer), camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub, MapFace + talkOpen (vùng đất có mặt), PromiseTitle (chữ hứa con số)… · demo: `demo-faces.tsx` (composition `Kit-MapFace`)
 Style Library/I-toy-atlas/vn-provinces.tsx  Việt Nam theo tỉnh: VN2025 (34 tỉnh, OCHA/HDX) · VN2024 (63 tỉnh, Natural Earth), ProvinceMap (tô, loang, viền loé, viền biển), ProvinceTag, CityPin, provinceBorder + BorderLine (ranh giới chung hai tỉnh) — dùng qua `<Atlas skip={["Vietnam"]} layer={…} />`
 Style Library/I-toy-atlas/globe.tsx  PacificAtlas (Mercator xoay, vd. 160°E: Việt Nam bên trái, Mỹ bên phải), ToyGlobe (quả địa cầu đồ chơi), greatCircle / rhumbLine
 Style Library/kit-common.ts, subs.tsx     font Bricolage Grotesque, easing, phụ đề karaoke
@@ -57,7 +58,7 @@ public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voic
 scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
 ```
 
-ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Map-P4-LaoRaBien`, `Cover-<slug>`.
+ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Map-P4-LaoRaBien`, `Map-P5-TphcmBaTheGioi`, `Cover-<slug>`.
 
 ## Luật Remotion (không được phá)
 
@@ -81,6 +82,7 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 ## Giọng đọc (Gemini TTS)
 
 - `scripts/tts.mjs`, model `gemini-3.8-flash-tts`, giọng **Orus**, tempo **1.1**, khoảng nghỉ {0,06 · 0,12 · 0,25} s, `batchBy: "take"`.
+- **Giọng nhân vật** ("vùng đất tự nói", Bible §6, Lucas 2026-10-22): khai báo vai trong `"cast": { "<vai>": { "voice", "style" } }` của `voiceover/<slug>.json`, rồi thêm `"who": "<vai>"` vào câu đó; `prep` giữ `who` khi chữ câu không đổi. Mỗi câu nhân vật là một request riêng. Giọng đã duyệt: Puck (nam Sài Gòn), Leda (nữ Sài Gòn), Kore (nữ Huế), Aoede (nữ Hà Nội), Orus + chỉ dẫn vùng (nam Bắc Trung Bộ); **không dùng Fenrir**.
 - Key trong `gemini_key.txt` (không commit, **không in, không log**). Free Tier: **10 request/ngày/key/model**, 3/phút; script tự xoay key và chờ. Một tập ≈ 7–8 request.
 - Bản thu thô cache theo nội dung: đổi tempo / khoảng nghỉ / bỏ câu cuối của một lượt → **không tốn request**. Khoảng nghỉ chỉnh tay trong `voiceover/<slug>.json` được `prep` giữ lại nếu chữ câu không đổi.
 - `words.py` kiểm tra cắt câu; cảnh báo kiểu "heard … kg / USD / 5h" thường là phần mềm nghe nhầm — nghe lại trước khi đọc lại.

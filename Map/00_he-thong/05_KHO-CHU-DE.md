@@ -67,6 +67,12 @@
 
 | Chủ đề | Rủi ro | Trạng thái |
 |---|---|---|
+| **Khuôn "Một tỉnh, N thế giới"** (Bible §3, Lucas 2026-10-22) — tỉnh mới sau 1/7/2025 gộp 3 tỉnh cũ khác hẳn nhau ⚠️ danh sách tỉnh gộp kiểm lại ở Cổng 2 (NQ 202/2025/QH15): | | |
+| ↳ TP.HCM mới: Sài Gòn (phố thị) – Bình Dương (khu công nghiệp) – Bà Rịa Vũng Tàu (biển, dầu khí) | T | **Đã làm** (`Map/p5-tphcm-ba-the-gioi/`, 5 cổng duyệt 2026-10-22, bản v2) |
+| ↳ Lâm Đồng mới: Đà Lạt (cao nguyên lạnh) – Đắk Nông (bô-xít, đất đỏ) – Bình Thuận (biển nắng, đồi cát) | T | ý tưởng 2026-10-22 |
+| ↳ Ninh Bình mới: Ninh Bình (núi đá vôi) – Hà Nam – Nam Định (đồng bằng, biển) | T | ý tưởng 2026-10-22 |
+| ↳ Cần Thơ mới: Cần Thơ (phố sông) – Sóc Trăng (văn hoá Khmer) – Hậu Giang (kênh rạch) | T–TB (văn hoá dân tộc: nói tích cực, có nguồn) | ý tưởng 2026-10-22 |
+| ↳ Gia Lai mới: Tây Nguyên (cao nguyên) + Bình Định (biển Quy Nhơn) — tỉnh "từ núi xuống biển" | T | ý tưởng 2026-10-22 |
 | Chỗ hẹp nhất Việt Nam: chưa đầy 50 km từ biển sang Lào (Quảng Bình, sáp nhập 2025) | T | **Đã làm** (`Map/p5-cho-hep-nhat/`, 5 cổng duyệt 2026-10-21) |
 | Vì sao Tây Ban Nha có những biên giới kỳ lạ nhất châu Âu? | T | ý tưởng (playbook) |
 | Hòn đảo đổi quốc tịch mỗi 6 tháng (đảo Pheasant) | T | ý tưởng |

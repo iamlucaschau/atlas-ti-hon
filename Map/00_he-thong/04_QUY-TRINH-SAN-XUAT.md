@@ -102,6 +102,8 @@ npx remotion still <CompositionId> out/check.png --frame=<n> --props='{"safeGuid
 
 ## 6. Render + gói xuất bản (Cổng 5)
 
+> **Kiểm địa lý (Lucas 2026-10-22):** mọi nhãn / mặt / đạo cụ gắn vào bản đồ khai trong `PLACES` của `Video.tsx`; `npm run draft` / `npm run final` tự chạy `scripts/geo-check.mjs` và dừng nếu có điểm nằm ngoài tỉnh. Checklist duyệt hình (skill `review-loop`) có thêm 3 dòng: nhãn đúng lãnh thổ, vùng được nhắc có tên trên hình, câu nhân vật có thẻ người nói.
+
 Một lệnh, chạy được cả trên Windows (PowerShell) lẫn macOS/Linux:
 ```bash
 npm run final -- <slug>
