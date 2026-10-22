@@ -1,0 +1,182 @@
+{
+  "durationInSeconds": 67.530125,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 2.691,
+      "text": "Mười một nước Đông Nam Á, chỉ một nước không có biển."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 2.750625,
+      "end": 3.2556249999999998,
+      "text": "Nước nào?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 3.315625,
+      "end": 3.789625,
+      "text": "Lào."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 3.8493749999999998,
+      "end": 5.828374999999999,
+      "text": "Vậy hàng của Lào ra biển bằng cách nào?"
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "start": 5.88875,
+      "end": 6.45775,
+      "text": "Đi nhờ."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 6.708208333333333,
+      "end": 9.487208333333333,
+      "text": "Lào giáp năm nước, bốn bề là đất liền."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 9.547083333333333,
+      "end": 12.756083333333333,
+      "text": "Phía tây là sông Mê Kông, phía đông là dãy Trường Sơn."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 13.006583333333333,
+      "end": 14.732583333333334,
+      "text": "Đi về phía tây, qua Thái Lan."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 14.792791666666666,
+      "end": 18.232791666666667,
+      "text": "Từ Savannakhet tới cảng Laem Chabang, hơn bảy trăm cây số."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 18.292708333333334,
+      "end": 21.695708333333332,
+      "text": "Từ cuối năm hai nghìn hai mươi mốt, Lào có thêm đường sắt lên Trung Quốc."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 21.755875,
+      "end": 24.628875,
+      "text": "Hơn một nghìn cây số đường ray, mà vẫn chưa thấy biển."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 24.879125,
+      "end": 28.370124999999998,
+      "text": "Phía đông, sau dãy Trường Sơn, biển gần hơn hẳn."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 28.429666666666666,
+      "end": 33.27166666666667,
+      "text": "Từ Viêng Chăn tới cảng Vũng Áng ở Hà Tĩnh, đường chim bay chỉ khoảng bốn trăm cây số."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 33.331833333333336,
+      "end": 36.036833333333334,
+      "text": "Qua cửa khẩu, đi thêm hơn một trăm cây số là tới cảng."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "start": 36.28666666666667,
+      "end": 39.78866666666667,
+      "text": "Năm hai nghìn hai mươi tư, kali và quặng sắt của Lào nối đuôi nhau ra đây."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "start": 39.848875,
+      "end": 42.020875,
+      "text": "Cả cảng thông qua hơn năm triệu tấn hàng."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 42.08133333333333,
+      "end": 43.60933333333333,
+      "text": "Khoảng một phần ba là hàng của Lào."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "start": 43.859208333333335,
+      "end": 44.85420833333333,
+      "text": "Và cú ngược đời?"
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 44.91395833333333,
+      "end": 45.608958333333334,
+      "text": "Chủ cảng."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "start": 45.66920833333333,
+      "end": 47.78120833333333,
+      "text": "Phía Lào nắm sáu mươi phần trăm công ty khai thác cảng."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "start": 47.84104166666666,
+      "end": 54.72904166666666,
+      "text": "Tháng tư năm hai nghìn hai mươi lăm, Tổng Bí thư, Chủ tịch nước Lào Thongloun Sisoulith tới tận Vũng Áng, dự khánh thành một bến mới."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "start": 54.97920833333333,
+      "end": 56.51720833333333,
+      "text": "Và Lào còn muốn đi xa hơn."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 56.577333333333335,
+      "end": 61.537333333333336,
+      "text": "Một tuyến đường sắt hơn năm trăm năm mươi cây số đang được tính, nối thẳng Viêng Chăn ra Vũng Áng."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "start": 61.59733333333334,
+      "end": 63.35033333333334,
+      "text": "Tuyến này còn đang nghiên cứu, chưa xây."
+    },
+    {
+      "id": "25",
+      "scene": "s7",
+      "start": 63.410625,
+      "end": 67.27962500000001,
+      "text": "Không có biển, Lào đi tìm biển, và tìm thấy một cửa ở Hà Tĩnh."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "name": "p4-lao-ra-bien",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu mở đầu nói như tiết lộ một bí mật nhỏ. \"Nước nào?\" hỏi nhẹ; \"Lào.\" ngắn, chắc, ngừng một nhịp. \"Đi nhờ.\" ngắn, có ý cười nhẹ. \"mà vẫn chưa thấy biển\" đọc có ý cười nhẹ. \"Và cú ngược đời?\" nhướn giọng; \"Chủ cảng.\" chắc, ngừng một nhịp. Đọc Savannakhet là \"Xa-van-na-khệt\", Laem Chabang là \"Lem Cha-bang\", Thongloun Sisoulith là \"Thoong-lun Xi-xu-lít\". \"chưa xây\" đọc rõ ràng. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Mười một nước Đông Nam Á, chỉ một nước không có biển."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Nước nào?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Lào."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Vậy hàng của Lào ra biển bằng cách nào?"
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Đi nhờ."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Lào giáp năm nước, bốn bề là đất liền."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Phía tây là sông Mê Kông, phía đông là dãy Trường Sơn."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Đi về phía tây, qua Thái Lan."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Từ Savannakhet tới cảng Laem Chabang, hơn bảy trăm cây số."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Từ cuối năm hai nghìn hai mươi mốt, Lào có thêm đường sắt lên Trung Quốc."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Hơn một nghìn cây số đường ray, mà vẫn chưa thấy biển."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Phía đông, sau dãy Trường Sơn, biển gần hơn hẳn."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Từ Viêng Chăn tới cảng Vũng Áng ở Hà Tĩnh, đường chim bay chỉ khoảng bốn trăm cây số."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Qua cửa khẩu, đi thêm hơn một trăm cây số là tới cảng."
+    },
+    {
+      "id": "15",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Năm hai nghìn hai mươi tư, kali và quặng sắt của Lào nối đuôi nhau ra đây."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Cả cảng thông qua hơn năm triệu tấn hàng."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Khoảng một phần ba là hàng của Lào."
+    },
+    {
+      "id": "18",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Và cú ngược đời?"
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Chủ cảng."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Phía Lào nắm sáu mươi phần trăm công ty khai thác cảng."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Tháng tư năm hai nghìn hai mươi lăm, Tổng Bí thư, Chủ tịch nước Lào Thongloun Sisoulith tới tận Vũng Áng, dự khánh thành một bến mới."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Và Lào còn muốn đi xa hơn."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Một tuyến đường sắt hơn năm trăm năm mươi cây số đang được tính, nối thẳng Viêng Chăn ra Vũng Áng."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Tuyến này còn đang nghiên cứu, chưa xây."
+    },
+    {
+      "id": "25",
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Không có biển, Lào đi tìm biển, và tìm thấy một cửa ở Hà Tĩnh."
+    }
+  ]
+}

@@ -14,6 +14,7 @@ import { P2LongThanh, p2LongThanhDuration } from "../Map/p2-long-thanh/Video";
 import { P2DienHatNhan, p2DienHatNhanDuration } from "../Map/p2-dien-hat-nhan/Video";
 import { P4DuongBayCong, p4DuongBayCongDuration } from "../Map/p4-duong-bay-cong/Video";
 import { P5ChoHepNhat, p5ChoHepNhatDuration } from "../Map/p5-cho-hep-nhat/Video";
+import { P4LaoRaBien, p4LaoRaBienDuration } from "../Map/p4-lao-ra-bien/Video";
 import { Cover, COVERS } from "../Map/covers";
 
 /** Every episode is 1080×1920 @ 30 fps; its length comes from the voiceover timing. New episode: add one <Composition> here + one entry in Map/covers.tsx. */
@@ -32,6 +33,7 @@ const EPISODES = [
   { id: "Map-P2-DienHatNhan", component: P2DienHatNhan, duration: p2DienHatNhanDuration },
   { id: "Map-P4-DuongBayCong", component: P4DuongBayCong, duration: p4DuongBayCongDuration },
   { id: "Map-P5-ChoHepNhat", component: P5ChoHepNhat, duration: p5ChoHepNhatDuration },
+  { id: "Map-P4-LaoRaBien", component: P4LaoRaBien, duration: p4LaoRaBienDuration },
 ];
 
 export const RemotionRoot: React.FC = () => (

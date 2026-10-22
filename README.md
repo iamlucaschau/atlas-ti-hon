@@ -17,12 +17,12 @@ Xem `Map/_mau-tap/README.md` (5 cổng: Concept → Evidence → Script → Visu
 
 `Map/00_he-thong/`: Channel Bible (luật kênh), prompt các cổng, quy trình sản xuất, kho chủ đề, nhận diện kênh (logo, banner, mô tả, hashtag, caption).
 
-## 14 tập đã làm
+## 15 tập đã làm
 
 | Pillar | Tập | ID |
 |---|---|---|
 | P1 Vì sao bản đồ như thế này | Brunei bị cắt làm đôi · Singapore bị đuổi khỏi Malaysia · Tây Nguyên bỗng có biển | `Map-P1-BruneiChiaDoi` · `Map-Singapore` · `Map-P1-TayNguyenCoBien` |
 | P2 Tiền & bản đồ | Đường sắt cao tốc 67 tỷ đô (v3) · Xứ sông nước lại khát cát · Con kênh lấy nước sông Hậu (Funan Techo, v3) · Cuộc giành khách: sân bay Long Thành · Điện hạt nhân: canh bạc hay lời giải? | `Map-P2-DuongSatCaoToc` · `Map-P2-CatMienTay` · `Map-P2-FunanTecho` · `Map-P2-LongThanh` · `Map-P2-DienHatNhan` |
 | P3 Địa lý giải thích hiện tượng | Miền Tây lún (v2) · Bức tường Bạch Mã | `Map-P3-DbsclSutLun` · `Map-P3-BachMa` |
-| P4 Tuyến đường & hành trình | Malacca – kênh Kra (v2) · Bay sang Mỹ: vì sao đường ngắn nhất vòng lên gần Alaska | `Map-P4-MalaccaKra` · `Map-P4-DuongBayCong` |
+| P4 Tuyến đường & hành trình | Malacca – kênh Kra (v2) · Bay sang Mỹ: vì sao đường ngắn nhất vòng lên gần Alaska · Lào không có biển, cửa biển ở Hà Tĩnh | `Map-P4-MalaccaKra` · `Map-P4-DuongBayCong` · `Map-P4-LaoRaBien` |
 | P5 Kỳ lạ & kỷ lục | Trung Quốc một múi giờ (v2) · Chỗ hẹp nhất Việt Nam | `Map-P5-TrungQuocMuiGio` · `Map-P5-ChoHepNhat` |

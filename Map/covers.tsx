@@ -22,6 +22,7 @@ import { Scene as AirportScene } from "./p2-long-thanh/Video";
 import { Scene as NuclearScene } from "./p2-dien-hat-nhan/Video";
 import { Scene as FlightScene } from "./p4-duong-bay-cong/Video";
 import { Scene as NarrowScene } from "./p5-cho-hep-nhat/Video";
+import { Scene as LaoSeaScene } from "./p4-lao-ra-bien/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -124,6 +125,9 @@ export const COVERS: CoverSpec[] = [
   // from the sea to the Lao border is less than 50 km (C1); the ruler across the waist, Lào tagged — line 01; ring on the ruler
   { slug: "p5-cho-hep-nhat", Scene: NarrowScene, frame: 74, hook: [{ text: "BIỂN SANG LÀO" }, { text: "< 50 KM", punch: true }], y: 230,
     mark: { x: 527, y: 752, r: 180, arrowFrom: [820, 1100] } },
+  // Laos has no sea but holds 60 % of a seaport in Hà Tĩnh (C7) — line 13, the crow-flies line Vientiane → Vũng Áng; ring on the port
+  { slug: "p4-lao-ra-bien", Scene: LaoSeaScene, frame: 918, hook: [{ text: "KHÔNG CÓ BIỂN" }, { text: "CẢNG Ở HÀ TĨNH", punch: true }], y: 230,
+    mark: { x: 808, y: 790, r: 50, arrowFrom: [640, 1080] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */
