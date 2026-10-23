@@ -31,7 +31,7 @@
 | Giá thuê văn phòng TP.HCM so với Gangnam — so cùng loại giá chưa? | C (dễ bị bẻ) | playbook EP05 — **phải ghi rõ loại giá** |
 | Vì sao vốn FDI đổ về một số tỉnh vệ tinh của TP.HCM và Hà Nội? | TB | ý tưởng |
 | Hai bên eo Malacca: vì sao cảng Singapore vượt lên? | T | ý tưởng (nối tiếp tập Singapore) |
-| Bắc Ninh: vì sao một tỉnh nhỏ xuất khẩu nhiều như một quốc gia? (cụm Samsung, gần Nội Bài + cảng Hải Phòng) | TB (gọi tên doanh nghiệp: chỉ nguồn công khai) | ý tưởng 2026-10-18, chấm sơ bộ 37,5 |
+| Bắc Ninh: vì sao xuất khẩu nhiều hơn cả TP.HCM? (2025 vượt sát nút; cụm điện thoại Yên Phong – Nội Bài; 9 tháng 2026 nhập > xuất) | TB (gọi tên doanh nghiệp: chỉ nguồn công khai) | **Đã làm** (`Map/p2-bac-ninh-xuat-khau/`, 5 cổng duyệt 2026-10-23) |
 | Sân bay Long Thành: vì sao xây sân bay mới ở Đồng Nai thay vì mở rộng Tân Sơn Nhất? | TB (không nói giá đất quanh sân bay) | **Đã làm** (`Map/p2-long-thanh/`, góc "Cuộc giành khách", 5 cổng duyệt 2026-10-20) |
 | Điện hạt nhân: canh bạc hay lời giải cho cơn khát điện? (dừng 2016 vì tiền, làm lại 2024 vì điện, Ninh Thuận) | TB (an toàn, đối tác, tái định cư: nói trung tính) | **Đã làm** (`Map/p2-dien-hat-nhan/`, 5 cổng duyệt 2026-10-20) |
 | Bài toán hoàn vốn của sân bay Long Thành: số khách thật so với dự tính của chủ đầu tư | C (tài chính doanh nghiệp niêm yết; không dự báo) | ý tưởng 2026-10-20 — chờ báo cáo khả thi gốc hoặc 1 năm khai thác |

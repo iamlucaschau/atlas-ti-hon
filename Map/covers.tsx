@@ -25,6 +25,7 @@ import { Scene as NarrowScene } from "./p5-cho-hep-nhat/Video";
 import { Scene as LaoSeaScene } from "./p4-lao-ra-bien/Video";
 import { Scene as HcmWorldsScene } from "./p5-tphcm-ba-the-gioi/Video";
 import { Scene as PhuQuocScene } from "./p1-phu-quoc-brevie/Video";
+import { Scene as BacNinhScene } from "./p2-bac-ninh-xuat-khau/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -135,6 +136,9 @@ export const COVERS: CoverSpec[] = [
   // "one pen stroke kept the island" (line 21): Phú Quốc stays south of the 1939 Brévié line that bends 3 km around its north tip (C7) — line 14
   { slug: "p1-phu-quoc-brevie", Scene: PhuQuocScene, frame: 1185, hook: [{ text: "PHÚ QUỐC ĐƯỢC GIỮ" }, { text: "BẰNG 1 NÉT BÚT", punch: true }], y: 170,
     mark: { x: 560, y: 712, r: 78, arrowFrom: [860, 1020] } },
+  // 2025: the country's top exporter is Bắc Ninh, not TP.HCM (C1) — line 03, the gold province and the question mark
+  { slug: "p2-bac-ninh-xuat-khau", Scene: BacNinhScene, frame: 258, hook: [{ text: "XUẤT KHẨU SỐ 1" }, { text: "BẮC NINH", punch: true }], y: 170,
+    mark: { x: 528, y: 618, r: 118, arrowFrom: [820, 1080] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */
