@@ -89,3 +89,25 @@
 
 - **C18 — đã có nguồn thứ hai:** SRC-021 [VCCI — Bắc Ninh tiếp tục dẫn đầu cả nước về quy mô xuất nhập khẩu](https://vcci.com.vn/tin-tuc/bac-ninh-tiep-tuc-dan-dau-ca-nuoc-ve-quy-mo-xuat-nhap-khau) (8/10/2026): 9 tháng 2026 xuất ~87,5, nhập ~90,3 tỷ USD, **nhập siêu ~2,8 tỷ**; điện thoại & linh kiện xuất ~55,52, nhập ~56,86 tỷ; Giám đốc Sở Công Thương **Nguyễn Minh Hiếu** giải thích: doanh nghiệp FDI nhập máy móc, linh kiện, nguyên liệu để sản xuất; cần nâng tỷ lệ nội địa hoá. Lưu ý: hai bài (VietnamPlus, VCCI) cùng gốc số liệu Sở Công Thương Bắc Ninh — **giữ twist (b)**, thẻ ghi "Số Sở Công Thương Bắc Ninh, 9 tháng 2026".
 - **C3 — chưa có nguồn thứ hai cho số 2024 theo địa giới mới.** Lời đọc chỉ nói định tính "năm trước đó, TP.HCM mới vẫn dẫn khá xa", không đọc số. Đỡ thêm bằng số 2023 của từng tỉnh cũ (SRC-008): TP.HCM 42,46 + Bình Dương 30,6 = 73,1 tỷ (chưa kể Bà Rịa – Vũng Tàu) so với Bắc Ninh 39,3 + Bắc Giang 24,5 (⚠️ số Bắc Giang 2023 kiểm lại nguồn) = 63,8 tỷ USD.
+
+## 7. Bổ sung cho kịch bản v2 (2026-10-23)
+
+| ID | Câu sẽ dùng | Giá trị | Nguồn | Trạng thái | Ghi chú |
+|---|---|---|---|---|---|
+| C20 | Năm 1997, tỉnh Hà Bắc tách đôi thành Bắc Ninh và Bắc Giang | Quốc hội khoá IX, kỳ họp 10 (11/1996); hoạt động từ 1/1/1997 | SRC-022, SRC-023 | ✅ 2 nguồn | ngày ra nghị quyết lệch (6/11 hay 15/11/1996) → **chỉ đọc năm 1997**, ruy băng ghi `1/1/1997` (ngày có hiệu lực, hai nguồn khớp) |
+| C21 | Năm 2025, gộp **toàn bộ** Bắc Giang và Bắc Ninh thành tỉnh Bắc Ninh mới (~4.718,6 km²) | NQ 202/2025/QH15 | SRC-024 (văn bản gốc), SRC-025 | ✅ | "hai nửa về lại một nhà": ranh giới 1997 và 2025 trùng ở cấp tỉnh (gộp nguyên hai tỉnh); không nói "y hệt Hà Bắc" về từng xã |
+| C22 | "Chưa có sân bay": sân bay quốc tế Gia Bình (Bắc Ninh) đang xây, mục tiêu khai thác bước đầu cuối 2026 | — | SRC-026, SRC-027 | ✅ 2 nguồn | dùng "**chưa** có", không dùng "không có"; nếu Gia Bình khai thác trước ngày đăng thì đổi câu 01 thành "từng không có sân bay" |
+| C23 | Hướng: Nội Bài phía tây (sát Yên Phong, ~16 km chim bay), cảng Hải Phòng phía đông, biên giới Trung Quốc phía bắc (cửa khẩu Hữu Nghị, Lạng Sơn) | km Luis đo ở Cổng 5 | **Luis đo trên bản đồ** (OCHA/HDX, Natural Earth) | ✅ phép đo | lời đọc chỉ nói hướng; số km chỉ trên thẻ |
+
+Bỏ khỏi lời đọc v2 (vẫn đúng, dùng ở bình luận ghim / mô tả): C16–C18 (nhập > xuất 9 tháng 2026), C19, "670 triệu USD" (C9), "> 1/3 hàng qua Nội Bài 2013" (C11 chỉ dùng làm căn cứ cho câu "chở máy bay là vừa").
+
+**Không dùng (kiểm tra bản Antigravity):** "ông Nguyễn Văn Đạo cùng đoàn Samsung đi tìm đất năm 2007" — sổ nguồn bản đó chỉ dẫn trang chủ (`baodautu.vn/`, `sggp.org.vn/`); Luis tìm không thấy bài nào xác nhận ([BrandsVietnam](https://www.brandsvietnam.com/2228-khong-bao-gio-tre-de-bat-dau) chỉ ghi ông là Phó TGĐ Samsung Vina, gắn bó từ đầu) → ❌.
+
+| ID | Nguồn | Ngày |
+|---|---|---|
+| SRC-022 | [Thanh Tra — Sức hút đầu tư Bắc Ninh](https://thanhtra.com.vn/kinh-doanh-A08BE54D6/suc-hut-dau-tu-bac-ninh-556648A4.html) (nghị quyết chia tách Hà Bắc; 1/1/1997 Bắc Ninh hoạt động theo đơn vị mới) | — |
+| SRC-023 | [Đại biểu Nhân dân — Khát vọng kỳ tích sông Cầu](https://daibieunhandan.vn/khat-vong-ky-tich-song-cau-10370604.html) (Hà Bắc 1963, tách 1/1/1997) | 2025 |
+| SRC-024 | [Nghị quyết 202/2025/QH15 (vbpl.vn, văn bản gốc)](https://vbpl.vn/TW/Lists/vbpq/Attachments/179501/202_2025_QH15_648951.doc) | 12/6/2025 |
+| SRC-025 | [Thư viện pháp luật — Tỉnh Bắc Ninh mới gồm những tỉnh nào](https://thuvienphapluat.vn/hoi-dap-phap-luat/tinh-bac-ninh-moi-gom-nhung-tinh-nao-hinh-thanh-138069559.html) | 2025 |
+| SRC-026 | [Bộ Xây dựng — Bắc Ninh tăng tốc dự án sân bay Gia Bình](https://moc.gov.vn/vn/tin-tuc/1184/94049/bac-ninh-tang-toc-du-an-san-bay-gia-binh--huong-toi-apec-2027.aspx) | 18/5/2026 |
+| SRC-027 | [Báo Pháp luật — Khởi công Cảng hàng không quốc tế Gia Bình](https://baophapluat.vn/bac-ninh-khoi-cong-xay-dung-cang-hang-khong-quoc-te-gia-binh-san-bay-lon-nhat-mien-bac.html) | 2025 |

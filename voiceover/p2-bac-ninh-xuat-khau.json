@@ -2,24 +2,35 @@
   "name": "p2-bac-ninh-xuat-khau",
   "model": "gemini-3.8-flash-tts",
   "voice": "Orus",
-  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu mở đầu nói như tiết lộ một bất ngờ nhỏ. \"Hàng gì?\" và \"Chọn Bắc Ninh vì đâu?\" hỏi nhẹ; \"Điện thoại.\" và \"Sân bay.\" ngắn, chắc. \"TP.HCM\" đọc là \"Thành phố Hồ Chí Minh\"; \"Samsung\" đọc là \"Xam-xung\". Câu \"Sát nút như hai xe máy cùng cán vạch.\" có ý cười nhẹ. \"Oái oăm ở chỗ\" chậm lại một nhịp, hơi nhướn giọng. Toàn bài trung tính, không chê bai. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu mở đầu nói như tiết lộ một bất ngờ nhỏ. \"Hàng gì?\" và \"Vì đâu?\" hỏi nhẹ; \"Điện thoại.\" và \"Vị trí.\" ngắn, chắc. \"TP.HCM\" đọc là \"Thành phố Hồ Chí Minh\"; \"Samsung\" đọc là \"Xam-xung\". Câu \"Sát nút như hai xe máy cùng cán vạch.\" có ý cười nhẹ. Toàn bài trung tính, không chê bai. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu. Câu cuối \"Tách ra là tỉnh nhỏ nhất, gộp lại thành nơi xuất khẩu nhiều nhất.\" nhấn \"nhỏ nhất\" và \"nhiều nhất\".",
   "trimSilence": true,
   "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
   "batchBy": "take",
+  "cast": {
+    "bacninh": {
+      "voice": "Aoede",
+      "style": "Giọng nữ trẻ người Bắc Ninh, giọng miền Bắc Việt Nam (Hà Nội – Bắc Ninh), hóm hỉnh, tự hào nhẹ, thân thiện như cô gái quê Kinh Bắc đang khoe quê mình. Nói tự nhiên, vui vẻ, không cường điệu, không chế giễu."
+    }
+  },
   "lines": [
     {
       "id": "01",
       "scene": "s1",
       "take": "t01",
-      "gapAfter": 0.15,
-      "text": "Năm hai nghìn hai mươi lăm, nơi xuất khẩu nhiều nhất Việt Nam không phải TP.HCM, mà là Bắc Ninh."
+      "gapAfter": 0.06,
+      "text": "Trước khi gộp tỉnh, Bắc Ninh nhỏ nhất nước, không biển, chưa có sân bay."
     },
     {
       "id": "02",
       "scene": "s1",
       "take": "t01",
-      "gapAfter": 0.15,
-      "text": "Hơn chín mươi ba tỷ đô."
+      "gapAfter": 0.06,
+      "text": "Vậy mà năm hai nghìn hai mươi lăm, Bắc Ninh xuất khẩu vượt cả Thành phố Hồ Chí Minh."
     },
     {
       "id": "03",
@@ -39,125 +50,128 @@
       "id": "05",
       "scene": "s2",
       "take": "t02",
-      "gapAfter": 0.15,
-      "text": "Năm hai nghìn lẻ tám, ông Nguyễn Quang Thanh, Sở Kế hoạch và Đầu tư Bắc Ninh, nói: Samsung chỉ còn thiếu vài giấy tờ, đủ giấy là cấp phép ngay."
+      "gapAfter": 0.06,
+      "text": "Năm hai nghìn lẻ tám, Samsung xin xây nhà máy điện thoại ở Yên Phong."
     },
     {
       "id": "06",
       "scene": "s2",
       "take": "t02",
-      "gapAfter": 0.6,
-      "text": "Dự án đầu tiên vào Yên Phong, sáu trăm bảy mươi triệu đô."
+      "gapAfter": 0.25,
+      "text": "Ông Nguyễn Quang Thanh, cán bộ tỉnh, nói với hãng tin AP: đủ giấy là cấp phép ngay."
     },
     {
       "id": "07",
       "scene": "s3",
       "take": "t03",
-      "gapAfter": 0.15,
-      "text": "Chọn Bắc Ninh vì đâu?"
+      "gapAfter": 0.06,
+      "text": "Vì đâu?"
     },
     {
       "id": "08",
       "scene": "s3",
-      "take": "t03",
-      "gapAfter": 0.15,
-      "text": "Sân bay."
+      "take": "t03a",
+      "gapAfter": 0.06,
+      "text": "Vị trí."
     },
     {
       "id": "09",
       "scene": "s3",
-      "take": "t03",
-      "gapAfter": 0.15,
-      "text": "Từ Yên Phong tới Nội Bài, đường chim bay chưa tới hai mươi cây số."
+      "take": "t03b",
+      "gapAfter": 0.25,
+      "text": "Nội Bài ngay sát bên, cảng Hải Phòng phía đông, biên giới Trung Quốc phía bắc."
     },
     {
       "id": "10",
-      "scene": "s3",
-      "take": "t03",
-      "gapAfter": 0.6,
-      "text": "Có lúc, riêng Samsung chiếm hơn một phần ba hàng hoá qua sân bay này."
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Đất em nhỏ thật, nhưng đi đâu cũng gần nha!",
+      "who": "bacninh"
     },
     {
       "id": "11",
-      "scene": "s4",
-      "take": "t04",
-      "gapAfter": 0.15,
-      "text": "Năm hai nghìn hai mươi lăm, Bắc Ninh nhập thêm Bắc Giang, cũng đầy nhà máy."
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Điện thoại nhẹ mà đắt, chở máy bay là vừa."
     },
     {
       "id": "12",
-      "scene": "s4",
-      "take": "t04",
-      "gapAfter": 0.15,
-      "text": "TP.HCM thì nhập Bình Dương và Bà Rịa Vũng Tàu."
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Tháng bảy năm hai nghìn hai mươi lăm, Bắc Ninh gộp Bắc Giang, cũng đầy nhà máy."
     },
     {
       "id": "13",
-      "scene": "s4",
-      "take": "t04",
-      "gapAfter": 0.15,
-      "text": "Năm trước đó, TP.HCM mới vẫn dẫn khá xa."
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Nhưng Thành phố Hồ Chí Minh cũng gộp Bình Dương, Bà Rịa Vũng Tàu."
     },
     {
       "id": "14",
-      "scene": "s4",
-      "take": "t04",
-      "gapAfter": 0.15,
-      "text": "Phải tới tháng mười, Bắc Ninh mới vượt, hơn chừng một trăm triệu đô."
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Tính trên địa giới mới, phải tới tháng mười, Bắc Ninh mới vượt."
     },
     {
       "id": "15",
-      "scene": "s4",
-      "take": "t04",
-      "gapAfter": 0.6,
-      "text": "Sát nút như hai xe máy cùng cán vạch."
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Cả năm, Bắc Ninh hơn chín mươi ba tỷ đô, nhỉnh hơn chút xíu."
     },
     {
       "id": "16",
-      "scene": "s5",
-      "take": "t05",
-      "gapAfter": 0.15,
-      "text": "Tỉnh gọi đây là trung tâm xuất khẩu lớn của cả nước."
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Sát nút như hai xe máy cùng cán vạch."
     },
     {
       "id": "17",
-      "scene": "s5",
-      "take": "t05",
-      "gapAfter": 0.6,
-      "text": "Nhưng trong một trăm bảy mươi sáu nhà cung cấp chính của Samsung ở đây, chỉ mười hai là doanh nghiệp Việt."
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.06,
+      "text": "Tỉnh gọi đây là trung tâm xuất khẩu của cả nước."
     },
     {
       "id": "18",
-      "scene": "s6",
-      "take": "t06",
-      "gapAfter": 0.15,
-      "text": "Oái oăm ở chỗ: chín tháng năm nay, Bắc Ninh nhập về còn nhiều hơn xuất."
+      "scene": "s7",
+      "take": "t07",
+      "gapAfter": 0.25,
+      "text": "Nhưng trong một trăm bảy mươi sáu nhà cung cấp chính của Samsung ở đây, chỉ mười hai là doanh nghiệp Việt."
     },
     {
       "id": "19",
-      "scene": "s6",
-      "take": "t06",
-      "gapAfter": 0.15,
-      "text": "Riêng điện thoại và linh kiện: nhập gần năm mươi bảy tỷ, xuất hơn năm mươi lăm."
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Còn chuyện thú vị nhất nằm trên bản đồ."
     },
     {
       "id": "20",
-      "scene": "s6",
-      "take": "t06",
-      "gapAfter": 0.15,
-      "text": "Tỉnh giải thích: nhà máy đang nhập máy móc, linh kiện để mở rộng."
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn chín trăm chín mươi bảy, tỉnh Hà Bắc tách đôi thành Bắc Ninh và Bắc Giang."
     },
     {
       "id": "21",
-      "scene": "s6",
-      "take": "t06",
-      "gapAfter": 0.6,
-      "text": "Đứng đầu rồi, cuộc đua tiếp theo là giữ lại nhiều hơn trong mỗi chiếc điện thoại."
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.06,
+      "text": "Hai mươi tám năm sau, hai nửa về lại một nhà."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "take": "t08",
+      "gapAfter": 0.25,
+      "text": "Tách ra là tỉnh nhỏ nhất, gộp lại thành nơi xuất khẩu nhiều nhất."
     }
-  ],
-  "gaps": {
-    "sentence": 0.06,
-    "paragraph": 0.12,
-    "scene": 0.25
-  }
+  ]
 }

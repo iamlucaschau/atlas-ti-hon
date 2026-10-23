@@ -1,60 +1,60 @@
-# Gói xuất bản — "Vì sao Bắc Ninh xuất khẩu nhiều hơn cả TP.HCM?"
+# Gói xuất bản v2 — "Vì sao tỉnh nhỏ nhất nước lại xuất khẩu nhiều nhất?" (Bắc Ninh)
 
-*Cổng 5 — **Lucas duyệt 2026-10-23**. Kênh **Atlas Tí Hon**. Video: `p2-bac-ninh-xuat-khau.mp4` (9:16, 72,1 s, −14,1 LUFS, đỉnh −2,6 dBFS). Loại số liệu: **kim ngạch xuất / nhập khẩu hàng hoá theo địa phương** (Cục Hải quan); số 9 tháng 2026 ở đoạn cuối là **số của Sở Công Thương Bắc Ninh**. Không phải GDP, không phải thu nhập. **Số 2026 thay đổi hằng tháng: kiểm lại trước khi đăng.***
+*Cổng 5 v2 — **Lucas duyệt 2026-10-23** (v1 đã duyệt và commit 093e2ec, v2 thay thế). Kênh **Atlas Tí Hon**. Video: `p2-bac-ninh-xuat-khau.mp4` (9:16, 68,9 s, −13,9 LUFS, đỉnh −2,7 dBFS). Loại số liệu: **kim ngạch xuất khẩu hàng hoá theo địa phương** (Cục Hải quan). Không phải GDP, không phải thu nhập. Bản đồ "Hà Bắc" = gộp ranh giới hai tỉnh Bắc Ninh + Bắc Giang trước 7/2025 (minh hoạ).*
 
 ## 1. Tiêu đề (thử A/B)
 
-1. **Vì sao Bắc Ninh xuất khẩu nhiều hơn cả TP.HCM?** *(chính)*
-2. Nơi xuất khẩu nhiều nhất Việt Nam không phải TP.HCM
-3. Bắc Ninh vượt TP.HCM: nhờ điện thoại hay nhờ sáp nhập?
-4. Xuất khẩu số một, nhưng nhập còn nhiều hơn
+1. **Vì sao tỉnh nhỏ nhất nước lại xuất khẩu nhiều nhất?** *(chính)*
+2. Không biển, chưa có sân bay, vẫn vượt TP.HCM về xuất khẩu
+3. Hà Bắc tách đôi năm 1997, nhập lại thành số 1 xuất khẩu
+4. Bắc Ninh vượt TP.HCM: nhờ điện thoại hay nhờ sáp nhập?
 
 ## 2. Mô tả
 
-> Năm 2025, nơi xuất khẩu nhiều nhất Việt Nam là Bắc Ninh: khoảng 93,3 tỷ USD, nhỉnh hơn TP.HCM (92,7 tỷ). Hàng chủ lực là điện thoại và đồ điện tử. Năm 2008, Samsung xin đầu tư nhà máy điện thoại đầu tiên ở khu công nghiệp Yên Phong, chưa tới 20 km đường chim bay từ sân bay Nội Bài. Năm 2025, cả hai bên cùng sáp nhập: Bắc Ninh gộp Bắc Giang, TP.HCM gộp Bình Dương và Bà Rịa – Vũng Tàu. Tính trên địa giới mới, TP.HCM vẫn dẫn trước; phải tới hết tháng 10/2025, Bắc Ninh mới vượt, hơn chừng 100 triệu USD. Nhưng 9 tháng năm 2026, Bắc Ninh lại nhập về nhiều hơn xuất đi: tỉnh giải thích nhà máy đang nhập máy móc, linh kiện để mở rộng. Theo bạn, làm sao để giữ lại nhiều hơn trong mỗi chiếc điện thoại "made in Vietnam"?
+> Trước khi gộp tỉnh, Bắc Ninh là tỉnh nhỏ nhất nước, không có biển, cũng chưa có sân bay. Vậy mà năm 2025, Bắc Ninh xuất khẩu khoảng 93,3 tỷ USD, nhỉnh hơn TP.HCM (92,7 tỷ). Hàng chủ lực là điện thoại. Năm 2008, Samsung xin xây nhà máy điện thoại ở Yên Phong, ngay sát sân bay Nội Bài; cảng Hải Phòng ở phía đông, biên giới Trung Quốc ở phía bắc. Năm 2025, cả hai bên cùng sáp nhập: Bắc Ninh gộp Bắc Giang, TP.HCM gộp Bình Dương và Bà Rịa – Vũng Tàu; tính trên địa giới mới, phải tới hết tháng 10/2025 Bắc Ninh mới vượt. Và chi tiết thú vị nhất: năm 1997, tỉnh Hà Bắc tách đôi thành Bắc Ninh và Bắc Giang; 28 năm sau, hai nửa về lại một nhà. Quê bạn có từng tách ra rồi gộp lại không?
 >
 > **Atlas Tí Hon** — bản đồ nhỏ, câu chuyện lớn.
 >
 > **Nguồn** (truy cập 23/10/2026):
-> - Xuất khẩu 2025: Bắc Ninh 93,27 tỷ USD, TP.HCM 92,68 tỷ USD; nhập khẩu Bắc Ninh 87,8, TP.HCM 99,8 tỷ USD — Cục Hải quan (Báo Đầu tư 8/1/2026; Tạp chí Thuế Hải quan 9/1/2026)
+> - Xuất khẩu 2025: Bắc Ninh 93,27 tỷ USD, TP.HCM 92,68 tỷ USD — Cục Hải quan (Báo Đầu tư 8/1/2026; Tạp chí Thuế Hải quan 9/1/2026)
 > - Hết 10 tháng 2025: Bắc Ninh 76,44, TP.HCM 76,34 tỷ USD — Cục Hải quan (Tạp chí Thuế Hải quan 7/11/2025)
-> - Năm 2024 tính theo địa giới mới, TP.HCM dẫn trước — số sơ bộ Cục Hải quan (VietNamNet 4/7/2025)
-> - Tháng 3/2008, ông Nguyễn Quang Thanh (Sở Kế hoạch và Đầu tư Bắc Ninh) nói với AP về giấy phép dự án Samsung 670 triệu USD — AP (TechCrunch 24/3/2008); nhà máy ở KCN Yên Phong, sản xuất từ 2009 — Dân trí / DTiNews (17/11/2009), Korea Times (2014)
+> - Bắc Ninh (trước 7/2025) rộng 822,7 km², nhỏ nhất cả nước — Tạp chí Quản lý nhà nước
+> - Sân bay quốc tế Gia Bình (Bắc Ninh) đang xây, mục tiêu khai thác bước đầu cuối 2026 — Bộ Xây dựng (18/5/2026), Báo Pháp luật
+> - Tháng 3/2008, ông Nguyễn Quang Thanh (Sở Kế hoạch và Đầu tư Bắc Ninh) nói với AP về giấy phép dự án Samsung — AP (TechCrunch 24/3/2008); nhà máy ở KCN Yên Phong — Dân trí / DTiNews (17/11/2009), Korea Times (2014)
 > - Năm 2013 Samsung chiếm khoảng 35% hàng hoá qua sân bay Nội Bài — Tuổi Trẻ News (2/9/2014)
-> - Khoảng cách KCN Yên Phong – Nội Bài: kênh đo trên bản đồ, ~16 km đường chim bay (toạ độ xấp xỉ)
-> - 164/176 nhà cung cấp cấp 1 của Samsung ở Bắc Ninh là doanh nghiệp nước ngoài — VCCI (21/1/2025); kinh tế tỉnh còn phụ thuộc nhiều vào FDI — VOV (8/10/2026)
-> - 9 tháng 2026: xuất khẩu ~87,5, nhập khẩu ~90,3 tỷ USD; điện thoại & linh kiện nhập ~56,86, xuất ~55,52 tỷ USD — Sở Công Thương Bắc Ninh (VietnamPlus 7/10/2026; VCCI 8/10/2026)
+> - Khoảng cách đường chim bay từ KCN Yên Phong: Nội Bài ~16 km, cảng Đình Vũ (Hải Phòng) ~93 km, cửa khẩu Hữu Nghị ~117 km — kênh đo trên bản đồ (toạ độ xấp xỉ)
+> - 164/176 nhà cung cấp cấp 1 của Samsung ở Bắc Ninh là doanh nghiệp nước ngoài — VCCI (21/1/2025)
+> - Hà Bắc tách thành Bắc Ninh và Bắc Giang từ 1/1/1997 — Báo Thanh Tra, Đại biểu Nhân dân; hai tỉnh gộp toàn bộ thành tỉnh Bắc Ninh từ 1/7/2025 — Nghị quyết 202/2025/QH15
 > - Nhạc: "Wallpaper" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/
-> - Bản đồ: OCHA/HDX (tỉnh 2025), Natural Earth (tỉnh 2024). **Thanh "cộng dồn 2025" là hình minh hoạ (chỉ số cuối là số thật); nhà máy, máy bay, xe máy, cái cân là hình minh hoạ. Nhân vật cán bộ là hình chung, không phải chân dung.** Giọng đọc tạo bằng AI.
+> - Bản đồ: OCHA/HDX (tỉnh 2025), Natural Earth (tỉnh 2024). **Thanh "cộng dồn 2025" là minh hoạ (số cuối là số thật); nhà máy, máy bay, xe máy là hình minh hoạ; ranh giới "Hà Bắc" là gộp hai tỉnh trước 2025, minh hoạ. Nhân vật cán bộ là hình chung, không phải chân dung.** Giọng đọc tạo bằng AI.
 >
-> #Shorts #AtlasTiHon #BanDo #DiaLy #BacNinh #XuatKhau #Samsung #KinhTe #TPHCM
+> #Shorts #AtlasTiHon #BanDo #DiaLy #BacNinh #BacGiang #HaBac #XuatKhau #KinhTe
 
 ## 3. Hashtag
 
-#Shorts #AtlasTiHon #BanDo #DiaLy #BacNinh #XuatKhau #Samsung #KinhTe #TPHCM
+#Shorts #AtlasTiHon #BanDo #DiaLy #BacNinh #BacGiang #HaBac #XuatKhau #KinhTe
 
 ## 4. Ảnh bìa
 
-`cover.jpg` (1080×1920, 270 KB): mục `p2-bac-ninh-xuat-khau` trong `Map/covers.tsx` (frame 258: Bắc Ninh mới sáng vàng trên bản đồ miền Bắc, dấu `?`; hook "XUẤT KHẨU SỐ 1 / BẮC NINH", vòng đỏ ở Bắc Ninh).
+`cover.jpg` (1080×1920, 290 KB): mục `p2-bac-ninh-xuat-khau` trong `Map/covers.tsx` (frame 1968, câu kết: Bắc Ninh mới sáng vàng, Bắc Ninh cũ viền sáng + nhãn "NHỎ NHẤT"; hook "TỈNH NHỎ NHẤT / XUẤT KHẨU SỐ 1", vòng đỏ ở Bắc Ninh cũ).
 
-## 5. Bình luận ghim
+## 5. Bình luận ghim (chuyển từ twist v1)
 
-> Bạn có đang làm (hoặc có người thân làm) ở một khu công nghiệp ở Bắc Ninh, Bắc Giang không? Kể mình nghe một ngày ở đó nhé 👇
+> 9 tháng đầu năm 2026, Bắc Ninh xuất khẩu ~87,5 tỷ USD nhưng nhập ~90,3 tỷ USD (Sở Công Thương Bắc Ninh): nhà máy đang nhập máy móc, linh kiện để mở rộng. Theo bạn, làm sao giữ lại nhiều hơn trong mỗi chiếc điện thoại? 👇
 
 ## 6. Caption + hashtag (TikTok / Facebook Reels / Instagram)
 
 ```text
-Nơi xuất khẩu nhiều nhất Việt Nam năm 2025 không phải TP.HCM 📱
-Mà là Bắc Ninh: hơn 93 tỷ đô, chủ yếu là điện thoại.
-Nhưng 9 tháng năm nay, Bắc Ninh lại nhập nhiều hơn xuất. Vì sao? 👇
+Tỉnh nhỏ nhất nước, không biển, chưa có sân bay… vậy mà xuất khẩu vượt cả TP.HCM 📱
+Và chuyện thú vị nhất nằm trên bản đồ: Hà Bắc tách đôi năm 1997, 28 năm sau về lại một nhà 🗺️
 
-#AtlasTiHon #BanDo #BacNinh #XuatKhau #KinhTe
+#AtlasTiHon #BanDo #BacNinh #HaBac #XuatKhau
 
 Nhạc: "Wallpaper" Kevin MacLeod (incompetech.com), CC BY 4.0
 ```
 
 ## Trước khi đăng (còn mở)
 
-- [ ] Lucas nghe video chính `p2-bac-ninh-xuat-khau.mp4`: câu 07 "Chọn Bắc Ninh vì đâu?" (máy kiểm tra nghe thành "…video"), "TP.HCM" đọc thành "Thành phố Hồ Chí Minh", tên "Nguyễn Quang Thanh", "Samsung".
-- [ ] Kiểm lại số xuất / nhập khẩu 2026 của Bắc Ninh (đang đọc "chín tháng năm nay"): nếu đăng sau khi có số 10 tháng mà nhập vẫn > xuất thì vẫn đúng; nếu không, báo Luis sửa câu 18–19.
-- [ ] Số năm 2024 theo địa giới mới mới có 1 nguồn (chỉ nói định tính trong video).
+- [ ] Lucas nghe video chính v2 (đã nghe vo.mp3 ở Cổng 4).
+- [ ] **"Chưa có sân bay":** nếu sân bay Gia Bình đã khai thác trước ngày đăng → báo Luis đổi câu 01 ("từng chưa có sân bay").
+- [ ] Bình luận ghim dùng số 9 tháng 2026: nếu đã có số mới hơn thì cập nhật.

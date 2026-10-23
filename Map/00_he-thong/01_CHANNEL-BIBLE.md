@@ -72,12 +72,22 @@ Tài liệu nguồn (tham khảo, không sửa): `Map/master-map-explainer-playb
 10. **Mỗi câu VO tối đa 1 con số mới** (năm cũng tính).
 11. **Không lặp câu cửa miệng:** "oái oăm", "thử…", "Vì sao?" trơn mỗi cụm tối đa 1 lần trong 3 tập liên tiếp; dùng kho câu thay thế ở prompt Cổng 3.
 
+**Luật kịch bản bổ sung 2** (so sánh tập Bắc Ninh v1 của Luis với bản Antigravity của Lucas, Lucas 2026-10-23: "update để các kịch bản sau cũng chất lượng hơn"):
+12. **Hook chồng nghịch lý:** nếu có, xếp 2–3 bất lợi có thật rồi lật ngược trong câu sau ("nhỏ nhất nước, không biển, chưa có sân bay. Vậy mà…"); mạnh hơn hook một vế. Mỗi bất lợi có ID nhận định.
+13. **Twist ưu tiên "bản đồ tự kể" và không hết hạn:** mốc lịch sử, ranh giới, tên gọi, hình dạng (vd. Hà Bắc tách 1997 → gộp 2025). **Số liệu theo tháng / quý / "năm nay" không làm twist** (cũ nhanh, thường một gốc nguồn): đặt ở thân bài kèm kỳ dữ liệu, hoặc chuyển xuống bình luận ghim.
+14. **Câu kết gọi lại đúng từ khoá của hook** (nhỏ nhất ↔ nhiều nhất; "một đường kẻ" ↔ "đường kẻ mới"), tạo vòng tròn nghĩa.
+15. **So sánh công bằng:** hai bên cùng đổi (sáp nhập, đổi địa giới, đổi cách tính) thì nói cả hai và so **trên cùng địa giới, cùng kỳ**; không để người xem hiểu sai nguyên nhân (vd. "vượt nhờ gộp tỉnh" khi đối thủ cũng gộp).
+16. **Câu có hạn dùng:** tránh "năm ngoái", "năm nay", "hiện nay" trơn; ghi năm cụ thể. Điều sắp thay đổi dùng "chưa…" và ghi tiến độ trong sổ nguồn (vd. "chưa có sân bay" ↔ sân bay Gia Bình đang xây); `xuat-ban.md` có mục "kiểm lại trước khi đăng".
+17. **Nhịp con số:** không đọc quá 2 số đo / khoảng cách liền nhau; vị trí nói bằng **hướng + bản đồ** ("Nội Bài sát bên, cảng phía đông"), số km để trên thẻ.
+18. **Vùng đất tự nói không chỉ cho khuôn "Một tỉnh, N thế giới":** tập nào xoay quanh một tỉnh / nước có "tính cách" thì cân nhắc 1 câu vùng tự nói (§6), đặt sau một nhịp nặng để làm câu đùa.
+19. **Ngân sách chữ đo thật:** Standard **≤ 265 chữ**. Giọng Orus tempo 1.1 đo thực tế 222–235 wpm kể cả nghỉ: 267 chữ = 72 s, 301 chữ = 78 s (quá 75 s). Đếm chữ ở Cổng 3 trước khi gửi Lucas.
+
 ## 4. Thời lượng & nhịp
 
 | Preset | Thời lượng | Beat | Số chữ VO (tiếng Việt, tempo 1.1) |
 |---|---|---|---|
 | Quick | 35–45 s | 4–6 | ~130–165 chữ |
-| **Standard** (mặc định) | **60–75 s** | 7–10 | **~220–275 chữ** |
+| **Standard** (mặc định) | **60–75 s** | 7–10 | **~220–265 chữ** (đo thật, §3 luật 19) |
 | Deep | 75–90 s | 9–12 | ~275–330 chữ |
 
 **Tempo mặc định 1.1** (Lucas 2026-10-13, sau khi nghe tập ĐBSCL ở 1.0 và 1.1) → thường ra **~235–240 wpm**. Nếu `vo-timestamps.md` đo được > 250 wpm (bản Gemini đọc nhanh bất thường, như đường sắt v1: 274 wpm) thì hạ tempo và hỏi Lucas. Đổi tempo không tốn request. Chọn preset **ngắn nhất** kể đủ câu chuyện; không độn chữ. Câu VO ngắn (5–15 chữ), mỗi câu là một beat hình; mỗi 1,5–2 s có một sự kiện trên màn hình.
@@ -100,6 +110,8 @@ Chi tiết + code: `Style Library/I-toy-atlas/README.md`. Tóm tắt những đi
 **Vùng đất có mặt — `MapFace`** (Lucas 2026-10-22, #16): mắt, mày, miệng vector đặt lên một nước / tỉnh / vùng, 8 biểu cảm (`neutral`, `happy`, `smug`, `angry`, `worried`, `surprised`, `sad`, `wink`), chớp mắt tự động, miệng mấp máy theo thời gian từng chữ khi vùng đó nói (`talkOpen` từ `words.json`). Dùng ở **1–3 nhịp mỗi tập** (thường là lúc vùng tự nói), không để suốt video; mặt nằm trong vùng an toàn, không che nhãn tên; **không đặt mặt lên Hoàng Sa, Trường Sa hay vùng tranh chấp**; biểu cảm không chế giễu.
 
 **Chữ hứa con số — `PromiseTitle`** (Lucas 2026-10-22, #19): 2–3 dòng, nghiêng ~8°, trượt vào từ dưới, hiện ~2–3 s trong giây 4–12, dòng đầu là con số to vàng ("3 THẾ GIỚI"). **Ngoại lệ luật ≤ 5 chữ: tối đa 8 chữ** cho khối này; lúc nó hiện, khung không có thẻ số nào khác.
+
+**Mật độ khung** (Lucas 2026-10-23, so sánh bản Bắc Ninh): **≤ 4 đạo cụ / biểu tượng gắn bản đồ cùng lúc**, ≤ 2 khối chữ; không chồng máy bay + xe + tàu + điện thoại + đường kẻ trong một khung. Nhãn không xoay nghiêng đè lên lãnh thổ khác; nhãn địa danh luôn qua kiểm địa lý. **Bảng / panel che bản đồ (cột số, lưới chấm, cân…) không quá 2 câu liền nhau**: video bản đồ phải để bản đồ kể chuyện.
 
 Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn chỉ cho địa danh của beat đó; thẻ số liệu gắn với bản đồ; không dùng ảnh vệ tinh làm nền chính; nguồn ở description, không trên màn hình (trừ attribution bắt buộc).
 
@@ -155,7 +167,7 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
    - **Bản đồ toàn lãnh thổ Việt Nam** (vd. tuyến Bắc–Nam): theo quy định của Việt Nam phải thể hiện **quần đảo Hoàng Sa và Trường Sa thuộc Việt Nam**. Dữ liệu Natural Earth không bảo đảm điều này → **không dùng nguyên dữ liệu gốc** cho khung có Biển Đông; Lucas duyệt cách vẽ ở Cổng 2 (vẽ bổ sung hai quần đảo cùng màu Việt Nam + nhãn, hoặc cắt khung chỉ còn đất liền khi câu chuyện không cần biển).
    - **Cách hiển thị chuẩn (Lucas 2026-10-14, kiểu ghim bản đồ):** chấm nhỏ màu Việt Nam cho các đảo, luôn có khi khung có cả bờ biển Việt Nam. Tên "Hoàng Sa", "Trường Sa" (42 px, chữ trắng viền tối) cạnh **một chấm đỏ viền trắng** mỗi quần đảo, gắn vào bản đồ (đi theo camera); **chỉ hiện ở cảnh camera tới đó** — tự hiện khi ghim nằm trong vùng an toàn và đủ gần để phân biệt hai quần đảo, cảnh châu Á rộng chỉ còn chấm.
    - **Địa giới tỉnh sau sáp nhập (1/7/2025):** dữ liệu tỉnh cũ đã lỗi thời → không vẽ ranh giới tỉnh trừ khi có nguồn hình học mới; số liệu theo tỉnh phải ghi rõ "trước / sau sáp nhập". Nguồn hình học mới (Lucas 2026-10-18): **OCHA/HDX COD-AB v02** (34 tỉnh, CC BY-IGO, ghi "OCHA/HDX" trong mô tả) trong `Style Library/I-toy-atlas/vn-provinces.tsx`; 63 tỉnh cũ (Natural Earth) chỉ dùng cho cảnh "trước sáp nhập". Đà Nẵng gồm Hoàng Sa, Khánh Hoà gồm Trường Sa: khi tô màu theo tỉnh, chấm đảo cùng màu tỉnh đó.
-10. Không bịa toạ độ, ranh giới, tuyến đường, ngày, trích dẫn, số liệu, URL, tên nguồn.
+10. Không bịa toạ độ, ranh giới, tuyến đường, ngày, trích dẫn, số liệu, URL, tên nguồn. **Mỗi SRC là link tới đúng bài / văn bản** (không chỉ trang chủ như `baodautu.vn/`); nhận định chỉ có nguồn "trang chủ" = ❌ không dùng. **Khoảnh khắc người** phải có ≥ 1 nguồn gốc nêu tên người + việc cụ thể (Lucas 2026-10-23: bản Antigravity dùng "ông Nguyễn Văn Đạo đi tìm đất 2007", sổ nguồn chỉ dẫn trang chủ, Luis không tìm được bài nào xác nhận).
 11. Người thật trong lịch sử: hình chibi tôn trọng, không biếm hoạ xúc phạm; không gọi tên cá nhân/tổ chức ngoài nguồn trong chủ đề nhạy cảm.
 12. Giữ attribution bản đồ khi giấy phép yêu cầu (Natural Earth là public domain — không bắt buộc, vẫn ghi trong description).
 13. Một tập chỉ được đăng khi **cả 5 cổng = duyệt**.
@@ -168,6 +180,7 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 
 | Ngày | Quyết định | Người |
 |---|---|---|
+| 2026-10-23 | Sau so sánh Bắc Ninh v1 ↔ bản Antigravity: luật kịch bản 12–19 (§3: hook chồng nghịch lý, twist không hết hạn, câu kết gọi lại hook, so sánh công bằng, câu có hạn dùng, nhịp con số, vùng tự nói mở rộng, Standard ≤ 265 chữ), mật độ khung (§5), SRC phải là link tới đúng bài (§8.10) | Lucas |
 | 2026-10-10 | Phân tích EasyHistories → style I "Toy Atlas"; camera được bay mỗi lần đổi nơi | Lucas |
 | 2026-10-10 | Tiếng Việt trước, tiếng Anh sau | Lucas |
 | 2026-10-12 | v2 tập Singapore: hook câu hỏi, chuyển động liên tục, phụ đề 5 chữ, nhạc −11 dB | Lucas |

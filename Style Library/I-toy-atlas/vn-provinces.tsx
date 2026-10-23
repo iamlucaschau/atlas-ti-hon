@@ -87,9 +87,10 @@ export const VN2025 = load(topo2025);
 /**
  * The border shared by two 2025 provinces (e.g. Huế | Đà Nẵng = the Bạch Mã ridge out to the Hải Vân pass),
  * from the same HDX topology: `d` is its base-projection path, `ll` its lon/lat points west → east.
+ * `year: 2024` uses the 63 old provinces (e.g. Bắc Ninh | Bắc Giang, the 1997 split of Hà Bắc).
  */
-export const provinceBorder = (a: string, b: string) => {
-  const t = topo2025 as unknown as Topology;
+export const provinceBorder = (a: string, b: string, year: 2024 | 2025 = 2025) => {
+  const t = (year === 2024 ? topo2024 : topo2025) as unknown as Topology;
   const m = mesh(t, t.objects.provinces as GeometryCollection, (x, y) => {
     const n = [(x.properties as Props).name, (y.properties as Props).name];
     return n.includes(a) && n.includes(b) && a !== b;

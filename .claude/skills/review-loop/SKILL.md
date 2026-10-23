@@ -44,6 +44,7 @@ Việc nhỏ, hiển nhiên (đè hình, lệch vị trí, tràn vùng an toàn)
 - **Nhãn, mặt, đạo cụ nằm đúng lãnh thổ** (geo check ✓ **và** nhìn lại trên sheet: nhãn nằm giữa vùng, không trên ranh giới, không ngoài vùng).
 - **Mỗi vùng / tỉnh được lời đọc nhắc tới đều có tên trên hình** lúc được nhắc; khi nhiều vùng gộp lại, vẫn biết vùng nào là vùng nào (nhãn dưới mặt, thẻ tên).
 - **Câu nhân vật nói** (giọng khác người dẫn) có dấu hiệu ai đang nói (thẻ tên trên phụ đề / bóng thoại).
+- **Mật độ khung** (Bible §5, Lucas 2026-10-23): ≤ 4 đạo cụ / biểu tượng gắn bản đồ cùng lúc; không nhãn xoay nghiêng đè lãnh thổ khác; bảng / panel che bản đồ không quá 2 câu liền nhau.
 
 **Nhịp & camera**
 - Hình khớp lời: ô của câu nào thì hình đang nói về đúng thứ câu đó nói.

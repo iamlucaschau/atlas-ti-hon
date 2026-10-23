@@ -1,119 +1,130 @@
-# Kịch bản FINAL — "Vì sao Bắc Ninh xuất khẩu nhiều hơn cả TP.HCM?"
+# Kịch bản FINAL v2 — "Vì sao tỉnh nhỏ nhất nước lại xuất khẩu nhiều nhất?" (Bắc Ninh)
 
-*Cổng 3 — **Lucas duyệt 2026-10-23**. Pillar P2 · **Money+Maps** (nghịch lý tiền → định vị → 2–3 nguyên nhân có nguồn → so sánh đúng loại số → "vậy thì sao"). Standard · 20 câu, ~281 chữ ≈ 72 s ở tempo 1.1 · giọng "vui vừa phải". Chỉ dùng nhận định trong `cong-2_so-nguon.md` (Lucas duyệt 2026-10-23: twist (b), khoảnh khắc người ông Nguyễn Quang Thanh 2008). Loại số liệu: **kim ngạch xuất / nhập khẩu hàng hoá theo địa phương**. Nối vòng mềm: câu kết trọn vẹn gọi lại "điện thoại" của hook; hình quay về khung toàn quốc.*
+*Cổng 3 v2 — **Lucas duyệt 2026-10-23**. Bản v1 (đã render, commit 093e2ec) còn trong git. v2 ghép điểm mạnh của bản Antigravity (hook chồng nghịch lý, twist Hà Bắc 1997, vùng đất tự nói) với nguồn và so sánh công bằng của v1. Pillar P2 · **Money+Maps** + một nhịp Timeline ở twist. Standard · 22 câu, **264 chữ ≈ 71 s** (đo theo v1: 267 chữ = 72,0 s). Một câu vùng đất tự nói (câu 10, Bắc Ninh, `Aoede`). Chỉ dùng nhận định trong `cong-2_so-nguon.md` (gồm phần bổ sung v2, C20–C23). Nối vòng mềm: câu kết gọi lại "nhỏ nhất" của hook; hình quay về khung toàn quốc.*
 
 ---
 
 ## VOICEOVER (English)
 
-Năm hai nghìn hai mươi lăm, nơi xuất khẩu nhiều nhất Việt Nam không phải TP.HCM, mà là Bắc Ninh. Hơn chín mươi ba tỷ đô. Hàng gì? Điện thoại.
+Trước khi gộp tỉnh, Bắc Ninh nhỏ nhất nước, không biển, chưa có sân bay. Vậy mà năm hai nghìn hai mươi lăm, Bắc Ninh xuất khẩu vượt cả Thành phố Hồ Chí Minh. Hàng gì? Điện thoại.
 
-Năm hai nghìn lẻ tám, ông Nguyễn Quang Thanh, Sở Kế hoạch và Đầu tư Bắc Ninh, nói: Samsung chỉ còn thiếu vài giấy tờ, đủ giấy là cấp phép ngay. Dự án đầu tiên vào Yên Phong, sáu trăm bảy mươi triệu đô.
+Năm hai nghìn lẻ tám, Samsung xin xây nhà máy điện thoại ở Yên Phong. Ông Nguyễn Quang Thanh, cán bộ tỉnh, nói với hãng tin AP: đủ giấy là cấp phép ngay.
 
-Chọn Bắc Ninh vì đâu? Sân bay. Từ Yên Phong tới Nội Bài, đường chim bay chưa tới hai mươi cây số. Có lúc, riêng Samsung chiếm hơn một phần ba hàng hoá qua sân bay này.
+Vì đâu? Vị trí. Nội Bài ngay sát bên, cảng Hải Phòng phía đông, biên giới Trung Quốc phía bắc.
 
-Năm hai nghìn hai mươi lăm, Bắc Ninh nhập thêm Bắc Giang, cũng đầy nhà máy. TP.HCM thì nhập Bình Dương và Bà Rịa Vũng Tàu. Năm trước đó, TP.HCM mới vẫn dẫn khá xa. Phải tới tháng mười, Bắc Ninh mới vượt, hơn chừng một trăm triệu đô. Sát nút như hai xe máy cùng cán vạch.
+Đất em nhỏ thật, nhưng đi đâu cũng gần nha!
 
-Tỉnh gọi đây là trung tâm xuất khẩu lớn của cả nước. Nhưng trong một trăm bảy mươi sáu nhà cung cấp chính của Samsung ở đây, chỉ mười hai là doanh nghiệp Việt.
+Điện thoại nhẹ mà đắt, chở máy bay là vừa.
 
-Oái oăm ở chỗ: chín tháng năm nay, Bắc Ninh nhập về còn nhiều hơn xuất. Riêng điện thoại và linh kiện: nhập gần năm mươi bảy tỷ, xuất hơn năm mươi lăm. Tỉnh giải thích: nhà máy đang nhập máy móc, linh kiện để mở rộng. Đứng đầu rồi, cuộc đua tiếp theo là giữ lại nhiều hơn trong mỗi chiếc điện thoại.
+Tháng bảy năm hai nghìn hai mươi lăm, Bắc Ninh gộp Bắc Giang, cũng đầy nhà máy. Nhưng Thành phố Hồ Chí Minh cũng gộp Bình Dương, Bà Rịa Vũng Tàu. Tính trên địa giới mới, phải tới tháng mười, Bắc Ninh mới vượt. Cả năm, Bắc Ninh hơn chín mươi ba tỷ đô, nhỉnh hơn chút xíu. Sát nút như hai xe máy cùng cán vạch.
+
+Tỉnh gọi đây là trung tâm xuất khẩu của cả nước. Nhưng trong một trăm bảy mươi sáu nhà cung cấp chính của Samsung ở đây, chỉ mười hai là doanh nghiệp Việt.
+
+Còn chuyện thú vị nhất nằm trên bản đồ. Năm một nghìn chín trăm chín mươi bảy, tỉnh Hà Bắc tách đôi thành Bắc Ninh và Bắc Giang. Hai mươi tám năm sau, hai nửa về lại một nhà. Tách ra là tỉnh nhỏ nhất, gộp lại thành nơi xuất khẩu nhiều nhất.
 
 ---
 
 ## Tiêu đề
 
-- **Chính:** Vì sao Bắc Ninh xuất khẩu nhiều hơn cả TP.HCM?
-- Thủ phủ xuất khẩu mới của Việt Nam không ở miền Nam
+- **Chính:** Vì sao tỉnh nhỏ nhất nước lại xuất khẩu nhiều nhất?
+- Không biển, chưa có sân bay, vẫn vượt TP.HCM về xuất khẩu
+- Hà Bắc tách đôi năm 1997, nhập lại thành số 1 xuất khẩu
 - Bắc Ninh vượt TP.HCM: nhờ điện thoại hay nhờ sáp nhập?
-- Xuất khẩu số một, nhưng nhập còn nhiều hơn
 
-## Cấu trúc — mạch Money+Maps (Bible §3)
+## Cấu trúc — mạch Money+Maps (+ Timeline ở twist)
 
 | Cảnh | Mạch chuẩn | Kỹ thuật |
 |---|---|---|
-| 1 | **Nghịch lý tiền** | hook mẫu B (sự thật lật ngược) + con số 93 tỷ · câu hỏi treo **"Hàng gì? Điện thoại."** |
-| 2 | **Nguyên nhân 1: nhà máy** | **[NGƯỜI]** ông Nguyễn Quang Thanh 2008 · dự án 670 triệu đô ở Yên Phong |
-| 3 | **Nguyên nhân 2: vị trí** | câu hỏi treo **"Chọn Bắc Ninh vì đâu? Sân bay."** · Yên Phong – Nội Bài · Samsung chiếm hơn 1/3 hàng qua Nội Bài |
-| 4 | **So sánh đúng loại số** | phá ngộ nhận "vượt nhờ sáp nhập": cả hai cùng sáp nhập; tính trên địa giới mới, TP.HCM vẫn dẫn; tháng 10/2025 Bắc Ninh vượt sát nút · `[ĐÙA]` xe máy cán vạch |
-| 5 | **Hai phe** | tỉnh: "trung tâm xuất khẩu" ↔ 12/176 nhà cung cấp chính là doanh nghiệp Việt |
-| 6 | **Twist + "vậy thì sao" + câu kết** | "Oái oăm ở chỗ…" 9 tháng 2026 nhập > xuất · lời tỉnh giải thích · câu kết gọi lại "điện thoại" |
+| 1 | **Nghịch lý tiền** | hook **chồng 3 bất lợi** (nhỏ nhất · không biển · chưa sân bay) → lật ngược · câu hỏi treo **"Hàng gì? Điện thoại."** |
+| 2 | **Nguyên nhân 1: nhà máy** | **[NGƯỜI]** ông Nguyễn Quang Thanh nói với AP, 3/2008 |
+| 3 | **Nguyên nhân 2: vị trí** | câu hỏi treo **"Vì đâu? Vị trí."** · ba hướng trên bản đồ, **không đọc số km** (số để trên thẻ) · **[VÙNG NÓI]** + `[ĐÙA]` câu 10 · vì sao sân bay quan trọng (câu 11) |
+| 4 | **So sánh đúng loại số** | cả hai bên cùng sáp nhập → so trên địa giới mới; tháng 10/2025 Bắc Ninh mới vượt; payoff 93 tỷ · `[ĐÙA]` xe máy cán vạch |
+| 5 | **Hai phe ("vậy thì sao")** | tỉnh: "trung tâm xuất khẩu" ↔ 12/176 nhà cung cấp chính là doanh nghiệp Việt |
+| 6 | **Twist + câu kết** | Hà Bắc tách đôi 1997 → gộp lại 2025 (bản đồ kể được, không bao giờ cũ) · câu kết **gọi lại "nhỏ nhất" của hook** |
 
-Câu cửa miệng: **không** dùng "Câu trả lời?", "Nhưng chi tiết lạ nhất là", "Thế giới thứ nhất?", "Trớ trêu là", "Nước nào?", "…bằng cách nào?", "Và cú ngược đời?" (3 tập gần nhất: Lào, TP.HCM, Phú Quốc). Từ kho: **"Oái oăm ở chỗ"** (không có trong 3 tập gần nhất); câu hỏi treo mới: **"Hàng gì?"**, **"Chọn … vì đâu?"**.
+Câu cửa miệng: **không** dùng "Oái oăm ở chỗ" (v1 của chính tập này), "Câu trả lời?", "Nhưng chi tiết lạ nhất là" (Phú Quốc), "Trớ trêu là", "Thế giới thứ nhất?" (TP.HCM). Câu mở twist mới: **"Còn chuyện thú vị nhất nằm trên bản đồ."** Câu hỏi treo: "Hàng gì?", "Vì đâu?".
+
+Khác v1: bỏ đoạn nhập > xuất 9 tháng 2026 (số dễ cũ, một gốc nguồn) → chuyển xuống **bình luận ghim**; bỏ "670 triệu đô" và số "> 1/3 hàng qua Nội Bài (2013)" (số cũ) khỏi lời đọc, giữ trên thẻ nếu cần.
 
 ## Bảng truy vết (câu → nhận định)
 
-| Câu | Lời (rút gọn) | Nhận định |
-|---|---|---|
-| 01 | 2025, nơi xuất khẩu nhiều nhất không phải TP.HCM, mà là Bắc Ninh | C1 |
-| 02 | Hơn 93 tỷ đô | C1 |
-| 03 | Hàng gì? Điện thoại. | C7 |
-| 04 | `[NGƯỜI]` 2008, ông Nguyễn Quang Thanh, Sở KH&ĐT Bắc Ninh, nói: | C8 |
-| 05 | Samsung chỉ còn thiếu vài giấy tờ, đủ giấy là cấp phép ngay | C8 (diễn ý lời ông với AP) |
-| 06 | Dự án đầu tiên vào Yên Phong, 670 triệu đô | C9 |
-| 07 | Chọn Bắc Ninh vì đâu? Sân bay. | C11, C12 |
-| 08 | Yên Phong – Nội Bài chưa tới 20 km đường chim bay | C12 (⚠️ Luis đo lại ở Cổng 5) |
-| 09 | Có lúc, Samsung chiếm hơn 1/3 hàng hoá qua sân bay này | C11 (35 %, năm 2013 — thẻ ghi năm) |
-| 10 | 2025, Bắc Ninh nhập thêm Bắc Giang, cũng đầy nhà máy | C5, C13 |
-| 11 | TP.HCM thì nhập Bình Dương và Bà Rịa Vũng Tàu | C5 |
-| 12 | Năm trước đó, TP.HCM mới vẫn dẫn khá xa | C3 (định tính), số 2023 các tỉnh cũ |
-| 13 | Tới tháng 10, Bắc Ninh mới vượt, hơn chừng 100 triệu đô | C2 (76,44 so với 76,34 tỷ) |
-| 14 | `[ĐÙA]` Sát nút như hai xe máy cùng cán vạch | — |
-| 15 | Tỉnh gọi đây là trung tâm xuất khẩu lớn của cả nước | C14 (phe 1) |
-| 16 | 176 nhà cung cấp chính của Samsung ở đây, chỉ 12 là doanh nghiệp Việt | C15 (phe 2) |
-| 17 | `[TWIST]` 9 tháng năm nay, Bắc Ninh nhập về còn nhiều hơn xuất | C18 |
-| 18 | Điện thoại & linh kiện: nhập gần 57 tỷ, xuất hơn 55 | C18 |
-| 19 | Tỉnh giải thích: nhà máy đang nhập máy móc, linh kiện để mở rộng | C18 (Giám đốc Sở Công Thương Nguyễn Minh Hiếu) |
-| 20 | Đứng đầu rồi, cuộc đua tiếp theo là giữ lại nhiều hơn trong mỗi chiếc điện thoại | C15, C18 (câu kết; đúng ý ông Hiếu: nâng tỷ lệ nội địa hoá) |
-
-Không dùng (Cổng 2): số "điện thoại đi máy bay chiếm bao nhiêu %", "FDI 99 %", doanh thu Samsung, số 2024 theo địa giới mới (chỉ nói định tính), "tỉnh nhỏ nhất" (cắt cho đủ thời lượng — có thể thêm lại nếu Lucas muốn, +~6 s).
+| Câu | Lời (rút gọn) | Nhận định | Số mới |
+|---|---|---|---|
+| 01 | Trước khi gộp tỉnh, Bắc Ninh nhỏ nhất nước, không biển, chưa có sân bay | C6 (822,7 km²), C22 (Gia Bình đang xây) | — |
+| 02 | Vậy mà năm 2025, Bắc Ninh xuất khẩu vượt cả TP.HCM | C1 | 2025 |
+| 03–04 | Hàng gì? Điện thoại. | C7 | — |
+| 05 | Năm 2008, Samsung xin xây nhà máy điện thoại ở Yên Phong | C8, C9 | 2008 |
+| 06 | `[NGƯỜI]` Ông Nguyễn Quang Thanh, cán bộ tỉnh, nói với AP: đủ giấy là cấp phép ngay | C8 (diễn ý) | — |
+| 07–08 | Vì đâu? Vị trí. | C11, C23 | — |
+| 09 | Nội Bài sát bên, cảng Hải Phòng phía đông, biên giới Trung Quốc phía bắc | C12, C23 (hướng, đo trên bản đồ) | — |
+| 10 | `[VÙNG NÓI]` `[ĐÙA]` Đất em nhỏ thật, nhưng đi đâu cũng gần nha! | — (không số) | — |
+| 11 | Điện thoại nhẹ mà đắt, chở máy bay là vừa | C11 (Samsung ~35 % hàng qua Nội Bài, 2013) | — |
+| 12 | 7/2025, Bắc Ninh gộp Bắc Giang, cũng đầy nhà máy | C5, C13, C21 | 7/2025 |
+| 13 | TP.HCM cũng gộp Bình Dương, Bà Rịa Vũng Tàu | C5 | — |
+| 14 | Tính trên địa giới mới, tới tháng 10 Bắc Ninh mới vượt | C2, C3 (định tính) | tháng 10 |
+| 15 | Cả năm, hơn 93 tỷ đô, nhỉnh hơn chút xíu | C1 | 93 tỷ |
+| 16 | `[ĐÙA]` Sát nút như hai xe máy cùng cán vạch | — | — |
+| 17 | Tỉnh gọi đây là trung tâm xuất khẩu của cả nước | C14 (phe 1) | — |
+| 18 | 176 nhà cung cấp chính của Samsung, chỉ 12 là doanh nghiệp Việt | C15 (phe 2) | 12/176 |
+| 19 | Còn chuyện thú vị nhất nằm trên bản đồ | — | — |
+| 20 | `[TWIST]` 1997, Hà Bắc tách đôi thành Bắc Ninh và Bắc Giang | C20 | 1997 |
+| 21 | 28 năm sau, hai nửa về lại một nhà | C20, C21 | 28 năm |
+| 22 | Tách ra là tỉnh nhỏ nhất, gộp lại thành nơi xuất khẩu nhiều nhất | C6, C1 (câu kết) | — |
 
 ## Phụ đề hiển thị (chữ số, `*từ khoá*`)
 
 | Câu | Phụ đề |
 |---|---|
-| 01 | Năm *2025*, nơi xuất khẩu nhiều nhất Việt Nam không phải TP.HCM, mà là *Bắc Ninh*. |
-| 02 | Hơn *93 tỷ đô*. |
-| 03 | Hàng gì? *Điện thoại.* |
-| 04 | Năm *2008*, ông *Nguyễn Quang Thanh*, Sở Kế hoạch và Đầu tư Bắc Ninh, nói: |
-| 06 | Dự án đầu tiên vào *Yên Phong*, *670 triệu đô*. |
-| 07 | Chọn Bắc Ninh vì đâu? *Sân bay.* |
-| 08 | Từ Yên Phong tới *Nội Bài*, đường chim bay chưa tới *20 km*. |
-| 09 | Có lúc, riêng Samsung chiếm hơn *1/3* hàng hoá qua sân bay này. |
-| 13 | Phải tới *tháng 10*, Bắc Ninh mới vượt, hơn chừng *100 triệu đô*. |
-| 16 | Nhưng trong *176* nhà cung cấp chính của Samsung ở đây, chỉ *12* là doanh nghiệp Việt. |
-| 17 | Oái oăm ở chỗ: *9 tháng* năm nay, Bắc Ninh *nhập* về còn nhiều hơn *xuất*. |
-| 18 | Riêng điện thoại và linh kiện: nhập gần *57 tỷ*, xuất hơn *55*. |
-| 20 | Đứng đầu rồi, cuộc đua tiếp theo là *giữ lại* nhiều hơn trong mỗi chiếc *điện thoại*. |
+| 01 | Trước khi gộp tỉnh, Bắc Ninh *nhỏ nhất nước*, không biển, chưa có sân bay. |
+| 02 | Vậy mà năm *2025*, Bắc Ninh xuất khẩu vượt cả *TP.HCM*. |
+| 04 | *Điện thoại.* |
+| 05 | Năm *2008*, Samsung xin xây nhà máy điện thoại ở *Yên Phong*. |
+| 06 | Ông *Nguyễn Quang Thanh*, cán bộ tỉnh, nói với hãng tin AP: đủ giấy là *cấp phép ngay*. |
+| 08 | *Vị trí.* |
+| 12 | Tháng 7 năm *2025*, Bắc Ninh gộp *Bắc Giang*, cũng đầy nhà máy. |
+| 14 | Tính trên địa giới mới, phải tới *tháng 10*, Bắc Ninh mới vượt. |
+| 15 | Cả năm, Bắc Ninh hơn *93 tỷ đô*, nhỉnh hơn chút xíu. |
+| 18 | Nhưng trong *176* nhà cung cấp chính của Samsung ở đây, chỉ *12* là doanh nghiệp Việt. |
+| 20 | Năm *1997*, tỉnh *Hà Bắc* tách đôi thành Bắc Ninh và Bắc Giang. |
+| 21 | *28 năm* sau, hai nửa về lại một nhà. |
+| 22 | Tách ra là tỉnh *nhỏ nhất*, gộp lại thành nơi xuất khẩu *nhiều nhất*. |
 
-Thẻ số / hình:
-- **Câu 01–02:** hai cột xuất khẩu 2025 (Bắc Ninh `93,3` · TP.HCM `92,7` tỷ USD, "Cục Hải quan").
-- **Câu 04–05:**
-  - quân cờ cán bộ tỉnh (hình chung);
-  - lá đơn / con dấu "CẤP PHÉP";
-  - ruy băng `3/2008`;
-  - tag nguồn nhỏ "AP".
-- **Câu 06:** ghim Yên Phong + thẻ `670 TRIỆU USD`.
-- **Câu 08–09:** đường chim bay Yên Phong → Nội Bài, máy bay chở hàng; thẻ `>1/3 · 2013`.
-- **Câu 10–12:** VN2024 → VN2025. Viền Bắc Ninh cũ + Bắc Giang cũ gộp lại; TP.HCM cũ + Bình Dương + Bà Rịa – Vũng Tàu gộp lại.
-- **Câu 13:** hai cột chạy đua lũy kế, Bắc Ninh nhích qua; thẻ `+0,1 TỶ`.
-- **Câu 16:** 176 chấm, 12 chấm màu Việt Nam.
-- **Câu 17–18:** cân hai đĩa nhập / xuất; thẻ `56,9 · 55,5 tỷ USD` "Sở Công Thương Bắc Ninh, 9 tháng 2026".
-- **Câu 20:** chiếc điện thoại, camera lùi về khung toàn quốc.
+Thẻ / hình (thay đổi so với v1, chi tiết ở beat sheet v2 sau khi duyệt):
+- **Câu 01:**
+  - bay từ khung toàn quốc vào Bắc Ninh cũ (VN2024);
+  - ba biểu tượng gạch chéo lần lượt hiện: thước đo `NHỎ NHẤT · 823 KM²`, sóng biển, máy bay.
+- **Câu 02:** hai cột 2025 (Bắc Ninh `93,3`, TP.HCM `92,7`).
+- **Câu 09:**
+  - ba ghim Nội Bài, Hải Phòng, cửa khẩu Hữu Nghị (Lạng Sơn), mỗi ghim một thẻ km nhỏ (Luis đo);
+  - Trung Quốc có `CountryTag` + cờ.
+- **Câu 10:** `MapFace` trên Bắc Ninh cũ, nhãn người nói "BẮC NINH NÓI".
+- **Câu 20–22:**
+  - vẽ ranh giới Hà Bắc (gộp Bắc Ninh cũ + Bắc Giang cũ);
+  - đường chia đôi (`BorderLine` Bắc Ninh | Bắc Giang) loé lên rồi tách ra;
+  - ruy băng `1/1/1997`, sau đó `7/2025`;
+  - hai nửa trượt lại thành Bắc Ninh mới (VN2025);
+  - camera lùi về khung đầu.
+- **Bỏ:** cái cân (b-05) và đoạn nhập > xuất.
+- **Ảnh:** dùng lại b-01…b-04, **không cần ảnh mới**.
 
 ## Ghi chú phát âm / giọng
 
-- "TP.HCM" đọc "Thành phố Hồ Chí Minh" — **kiểm trong voiceover JSON**: viết chữ đầy đủ cho TTS.
-- "Samsung" đọc "Xam-xung"; "AP" (nếu giữ trên hình) không đọc.
-- "Hàng gì?" hỏi nhẹ, "Điện thoại." chắc. "Sân bay." chắc.
-- Câu 14 có ý cười nhẹ. Câu 17 "Oái oăm ở chỗ" chậm lại một nhịp.
-- Toàn bài trung tính, không chê doanh nghiệp FDI hay tỉnh; câu 20 kết ấm, hướng tới.
+- Viết "Thành phố Hồ Chí Minh" đầy đủ trong lời đọc (v1 viết "TP.HCM", máy kiểm nghe chưa rõ).
+- "Hàng gì?", "Vì đâu?" hỏi nhẹ; "Điện thoại.", "Vị trí." ngắn, chắc.
+- **Câu 10 (`Aoede`, nữ Hà Nội, đã duyệt):** giọng nữ Bắc Bộ trẻ, hóm hỉnh, tự hào nhẹ.
+- Câu 16 có ý cười nhẹ.
+- Câu 22 chậm lại, nhấn "nhỏ nhất" và "nhiều nhất", hạ giọng kết.
 
 ## Kết thúc (nối vòng mềm)
 
-Câu kết trọn vẹn: "Đứng đầu rồi, cuộc đua tiếp theo là giữ lại nhiều hơn trong mỗi chiếc điện thoại." Câu này gọi lại "Điện thoại." của hook, khép twist nhập > xuất bằng hướng đi mà chính Sở Công Thương nêu (nâng nội địa hoá), không phán xét. Hình: camera lùi về khung toàn quốc của frame 0, các cột số tắt dần; ~0,7 s nhạc sau chữ cuối, khung cuối = khung đầu.
+Câu kết trọn vẹn: "Tách ra là tỉnh nhỏ nhất, gộp lại thành nơi xuất khẩu nhiều nhất." Câu này gọi lại "nhỏ nhất nước" của hook (vòng tròn nghĩa), khép twist bằng chính bản đồ, không phán xét. Hình: hai nửa Hà Bắc ghép lại, camera lùi về khung toàn quốc của frame 0; ~0,7 s nhạc sau chữ cuối.
+
+## Bình luận ghim (chuyển từ twist v1)
+
+> 9 tháng đầu năm 2026, Bắc Ninh xuất khẩu ~87,5 tỷ USD nhưng nhập ~90,3 tỷ USD (Sở Công Thương Bắc Ninh): nhà máy đang nhập máy móc, linh kiện để mở rộng. Theo bạn, làm sao giữ lại nhiều hơn trong mỗi chiếc điện thoại? 👇
 
 ---
 
 ## Sổ số liệu (claim ledger)
 
-Bản đầy đủ: `cong-2_so-nguon.md` (C1–C19, SRC-001…021).
+Bản đầy đủ: `cong-2_so-nguon.md` (C1–C23, SRC-001…027).

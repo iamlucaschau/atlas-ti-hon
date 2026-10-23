@@ -20,6 +20,10 @@ QUY TẮC:
 - Không biến tương quan thành nhân quả.
 - Ranh giới/lãnh thổ tranh chấp (đặc biệt Biển Đông): DỪNG, nêu phương án vẽ để Lucas chọn.
 - Không bịa toạ độ, ranh giới, ngày, trích dẫn, số liệu, URL, tên nguồn. Không tìm được → ghi "không tìm được".
+- Mỗi SRC là URL tới ĐÚNG bài / văn bản (không phải trang chủ báo). Chỉ có trang chủ → nhận định ❌.
+- Khoảnh khắc người: ≥ 1 nguồn gốc ghi tên người + việc cụ thể; không có → chọn người khác.
+- Ghi "hạn dùng" cho số biến động (tháng / quý / dự án đang xây): kỳ dữ liệu + việc cần kiểm lại trước khi đăng.
+- Nếu tập so sánh hai nơi: ghi rõ cả hai bên có đổi địa giới / cách tính không, và nguồn cho số "cùng địa giới, cùng kỳ".
 
 ĐẦU RA:
 1. Sổ nhận định: ID (C1…) | Câu sẽ dùng | Giá trị + đơn vị | Loại số liệu | Phạm vi địa lý | Kỳ dữ liệu | Nguồn (SRC-…) | Trạng thái (✅ / ⚠️ cần thêm / ❌) | Rủi ro | Cách nói an toàn | Điều nguồn KHÔNG chứng minh
@@ -44,7 +48,7 @@ Kết thúc đúng câu: "Duyệt Cổng 2, hoặc cho biết cần kiểm chứ
 
 ```text
 Viết lời đọc TIẾNG VIỆT cho video bản đồ 9:16, CHỈ dùng các nhận định đã duyệt ở Cổng 2: [dán sổ nhận định].
-Pillar: [P_]. Engine: [__]. Preset: [Quick 130–165 chữ | Standard 220–275 chữ | Deep 275–330 chữ] (đếm theo chữ/âm tiết, tempo 1.1 ≈ 235–240 wpm).
+Pillar: [P_]. Engine: [__]. Preset: [Quick 130–165 chữ | Standard 220–265 chữ | Deep 275–330 chữ] (đếm theo chữ/âm tiết; đo thật Orus tempo 1.1: 267 chữ = 72 s, 301 chữ = 78 s).
 Giọng kể "vui vừa phải": cảnh đời thường, chơi chữ nhẹ, tối đa 1–2 câu khẩu ngữ; số liệu chuẩn, tranh luận trung tính.
 Kỹ thuật (Channel Bible §3): hook mẫu F lật ngược · phá ngộ nhận · "thử tưởng tượng" · câu hỏi treo giữa video · chi tiết nhỏ dễ nhớ · twist có nguồn ở cuối, kết bằng câu trọn vẹn.
 Luật bắt buộc (Bible §3, 6–11):
@@ -54,6 +58,15 @@ Luật bắt buộc (Bible §3, 6–11):
 - Chủ đề có tranh luận: 2 câu hai phe, mỗi vế một ID nhận định.
 - Mỗi câu tối đa 1 con số mới (năm cũng tính).
 - Twist là nhịp nội dung cuối; tin cập nhật đặt trước twist.
+Luật bổ sung 2 (Bible §3, 12–19, Lucas 2026-10-23):
+- Hook chồng nghịch lý khi có: 2–3 bất lợi có thật → "Vậy mà…".
+- Twist ưu tiên điều bản đồ tự kể và không hết hạn (lịch sử, ranh giới, tên gọi); số theo tháng/quý/"năm nay" KHÔNG làm twist (để thân bài hoặc bình luận ghim).
+- Câu kết gọi lại đúng từ khoá của hook.
+- So sánh công bằng: bên kia cũng đổi (sáp nhập, cách tính) thì nói ra; so cùng địa giới, cùng kỳ.
+- Không "năm ngoái / năm nay / hiện nay" trơn; điều sắp đổi dùng "chưa…" + tiến độ trong sổ nguồn.
+- Không đọc quá 2 số đo liền nhau; vị trí nói bằng hướng, số km để trên thẻ.
+- Cân nhắc 1 câu vùng đất tự nói (giọng cast) khi tập xoay quanh một tỉnh / nước.
+- Đếm chữ trước khi gửi: Standard ≤ 265 chữ.
 - Kho câu thay thế (mỗi cụm ≤ 1 lần / 3 tập liên tiếp; kiểm 2 tập gần nhất trước khi dùng):
   · twist: "Nhưng chi tiết lạ nhất là…" · "Và cú ngược đời?" · "Lý do thật có lẽ nằm ở đây:" · "Trớ trêu là…" · "Oái oăm ở chỗ…"
   · mở cảnh hình dung: "Hình dung thế này:" · "Giả sử bạn…" · "Lấy một ví dụ:" · "Thử…"

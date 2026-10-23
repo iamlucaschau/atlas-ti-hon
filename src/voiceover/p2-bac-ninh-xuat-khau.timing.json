@@ -1,5 +1,5 @@
 {
-  "durationInSeconds": 72.02058333333333,
+  "durationInSeconds": 68.46333333333334,
   "loop": true,
   "tail": 0.7,
   "lines": [
@@ -7,148 +7,155 @@
       "id": "01",
       "scene": "s1",
       "start": 0.05,
-      "end": 6.224,
-      "text": "Năm hai nghìn hai mươi lăm, nơi xuất khẩu nhiều nhất Việt Nam không phải TP.HCM, mà là Bắc Ninh."
+      "end": 4.631,
+      "text": "Trước khi gộp tỉnh, Bắc Ninh nhỏ nhất nước, không biển, chưa có sân bay."
     },
     {
       "id": "02",
       "scene": "s1",
-      "start": 6.373541666666667,
-      "end": 8.051541666666667,
-      "text": "Hơn chín mươi ba tỷ đô."
+      "start": 4.691291666666666,
+      "end": 9.190291666666667,
+      "text": "Vậy mà năm hai nghìn hai mươi lăm, Bắc Ninh xuất khẩu vượt cả Thành phố Hồ Chí Minh."
     },
     {
       "id": "03",
       "scene": "s1",
-      "start": 8.201583333333334,
-      "end": 8.679583333333333,
+      "start": 9.250374999999998,
+      "end": 9.820374999999999,
       "text": "Hàng gì?"
     },
     {
       "id": "04",
       "scene": "s1",
-      "start": 8.829541666666668,
-      "end": 9.593541666666667,
+      "start": 9.970291666666665,
+      "end": 10.552291666666665,
       "text": "Điện thoại."
     },
     {
       "id": "05",
       "scene": "s2",
-      "start": 10.193875,
-      "end": 18.382875,
-      "text": "Năm hai nghìn lẻ tám, ông Nguyễn Quang Thanh, Sở Kế hoạch và Đầu tư Bắc Ninh, nói: Samsung chỉ còn thiếu vài giấy tờ, đủ giấy là cấp phép ngay."
+      "start": 11.151916666666665,
+      "end": 14.841916666666664,
+      "text": "Năm hai nghìn lẻ tám, Samsung xin xây nhà máy điện thoại ở Yên Phong."
     },
     {
       "id": "06",
       "scene": "s2",
-      "start": 18.532875,
-      "end": 21.410875,
-      "text": "Dự án đầu tiên vào Yên Phong, sáu trăm bảy mươi triệu đô."
+      "start": 14.902333333333331,
+      "end": 19.83533333333333,
+      "text": "Ông Nguyễn Quang Thanh, cán bộ tỉnh, nói với hãng tin AP: đủ giấy là cấp phép ngay."
     },
     {
       "id": "07",
       "scene": "s3",
-      "start": 22.010958333333335,
-      "end": 23.039958333333335,
-      "text": "Chọn Bắc Ninh vì đâu?"
+      "start": 20.085666666666665,
+      "end": 20.655666666666665,
+      "text": "Vì đâu?"
     },
     {
       "id": "08",
       "scene": "s3",
-      "start": 23.189791666666668,
-      "end": 23.839791666666667,
-      "text": "Sân bay."
+      "start": 20.715874999999997,
+      "end": 21.166874999999997,
+      "text": "Vị trí."
     },
     {
       "id": "09",
       "scene": "s3",
-      "start": 23.989333333333335,
-      "end": 27.174333333333333,
-      "text": "Từ Yên Phong tới Nội Bài, đường chim bay chưa tới hai mươi cây số."
+      "start": 21.22645833333333,
+      "end": 25.63645833333333,
+      "text": "Nội Bài ngay sát bên, cảng Hải Phòng phía đông, biên giới Trung Quốc phía bắc."
     },
     {
       "id": "10",
-      "scene": "s3",
-      "start": 27.32479166666667,
-      "end": 30.54179166666667,
-      "text": "Có lúc, riêng Samsung chiếm hơn một phần ba hàng hoá qua sân bay này."
+      "scene": "s4",
+      "start": 25.88683333333333,
+      "end": 28.780833333333327,
+      "text": "Đất em nhỏ thật, nhưng đi đâu cũng gần nha!"
     },
     {
       "id": "11",
-      "scene": "s4",
-      "start": 31.142166666666668,
-      "end": 35.311166666666665,
-      "text": "Năm hai nghìn hai mươi lăm, Bắc Ninh nhập thêm Bắc Giang, cũng đầy nhà máy."
+      "scene": "s5",
+      "start": 29.03129166666666,
+      "end": 31.837291666666662,
+      "text": "Điện thoại nhẹ mà đắt, chở máy bay là vừa."
     },
     {
       "id": "12",
-      "scene": "s4",
-      "start": 35.461416666666665,
-      "end": 37.97741666666666,
-      "text": "TP.HCM thì nhập Bình Dương và Bà Rịa Vũng Tàu."
+      "scene": "s6",
+      "start": 32.08754166666666,
+      "end": 35.82554166666666,
+      "text": "Tháng bảy năm hai nghìn hai mươi lăm, Bắc Ninh gộp Bắc Giang, cũng đầy nhà máy."
     },
     {
       "id": "13",
-      "scene": "s4",
-      "start": 38.12779166666667,
-      "end": 41.049791666666664,
-      "text": "Năm trước đó, TP.HCM mới vẫn dẫn khá xa."
+      "scene": "s6",
+      "start": 35.88587499999999,
+      "end": 38.670874999999995,
+      "text": "Nhưng Thành phố Hồ Chí Minh cũng gộp Bình Dương, Bà Rịa Vũng Tàu."
     },
     {
       "id": "14",
-      "scene": "s4",
-      "start": 41.19954166666667,
-      "end": 44.51354166666667,
-      "text": "Phải tới tháng mười, Bắc Ninh mới vượt, hơn chừng một trăm triệu đô."
+      "scene": "s6",
+      "start": 38.73112499999999,
+      "end": 41.85012499999999,
+      "text": "Tính trên địa giới mới, phải tới tháng mười, Bắc Ninh mới vượt."
     },
     {
       "id": "15",
-      "scene": "s4",
-      "start": 44.663833333333336,
-      "end": 46.493833333333335,
-      "text": "Sát nút như hai xe máy cùng cán vạch."
+      "scene": "s6",
+      "start": 41.90974999999999,
+      "end": 45.49174999999999,
+      "text": "Cả năm, Bắc Ninh hơn chín mươi ba tỷ đô, nhỉnh hơn chút xíu."
     },
     {
       "id": "16",
-      "scene": "s5",
-      "start": 47.09341666666667,
-      "end": 49.36441666666667,
-      "text": "Tỉnh gọi đây là trung tâm xuất khẩu lớn của cả nước."
+      "scene": "s6",
+      "start": 45.55145833333332,
+      "end": 47.69145833333332,
+      "text": "Sát nút như hai xe máy cùng cán vạch."
     },
     {
       "id": "17",
-      "scene": "s5",
-      "start": 49.514,
-      "end": 54.409000000000006,
-      "text": "Nhưng trong một trăm bảy mươi sáu nhà cung cấp chính của Samsung ở đây, chỉ mười hai là doanh nghiệp Việt."
+      "scene": "s7",
+      "start": 47.94174999999999,
+      "end": 50.25274999999999,
+      "text": "Tỉnh gọi đây là trung tâm xuất khẩu của cả nước."
     },
     {
       "id": "18",
-      "scene": "s6",
-      "start": 55.00870833333334,
-      "end": 59.31370833333334,
-      "text": "Oái oăm ở chỗ: chín tháng năm nay, Bắc Ninh nhập về còn nhiều hơn xuất."
+      "scene": "s7",
+      "start": 50.312458333333325,
+      "end": 54.96245833333332,
+      "text": "Nhưng trong một trăm bảy mươi sáu nhà cung cấp chính của Samsung ở đây, chỉ mười hai là doanh nghiệp Việt."
     },
     {
       "id": "19",
-      "scene": "s6",
-      "start": 59.463416666666674,
-      "end": 63.359416666666675,
-      "text": "Riêng điện thoại và linh kiện: nhập gần năm mươi bảy tỷ, xuất hơn năm mươi lăm."
+      "scene": "s8",
+      "start": 55.212416666666655,
+      "end": 57.273416666666655,
+      "text": "Còn chuyện thú vị nhất nằm trên bản đồ."
     },
     {
       "id": "20",
-      "scene": "s6",
-      "start": 63.509416666666674,
-      "end": 66.69441666666667,
-      "text": "Tỉnh giải thích: nhà máy đang nhập máy móc, linh kiện để mở rộng."
+      "scene": "s8",
+      "start": 57.33374999999999,
+      "end": 61.63474999999999,
+      "text": "Năm một nghìn chín trăm chín mươi bảy, tỉnh Hà Bắc tách đôi thành Bắc Ninh và Bắc Giang."
     },
     {
       "id": "21",
-      "scene": "s6",
-      "start": 66.84408333333334,
-      "end": 71.42108333333334,
-      "text": "Đứng đầu rồi, cuộc đua tiếp theo là giữ lại nhiều hơn trong mỗi chiếc điện thoại."
+      "scene": "s8",
+      "start": 61.69495833333332,
+      "end": 64.55695833333331,
+      "text": "Hai mươi tám năm sau, hai nửa về lại một nhà."
+    },
+    {
+      "id": "22",
+      "scene": "s8",
+      "start": 64.61679166666666,
+      "end": 68.21379166666665,
+      "text": "Tách ra là tỉnh nhỏ nhất, gộp lại thành nơi xuất khẩu nhiều nhất."
     }
   ]
 }
