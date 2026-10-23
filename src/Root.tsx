@@ -16,6 +16,7 @@ import { P4DuongBayCong, p4DuongBayCongDuration } from "../Map/p4-duong-bay-cong
 import { P5ChoHepNhat, p5ChoHepNhatDuration } from "../Map/p5-cho-hep-nhat/Video";
 import { P4LaoRaBien, p4LaoRaBienDuration } from "../Map/p4-lao-ra-bien/Video";
 import { P5TphcmBaTheGioi, p5TphcmBaTheGioiDuration } from "../Map/p5-tphcm-ba-the-gioi/Video";
+import { P1PhuQuocBrevie, p1PhuQuocBrevieDuration } from "../Map/p1-phu-quoc-brevie/Video";
 import { Cover, COVERS } from "../Map/covers";
 import { KitFaceDemo } from "../Style Library/I-toy-atlas/demo-faces";
 
@@ -37,6 +38,7 @@ const EPISODES = [
   { id: "Map-P5-ChoHepNhat", component: P5ChoHepNhat, duration: p5ChoHepNhatDuration },
   { id: "Map-P4-LaoRaBien", component: P4LaoRaBien, duration: p4LaoRaBienDuration },
   { id: "Map-P5-TphcmBaTheGioi", component: P5TphcmBaTheGioi, duration: p5TphcmBaTheGioiDuration },
+  { id: "Map-P1-PhuQuocBrevie", component: P1PhuQuocBrevie, duration: p1PhuQuocBrevieDuration },
 ];
 
 export const RemotionRoot: React.FC = () => (

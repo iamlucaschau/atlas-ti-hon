@@ -24,6 +24,7 @@ import { Scene as FlightScene } from "./p4-duong-bay-cong/Video";
 import { Scene as NarrowScene } from "./p5-cho-hep-nhat/Video";
 import { Scene as LaoSeaScene } from "./p4-lao-ra-bien/Video";
 import { Scene as HcmWorldsScene } from "./p5-tphcm-ba-the-gioi/Video";
+import { Scene as PhuQuocScene } from "./p1-phu-quoc-brevie/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -131,6 +132,9 @@ export const COVERS: CoverSpec[] = [
     mark: { x: 808, y: 790, r: 50, arrowFrom: [640, 1080] } },
   // one city, three worlds (C1): the three faces smiling together on the gold new city — line 16
   { slug: "p5-tphcm-ba-the-gioi", Scene: HcmWorldsScene, frame: 1478, hook: [{ text: "TP.HCM MỚI" }, { text: "3 THẾ GIỚI", punch: true }], y: 150 },
+  // "one pen stroke kept the island" (line 21): Phú Quốc stays south of the 1939 Brévié line that bends 3 km around its north tip (C7) — line 14
+  { slug: "p1-phu-quoc-brevie", Scene: PhuQuocScene, frame: 1185, hook: [{ text: "PHÚ QUỐC ĐƯỢC GIỮ" }, { text: "BẰNG 1 NÉT BÚT", punch: true }], y: 170,
+    mark: { x: 560, y: 712, r: 78, arrowFrom: [860, 1020] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

@@ -1,0 +1,163 @@
+{
+  "name": "p1-phu-quoc-brevie",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, điềm đạm và đáng tin, như người kể chuyện lịch sử bản đồ hấp dẫn, có chút dí dỏm. Nhịp vừa phải: đọc năm, con số và địa danh chậm hơn một nhịp. Giọng trung tính, không nhấn kiểu thắng thua. \"Câu trả lời?\" hỏi nhẹ; \"Một đường kẻ.\" chắc, ngừng một nhịp. Đọc Jules Brévié là \"Giuyn Brê-vi-ê\". \"Một nét bút vòng nhẹ\" có ý cười nhẹ. \"Nhưng chi tiết lạ nhất là\" hạ giọng như kể chuyện bên lề. Câu cuối cùng là câu trọn vẹn: chậm lại một chút và hạ giọng kết câu. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Phú Quốc cách bờ Campuchia chừng mười cây số."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Còn về tới Hà Tiên thì xa gấp bốn lần."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Vậy sao đảo lại thuộc Việt Nam?"
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Câu trả lời?"
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Một đường kẻ."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Đầu thế kỷ mười tám, Mạc Cửu cai quản vùng Hà Tiên, gồm cả đảo Phú Quốc."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Năm một nghìn bảy trăm lẻ tám, ông đưa cả vùng đất này về với chúa Nguyễn."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn tám trăm sáu mươi bảy, Pháp chiếm Hà Tiên, Phú Quốc thành một phần của Nam Kỳ."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Campuchia bên cạnh cũng nằm dưới quyền Pháp."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Vậy đảo ngoài khơi giao cho bên nào?"
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn chín trăm ba mươi chín, Toàn quyền Đông Dương Jules Brévié gửi đi một lá thư."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Ông kẻ một đường thẳng trên biển."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Đảo phía bắc đường giao Campuchia, đảo phía nam giao Nam Kỳ."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Tới gần Phú Quốc, đường kẻ bẻ cong, vòng qua mũi bắc đảo, chừa đúng ba cây số."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Một nét bút vòng nhẹ, cả hòn đảo nằm trọn phía nam."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Ông còn ghi rõ: đường này chỉ để quản lý hành chính và cảnh sát."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn chín trăm tám mươi hai, Việt Nam và Campuchia ký hiệp định vùng nước lịch sử."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Hai nước dùng đúng đường kẻ ấy để chia đảo, vùng nước quanh đó thì cùng tuần tra."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Từ năm hai nghìn hai mươi lăm, Phú Quốc là một đặc khu của Việt Nam."
+    },
+    {
+      "id": "20",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Nhưng chi tiết lạ nhất là: đường kẻ ấy chia được đảo, mà đường biên trên biển ở đây đến nay vẫn chưa được vạch."
+    },
+    {
+      "id": "21",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Một nét bút đã giữ hòn đảo lại, còn mặt biển quanh nó vẫn đang chờ một đường kẻ mới."
+    }
+  ]
+}

@@ -17,6 +17,7 @@
 | Vì sao Transylvania thuộc Romania? | | TB (tranh luận Hung–Ro) | ý tưởng (mẫu V2) |
 | Vì sao Constantinople không thuộc Hy Lạp? | | TB | ý tưởng (playbook) |
 | Vì sao Tây Nguyên bỗng có biển? (63 → 34 tỉnh, NQ 202/2025/QH15) | ✔ | TB (chính sách; Hoàng Sa, Trường Sa thuộc tỉnh có gộp) | **Đã làm** (`Map/p1-tay-nguyen-co-bien/`, 5 cổng duyệt 2026-10-18) |
+| Vì sao Phú Quốc sát Campuchia mà thuộc Việt Nam? (đường Brévié 1939 vòng qua mũi bắc đảo, hiệp định vùng nước lịch sử 1982) | ✔ | TB (chủ quyền: sơ đồ minh hoạ, không vẽ biên giới biển) | **Đã làm** (`Map/p1-phu-quoc-brevie/`, 5 cổng duyệt 2026-10-23) |
 
 ## P2 — Tiền & bản đồ (30%, ưu tiên Việt Nam; luôn ≥ 2 nguồn, ghi loại giá)
 
