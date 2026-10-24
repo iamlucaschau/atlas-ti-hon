@@ -61,6 +61,7 @@
 | Lào không có biển, nắm 60 % một cảng biển ở Hà Tĩnh (Vũng Áng, đường sắt Viêng Chăn – Vũng Áng) | ✔ | T | **Đã làm** (`Map/p4-lao-ra-bien/`, 5 cổng duyệt 2026-10-22) |
 | Mekong: ai giữ vòi nước của 6 quốc gia? (11 đập Lan Thương, nước đến từ mưa hạ lưu, hạn 2019 hai phe, Biển Hồ chảy ngược) | ✔ | TB (chính trị Trung Quốc – hạ lưu: trung tính, hai phe) | **Đã làm** (`Map/p4-mekong-voi-nuoc/`, 5 cổng duyệt 2026-10-24) |
 | Giá điện: EVN từ lỗ 45 nghìn tỷ đến lãi 52 nghìn tỷ: nhờ trời mưa? (than đắt 2022, đề xuất tính lỗ vào giá, Bộ Công Thương ↔ Bộ Tài chính, thủy điện +24,5 %, công ty mẹ còn lỗ 5.611 tỷ) | ✔ | TB (doanh nghiệp nhà nước, giá điện: trung tính, hai phe) | **Đã làm** (`Map/p2-evn-gia-dien/`, 5 cổng duyệt 2026-10-24) |
+| Mét vuông bạc tỷ: Hàng Ngang 702 triệu/m² trên giấy ↔ Thủ Thiêm từng 2,44 tỷ/m² trên sàn đấu (hai loại giá, 48 Hàng Ngang, bỏ cọc 600 tỷ) | ✔ | TB (giá đất, doanh nghiệp: trung tính, không nêu tên người, không gợi ý đầu tư) | **Đã làm** (`Map/p2-met-vuong-bac-ty/`, 5 cổng duyệt 2026-10-24) |
 | Vì sao một con tàu mắc kẹt ở kênh Suez làm cả thế giới thiếu hàng? | | T | ý tưởng |
 | Vì sao không thể lái xe từ Bắc Mỹ xuống Nam Mỹ? (Darien Gap) | | T | ý tưởng (playbook) |
 | Vì sao tàu Thống Nhất Bắc–Nam chạy lâu như vậy? | ✔ | TB (số liệu ngành) | ý tưởng |

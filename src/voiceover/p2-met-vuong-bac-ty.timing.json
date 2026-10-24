@@ -1,0 +1,161 @@
+{
+  "durationInSeconds": 65.441875,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 4.526,
+      "text": "Trên giấy, mét vuông đắt nhất Hà Nội có ở phố Hàng Ngang: hơn bảy trăm triệu đồng."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 4.675708333333334,
+      "end": 7.716708333333333,
+      "text": "Còn ở Thủ Thiêm, một mét vuông từng được trả giá gấp hơn ba lần."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 7.866458333333334,
+      "end": 8.743458333333335,
+      "text": "Giá nào mới thật?"
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 8.893791666666667,
+      "end": 9.464791666666667,
+      "text": "Cả hai."
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "start": 9.615083333333335,
+      "end": 11.394083333333334,
+      "text": "Đất nhà bạn cũng có hai cái giá."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 11.994375000000002,
+      "end": 14.401375000000002,
+      "text": "Giá thứ nhất là bảng giá do thành phố ban hành."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 14.551166666666669,
+      "end": 17.188166666666667,
+      "text": "Khi bạn làm sổ, tiền sử dụng đất tính theo giá này."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "start": 17.33829166666667,
+      "end": 20.43829166666667,
+      "text": "Chỉ một quyết định, giá ấy ở Hàng Ngang tăng gần gấp bốn."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 21.038750000000004,
+      "end": 23.767750000000003,
+      "text": "Cũng trên phố này, có ngôi nhà số bốn mươi tám."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 23.918125000000003,
+      "end": 29.148125000000004,
+      "text": "Năm một nghìn chín trăm bốn mươi lăm, gia đình ông Trịnh Văn Bô dành tầng hai cho Chủ tịch Hồ Chí Minh."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 29.29779166666667,
+      "end": 31.782791666666668,
+      "text": "Người viết Tuyên ngôn Độc lập trong một căn phòng nhỏ ở đó."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "start": 31.932583333333334,
+      "end": 34.14658333333333,
+      "text": "Có những mét vuông, không bảng giá nào đo được."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 34.74675,
+      "end": 37.598749999999995,
+      "text": "Giá thứ hai nằm bên kia sông Sài Gòn, trên sàn đấu."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 37.749125,
+      "end": 41.034125,
+      "text": "Năm hai nghìn hai mươi mốt, một khu đất Thủ Thiêm được đấu giá."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 41.184625,
+      "end": 43.731624999999994,
+      "text": "Giá chốt khoảng hai phẩy bốn tỷ đồng mỗi mét vuông."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "start": 43.881874999999994,
+      "end": 47.49587499999999,
+      "text": "Nhưng đó là đất xây tháp: mỗi mét vuông đất gánh gần chín mét vuông sàn."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 48.09537499999999,
+      "end": 50.496374999999986,
+      "text": "Cơ quan tư pháp kết luận cuộc đấu đúng quy trình."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 50.64674999999999,
+      "end": 53.69374999999999,
+      "text": "Hiệp hội Bất động sản thành phố lại lo mức giá ấy kéo cả vùng lên."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "start": 53.84366666666666,
+      "end": 57.21566666666666,
+      "text": "Rồi doanh nghiệp trúng xin rút, mất gần sáu trăm tỷ tiền cọc."
+    },
+    {
+      "id": "20",
+      "scene": "s5",
+      "start": 57.36524999999999,
+      "end": 59.717249999999986,
+      "text": "Gần sáu trăm tỷ, cho một lần đổi ý."
+    },
+    {
+      "id": "21",
+      "scene": "s5",
+      "start": 59.866874999999986,
+      "end": 62.09487499999999,
+      "text": "Mét vuông bạc tỷ ấy chưa từng được trả tiền."
+    },
+    {
+      "id": "22",
+      "scene": "s5",
+      "start": 62.24533333333332,
+      "end": 64.84233333333331,
+      "text": "Giá bạc tỷ, có khi chỉ nằm trên giấy."
+    }
+  ]
+}

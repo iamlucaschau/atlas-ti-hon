@@ -1,0 +1,170 @@
+{
+  "name": "p2-met-vuong-bac-ty",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, thân thiện và đáng tin, như người kể chuyện kinh tế bằng bản đồ, có chút dí dỏm. Nhịp vừa phải: đọc con số và địa danh chậm hơn một nhịp. Câu mở đầu nói như kể một chuyện khó tin. \"Giá nào mới thật?\" hỏi nhẹ; \"Cả hai.\" ngắn, chắc. Đoạn nhà số bốn mươi tám Hàng Ngang, gia đình ông Trịnh Văn Bô và Tuyên ngôn Độc lập đọc chậm lại, trang trọng, ấm, không đùa. Đoạn cơ quan tư pháp và Hiệp hội Bất động sản đọc trung tính, đều nhịp, không nghiêng về bên nào. Câu \"Gần sáu trăm tỷ, cho một lần đổi ý.\" có ý cười nhẹ, không chế giễu. Câu cuối \"Giá bạc tỷ, có khi chỉ nằm trên giấy.\" chậm lại, hạ giọng kết. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "batchBy": "take",
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Trên giấy, mét vuông đắt nhất Hà Nội có ở phố Hàng Ngang: hơn bảy trăm triệu đồng."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Còn ở Thủ Thiêm, một mét vuông từng được trả giá gấp hơn ba lần."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Giá nào mới thật?"
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Cả hai."
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.6,
+      "text": "Đất nhà bạn cũng có hai cái giá."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Giá thứ nhất là bảng giá do thành phố ban hành."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Khi bạn làm sổ, tiền sử dụng đất tính theo giá này."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.6,
+      "text": "Chỉ một quyết định, giá ấy ở Hàng Ngang tăng gần gấp bốn."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.15,
+      "text": "Cũng trên phố này, có ngôi nhà số bốn mươi tám."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.15,
+      "text": "Năm một nghìn chín trăm bốn mươi lăm, gia đình ông Trịnh Văn Bô dành tầng hai cho Chủ tịch Hồ Chí Minh."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.15,
+      "text": "Người viết Tuyên ngôn Độc lập trong một căn phòng nhỏ ở đó."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.6,
+      "text": "Có những mét vuông, không bảng giá nào đo được."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "Giá thứ hai nằm bên kia sông Sài Gòn, trên sàn đấu."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "Năm hai nghìn hai mươi mốt, một khu đất Thủ Thiêm được đấu giá."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "Giá chốt khoảng hai phẩy bốn tỷ đồng mỗi mét vuông."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.6,
+      "text": "Nhưng đó là đất xây tháp: mỗi mét vuông đất gánh gần chín mét vuông sàn."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.15,
+      "text": "Cơ quan tư pháp kết luận cuộc đấu đúng quy trình."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.15,
+      "text": "Hiệp hội Bất động sản thành phố lại lo mức giá ấy kéo cả vùng lên."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.15,
+      "text": "Rồi doanh nghiệp trúng xin rút, mất gần sáu trăm tỷ tiền cọc."
+    },
+    {
+      "id": "20",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.15,
+      "text": "Gần sáu trăm tỷ, cho một lần đổi ý."
+    },
+    {
+      "id": "21",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.15,
+      "text": "Mét vuông bạc tỷ ấy chưa từng được trả tiền."
+    },
+    {
+      "id": "22",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.6,
+      "text": "Giá bạc tỷ, có khi chỉ nằm trên giấy."
+    }
+  ]
+}
