@@ -16,7 +16,7 @@ import { SafeGuide } from "../../src/series/pvr/safe";
 import { MusicBed, PILLAR_MUSIC, SfxCues, type SfxCue } from "../../src/series/pvr/sfx";
 import { KaraokeSubs } from "../../Style Library/subs";
 import {
-  ATLAS, Atlas, AtlasSub, beats, BigGold, camAt, CountryTag, DataCard, type Fill, type GeoCam, seamKeys, show, VnIslands, YearRibbon,
+  ATLAS, Atlas, AtlasSub, beats, BigGold, camAt, CountryTag, DataCard, type Fill, type GeoCam, seamKeys, show, Signature, VnIslands, YearRibbon,
 } from "../../Style Library/I-toy-atlas/toy-atlas";
 
 const FPS = 30;
@@ -78,9 +78,13 @@ const SFX: SfxCue[] = [
   [W, "02", 0, -4],
 ];
 
+/** Channel signature (Bible §5, Lucas 2026-10-24): moves at every camera flight; tune `spots` after the draft review. */
+const SignatureLayer: React.FC = () => <Signature f={useCurrentFrame()} cuts={KEYS0.map((k) => k.at)} end={END} />;
+
 export const Episode: React.FC = () => ( // TODO rename (e.g. P2DuongSatCaoToc) and register in src/Root.tsx
   <AbsoluteFill style={{ backgroundColor: ATLAS.deep }}>
     <Scene />
+    <SignatureLayer />
     <KaraokeSubs timing={timing} words={words} captions={CAPTIONS} Skin={AtlasSub} oneLine maxWords={4} maxChars={20} />
     <Audio name="VO" src={staticFile("voiceover/SLUG/vo.mp3")} /> {/* TODO slug */}
     <MusicBed file={PILLAR_MUSIC.P1} /> {/* TODO pillar */}

@@ -18,6 +18,7 @@ import { P4LaoRaBien, p4LaoRaBienDuration } from "../Map/p4-lao-ra-bien/Video";
 import { P5TphcmBaTheGioi, p5TphcmBaTheGioiDuration } from "../Map/p5-tphcm-ba-the-gioi/Video";
 import { P1PhuQuocBrevie, p1PhuQuocBrevieDuration } from "../Map/p1-phu-quoc-brevie/Video";
 import { P2BacNinhXuatKhau, p2BacNinhXuatKhauDuration } from "../Map/p2-bac-ninh-xuat-khau/Video";
+import { P4MekongVoiNuoc, p4MekongVoiNuocDuration } from "../Map/p4-mekong-voi-nuoc/Video";
 import { Cover, COVERS } from "../Map/covers";
 import { KitFaceDemo } from "../Style Library/I-toy-atlas/demo-faces";
 
@@ -41,6 +42,7 @@ const EPISODES = [
   { id: "Map-P5-TphcmBaTheGioi", component: P5TphcmBaTheGioi, duration: p5TphcmBaTheGioiDuration },
   { id: "Map-P1-PhuQuocBrevie", component: P1PhuQuocBrevie, duration: p1PhuQuocBrevieDuration },
   { id: "Map-P2-BacNinhXuatKhau", component: P2BacNinhXuatKhau, duration: p2BacNinhXuatKhauDuration },
+  { id: "Map-P4-MekongVoiNuoc", component: P4MekongVoiNuoc, duration: p4MekongVoiNuocDuration },
 ];
 
 export const RemotionRoot: React.FC = () => (

@@ -377,7 +377,7 @@ export const MapLabel: React.FC<{ text: string; x: number; y: number; o?: number
 
 /** Five-point star, unit radius (flag stars). */
 const STAR = "M0,-1 L0.2245,-0.309 L0.951,-0.309 L0.3633,0.118 L0.5878,0.809 L0,0.382 L-0.5878,0.809 L-0.3633,0.118 L-0.951,-0.309 L-0.2245,-0.309 Z";
-export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia" | "usa" | "laos";
+export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia" | "usa" | "laos" | "myanmar";
 
 export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kind, w = 64, f = 0 }) => {
   const h = w * 0.62;
@@ -455,6 +455,15 @@ export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kin
             <path fill="#FFFFFF" d={`M${w * 0.3} ${h * 0.66} L${w * 0.7} ${h * 0.66} L${w * 0.7} ${h * 0.58} L${w * 0.64} ${h * 0.58}
               L${w * 0.62} ${h * 0.44} L${w * 0.58} ${h * 0.58} L${w * 0.53} ${h * 0.58} L${w * 0.5} ${h * 0.34} L${w * 0.47} ${h * 0.58}
               L${w * 0.42} ${h * 0.58} L${w * 0.38} ${h * 0.44} L${w * 0.36} ${h * 0.58} L${w * 0.3} ${h * 0.58} Z`} />
+          </g>
+        )}
+        {kind === "myanmar" && (
+          <g>
+            {/* yellow – green – red, large white star */}
+            <rect width={w} height={h / 3} fill="#FECB00" />
+            <rect y={h / 3} width={w} height={h / 3} fill="#34B233" />
+            <rect y={(h * 2) / 3} width={w} height={h / 3} fill="#EA2839" />
+            <path transform={`translate(${w / 2} ${h * 0.55}) scale(${h * 0.42})`} fill="#FFFFFF" d={STAR} />
           </g>
         )}
         {kind === "japan" && (
@@ -1119,6 +1128,47 @@ export const PromiseTitle: React.FC<{
           );
         })}
       </g>
+    </svg>
+  );
+};
+
+/**
+ * Channel signature (anti re-upload, Lucas 2026-10-24, option B): a small semi-transparent "ATLAS TÍ HON" with a map
+ * pin, kept inside the safe area (re-uploaders crop the edges) and moved to another spot at every camera flight, so it
+ * cannot be removed with one blur box. Spots: 0 bottom-left · 1 upper-left · 2 bottom-right · 3 upper-right. By default they
+ * cycle 0-1-2; pass `spots` (one per segment) to dodge an episode's panels. The last segment always uses the first
+ * segment's spot, so the loop seam stays clean. `cuts`: frames where the camera starts a new flight.
+ * Exception to the 48 px rule (Bible §5): 38 px, ~55 % opacity.
+ */
+export const Signature: React.FC<{ f: number; cuts: number[]; end: number; spots?: number[]; text?: string }> = ({
+  f, cuts, end, spots, text = "ATLAS TÍ HON",
+}) => {
+  const POS: [number, number, "start" | "end"][] = [
+    [SAFE.left + 14, 1262, "start"],
+    [SAFE.left + 14, 470, "start"],
+    [CANVAS.width - SAFE.right - 14, 1262, "end"],
+    [CANVAS.width - SAFE.right - 14, 470, "end"],
+  ];
+  const ts = cuts.filter((c) => c > 8 && c < end - 30).sort((a, b) => a - b);
+  const seg = ts.filter((c) => f >= c).length;
+  const pick = (i: number) => (spots ? spots[i % spots.length] : i % 3);
+  const idx = seg === ts.length ? pick(0) : pick(seg);
+  const next = ts[seg] ?? end + 100;
+  const prev = seg > 0 ? ts[seg - 1] : -100;
+  const o = 0.55 * Math.min(prog(f, prev + 4, 10), 1 - prog(f, next - 8, 6));
+  if (o <= 0) return null;
+  const [x, y, anchor] = POS[idx];
+  const SIZE = 38;
+  const w = text.length * SIZE * 0.62;
+  const ix = anchor === "start" ? x + 14 : x - w - 22;
+  return (
+    <svg width={CANVAS.width} height={CANVAS.height} style={{ position: "absolute", opacity: o, pointerEvents: "none" }}>
+      <g style={{ translate: `${ix}px ${y - 14}px` }}>
+        <path d="M 0 -16 C -11 -16 -14 -6 -11 0 L 0 18 L 11 0 C 14 -6 11 -16 0 -16 Z" fill={ATLAS.red} stroke={ATLAS.ink} strokeWidth={4} />
+        <circle cy={-6} r={4.5} fill={ATLAS.white} />
+      </g>
+      <text x={anchor === "start" ? x + 34 : x} y={y} textAnchor={anchor} fontFamily={FONT} fontWeight={800} fontSize={SIZE} letterSpacing={2}
+        fill={ATLAS.white} stroke={ATLAS.ink} strokeWidth={7} strokeLinejoin="round" paintOrder="stroke">{text}</text>
     </svg>
   );
 };

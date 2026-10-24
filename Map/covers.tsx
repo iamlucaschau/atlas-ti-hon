@@ -26,6 +26,7 @@ import { Scene as LaoSeaScene } from "./p4-lao-ra-bien/Video";
 import { Scene as HcmWorldsScene } from "./p5-tphcm-ba-the-gioi/Video";
 import { Scene as PhuQuocScene } from "./p1-phu-quoc-brevie/Video";
 import { Scene as BacNinhScene } from "./p2-bac-ninh-xuat-khau/Video";
+import { Scene as MekongScene } from "./p4-mekong-voi-nuoc/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -139,6 +140,9 @@ export const COVERS: CoverSpec[] = [
   // v2: smallest province before 7/2025 (C6) → top exporter in 2025 (C1) — line 22, old Bắc Ninh outlined inside the new one
   { slug: "p2-bac-ninh-xuat-khau", Scene: BacNinhScene, frame: 1968, hook: [{ text: "TỈNH NHỎ NHẤT" }, { text: "XUẤT KHẨU SỐ 1", punch: true }], y: 170,
     mark: { x: 330, y: 885, r: 120, arrowFrom: [760, 1180] } },
+  // 11 dams upstream (C2), but the biggest "tap" is the Tonle Sap flowing backwards (C12–C14) — line 21, the reversed river
+  { slug: "p4-mekong-voi-nuoc", Scene: MekongScene, frame: 1850, hook: [{ text: "11 ĐẬP THƯỢNG NGUỒN" }, { text: "AI GIỮ VÒI NƯỚC?", punch: true }], y: 170,
+    mark: { x: 440, y: 590, r: 140, arrowFrom: [820, 1080] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

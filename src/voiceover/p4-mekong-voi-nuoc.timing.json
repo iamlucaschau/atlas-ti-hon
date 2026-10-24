@@ -1,0 +1,175 @@
+{
+  "durationInSeconds": 72.33429166666667,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.069,
+      "text": "Trước khi về tới miền Tây, sông Mekong chảy qua sáu nước."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 3.219083333333333,
+      "end": 5.586083333333333,
+      "text": "Đoạn đầu ở Trung Quốc đã có mười một con đập."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 5.7364999999999995,
+      "end": 7.1754999999999995,
+      "text": "Vậy ai giữ vòi nước?"
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 7.325374999999999,
+      "end": 8.485375,
+      "text": "Không chỉ một nước."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 9.085208333333332,
+      "end": 11.629208333333333,
+      "text": "Riêng đập Tiểu Loan cao gần bằng tháp Eiffel."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 11.779499999999999,
+      "end": 13.9285,
+      "text": "Đứng dưới chân mà ngước lên chắc mỏi cổ."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 14.078916666666665,
+      "end": 16.795916666666663,
+      "text": "Cả mười một hồ chứa được khoảng bốn mươi hai tỷ khối nước."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 17.395625,
+      "end": 18.997625,
+      "text": "Nhưng nước Mekong đến từ đâu?"
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 19.14775,
+      "end": 19.701749999999997,
+      "text": "Từ mưa."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 19.851916666666664,
+      "end": 21.845916666666664,
+      "text": "Phần Trung Quốc chỉ góp chưa tới một phần năm."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 21.995499999999996,
+      "end": 23.903499999999998,
+      "text": "Riêng mưa ở Lào đã góp hơn một phần ba."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 24.50395833333333,
+      "end": 26.74795833333333,
+      "text": "Năm hai nghìn mười chín, hạ lưu hạn nặng."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 26.897874999999996,
+      "end": 30.358874999999994,
+      "text": "Nhà nghiên cứu Mỹ Alan Basist dùng ảnh vệ tinh soi các hồ thượng nguồn."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 30.509291666666662,
+      "end": 33.11629166666666,
+      "text": "Ông cho rằng đập đã giữ nước lại, làm hạn thêm nặng."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 33.266124999999995,
+      "end": 36.735125,
+      "text": "Trung Quốc và Ủy hội sông Mekong phản bác: hạn do trời ít mưa."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "start": 36.88549999999999,
+      "end": 39.82249999999999,
+      "text": "Số đo cũng cho thấy, mùa khô hồ chứa xả thêm nước."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 40.422374999999995,
+      "end": 45.165375,
+      "text": "Có điều, nước giữ lại còn xả ra được, phù sa thì nằm lại dưới đáy hồ."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 45.31545833333333,
+      "end": 47.45345833333333,
+      "text": "Lào cũng đã có hai đập trên dòng chính."
+    },
+    {
+      "id": "19",
+      "scene": "s6",
+      "start": 48.053875,
+      "end": 52.762874999999994,
+      "text": "Nước thì về, mà đất bồi thì thiếu, tụi tui đói phù sa đó nghen!"
+    },
+    {
+      "id": "20",
+      "scene": "s7",
+      "start": 53.36266666666666,
+      "end": 56.26566666666666,
+      "text": "Nhưng cái vòi lớn nhất lại do chính dòng sông tự mở."
+    },
+    {
+      "id": "21",
+      "scene": "s7",
+      "start": 56.415416666666665,
+      "end": 61.18541666666667,
+      "text": "Mùa mưa, nước Mekong dâng lên, đẩy một con sông ở Campuchia chảy ngược vào Biển Hồ."
+    },
+    {
+      "id": "22",
+      "scene": "s7",
+      "start": 61.33558333333333,
+      "end": 64.14758333333333,
+      "text": "Mùa khô, hồ nhả ra chừng bốn mươi tỷ khối."
+    },
+    {
+      "id": "23",
+      "scene": "s7",
+      "start": 64.297625,
+      "end": 66.670625,
+      "text": "Gần bằng sức chứa cả mười một hồ Trung Quốc."
+    },
+    {
+      "id": "24",
+      "scene": "s7",
+      "start": 66.82012499999999,
+      "end": 71.73412499999999,
+      "text": "Vòi nước lớn nhất của Mekong không nằm sau con đập nào, mà ở một con sông biết chảy ngược."
+    }
+  ]
+}

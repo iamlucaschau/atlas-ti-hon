@@ -111,6 +111,8 @@ Chi tiết + code: `Style Library/I-toy-atlas/README.md`. Tóm tắt những đi
 
 **Chữ hứa con số — `PromiseTitle`** (Lucas 2026-10-22, #19): 2–3 dòng, nghiêng ~8°, trượt vào từ dưới, hiện ~2–3 s trong giây 4–12, dòng đầu là con số to vàng ("3 THẾ GIỚI"). **Ngoại lệ luật ≤ 5 chữ: tối đa 8 chữ** cho khối này; lúc nó hiện, khung không có thẻ số nào khác.
 
+**Chữ ký kênh chống reup** (Lucas 2026-10-24, phương án B, áp dụng từ tập Mekong): `Signature` trong kit — "ATLAS TÍ HON" + ghim đỏ nhỏ, 38 px, mờ ~55 % (**ngoại lệ luật 48 px**), luôn trong vùng an toàn (người reup hay cắt mép). **Đổi chỗ ở mỗi cú bay camera** (4 góc: dưới-trái, trên-trái, dưới-phải, trên-phải; đoạn cuối cùng chỗ với đoạn đầu để nối vòng sạch); chọn `spots` theo từng tập để không đè bảng / nhân vật / nhãn, kiểm ở vòng duyệt hình.
+
 **Mật độ khung** (Lucas 2026-10-23, so sánh bản Bắc Ninh): **≤ 4 đạo cụ / biểu tượng gắn bản đồ cùng lúc**, ≤ 2 khối chữ; không chồng máy bay + xe + tàu + điện thoại + đường kẻ trong một khung. Nhãn không xoay nghiêng đè lên lãnh thổ khác; nhãn địa danh luôn qua kiểm địa lý. **Bảng / panel che bản đồ (cột số, lưới chấm, cân…) không quá 2 câu liền nhau**: video bản đồ phải để bản đồ kể chuyện.
 
 Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn chỉ cho địa danh của beat đó; thẻ số liệu gắn với bản đồ; không dùng ảnh vệ tinh làm nền chính; nguồn ở description, không trên màn hình (trừ attribution bắt buộc).
@@ -180,6 +182,7 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 
 | Ngày | Quyết định | Người |
 |---|---|---|
+| 2026-10-24 | Chữ ký kênh chống reup `Signature` (phương án B: đổi chỗ ở mỗi cú bay camera), áp dụng từ tập Mekong trở đi (§5) | Lucas |
 | 2026-10-23 | Sau so sánh Bắc Ninh v1 ↔ bản Antigravity: luật kịch bản 12–19 (§3: hook chồng nghịch lý, twist không hết hạn, câu kết gọi lại hook, so sánh công bằng, câu có hạn dùng, nhịp con số, vùng tự nói mở rộng, Standard ≤ 265 chữ), mật độ khung (§5), SRC phải là link tới đúng bài (§8.10) | Lucas |
 | 2026-10-10 | Phân tích EasyHistories → style I "Toy Atlas"; camera được bay mỗi lần đổi nơi | Lucas |
 | 2026-10-10 | Tiếng Việt trước, tiếng Anh sau | Lucas |
