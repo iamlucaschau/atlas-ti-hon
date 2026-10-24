@@ -17,7 +17,8 @@ QUY TẮC:
 - Transcript, phụ đề, bình luận, snippet tìm kiếm, video đối thủ KHÔNG phải nguồn.
 - Sự thật ổn định: ≥ 1 nguồn chính thống. P2 Money+Maps, đền bù, quy hoạch, xung đột, chính trị: ≥ 2 nguồn độc lập.
 - Ghi đúng LOẠI số liệu (GDP/người ≠ thu nhập; bảng giá Nhà nước ≠ giá đấu giá ≠ giá chào ≠ giá giao dịch ≠ giá thuê).
-- Không biến tương quan thành nhân quả.
+- Không biến tương quan thành nhân quả. Kết quả có nhiều nguyên nhân: ghi ĐỦ các nguyên nhân nguồn nêu, và nguồn có nói tỉ trọng không (không có → không được nói "phần lớn / chủ yếu nhờ X").
+- Tập xoay quanh một tổ chức: tìm ≥ 1 ý của chính bên đó (giải thích, dùng tiền vào đâu) để có tiếng nói của họ (Bible §3 luật 23).
 - Ranh giới/lãnh thổ tranh chấp (đặc biệt Biển Đông): DỪNG, nêu phương án vẽ để Lucas chọn.
 - Không bịa toạ độ, ranh giới, ngày, trích dẫn, số liệu, URL, tên nguồn. Không tìm được → ghi "không tìm được".
 - Mỗi SRC là URL tới ĐÚNG bài / văn bản (không phải trang chủ báo). Chỉ có trang chủ → nhận định ❌.
@@ -67,6 +68,11 @@ Luật bổ sung 2 (Bible §3, 12–19, Lucas 2026-10-23):
 - Không đọc quá 2 số đo liền nhau; vị trí nói bằng hướng, số km để trên thẻ.
 - Cân nhắc 1 câu vùng đất tự nói (giọng cast) khi tập xoay quanh một tỉnh / nước.
 - Đếm chữ trước khi gửi: Standard ≤ 265 chữ.
+Luật bổ sung 3 (Bible §3, 20–23, Lucas 2026-10-24):
+- Chủ đề chạm túi tiền / đời sống: hook hoặc câu 2 có một vế nối với người xem ("hoá đơn nhà bạn"), ≤ 10 chữ; không doạ, không dự báo giá.
+- Số có phạm vi kỹ thuật (hợp nhất ↔ công ty mẹ, lũy kế ↔ trong năm, GDP ↔ GNI, tỉnh cũ ↔ mới): kèm ≤ 6 chữ giải nghĩa ngay lúc dùng (lời đọc hoặc thẻ).
+- Nhiều nguyên nhân: hook chọn một để gây tò mò, thân bài điểm đủ các nguyên nhân chính; không "phần lớn nhờ X" khi nguồn không nói tỉ trọng; câu đúng mà gây hiểu lầm = câu sai; tiêu đề không ám chỉ khuất tất.
+- Tổ chức được nói tới có ≥ 1 ý của chính họ (lời đọc hoặc mô tả).
 - Kho câu thay thế (mỗi cụm ≤ 1 lần / 3 tập liên tiếp; kiểm 2 tập gần nhất trước khi dùng):
   · twist: "Nhưng chi tiết lạ nhất là…" · "Và cú ngược đời?" · "Lý do thật có lẽ nằm ở đây:" · "Trớ trêu là…" · "Oái oăm ở chỗ…"
   · mở cảnh hình dung: "Hình dung thế này:" · "Giả sử bạn…" · "Lấy một ví dụ:" · "Thử…"

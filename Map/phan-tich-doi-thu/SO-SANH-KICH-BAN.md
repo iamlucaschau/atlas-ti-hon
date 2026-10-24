@@ -76,3 +76,24 @@ Xem cả 5 tập liền nhau sẽ thấy khuôn:
 | 7 | Kho câu thay thế cho "oái oăm / thử / vì sao" | prompt Cổng 3 |
 
 Áp dụng thử: có thể viết lại **một tập** (gợi ý P4, thiếu nhiều nhất: người, đùa, twist không ở cuối) thành bản v2 và đặt hai bản cạnh nhau như đã làm với P2.
+
+## 7. Tập EVN ↔ kịch bản bên ngoài (2026-10-24)
+
+*Lucas đưa một kịch bản khác cùng chủ đề ("EVN lỗ 44.700 tỷ, dân gánh — rồi báo lãi 52.000 tỷ: tiền đi đâu?", ~60 s) để so với tập `p2-evn-gia-dien`. Lucas giữ bản của kênh, nhưng muốn học các điểm bản kia làm tốt hơn → **luật 20–23** (Bible §3).*
+
+**Bản kia làm tốt hơn mình:**
+
+| Điểm | Bản kia | Tập mình | Thành luật |
+|---|---|---|---|
+| Người xem trong hook | "hoá đơn nhà bạn có nhẹ đi không?" ngay giây đầu | "Bí quyết? Trời mưa." lạ nhưng tới câu cuối mới chạm hoá đơn | 20 |
+| Gỡ mâu thuẫn phạm vi số | "lãi hợp nhất — cộng cả công ty con" | "Cả tập đoàn đã hết lỗ, còn công ty mẹ thì chưa" mà không nói vì sao | 21 |
+| Tiếng nói của EVN | EVN nói lãi dùng cho đầu tư (⚠️ số 125.778 tỷ chưa kiểm) | Bộ Công Thương nói thay EVN | 23 |
+| Nguyên nhân | nhắc tăng giá 4,8 % là một nguồn lãi | hook quy cả cho mưa, dù câu 11 có nhắc tăng giá | 22 |
+
+**Bản kia sai / yếu (không học):**
+- "Lãi đến **phần lớn** từ đợt tăng giá 4,8 %": không nguồn nào nói tỉ trọng. Ước tính thô của Luis (⚠️) là khoảng 1/3. Câu "tiền lãi chính là tiền bạn trả" đúng mà gây hiểu lầm → luật 22.
+- Tiêu đề "dân gánh", "tiền đi đâu" ám chỉ khuất tất; "hai phe chuyên gia" thật ra là hai vế của một ý; không có nhân vật có tên (luật 7).
+- ~13 con số / 60 s, 4 số lớn trong 3 câu, không có câu đùa (luật 8, 10); gần như không có bản đồ.
+- Bỏ qua dữ kiện có nguồn trả lời đúng câu hỏi của chính nó: lỗ định tính vào giá co từ 44.792 xuống 5.611 tỷ; năm nhiều nước có thể bù mà không tăng giá (C5, C13).
+
+**Mình giữ:** sổ nguồn từng câu, so cùng phạm vi (luật 15), hai phe có tên, khoảnh khắc người, bản đồ là lời giải, câu kết gọi lại hook.

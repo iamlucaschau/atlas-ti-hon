@@ -82,6 +82,12 @@ Tài liệu nguồn (tham khảo, không sửa): `Map/master-map-explainer-playb
 18. **Vùng đất tự nói không chỉ cho khuôn "Một tỉnh, N thế giới":** tập nào xoay quanh một tỉnh / nước có "tính cách" thì cân nhắc 1 câu vùng tự nói (§6), đặt sau một nhịp nặng để làm câu đùa.
 19. **Ngân sách chữ đo thật:** Standard **≤ 265 chữ**. Giọng Orus tempo 1.1 đo thực tế 222–235 wpm kể cả nghỉ: 267 chữ = 72 s, 301 chữ = 78 s (quá 75 s). Đếm chữ ở Cổng 3 trước khi gửi Lucas.
 
+**Luật kịch bản bổ sung 3** (so sánh tập EVN với một kịch bản bên ngoài, Lucas 2026-10-24: "nâng cấp và cải tiến kịch bản ngày càng tốt hơn"; chi tiết `Map/phan-tich-doi-thu/SO-SANH-KICH-BAN.md` §7):
+20. **Đặt người xem vào câu chuyện sớm:** chủ đề chạm túi tiền / đời sống (giá điện, xăng, nhà, thuế, lương, học phí…) thì hook hoặc câu thứ hai có **một vế nối với người xem** ("hoá đơn nhà bạn", "bình xăng của bạn"), ≤ 10 chữ. Không doạ, không dự báo giá (§8). Câu kết có thể gọi lại vế này (luật 14).
+21. **Gỡ mâu thuẫn bề ngoài ngay khi nó xuất hiện:** số có phạm vi kỹ thuật (hợp nhất ↔ công ty mẹ, lỗ lũy kế ↔ lỗ trong năm, GDP ↔ GNI, danh nghĩa ↔ thực, tỉnh cũ ↔ tỉnh mới) thì kèm **≤ 6 chữ giải nghĩa**, trong lời đọc hoặc trên thẻ ("cả tập đoàn, tính cả công ty con"). Không để người xem tự hỏi "sao lại thế?" mà video không trả lời.
+22. **Nguyên nhân đủ phần, không quy về một:** kết quả có nhiều nguyên nhân có nguồn thì hook được chọn một nguyên nhân để gây tò mò, nhưng thân bài phải điểm **đủ các nguyên nhân chính** (một câu liệt kê ngắn), mô tả ghi đủ. Không nói "phần lớn / chủ yếu nhờ X" khi nguồn không nói tỉ trọng. Câu **đúng nhưng gây hiểu lầm** (vd. "tiền lãi chính là tiền bạn trả") tính như câu sai. Tiêu đề không ám chỉ khuất tất ("tiền đi đâu", "dân gánh") khi nguồn không nói vậy.
+23. **Bên được nói tới có tiếng nói:** tập xoay quanh một tổ chức (doanh nghiệp, cơ quan, chính quyền) thì có **≥ 1 ý của chính bên đó** (có nguồn: họ giải thích, dùng tiền vào đâu…), trong lời đọc hoặc ít nhất ở mô tả. Đây là một phe của luật 9, không thay phe kia.
+
 ## 4. Thời lượng & nhịp
 
 | Preset | Thời lượng | Beat | Số chữ VO (tiếng Việt, tempo 1.1) |
@@ -182,6 +188,7 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 
 | Ngày | Quyết định | Người |
 |---|---|---|
+| 2026-10-24 | Sau so sánh tập EVN ↔ kịch bản bên ngoài: luật kịch bản 20–23 (§3: người xem trong hook, gỡ mâu thuẫn phạm vi số ngay, nguyên nhân đủ phần, bên được nói tới có tiếng nói) | Lucas |
 | 2026-10-24 | Chữ ký kênh chống reup `Signature` (phương án B: đổi chỗ ở mỗi cú bay camera), áp dụng từ tập Mekong trở đi (§5) | Lucas |
 | 2026-10-23 | Sau so sánh Bắc Ninh v1 ↔ bản Antigravity: luật kịch bản 12–19 (§3: hook chồng nghịch lý, twist không hết hạn, câu kết gọi lại hook, so sánh công bằng, câu có hạn dùng, nhịp con số, vùng tự nói mở rộng, Standard ≤ 265 chữ), mật độ khung (§5), SRC phải là link tới đúng bài (§8.10) | Lucas |
 | 2026-10-10 | Phân tích EasyHistories → style I "Toy Atlas"; camera được bay mỗi lần đổi nơi | Lucas |
