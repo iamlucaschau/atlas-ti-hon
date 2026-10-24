@@ -43,7 +43,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 ```
 Map/00_he-thong/      01 Channel Bible · 02 prompt Cổng 1 · 03 prompt Cổng 2–3 · 04 quy trình Cổng 4–5 · 05 kho chủ đề · 06 nhận diện kênh
 Map/_mau-tap/         khung một tập mới (README + file mẫu + Video.tsx.txt)
-Map/<slug>/           một tập: cong-2_so-nguon, kich-ban-…-FINAL, spec, beat-sheet, image-prompts, Video.tsx, vo-timestamps, xuat-ban, cover.jpg (+ mp4, vo.mp3 chỉ trên máy)
+Map/<slug>/           một tập: cong-2_so-nguon, kich-ban-…-FINAL, spec, beat-sheet, image-prompts, Video.tsx, vo-timestamps, xuat-ban.txt, cover.jpg (+ mp4, vo.mp3 chỉ trên máy)
 Map/covers.tsx        ảnh bìa của mọi tập (khung + hook 2 tầng + vòng đỏ)
 Map/cong-1_*.md       hồ sơ Cổng 1 · Map/phan-tich-doi-thu/ phân tích 20 video đối thủ (BAO-CAO, BOC-TACH, SO-SANH)
 Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas (skip, layer), camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub, MapFace + talkOpen (vùng đất có mặt), PromiseTitle (chữ hứa con số)… · demo: `demo-faces.tsx` (composition `Kit-MapFace`)
@@ -58,7 +58,7 @@ public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voic
 scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
 ```
 
-ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Map-P4-LaoRaBien`, `Map-P5-TphcmBaTheGioi`, `Map-P1-PhuQuocBrevie`, `Map-P2-BacNinhXuatKhau`, `Map-P4-MekongVoiNuoc`, `Cover-<slug>`.
+ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Map-P4-LaoRaBien`, `Map-P5-TphcmBaTheGioi`, `Map-P1-PhuQuocBrevie`, `Map-P2-BacNinhXuatKhau`, `Map-P4-MekongVoiNuoc`, `Map-P2-EvnGiaDien`, `Cover-<slug>`.
 
 ## Luật Remotion (không được phá)
 

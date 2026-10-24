@@ -100,4 +100,15 @@ Kênh tiếng Anh sau này (Tiny Atlas): `#TinyAtlas #Maps #Geography #MapExplai
 
 ## 6. Caption mạng xã hội (TikTok / Facebook Reels / Instagram, Lucas 2026-10-15)
 
-Mỗi tập có caption riêng trong `xuat-ban.md` mục 6. Công thức 3 dòng: **hook** (dòng 1, khớp hook ảnh bìa, có emoji) → **một câu bối cảnh có số liệu đã kiểm chứng** → **câu hỏi mời bình luận** + 👇. Hashtag: `#AtlasTiHon #BanDo #DiaLy` + 3 tag theo tập (tối đa ~6; TikTok có thể thêm `#HocCungTikTok`). Không dùng `#Shorts` ngoài YouTube.
+Mỗi tập có caption riêng trong `xuat-ban.txt` mục 6. Công thức 3 dòng: **hook** (dòng 1, khớp hook ảnh bìa, có emoji) → **một câu bối cảnh có số liệu đã kiểm chứng** → **câu hỏi mời bình luận** + 👇. Hashtag: `#AtlasTiHon #BanDo #DiaLy` + 3 tag theo tập (tối đa ~6; TikTok có thể thêm `#HocCungTikTok`). Không dùng `#Shorts` ngoài YouTube.
+
+## 7. Tiêu đề video (Lucas 2026-10-24)
+
+Sau tập EVN (tiêu đề cũ "EVN từ lỗ 45 nghìn tỷ đến lãi 52 nghìn tỷ: nhờ trời mưa?" bị Lucas chê yếu):
+- **≤ 45 ký tự**: điện thoại cắt tiêu đề dài, phần gây tò mò phải nằm ở đầu (tiêu đề cũ 56 ký tự, mất "nhờ trời mưa?").
+- **Một ý, không bắt người xem tính:** hai con số lớn trong một tiêu đề là quá nặng; một con số hoặc một nghịch lý là đủ.
+- **Chạm người xem** khi chủ đề chạm túi tiền / đời sống ("tiền điện nhà bạn…", Bible §3 luật 20).
+- **Bổ sung cho ảnh bìa, không lặp:** bìa nói con số thì tiêu đề nói hệ quả với người xem, và ngược lại.
+- **Đúng phạm vi, không ám chỉ** (Bible §3 luật 21–22): không ghép số khác phạm vi thành "từ lỗ … đến lãi …"; không "tiền đi đâu", "dân gánh" khi nguồn không nói vậy.
+- 4 biến thể để thử A/B: câu hỏi chạm người xem (chính) · con số + bỏ lửng · nghịch lý / twist · "Vì sao …?".
+- Số viết bằng chữ số (45.000 tỷ); soát chính tả, một kiểu bỏ dấu ("hóa", "thủy").

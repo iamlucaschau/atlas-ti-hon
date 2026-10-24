@@ -1,0 +1,147 @@
+{
+  "durationInSeconds": 67.23770833333333,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 4.349,
+      "text": "Cuối năm hai nghìn hai mươi tư, công ty mẹ EVN còn lỗ gần bốn mươi lăm nghìn tỷ."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 4.499291666666667,
+      "end": 6.799291666666667,
+      "text": "Bộ Công Thương đề xuất tính dần khoản lỗ ấy vào giá điện."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 6.949125,
+      "end": 10.143125000000001,
+      "text": "Vậy mà một năm sau, cả tập đoàn lãi gần năm mươi hai nghìn tỷ."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 10.29325,
+      "end": 10.66825,
+      "text": "Bí quyết?"
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "start": 10.818583333333335,
+      "end": 11.324583333333335,
+      "text": "Trời mưa."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 11.92425,
+      "end": 14.81225,
+      "text": "Năm hai nghìn hai mươi hai, than nhập khẩu đắt vọt."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 14.962291666666667,
+      "end": 19.051291666666668,
+      "text": "Mỗi số điện từ than tốn gần gấp đôi giá bán ra, nên càng bán càng lỗ."
+    },
+    {
+      "id": "08",
+      "scene": "s3",
+      "start": 19.651,
+      "end": 22.419,
+      "text": "Bộ Công Thương cho rằng chi phí hợp lý thì cần được bù."
+    },
+    {
+      "id": "09",
+      "scene": "s3",
+      "start": 22.569499999999998,
+      "end": 26.542499999999997,
+      "text": "Bộ Tài chính muốn tách: lỗ vì giữ giá cho dân, hay vì kinh doanh."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 26.692749999999997,
+      "end": 33.50075,
+      "text": "Ông Nguyễn Tiến Thỏa, nguyên Cục trưởng Cục Quản lý giá, nói: làm ăn yếu kém thì tự chịu, giữ giá vì an sinh thì phải có cách bù."
+    },
+    {
+      "id": "11",
+      "scene": "s4",
+      "start": 34.101166666666664,
+      "end": 37.87616666666666,
+      "text": "Tháng năm năm hai nghìn hai mươi lăm, giá điện tăng bốn phẩy tám phần trăm."
+    },
+    {
+      "id": "12",
+      "scene": "s4",
+      "start": 38.026291666666665,
+      "end": 41.416291666666666,
+      "text": "Rồi mưa nhiều, hồ thủy điện từ Sơn La tới Tây Nguyên đầy ắp."
+    },
+    {
+      "id": "13",
+      "scene": "s4",
+      "start": 41.566583333333334,
+      "end": 44.67758333333333,
+      "text": "Sáu tháng đầu năm, điện từ thủy điện tăng gần một phần tư."
+    },
+    {
+      "id": "14",
+      "scene": "s4",
+      "start": 44.82775,
+      "end": 47.18375,
+      "text": "Đây là nguồn điện rẻ nhất, nên lãi tăng vọt."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 47.333666666666666,
+      "end": 49.34466666666667,
+      "text": "Năm đó, chắc cả EVN đều mong mưa."
+    },
+    {
+      "id": "16",
+      "scene": "s5",
+      "start": 49.94475,
+      "end": 51.81975,
+      "text": "Nhưng có một điều ít ai để ý."
+    },
+    {
+      "id": "17",
+      "scene": "s5",
+      "start": 51.97025,
+      "end": 55.36425,
+      "text": "Cả tập đoàn đã hết lỗ, còn công ty mẹ thì chưa."
+    },
+    {
+      "id": "18",
+      "scene": "s5",
+      "start": 55.51470833333333,
+      "end": 59.26070833333333,
+      "text": "Khoản lỗ từng đề xuất tính vào giá điện giờ còn hơn năm nghìn sáu trăm tỷ."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "start": 59.41075,
+      "end": 63.31375,
+      "text": "Theo đề xuất ấy, năm nào nhiều nước thì có thể bù lỗ mà không cần tăng giá."
+    },
+    {
+      "id": "20",
+      "scene": "s5",
+      "start": 63.46341666666667,
+      "end": 66.63741666666667,
+      "text": "Hoá đơn tiền điện, hoá ra cũng phải xem dự báo thời tiết."
+    }
+  ]
+}

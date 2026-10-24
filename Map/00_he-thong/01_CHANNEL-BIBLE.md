@@ -77,7 +77,7 @@ Tài liệu nguồn (tham khảo, không sửa): `Map/master-map-explainer-playb
 13. **Twist ưu tiên "bản đồ tự kể" và không hết hạn:** mốc lịch sử, ranh giới, tên gọi, hình dạng (vd. Hà Bắc tách 1997 → gộp 2025). **Số liệu theo tháng / quý / "năm nay" không làm twist** (cũ nhanh, thường một gốc nguồn): đặt ở thân bài kèm kỳ dữ liệu, hoặc chuyển xuống bình luận ghim.
 14. **Câu kết gọi lại đúng từ khoá của hook** (nhỏ nhất ↔ nhiều nhất; "một đường kẻ" ↔ "đường kẻ mới"), tạo vòng tròn nghĩa.
 15. **So sánh công bằng:** hai bên cùng đổi (sáp nhập, đổi địa giới, đổi cách tính) thì nói cả hai và so **trên cùng địa giới, cùng kỳ**; không để người xem hiểu sai nguyên nhân (vd. "vượt nhờ gộp tỉnh" khi đối thủ cũng gộp).
-16. **Câu có hạn dùng:** tránh "năm ngoái", "năm nay", "hiện nay" trơn; ghi năm cụ thể. Điều sắp thay đổi dùng "chưa…" và ghi tiến độ trong sổ nguồn (vd. "chưa có sân bay" ↔ sân bay Gia Bình đang xây); `xuat-ban.md` có mục "kiểm lại trước khi đăng".
+16. **Câu có hạn dùng:** tránh "năm ngoái", "năm nay", "hiện nay" trơn; ghi năm cụ thể. Điều sắp thay đổi dùng "chưa…" và ghi tiến độ trong sổ nguồn (vd. "chưa có sân bay" ↔ sân bay Gia Bình đang xây); `xuat-ban.txt` có mục "kiểm lại trước khi đăng".
 17. **Nhịp con số:** không đọc quá 2 số đo / khoảng cách liền nhau; vị trí nói bằng **hướng + bản đồ** ("Nội Bài sát bên, cảng phía đông"), số km để trên thẻ.
 18. **Vùng đất tự nói không chỉ cho khuôn "Một tỉnh, N thế giới":** tập nào xoay quanh một tỉnh / nước có "tính cách" thì cân nhắc 1 câu vùng tự nói (§6), đặt sau một nhịp nặng để làm câu đùa.
 19. **Ngân sách chữ đo thật:** Standard **≤ 265 chữ**. Giọng Orus tempo 1.1 đo thực tế 222–235 wpm kể cả nghỉ: 267 chữ = 72 s, 301 chữ = 78 s (quá 75 s). Đếm chữ ở Cổng 3 trước khi gửi Lucas.
@@ -149,7 +149,7 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
   | P4 Hành trình | Ascending the Vale (màu châu Á) | Crossing the Chasm |
   | P5 Kỳ lạ & kỷ lục | Investigations (tò mò) | Sneaky Snitch |
 
-  **Content ID:** nhạc Kevin MacLeod cũng đã đăng ký Content ID; khiếu nại thường do **thiếu ghi công** → thêm dòng ghi công vào mô tả rồi kháng nghị (gỡ trong ~72 giờ), nhiều video thì dùng form gỡ hàng loạt trên trang incompetech "YouTube Content ID" hoặc email help@incompetech.com. **Không** dùng lại nhạc Pixabay: 2026-10-17 cả 10 bài cũ đều "Content ID Registered", tập P4 bị chặn toàn cầu (khiếu nại "Seaside Morning" — Aleksey Chistilin / Elite Alliance Music); dò 120 bài Pixabay chỉ 2 bài chưa đăng ký. **Trước khi chọn nhạc mới:** kiểm trang bài có "Content ID" / chính sách khiếu nại của tác giả, và đưa dòng ghi công vào `xuat-ban.md`.
+  **Content ID:** nhạc Kevin MacLeod cũng đã đăng ký Content ID; khiếu nại thường do **thiếu ghi công** → thêm dòng ghi công vào mô tả rồi kháng nghị (gỡ trong ~72 giờ), nhiều video thì dùng form gỡ hàng loạt trên trang incompetech "YouTube Content ID" hoặc email help@incompetech.com. **Không** dùng lại nhạc Pixabay: 2026-10-17 cả 10 bài cũ đều "Content ID Registered", tập P4 bị chặn toàn cầu (khiếu nại "Seaside Morning" — Aleksey Chistilin / Elite Alliance Music); dò 120 bài Pixabay chỉ 2 bài chưa đăng ký. **Trước khi chọn nhạc mới:** kiểm trang bài có "Content ID" / chính sách khiếu nại của tác giả, và đưa dòng ghi công vào `xuat-ban.txt`.
 - SFX thật Pixabay: whoosh mỗi cú bay, click khi sticker hiện, deep hit ở con số chốt; không pop/ding hoạt hình; master −14 LUFS / −1,5 dBTP.
 
 ## 7. Cấu trúc bắt buộc mọi tập

@@ -124,7 +124,7 @@ python -P scripts/review.py <slug>
 
 **Ghi công nhạc (bắt buộc, Lucas 2026-10-17):** mô tả YouTube và caption mạng khác của mọi tập có dòng `"Tên bài" Kevin MacLeod (incompetech.com) — Licensed under Creative Commons: By Attribution 4.0 — https://creativecommons.org/licenses/by/4.0/` (tên bài theo `PILLAR_MUSIC`, Bible §6). Thiếu dòng này → Content ID khiếu nại.
 
-**Gói xuất bản** (`Map/<slug>/xuat-ban.md`, khung: `Map/_mau-tap/xuat-ban.md`; tiêu đề, mô tả, hashtag theo công thức ~10 tag, ảnh bìa từ `Map/covers.tsx`, bình luận ghim, caption TikTok/Reels — `06_NHAN-DIEN-KENH.md` §5–§6). Ghi chú cũ bên dưới vẫn đúng trừ số hashtag:
+**Gói xuất bản** (`Map/<slug>/xuat-ban.txt`, khung: `Map/_mau-tap/xuat-ban.txt`; tiêu đề, mô tả, hashtag theo công thức ~10 tag, ảnh bìa từ `Map/covers.tsx`, bình luận ghim, caption TikTok/Reels — `06_NHAN-DIEN-KENH.md` §5–§6). Ghi chú cũ bên dưới vẫn đúng trừ số hashtag:
 1. **3–7 tiêu đề** (mẫu A–E; tiêu đề chính = câu hỏi hook; có thể thêm cờ 🇻🇳 / 🤯 cho Facebook/YouTube, thử A/B).
 2. **Mô tả 5 phần:** (1) đoạn kể chuyện 2–3 câu kết bằng câu hỏi; (2) hashtag chủ đề; (3) giới thiệu kênh 1–2 câu (khi có tên); (4) **danh sách nguồn đầy đủ** (SRC-… + link + ngày truy cập) + "Bản đồ: Natural Earth"; (5) hashtag ngách (#bando #lichsu #diali #kinhte …).
 3. **≤ 20 hashtag** (tiếng Việt + vài tag tiếng Anh).

@@ -27,6 +27,7 @@ import { Scene as HcmWorldsScene } from "./p5-tphcm-ba-the-gioi/Video";
 import { Scene as PhuQuocScene } from "./p1-phu-quoc-brevie/Video";
 import { Scene as BacNinhScene } from "./p2-bac-ninh-xuat-khau/Video";
 import { Scene as MekongScene } from "./p4-mekong-voi-nuoc/Video";
+import { Scene as EvnScene } from "./p2-evn-gia-dien/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -143,6 +144,9 @@ export const COVERS: CoverSpec[] = [
   // 11 dams upstream (C2), but the biggest "tap" is the Tonle Sap flowing backwards (C12–C14) — line 21, the reversed river
   { slug: "p4-mekong-voi-nuoc", Scene: MekongScene, frame: 1850, hook: [{ text: "11 ĐẬP THƯỢNG NGUỒN" }, { text: "AI GIỮ VÒI NƯỚC?", punch: true }], y: 170,
     mark: { x: 440, y: 590, r: 140, arrowFrom: [820, 1080] } },
+  // parent loss ~45k bn (C3) → group profit ~52k bn (C12): the two bars of line 03, "rain" in the hook
+  { slug: "p2-evn-gia-dien", Scene: EvnScene, frame: 1215, hook: [{ text: "LỖ 45 NGHÌN TỶ → LÃI 52" }, { text: "NHỜ TRỜI MƯA?", punch: true }], y: 170,
+    mark: { x: 310, y: 830, r: 185, arrowFrom: [800, 1180] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

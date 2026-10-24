@@ -1,0 +1,86 @@
+﻿GÓI XUẤT BẢN – "<tiêu đề chính>"
+Tập <pillar> · <slug> · Kênh Atlas Tí Hon
+Video: <slug>.mp4 (9:16, <giây> giây, −14 LUFS) · Ảnh bìa: cover.jpg
+Cổng 5 – chờ Lucas duyệt (<ngày>)
+
+(File .txt thuần, UTF-8: mở được bằng Notepad / điện thoại, dán thẳng lên YouTube / TikTok. Không dùng ký hiệu Markdown.)
+(Soát chính tả trước khi gửi: một kiểu bỏ dấu cho cả file – "hóa", "thủy", "Hòa"; "4,8%" không cách trước %; không viết tắt gây hiểu nhầm như "định tính".)
+
+
+==================================================
+1. TIÊU ĐỀ (thử A/B)
+==================================================
+
+Công thức (Bible §3 luật 20–22, 06_NHAN-DIEN-KENH §7):
+- ≤ 45 ký tự để không bị cắt trên điện thoại; phần gây tò mò nằm ở đầu.
+- Chạm người xem khi chủ đề chạm túi tiền / đời sống ("nhà bạn", "của bạn").
+- Bổ sung cho chữ trên ảnh bìa, không lặp lại nguyên văn.
+- Số viết bằng chữ số (45.000 tỷ), không trộn phạm vi số, không ám chỉ khuất tất.
+
+1. <tiêu đề chính>   (CHÍNH)
+2. <biến thể con số>
+3. <biến thể nghịch lý / twist>
+4. <biến thể câu hỏi "vì sao">
+
+
+==================================================
+2. MÔ TẢ (YouTube)
+==================================================
+
+<Dòng 1: câu hook ngắn, hiện trong bảng tin>
+
+<2–3 câu kể chuyện, có số liệu đã kiểm chứng, ghi rõ phạm vi số>
+
+<Câu hỏi mời bình luận>
+
+Atlas Tí Hon – bản đồ nhỏ, câu chuyện lớn.
+
+Nguồn (truy cập <ngày>):
+- <nhận định> – <báo / cơ quan> (<ngày đăng>)
+- Nhạc: "<bài>" Kevin MacLeod (incompetech.com) – Licensed under Creative Commons: By Attribution 4.0 – https://creativecommons.org/licenses/by/4.0/
+- Bản đồ: Natural Earth. <lớp nào là sơ đồ minh họa>. Giọng đọc tạo bằng AI.
+
+#Shorts #AtlasTiHon #BanDo #DiaLy <2 tag pillar> <1–2 tag vùng> <1–3 tag địa danh>
+
+
+==================================================
+3. HASHTAG (YouTube)
+==================================================
+
+#Shorts #AtlasTiHon #BanDo #DiaLy …
+
+
+==================================================
+4. ẢNH BÌA
+==================================================
+
+cover.jpg (1080×1920, < 2 MB): <khung giây …, hình gì>. Chữ trên bìa 2 tầng: "<tầng 1>" / "<tầng 2>"; vòng đỏ quanh <…>.
+(Cách làm: thêm một mục vào Map/covers.tsx → npx remotion still Cover-<slug> out/cover.png → đổi sang JPG.)
+
+
+==================================================
+5. BÌNH LUẬN GHIM
+==================================================
+
+<câu hỏi gợi tranh luận có ích> 👇
+
+
+==================================================
+6. CAPTION + HASHTAG (TikTok / Facebook Reels / Instagram)
+==================================================
+
+<hook khớp ảnh bìa> <emoji>
+<một câu bối cảnh có số liệu đã kiểm chứng>
+<câu hỏi mời bình luận> 👇
+
+#AtlasTiHon #BanDo #DiaLy <3 tag theo tập>
+
+Nhạc: "<bài>" Kevin MacLeod (incompetech.com), CC BY 4.0
+
+
+==================================================
+TRƯỚC KHI ĐĂNG (còn mở)
+==================================================
+
+[ ] Lucas nghe video chính.
+[ ] <số / chính sách có hạn dùng cần kiểm lại>
