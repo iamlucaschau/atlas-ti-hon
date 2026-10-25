@@ -29,6 +29,7 @@ import { Scene as BacNinhScene } from "./p2-bac-ninh-xuat-khau/Video";
 import { Scene as MekongScene } from "./p4-mekong-voi-nuoc/Video";
 import { Scene as EvnScene } from "./p2-evn-gia-dien/Video";
 import { Scene as MetVuongScene } from "./p2-met-vuong-bac-ty/Video";
+import { Scene as ThuySiScene } from "./p1-thuy-si-linh-thue/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -151,6 +152,9 @@ export const COVERS: CoverSpec[] = [
   // table price 702 million (C1) vs winning bid ~2.44 bn (C6), the hook's question; the frame is line 14: the lot, the gavel, the bidder
   { slug: "p2-met-vuong-bac-ty", Scene: MetVuongScene, frame: 1222, hook: [{ text: "702 TRIỆU ↔ 2,4 TỶ/M²" }, { text: "GIÁ NÀO THẬT?", punch: true }], y: 170,
     mark: { x: 690, y: 800, r: 170, arrowFrom: [900, 1250] } },
+  // ~1.5 million in foreign service (C4); the title asks "why so rich", the cover answers with the soldiers; frame: end of line 05, arrows out of Switzerland
+  { slug: "p1-thuy-si-linh-thue", Scene: ThuySiScene, frame: 380, hook: [{ text: "1,5 TRIỆU LÍNH THUÊ" }, { text: "GIỜ GIÀU NỨT VÁCH?", punch: true }], y: 170,
+    mark: { x: 576, y: 740, r: 115, arrowFrom: [880, 1150] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

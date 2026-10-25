@@ -817,5 +817,14 @@
     "seconds": 137,
     "lufs": -17.5,
     "source": "https://incompetech.com/music/royalty-free/music.html"
+  },
+  {
+    "file": "sfx/drum/perc-military-snare-drum-sound-effect-502886.mp3",
+    "category": "drum",
+    "title": "PERC - Military Snare Drum Sound Effect",
+    "author": "Fronbondi_Skegs",
+    "seconds": 3,
+    "lufs": -13.4,
+    "source": "https://pixabay.com/sound-effects/musical-perc-military-snare-drum-sound-effect-502886/"
   }
 ]

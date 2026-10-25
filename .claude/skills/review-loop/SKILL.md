@@ -18,6 +18,10 @@ Luis không xem được video, nhưng xem được khung hình. **Không bao gi
    - `npm run sheet -- <slug> 12.3 14.8` — đúng những giây cần xem.
    - Một khung độ phân giải thật: `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35`.
 4. Sửa, rồi quay lại bước 1. Dừng khi một lượt đầy đủ không thấy lỗi.
+4b. **Tự chấm /10** (Lucas 2026-10-25; Bible §7 mục 7):
+    - Khi đã sạch lỗi, chấm tập theo mục **"Lên 10"** của checklist và làm các nâng cấp hình / âm thanh tới khoảng ≥ 9. Sau đó quay lại bước 1 để soát lỗi phần mới.
+    - Nâng cấp phải đổi kịch bản đã duyệt hoặc thu lại giọng thì chỉ đề xuất cho Lucas.
+    - **Sạch lỗi chưa phải xong.**
 5. Cuối: `npm run final -- <slug>` (render → master → đo; chỉ video chính). Mọi dòng phải là ✓; lệnh thoát mã 1 khi có ✗.
 
 Việc nhỏ, hiển nhiên (đè hình, lệch vị trí, tràn vùng an toàn) thì tự sửa, không hỏi. Thay đổi đụng tới kịch bản, số liệu, cách vẽ lãnh thổ hay luật kênh thì dừng lại hỏi Lucas.
@@ -59,6 +63,14 @@ Việc nhỏ, hiển nhiên (đè hình, lệch vị trí, tràn vùng an toàn)
 - Loudness −14 ±1 LUFS, true peak ≤ −1,5 dBFS.
 - Luis không nghe được: SFX lệch nhịp, nhạc lấn giọng, chỗ nối vòng bị khựng thì **nhờ Lucas nghe video chính `Map/<slug>/<slug>.mp4`** (không còn tạo bản lặp 2 vòng, Lucas 2026-10-20).
 
+**Lên 10 (sau khi đã sạch lỗi)**
+- Câu hỏi của tiêu đề có cảnh trả lời riêng (~15 s), có hình riêng, không chỉ một thẻ chữ.
+- Mỗi lần quay lại cùng một nơi có "sân khấu" khác: góc camera, lớp bản đồ (hồ, núi, phố, sông), đạo cụ.
+- Twist có bằng chứng bằng hình (kính lúp, so sánh, mũi tên cũ sáng lại rồi tắt).
+- Câu đùa có gag bằng hình (biển lật thành áp phích, đạo cụ phản ứng).
+- Khoảnh khắc người được dàn cảnh: đoàn người, điểm đến, hành động.
+- ≥ 1 SFX thật hợp cảnh ngoài whoosh / click (trống, đóng dấu, tích tắc…), tải từ Pixabay qua `scripts/fetch-sfx.mjs`.
+
 ## Báo cáo
 
-Khi xong, nói rõ: đã xem những sheet nào, thấy gì, đã sửa gì và sheet nào chứng minh chỗ đã sửa (kèm số câu / giây), số đo của `npm run final`, và những gì Luis không kiểm được (nghe). Không nói "đã sửa" khi chưa render lại và xem lại.
+Khi xong, nói rõ **điểm tự chấm /10** và đã nâng cấp gì, còn thiếu gì; đã xem những sheet nào, thấy gì, đã sửa gì và sheet nào chứng minh chỗ đã sửa (kèm số câu / giây), số đo của `npm run final`, và những gì Luis không kiểm được (nghe). Không nói "đã sửa" khi chưa render lại và xem lại.

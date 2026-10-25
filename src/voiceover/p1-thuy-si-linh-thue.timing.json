@@ -1,0 +1,182 @@
+{
+  "durationInSeconds": 68.632875,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.2279999999999998,
+      "text": "Không biển, gần như không tài nguyên, phần lớn là núi."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 3.3777916666666665,
+      "end": 6.9267916666666665,
+      "text": "Thế mà nay, người Thụy Sĩ làm ra gấp khoảng hai mươi hai lần người Việt Nam."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 7.0770833333333325,
+      "end": 8.762083333333333,
+      "text": "Thứ họ đưa ra nước ngoài nhiều nhất là gì?"
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 8.911624999999999,
+      "end": 9.302624999999999,
+      "text": "Lính."
+    },
+    {
+      "id": "05",
+      "scene": "s2",
+      "start": 9.902833333333332,
+      "end": 13.184833333333332,
+      "text": "Suốt mấy trăm năm, các bang cho vua chúa châu Âu thuê lính."
+    },
+    {
+      "id": "06",
+      "scene": "s2",
+      "start": 13.335208333333332,
+      "end": 15.298208333333331,
+      "text": "Ước tính một triệu rưỡi người đã đi."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 15.448291666666666,
+      "end": 18.446291666666667,
+      "text": "Người Pháp có câu: không tiền, không lính Thụy Sĩ."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "start": 18.596166666666665,
+      "end": 20.038166666666665,
+      "text": "Nghe như khẩu hiệu tuyển dụng."
+    },
+    {
+      "id": "09",
+      "scene": "s2",
+      "start": 20.188625,
+      "end": 24.069625,
+      "text": "Theo một sử gia, máu phiêu lưu và chiến lợi phẩm hút người hơn cả cái đói."
+    },
+    {
+      "id": "10",
+      "scene": "s3",
+      "start": 24.66945833333333,
+      "end": 30.339458333333333,
+      "text": "Năm một nghìn năm trăm linh sáu, Kaspar von Silenen dẫn lính Thụy Sĩ vào Rome gác cho Giáo hoàng."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 30.489708333333333,
+      "end": 34.36870833333333,
+      "text": "Chín năm sau, thua ở Marignano, thường được coi là khởi đầu trung lập."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "start": 34.428333333333335,
+      "end": 37.196333333333335,
+      "text": "Mục sư Zwingli giảng rằng tiền lính làm hư người."
+    },
+    {
+      "id": "13",
+      "scene": "s3",
+      "start": 37.25641666666667,
+      "end": 39.580416666666665,
+      "text": "Zürich cấm mộ lính, các bang khác nổi giận."
+    },
+    {
+      "id": "14",
+      "scene": "s3",
+      "start": 39.640625,
+      "end": 42.448625,
+      "text": "Năm một nghìn tám trăm mười lăm, châu Âu công nhận Thụy Sĩ trung lập."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 42.69875,
+      "end": 44.034749999999995,
+      "text": "Vậy họ giàu lên nhờ đâu?"
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "start": 44.09466666666666,
+      "end": 44.93066666666666,
+      "text": "Tay nghề."
+    },
+    {
+      "id": "17",
+      "scene": "s4",
+      "start": 44.99054166666666,
+      "end": 46.037541666666655,
+      "text": "Ngân hàng chỉ là một phần."
+    },
+    {
+      "id": "18",
+      "scene": "s4",
+      "start": 46.09737499999999,
+      "end": 49.67337499999999,
+      "text": "Ở Genève, luật cấm đeo trang sức đẩy thợ kim hoàn sang làm đồng hồ."
+    },
+    {
+      "id": "19",
+      "scene": "s4",
+      "start": 49.73304166666666,
+      "end": 51.59204166666666,
+      "text": "Rồi thợ giỏi từ Pháp chạy nạn sang."
+    },
+    {
+      "id": "20",
+      "scene": "s4",
+      "start": 51.65208333333332,
+      "end": 54.06208333333332,
+      "text": "Nước trung lập ấy còn là nơi ra đời Hội Chữ thập đỏ."
+    },
+    {
+      "id": "21",
+      "scene": "s4",
+      "start": 54.122541666666656,
+      "end": 57.95354166666666,
+      "text": "Từ cho thuê lính, họ chuyển sang bán đồng hồ, máy chính xác, thuốc men."
+    },
+    {
+      "id": "22",
+      "scene": "s5",
+      "start": 58.203666666666656,
+      "end": 59.67566666666666,
+      "text": "Còn lính Thụy Sĩ thì sao?"
+    },
+    {
+      "id": "23",
+      "scene": "s5",
+      "start": 59.73545833333332,
+      "end": 60.13345833333332,
+      "text": "Vẫn còn."
+    },
+    {
+      "id": "24",
+      "scene": "s5",
+      "start": 60.19333333333332,
+      "end": 63.20033333333332,
+      "text": "Đội cận vệ năm ấy vẫn gác cho Giáo hoàng tới hôm nay."
+    },
+    {
+      "id": "25",
+      "scene": "s5",
+      "start": 63.260166666666656,
+      "end": 68.38316666666665,
+      "text": "Từng cho cả châu Âu thuê lính, nay chỉ còn một đội, gác nước nhỏ nhất thế giới."
+    }
+  ]
+}

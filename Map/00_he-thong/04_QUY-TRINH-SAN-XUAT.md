@@ -100,6 +100,21 @@ npx remotion still <CompositionId> out/check.png --frame=<n> --props='{"safeGuid
 | Tên nước | mỗi nước được gọi tên / tô màu có nhãn + cờ (`CountryTag`), viền loé đúng lúc lời đọc nói tên |
 | Bản đồ | không tô màu nước ngoài câu chuyện; không nhãn vùng tranh chấp |
 
+**Tự chấm /10 trước khi trình (Bible §7 mục 7, Lucas 2026-10-25).**
+- Sau khi bản nháp **sạch lỗi**, chấm tập theo thang 10 và làm các nâng cấp tới khoảng ≥ 9 rồi mới render cuối.
+- Gói xuất bản / lời trình Cổng 5 ghi điểm, đã nâng cấp gì, còn thiếu gì.
+- Đổi kịch bản hoặc tốn quota giọng → đề xuất cho Lucas, không tự làm.
+
+| Hạng mục | Câu hỏi để lên 10 |
+|---|---|
+| Lời hứa tiêu đề | Câu hỏi của tiêu đề có cảnh trả lời riêng (~15 s), có hình riêng? |
+| Khung lặp | Mỗi lần quay lại cùng một nơi có góc / lớp / đạo cụ mới? |
+| Twist | Có bằng chứng bằng hình (phóng to, so sánh, mũi tên cũ sáng lại)? |
+| Câu đùa | Có gag bằng hình đi kèm? |
+| Khoảnh khắc người | Có dàn cảnh (đoàn người, điểm đến, hành động), không chỉ một quân cờ đứng? |
+| Bản đồ | Có lớp riêng của câu chuyện (hồ, núi, phố, sông, đường), không chỉ ranh giới? |
+| Âm thanh | Có ≥ 1 SFX thật hợp cảnh ngoài whoosh / click? |
+
 ## 6. Render + gói xuất bản (Cổng 5)
 
 > **Kiểm địa lý (Lucas 2026-10-22):** mọi nhãn / mặt / đạo cụ gắn vào bản đồ khai trong `PLACES` của `Video.tsx`; `npm run draft` / `npm run final` tự chạy `scripts/geo-check.mjs` và dừng nếu có điểm nằm ngoài tỉnh. Checklist duyệt hình (skill `review-loop`) có thêm 3 dòng: nhãn đúng lãnh thổ, vùng được nhắc có tên trên hình, câu nhân vật có thẻ người nói.

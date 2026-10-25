@@ -160,6 +160,25 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
 4. **Twist / nghịch lý là nhịp nội dung cuối cùng**; tin cập nhật, bối cảnh hiện tại đặt **trước** twist (hoặc vào bình luận ghim).
 5. **Nối vòng mềm** (Lucas 2026-10-14, thay câu bỏ lửng): lời đọc **kết bằng một câu trọn vẹn, có sức nặng** (không còn vế bỏ lửng nối vào câu đầu, vì nghe cụt khi không tự lặp và giọng TTS đọc câu treo gượng). **Hình vẫn lặp liền:** khung cuối = khung đầu (`seamKeys` trong kit), hình quay về trong câu cuối hoặc trong **0,7–1 s nhạc sau chữ cuối** (`export --loop --tail=0.7`).
 6. CTA chỉ khi câu hỏi thật sự có ích (câu hỏi gợi comment để trong pinned comment, không đọc trong video).
+7. **Tự chấm /10 trước khi trình Cổng 3 và Cổng 5** (Lucas 2026-10-25, sau tập Thụy Sĩ: bản đầu ~8/10, chỉ lên 10 khi Lucas bảo nâng cấp):
+   - Luis tự hỏi "cần gì để tập này đạt 10?", **làm các nâng cấp đó trước**, chỉ trình khi đạt khoảng **≥ 9**.
+   - Lời trình ghi rõ **điểm tự chấm**, đã nâng cấp gì, còn thiếu gì.
+   - Nâng cấp nào phải đổi kịch bản đã duyệt hoặc tốn thêm quota giọng thì **đề xuất**, không tự làm.
+   - **"Sạch lỗi" chưa phải "xong".**
+
+   **Cổng 3 (kịch bản):**
+   - Câu hỏi của tiêu đề có **cảnh trả lời riêng** (~15 s), có câu hỏi treo đáp ngay.
+   - Không đọc quá **2 mốc năm liền nhau**.
+   - **Mỗi khi tiêu đề đổi, kiểm lại kịch bản theo lời hứa mới** (tập Thụy Sĩ v1: tiêu đề đổi sang "Sao Thụy Sĩ giàu thế?" mà phần trả lời chỉ ~4,5 s).
+   - Nguyên nhân là **một mạch nhân quả**, không phải danh sách.
+
+   **Cổng 5 (hình):**
+   - Khung lặp lại (cùng một nơi nhiều lần) mỗi lần có **"sân khấu" khác**: góc camera, lớp bản đồ (hồ, núi, phố), đạo cụ.
+   - **Twist có bằng chứng bằng hình**, không chỉ lời; ví dụ kính lúp, mũi tên cũ sáng lại rồi tắt.
+   - Câu đùa có **gag bằng hình**.
+   - Khoảnh khắc người được **dàn cảnh**: đoàn người, điểm đến, không chỉ một quân cờ.
+   - Có **≥ 1 SFX thật hợp cảnh** ngoài whoosh / click.
+   - **Bản đồ có lớp riêng** của câu chuyện (hồ, núi, phố, sông), không chỉ ranh giới nước.
 
 ## 8. Nguyên tắc dữ liệu & an toàn (gộp playbook §7 + Engine V2)
 
@@ -188,6 +207,7 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 
 | Ngày | Quyết định | Người |
 |---|---|---|
+| 2026-10-25 | Tự chấm /10 và nâng cấp trước khi trình Cổng 3, Cổng 5 (§7 mục 7; quy trình §5; skill `review-loop`) | Lucas |
 | 2026-10-24 | Sau so sánh tập EVN ↔ kịch bản bên ngoài: luật kịch bản 20–23 (§3: người xem trong hook, gỡ mâu thuẫn phạm vi số ngay, nguyên nhân đủ phần, bên được nói tới có tiếng nói) | Lucas |
 | 2026-10-24 | Chữ ký kênh chống reup `Signature` (phương án B: đổi chỗ ở mỗi cú bay camera), áp dụng từ tập Mekong trở đi (§5) | Lucas |
 | 2026-10-23 | Sau so sánh Bắc Ninh v1 ↔ bản Antigravity: luật kịch bản 12–19 (§3: hook chồng nghịch lý, twist không hết hạn, câu kết gọi lại hook, so sánh công bằng, câu có hạn dùng, nhịp con số, vùng tự nói mở rộng, Standard ≤ 265 chữ), mật độ khung (§5), SRC phải là link tới đúng bài (§8.10) | Lucas |

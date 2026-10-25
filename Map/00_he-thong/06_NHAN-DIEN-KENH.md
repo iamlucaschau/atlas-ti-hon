@@ -112,3 +112,9 @@ Sau tập EVN (tiêu đề cũ "EVN từ lỗ 45 nghìn tỷ đến lãi 52 ngh�
 - **Đúng phạm vi, không ám chỉ** (Bible §3 luật 21–22): không ghép số khác phạm vi thành "từ lỗ … đến lãi …"; không "tiền đi đâu", "dân gánh" khi nguồn không nói vậy.
 - 4 biến thể để thử A/B: câu hỏi chạm người xem (chính) · con số + bỏ lửng · nghịch lý / twist · "Vì sao …?".
 - Số viết bằng chữ số (45.000 tỷ); soát chính tả, một kiểu bỏ dấu ("hóa", "thủy").
+- **Mẫu tiêu đề hook mạnh (Lucas 2026-10-25, học từ "Why Is Switzerland So Rich? (No Oil, No Sea)", "How did Switzerland go from Poor to Infinite Money?"):**
+  1. **Câu hỏi thẳng + ngoặc chồng bất lợi:** "Sao Thụy Sĩ giàu thế? (Không biển, không dầu)".
+  2. **Từ … đến … phóng đại bằng thành ngữ:** "Từ lính thuê tới giàu nứt đố đổ vách". Phóng đại chỉ bằng thành ngữ quen, không bằng con số sai.
+  3. **Nghịch lý + con số so với Việt Nam:** "Không biển, không dầu mà giàu gấp 22 lần VN".
+  4. **Trước ↔ sau, giọng nói chuyện:** "Từng đi lính thuê, giờ tiền tiêu không hết?".
+  - Câu ngắn, ý mạnh nằm ở đầu. Không viết kiểu bài báo ("…, giờ giàu nhất?").

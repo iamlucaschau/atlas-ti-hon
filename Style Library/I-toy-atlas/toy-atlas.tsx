@@ -72,7 +72,7 @@ const load = (topo: unknown): Feature<Geometry, { name: string }>[] => {
   return (feature(t, t.objects.countries) as FeatureCollection<Geometry, { name: string }>).features;
 };
 /** Fine geometry for the countries a story zooms into, coarse for the rest. */
-const FINE = new Set(["Singapore", "Malaysia", "Indonesia", "Brunei", "Thailand"]);
+const FINE = new Set(["Singapore", "Malaysia", "Indonesia", "Brunei", "Thailand", "Switzerland", "Vatican"]);
 /**
  * Vietnam's archipelagos (Channel Bible §8, Lucas 2026-10-12): Natural Earth
  * puts the Hoàng Sa (Paracel) islands inside "China" and has the Trường Sa as
@@ -377,7 +377,8 @@ export const MapLabel: React.FC<{ text: string; x: number; y: number; o?: number
 
 /** Five-point star, unit radius (flag stars). */
 const STAR = "M0,-1 L0.2245,-0.309 L0.951,-0.309 L0.3633,0.118 L0.5878,0.809 L0,0.382 L-0.5878,0.809 L-0.3633,0.118 L-0.951,-0.309 L-0.2245,-0.309 Z";
-export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia" | "usa" | "laos" | "myanmar";
+export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia" | "usa" | "laos" | "myanmar"
+  | "switzerland" | "france" | "vatican";
 
 export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kind, w = 64, f = 0 }) => {
   const h = w * 0.62;
@@ -464,6 +465,31 @@ export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kin
             <rect y={h / 3} width={w} height={h / 3} fill="#34B233" />
             <rect y={(h * 2) / 3} width={w} height={h / 3} fill="#EA2839" />
             <path transform={`translate(${w / 2} ${h * 0.55}) scale(${h * 0.42})`} fill="#FFFFFF" d={STAR} />
+          </g>
+        )}
+        {kind === "switzerland" && (
+          <g>
+            {/* the real flag is square; drawn on the shared cloth: red field, white cross */}
+            <rect width={w} height={h} fill="#DA291C" />
+            <rect x={w / 2 - h * 0.1} y={h * 0.18} width={h * 0.2} height={h * 0.64} fill="#FFFFFF" />
+            <rect x={w / 2 - h * 0.32} y={h * 0.4} width={h * 0.64} height={h * 0.2} fill="#FFFFFF" />
+          </g>
+        )}
+        {kind === "france" && (
+          <g>
+            <rect width={w / 3} height={h} fill="#002654" />
+            <rect x={w / 3} width={w / 3} height={h} fill="#FFFFFF" />
+            <rect x={(w * 2) / 3} width={w / 3} height={h} fill="#CE1126" />
+          </g>
+        )}
+        {kind === "vatican" && (
+          <g>
+            {/* simplified: yellow | white halves, the crossed keys reduced to two gold–silver bars */}
+            <rect width={w / 2} height={h} fill="#FFE000" />
+            <rect x={w / 2} width={w / 2} height={h} fill="#FFFFFF" />
+            <rect width={w} height={h} fill="none" stroke="#BBB" strokeWidth={1} />
+            <path d={`M${w * 0.62} ${h * 0.3} L${w * 0.88} ${h * 0.72}`} stroke="#D4A62A" strokeWidth={h * 0.08} strokeLinecap="round" />
+            <path d={`M${w * 0.88} ${h * 0.3} L${w * 0.62} ${h * 0.72}`} stroke="#9EA3A8" strokeWidth={h * 0.08} strokeLinecap="round" />
           </g>
         )}
         {kind === "japan" && (
