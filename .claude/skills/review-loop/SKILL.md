@@ -17,6 +17,7 @@ Luis không xem được video, nhưng xem được khung hình. **Không bao gi
    - `npm run sheet -- <slug> --from 30 --to 32 --every 0.2` — tua một cú bay camera hoặc lúc hai thứ cùng chiếm chỗ.
    - `npm run sheet -- <slug> 12.3 14.8` — đúng những giây cần xem.
    - Một khung độ phân giải thật: `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35`.
+3b. **Soát từng 0,5 s ngay trên bản nháp** (Lucas 2026-10-27): `python -P scripts/review.py <slug> --draft`, xem hết `out/review/<slug>/sheet-*.png`. Lỗi nào cũng sửa ở bước nháp; `npm run final` chỉ khi bản nháp đã sạch (mục tiêu 1–2 lần render cuối).
 4. Sửa, rồi quay lại bước 1. Dừng khi một lượt đầy đủ không thấy lỗi.
 4b. **Tự chấm /10** (Lucas 2026-10-25; Bible §7 mục 7):
     - Khi đã sạch lỗi, chấm tập theo mục **"Lên 10"** của checklist và làm các nâng cấp hình / âm thanh tới khoảng ≥ 9. Sau đó quay lại bước 1 để soát lỗi phần mới.
@@ -33,6 +34,7 @@ Việc nhỏ, hiển nhiên (đè hình, lệch vị trí, tràn vùng an toàn)
 - Không có gì đè lên nhau ngoài ý muốn, nhất là lúc chuyển cảnh (thứ đang ra và thứ đang vào cùng một chỗ), thẻ số che nhãn địa danh, sticker che phụ đề.
 - Chữ, số, mặt người, hình chính nằm ngoài vùng đỏ (x 60–940, y 220–1440).
 - Frame 0 là một hình thật, có hook (không đen, không trống).
+- 3 giây đầu: **chỉ một hook chữ 3–5 chữ** (`HookTitle`), chưa có phụ đề, không thẻ số / ruy băng chồng lên; cú bay mở đầu không vọt ra toàn thế giới (`lift ≤ 0,3`; tua `--from 0 --to 3 --every 0.25`).
 
 **Chữ & phụ đề**
 - Không chữ nào bị cắt bởi khung, mặt nạ hay mép thẻ.

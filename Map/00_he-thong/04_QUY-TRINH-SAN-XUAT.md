@@ -62,10 +62,10 @@ Kèm: bảng màu khoá theo phe (cùng phe một màu suốt tập), quy tắc 
 ## 3. Ảnh nhân vật & đạo cụ (Cổng 4)
 
 - Viết `Map/<slug>/image-prompts.md` theo mẫu `Map/i-singapore/image-prompts.md`: khối **STYLE** (quân cờ chibi, nền kem phẳng, không chữ, không cờ) + bảng `i-01-…png` → prompt.
-- Lucas tạo trong app (Gemini / ChatGPT, **cùng một cuộc chat** để đồng nhất), lưu vào `public/images/<slug>/`.
+- Lucas tạo trong app (Gemini / ChatGPT, **cùng một cuộc chat** để đồng nhất), lưu vào `assets/images/<slug>/` (ảnh gốc ở ngoài `public/` để mỗi lần render không phải chép, Lucas 2026-10-27).
 - Tách nền:
 ```bash
-python -P scripts/cutout.py public/images/<slug> public/images/<slug>/cut 38 <file1.png> <file2.png>
+python -P scripts/cutout.py assets/images/<slug> public/images/<slug>/cut 38 <file1.png> <file2.png>
 ```
 - Cờ quốc gia vẽ vector trong kit (`Flag`; thêm nước mới vào `FlagKind`). Người thật: hình tôn trọng.
 
@@ -87,6 +87,8 @@ npx remotion still <CompositionId> out/check.png --frame=<n> --props='{"safeGuid
 ```
 
 ## 5. QA trước khi render cuối
+
+**Soát trên bản nháp, render cuối 1–2 lần (Lucas 2026-10-27):** `npm run draft -- <slug>` → xem contact sheet theo câu **và** `python -P scripts/review.py <slug> --draft` (từng 0,5 s) → sửa hết → lặp. Chỉ `npm run final` khi bản nháp đã sạch; rồi `review.py <slug>` một lần trên bản cuối. Kịch bản + gói xuất bản: `node scripts/script-check.mjs <slug>` (Cổng 3 và Cổng 5).
 
 | Hạng mục | Chuẩn |
 |---|---|
@@ -148,15 +150,22 @@ python -P scripts/review.py <slug>
 
 ## 7. Lưu & sao lưu
 
-`Map/<slug>/` giữ: FINAL, spec, image-prompts, Video.tsx, vo-timestamps, xuat-ban, so-lieu. Commit + push khi Lucas yêu cầu (`origin` = GitHub riêng).
+`Map/<slug>/` giữ: FINAL, spec, image-prompts, Video.tsx, vo-timestamps, xuat-ban, cover. Số liệu sau đăng ở sổ chung `Map/so-lieu.csv` (§8). Commit + push khi Lucas yêu cầu (`origin` = GitHub riêng).
 
-## 8. Số liệu sau khi đăng (`Map/<slug>/so-lieu.md`)
+## 8. Số liệu sau khi đăng (sổ chung `Map/so-lieu.csv`, Lucas 2026-10-27)
 
-| Nền tảng | Mốc | Views | TG xem TB | % xem TB | Likes | Comments | Shares | Saves | Follow mới | Ghi chú |
-|---|---|---|---|---|---|---|---|---|---|---|
-| YouTube | 24 h | | | | | | | | | |
-| YouTube | 7 ngày | | | | | | | | | |
-| YouTube | 30 ngày | | | | | | | | | |
-| Facebook / Instagram / TikTok | … | | | | | | | | | |
+Một dòng cho mỗi **tập × nền tảng × mốc** (`24h` · `7d` · `30d`). Lucas gửi ảnh / số từ YouTube Studio (hoặc TikTok, Facebook), Luis điền vào sổ. File UTF-8 có BOM để mở bằng Excel; số thập phân dùng dấu chấm hoặc để trong ngoặc kép.
 
-Mỗi 10 tập: so sánh theo pillar / engine / thời lượng / mẫu hook bằng **trung vị**; đề xuất thử nghiệm cho Lucas duyệt (không tự đổi Channel Bible).
+| Cột | Ý nghĩa |
+|---|---|
+| `slug`, `pillar`, `thoi_luong_s` | tập, pillar, độ dài (s) |
+| `hook_chu` | `co` = có `HookTitle` 3 s đầu (từ 2026-10-27) · `khong` = phụ đề chạy từ frame 0 (các tập cũ) |
+| `ngay_dang`, `nen_tang`, `moc` | ngày đăng, `youtube` / `tiktok` / `facebook` / `instagram`, mốc |
+| `views`, `da_xem_pct` | lượt xem; **% "Đã xem" (Viewed vs swiped away)** của Shorts |
+| `tg_xem_tb_s`, `xem_tb_pct` | thời gian xem trung bình (s), % xem trung bình |
+| `likes`, `comments`, `shares`, `subs_moi`, `ghi_chu` | tương tác, người đăng ký mới, ghi chú (vd. "đăng lúc 20h", "bị chặn Content ID") |
+
+```bash
+node scripts/stats.mjs --moc 7d
+```
+In các tập đã có số (xếp theo % "Đã xem") và **trung vị** theo pillar và theo `hook_chu`. Mỗi 10 tập (hoặc khi Lucas hỏi): so sánh cùng loại bằng trung vị, đề xuất thử nghiệm cho Lucas duyệt (không tự đổi Channel Bible). Dưới 6 tập có số thì chỉ coi là gợi ý.

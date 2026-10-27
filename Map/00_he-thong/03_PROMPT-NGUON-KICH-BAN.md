@@ -67,7 +67,7 @@ Luật bổ sung 2 (Bible §3, 12–19, Lucas 2026-10-23):
 - Không "năm ngoái / năm nay / hiện nay" trơn; điều sắp đổi dùng "chưa…" + tiến độ trong sổ nguồn.
 - Không đọc quá 2 số đo liền nhau; vị trí nói bằng hướng, số km để trên thẻ.
 - Cân nhắc 1 câu vùng đất tự nói (giọng cast) khi tập xoay quanh một tỉnh / nước.
-- Đếm chữ trước khi gửi: Standard ≤ 265 chữ.
+- Đếm chữ trước khi gửi: Standard ≤ 265 chữ. Chạy `node scripts/script-check.mjs <slug>` (không ✗; ⚠ phải xem từng dòng) trước khi trình.
 Luật bổ sung 3 (Bible §3, 20–23, Lucas 2026-10-24):
 - Chủ đề chạm túi tiền / đời sống: hook hoặc câu 2 có một vế nối với người xem ("hoá đơn nhà bạn"), ≤ 10 chữ; không doạ, không dự báo giá.
 - Số có phạm vi kỹ thuật (hợp nhất ↔ công ty mẹ, lũy kế ↔ trong năm, GDP ↔ GNI, tỉnh cũ ↔ mới): kèm ≤ 6 chữ giải nghĩa ngay lúc dùng (lời đọc hoặc thẻ).
@@ -79,7 +79,7 @@ Luật bổ sung 3 (Bible §3, 20–23, Lucas 2026-10-24):
   · câu hỏi treo: "Sao lại thế?" · "Tại sao chưa…?" · "Hệ quả?" · "Vì sao?"
 
 CẤU TRÚC (theo engine, xem mạch chuẩn bên dưới), chia thành CẢNH; mỗi cảnh 1–4 câu; mỗi câu = 1 beat hình:
-- Hook ≤ 3 giây, có CÂU HỎI (mẫu A–E). Ví dụ mẫu B: "Malaysia từng đuổi Singapore ra khỏi đất nước. Vậy vì sao hôm nay, Singapore lại giàu gấp hơn bảy lần?"
+- Hook ≤ 3 giây, có CÂU HỎI (mẫu A–E). Kèm HOOK CHỮ trên màn 3–5 chữ (dòng nhỏ tuỳ chọn + dòng lớn, cùng ý với chữ ảnh bìa); phụ đề chỉ chạy sau nó. Ví dụ mẫu B: "Malaysia từng đuổi Singapore ra khỏi đất nước. Vậy vì sao hôm nay, Singapore lại giàu gấp hơn bảy lần?"
 - Mỗi câu 5–15 chữ; câu dài nhất ≤ 25 chữ. Không câu rỗng, không lặp ý, không văn hành chính.
 - Năm, con số, địa danh: viết bằng CHỮ cho TTS ("năm một nghìn chín trăm sáu mươi lăm", "một trăm hai mươi sáu trên không").
 - Payoff trả lời ĐÚNG câu hỏi hook, có SO SÁNH (hai con số / trước–sau).

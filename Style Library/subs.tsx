@@ -44,9 +44,12 @@ export const KaraokeSubs: React.FC<{
   maxWords?: number;
   maxChars?: number;
   oneLine?: boolean;
-}> = ({ timing, words = {}, captions = {}, Skin, maxWords = MAX_WORDS, maxChars = MAX_CHARS, oneLine = false }) => {
+  /** first frame with subtitles: while the opening `HookTitle` is on screen there are none (Lucas 2026-10-27) */
+  from?: number;
+}> = ({ timing, words = {}, captions = {}, Skin, maxWords = MAX_WORDS, maxChars = MAX_CHARS, oneLine = false, from = 0 }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
+  if (f < from) return null;
   const t = f / fps;
   const lines = timing.lines;
   const i = lines.findIndex((l, k) => t >= l.start - 0.05 && t < (lines[k + 1]?.start ?? l.end + 0.6) - 0.05);

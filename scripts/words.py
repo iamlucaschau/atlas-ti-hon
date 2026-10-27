@@ -31,6 +31,9 @@ sys.stdout.reconfigure(encoding="utf-8")
 NUMBER_WORDS = set("một hai ba bốn năm sáu bảy tám chín mười mươi mốt tư lăm trăm nghìn ngàn triệu tỷ linh lẻ không rưỡi phẩy "
                    "one two three four five six seven eight nine ten hundred thousand million billion".split())
 
+# spelled-out units come back as symbols ("tám phần trăm" -> "8%", "ki-lô-mét" -> "km"; tập Diện tích 2026-10-27)
+UNITS = {"tram": ["%"], "kilomet": ["km"], "met": ["m"], "kilogam": ["kg"], "do": ["usd", "$"], "kilooat": ["kw"], "megaoat": ["mw"]}
+
 
 def norm(w):
     w = unicodedata.normalize("NFD", w.lower().replace("đ", "d"))
@@ -43,6 +46,9 @@ def same(expected, heard):
     bare = re.sub(r"[^\w]", "", expected.lower())
     if bare in NUMBER_WORDS and any(c.isdigit() for c in heard):
         return True
+    for u in UNITS.get(norm(expected), []):
+        if re.fullmatch(r"[\d.,]*" + re.escape(u) + r"[.,!?:]*", heard.lower()):
+            return True
     # loose: Whisper often mishears one letter of a Vietnamese syllable ("sa" -> "xa")
     return SequenceMatcher(None, norm(expected), norm(heard)).ratio() >= 0.5
 
@@ -65,6 +71,11 @@ if sys.argv[1:] == ["--selftest"]:
     assert split_problems([good], {"17": ["Năm", "2023,", "Thái", "mới."]}) == []
     # its audio ran on into the next line ("…mới, không đào kênh mà xây cầu đất liền.")
     assert split_problems([good], {"17": ["Năm", "2023,", "mới,", "không", "liền."]})
+    # units read out in words, heard as symbols
+    pct = {"id": "04", "start": 0, "end": 2, "text": "Đức chỉ rộng hơn chừng tám phần trăm."}
+    assert split_problems([pct], {"04": ["Đức", "chỉ", "8%."]}) == []
+    km = {"id": "09", "start": 0, "end": 4, "text": "Từ Lũng Cú tới Đất Mũi dài một nghìn sáu trăm năm mươi ki-lô-mét."}
+    assert split_problems([km], {"09": ["Từ", "1.650", "km."]}) == []
     print("selftest ok")
     sys.exit(0)
 

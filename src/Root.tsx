@@ -26,6 +26,7 @@ import { P5SonDoong, p5SonDoongDuration } from "../Map/p5-son-doong/Video";
 import { P3DienTichVietNam, p3DienTichVietNamDuration } from "../Map/p3-dien-tich-viet-nam/Video";
 import { Cover, COVERS } from "../Map/covers";
 import { KitFaceDemo } from "../Style Library/I-toy-atlas/demo-faces";
+import { KitHookDemo } from "../Style Library/I-toy-atlas/demo-hook";
 
 /** Every episode is 1080×1920 @ 30 fps; its length comes from the voiceover timing. New episode: add one <Composition> here + one entry in Map/covers.tsx. */
 const EPISODES = [
@@ -65,6 +66,7 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="Kit">
       <Composition id="Kit-MapFace" component={KitFaceDemo} width={PVR.width} height={PVR.height} fps={PVR.fps} durationInFrames={360} />
+      <Composition id="Kit-HookOpen" component={KitHookDemo} width={PVR.width} height={PVR.height} fps={PVR.fps} durationInFrames={150} />
     </Folder>
     <Folder name="Covers">
       {COVERS.map((spec) => (

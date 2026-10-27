@@ -15,7 +15,7 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 - Quy trình **5 cổng**; hết mỗi cổng **dừng lại chờ "Duyệt Cổng N"**. Việc nhỏ, hiển nhiên (sửa lỗi đè hình, chỉnh vị trí, lỗi lint) thì tự làm, không hỏi; chỉ hỏi ở cổng hoặc khi thay đổi ảnh hưởng toàn kênh.
 - Khi Lucas hỏi "bạn hiểu ý mình chứ" → tóm lại cách hiểu + các lựa chọn, **chưa làm** cho tới khi Lucas nói làm.
 - **Ảnh nhân vật / đạo cụ do Lucas tạo** trong app (Gemini / ChatGPT) từ bộ prompt Luis viết (Free Tier Gemini API không có quota ảnh). Luis tách nền, vẽ bản đồ, cờ, số, chữ bằng vector.
-- **Hiển thị trong chat (Lucas 2026-10-19):** gợi ý chủ đề (Cổng 1), kịch bản (Cổng 3) và prompt ảnh (Cổng 4) phải **in thẳng trong câu trả lời** để Lucas đọc ngay, không chỉ ghi vào file. Khi gửi prompt ảnh, **tạo sẵn thư mục `public/images/<slug>/`** để Lucas dán ảnh vào. Render cuối xong (`npm run final`) thì **gửi luôn video `Map/<slug>/<slug>.mp4` vào chat** để Lucas xem (Lucas 2026-10-20).
+- **Hiển thị trong chat (Lucas 2026-10-19):** gợi ý chủ đề (Cổng 1), kịch bản (Cổng 3) và prompt ảnh (Cổng 4) phải **in thẳng trong câu trả lời** để Lucas đọc ngay, không chỉ ghi vào file. Khi gửi prompt ảnh, **tạo sẵn thư mục `assets/images/<slug>/`** để Lucas dán ảnh vào (ảnh gốc nằm ngoài `public/` từ 2026-10-27, render nhanh hơn). Render cuối xong (`npm run final`) thì **gửi luôn video `Map/<slug>/<slug>.mp4` vào chat** để Lucas xem (Lucas 2026-10-20).
 - **Commit / push chỉ khi Lucas bảo.** Trước khi commit: `git status --short` là **một bước riêng**, đọc kết quả; thấy thư mục mới, video, mp3, key hay tài liệu bên thứ ba → **dừng lại hỏi**. Không bao giờ push đè (`--force`) khi chưa được Lucas đồng ý. (Sự cố 2026-10-15: video đối thủ lỡ bị push.)
 - Báo cáo thật: lỗi, cảnh báo, chỗ chưa chắc đều nói rõ; số liệu nào chưa kiểm chứng thì ghi ⚠️.
 
@@ -30,11 +30,13 @@ Tách ra từ repo `VIDEO AI` ngày 2026-10-15 (5 pillar đã thử xong, 6 tậ
 | Soi thêm khung | `npm run sheet -- <slug> --at 0.9` · `--from 30 --to 32 --every 0.2` · `<giây> <giây>` |
 | Ảnh kiểm tra 1 khung | `npx remotion still <id> out/check.png --frame=<n> --props='{"safeGuide":true}' --scale=0.35` |
 | Render tập | `npm run final -- <slug>` → render, master vào `Map/<slug>/<slug>.mp4`, đo LUFS / đỉnh / chỗ nối vòng (thoát mã 1 nếu trượt). Chỉ render video chính; bản lặp 2 vòng chỉ khi thêm `--loop-preview` (Lucas 2026-10-20) |
-| Soát khung hình sau render | `python -P scripts/review.py <slug>` → xem hết `out/review/<slug>/sheet-*.png`, tự sửa rồi render lại (`04_QUY-TRINH` §6) |
+| Soát từng khung | `python -P scripts/review.py <slug> --draft` trên bản nháp (sửa hết ở đây), rồi `python -P scripts/review.py <slug>` một lần trên bản cuối → xem hết `out/review/<slug>/sheet-*.png` (`04_QUY-TRINH` §5–6) |
+| Kiểm kịch bản | `node scripts/script-check.mjs <slug>` — số chữ theo preset, câu ≤ 25 chữ, ≤ 1 số mới mỗi câu, câu hỏi treo đáp ngay, câu cửa miệng trùng 3 tập trước, tiêu đề ≤ 45 ký tự, `xuat-ban.txt` BOM + CRLF + ghi công nhạc; chạy trước khi trình Cổng 3 và Cổng 5 |
+| Số liệu sau đăng | `node scripts/stats.mjs --moc 7d` — đọc sổ chung `Map/so-lieu.csv` (Lucas gửi số YouTube Studio, Luis điền), in trung vị theo pillar / có-không hook chữ |
 | Ảnh bìa | `npx remotion still Cover-<slug> out/cover.png` → JPG < 2 MB vào `Map/<slug>/cover.jpg` |
 | Giọng đọc | `node scripts/episode.mjs prep "Map/<slug>"` → `npm run voiceover -- voiceover/<slug>.json` → `node scripts/episode.mjs export "Map/<slug>" --loop --tail=0.7` → `python -P scripts/words.py <slug> vi` |
 | Kiểm tra key TTS | `npm run tts:check` (không tốn quota) |
-| Tách nền ảnh | `python -P scripts/cutout.py public/images/<slug> public/images/<slug>/cut 38 <file.png>` (thêm `+holes` cho vật có lỗ) |
+| Tách nền ảnh | `python -P scripts/cutout.py assets/images/<slug> public/images/<slug>/cut 38 <file.png>` (thêm `+holes` cho vật có lỗ). Ảnh gốc ở `assets/images/<slug>/`, chỉ ảnh đã tách nền vào `public/` |
 
 ⚠️ Remotion 4.0.532: danh sách khung kiểu `--frames=20,96` có thể lỗi `EINVAL … inline-audio-mixing` → dùng `still` từng khung hoặc dải liên tục.
 
@@ -46,16 +48,18 @@ Map/_mau-tap/         khung một tập mới (README + file mẫu + Video.tsx.t
 Map/<slug>/           một tập: cong-2_so-nguon, kich-ban-…-FINAL, spec, beat-sheet, image-prompts, Video.tsx, vo-timestamps, xuat-ban.txt, cover.jpg (+ mp4, vo.mp3 chỉ trên máy)
 Map/covers.tsx        ảnh bìa của mọi tập (khung + hook 2 tầng + vòng đỏ)
 Map/cong-1_*.md       hồ sơ Cổng 1 · Map/phan-tich-doi-thu/ phân tích 20 video đối thủ (BAO-CAO, BOC-TACH, SO-SANH)
-Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas (skip, layer), camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub, MapFace + talkOpen (vùng đất có mặt), PromiseTitle (chữ hứa con số)… · demo: `demo-faces.tsx` (composition `Kit-MapFace`)
+Style Library/I-toy-atlas/toy-atlas.tsx   kit: Atlas (skip, layer), camAt/seamKeys, CountryTag, Flag, VnIslands, CoastBand, RegionFill, DataCard, BigGold, YearRibbon, PegImg, ImgSticker, Stamp, Question, AtlasSub, MapFace + talkOpen (vùng đất có mặt), PromiseTitle (chữ hứa con số), HookTitle (hook chữ 3 s đầu)… · demo: `demo-faces.tsx` (`Kit-MapFace`), `demo-hook.tsx` (`Kit-HookOpen`: mở đầu mới)
 Style Library/I-toy-atlas/vn-provinces.tsx  Việt Nam theo tỉnh: VN2025 (34 tỉnh, OCHA/HDX) · VN2024 (63 tỉnh, Natural Earth), ProvinceMap (tô, loang, viền loé, viền biển), ProvinceTag, CityPin, provinceBorder + BorderLine (ranh giới chung hai tỉnh) — dùng qua `<Atlas skip={["Vietnam"]} layer={…} />`
+Style Library/I-toy-atlas/geo-tools.tsx  countryRings, moveOnSphere, geoSticker (nước dời trên mặt cầu → cỡ trên bản đồ), MapLayer, MapSticker, Graticule, Tissot, MorphMap (Mercator ↔ đúng diện tích), ScreenTag, Compass, CurveArrow + onCurve
 Style Library/I-toy-atlas/globe.tsx  PacificAtlas (Mercator xoay, vd. 160°E: Việt Nam bên trái, Mỹ bên phải), ToyGlobe (quả địa cầu đồ chơi), greatCircle / rhumbLine
 Style Library/kit-common.ts, subs.tsx     font Bricolage Grotesque, easing, phụ đề karaoke
 src/Root.tsx          đăng ký mọi tập (thư mục Episodes) và ảnh bìa (Covers)
 src/series/pvr/       episode.ts (thời lượng), sfx.tsx (Sfx, MusicBed, PILLAR_MUSIC), safe.tsx (SafeGuide), theme.ts (1080×1920, SAFE)
 src/voiceover/        manifest + timing + words của từng tập (sinh tự động, không sửa tay)
 voiceover/<slug>.json kịch bản TTS của từng tập · voiceover/.cache/ bản thu thô (giữ lại để khỏi tốn quota)
-public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voiceover/<slug>/ giọng đọc · public/sfx/ SFX + nhạc Pixabay (catalog.json)
-scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
+assets/images/<slug>/ ảnh gốc Lucas tạo (không vào render) · public/images/<slug>/cut/ ảnh đã tách nền · public/voiceover/<slug>/ giọng đọc · public/sfx/ SFX Pixabay / Mixkit + nhạc Kevin MacLeod (`catalog.json`; file mp3 không commit)
+Map/so-lieu.csv       sổ số liệu sau đăng (mọi tập) · `scripts/stats.mjs` tổng hợp
+scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json, geo-check.mjs, review.py, script-check.mjs, stats.mjs
 ```
 
 ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Map-P4-LaoRaBien`, `Map-P5-TphcmBaTheGioi`, `Map-P1-PhuQuocBrevie`, `Map-P2-BacNinhXuatKhau`, `Map-P4-MekongVoiNuoc`, `Map-P2-EvnGiaDien`, `Map-P2-MetVuongBacTy`, `Map-P1-ThuySiLinhThue`, `Map-P5-SonDoong`, `Map-P3-DienTichVietNam`, `Cover-<slug>`.
@@ -90,11 +94,12 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 ## Kiểm tra trước khi giao
 
 1. `npm run lint` đạt.
-2. Vòng duyệt hình (skill `review-loop`): `npm run draft -- <slug>`, xem **mọi** contact sheet, sửa đè hình / tràn vùng an toàn, lặp tới khi một lượt sạch.
-3. `npm run final -- <slug>`: mọi dòng ✓ (≈ −14 LUFS, đỉnh ≤ −1,5 dB, khung cuối ≈ khung đầu).
-4. **Soát từng khung bản render** (`python -P scripts/review.py <slug>`, xem hết mọi tờ): chỗ nào xấu / chưa đạt thì **tự sửa**, render + master lại, soát lại tới khi sạch; báo Lucas đã sửa gì (Lucas 2026-10-16).
-5. Nhờ Lucas nghe video chính `Map/<slug>/<slug>.mp4` (Luis không nghe được). Mô tả có dòng ghi công nhạc Kevin MacLeod (Bible §6).
-6. Xoá ảnh/khung thử trong `out/` (cả `out/review/`, `out/sheets/`).
+2. Vòng duyệt hình (skill `review-loop`): `npm run draft -- <slug>`, xem **mọi** contact sheet **và** `review.py <slug> --draft` (từng 0,5 s), sửa đè hình / tràn vùng an toàn, lặp tới khi một lượt sạch. Mục tiêu: `final` chỉ 1–2 lần (Lucas 2026-10-27).
+3. `node scripts/script-check.mjs <slug>` đạt (không ✗; ⚠ đã xem).
+4. `npm run final -- <slug>`: mọi dòng ✓ (≈ −14 LUFS, đỉnh ≤ −1,5 dB, khung cuối ≈ khung đầu).
+5. **Soát từng khung bản render** (`python -P scripts/review.py <slug>`, xem hết mọi tờ): chỗ nào xấu / chưa đạt thì **tự sửa**, render + master lại, soát lại tới khi sạch; báo Lucas đã sửa gì (Lucas 2026-10-16).
+6. Nhờ Lucas nghe video chính `Map/<slug>/<slug>.mp4` (Luis không nghe được). Mô tả có dòng ghi công nhạc Kevin MacLeod (Bible §6).
+7. Xoá ảnh/khung thử trong `out/` (cả `out/review/`, `out/sheets/`).
 
 ## Bản quyền & bảo mật
 

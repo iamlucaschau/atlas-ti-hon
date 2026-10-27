@@ -156,6 +156,8 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
 ## 7. Cấu trúc bắt buộc mọi tập
 
 1. **Hook ≤ 3 s** (mẫu §3), có câu hỏi.
+   - **Hook chữ** (Lucas 2026-10-27, sau góp ý bên ngoài "chữ mở đầu dài, rối"): 3 giây đầu trên màn chỉ có **một câu hook 3–5 chữ** (`HookTitle`: dòng nhỏ trắng tuỳ chọn + dòng vàng lớn), cùng ý với chữ trên ảnh bìa. **Phụ đề karaoke chỉ bắt đầu khi hook chữ rời đi** (`KaraokeSubs from`). Không đặt thẻ số / ruy băng năm chồng lên hook chữ.
+   - **Cú bay mở đầu** (frame 0 → 1) dùng `lift ≤ 0,3`: camera lướt thẳng vào nơi hook nhắc tới, không vọt ra toàn thế giới rồi mới vào.
 2. Mạch theo engine; mỗi câu 1 beat.
 3. **Payoff trả lời đúng câu hỏi hook**, có **so sánh nhìn thấy được** (2 cột, 2 con số, trước/sau).
 4. **Twist / nghịch lý là nhịp nội dung cuối cùng**; tin cập nhật, bối cảnh hiện tại đặt **trước** twist (hoặc vào bình luận ghim).
@@ -202,12 +204,13 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
 
 ## 9. Học sau khi đăng
 
-Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Instagram / TikTok: views, thời gian xem trung bình, % xem trung bình, likes, comments, shares, saves, follow mới (mẫu bảng: `04_QUY-TRINH-SAN-XUAT.md` §8). So sánh **cùng loại** (pillar, engine, thời lượng, mẫu hook); dùng **trung vị** và mẫu lặp lại, không theo 1 video outlier. Đề xuất thử nghiệm; **không tự đổi luật trong file này** — Lucas duyệt.
+Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Instagram / TikTok: views, thời gian xem trung bình, % xem trung bình, likes, comments, shares, saves, follow mới (một sổ chung `Map/so-lieu.csv`, tổng hợp bằng `node scripts/stats.mjs`; cách ghi: `04_QUY-TRINH-SAN-XUAT.md` §8). So sánh **cùng loại** (pillar, engine, thời lượng, mẫu hook); dùng **trung vị** và mẫu lặp lại, không theo 1 video outlier. Đề xuất thử nghiệm; **không tự đổi luật trong file này** — Lucas duyệt.
 
 ## 10. Nhật ký quyết định
 
 | Ngày | Quyết định | Người |
 |---|---|---|
+| 2026-10-27 | Rà dự án, nhóm A: hook chữ 3–5 chữ ở 3 s đầu, phụ đề bắt đầu sau (§7 mục 1, kit `HookTitle`, `KaraokeSubs from`); cú bay mở đầu `lift ≤ 0,3`; sổ số liệu chung `Map/so-lieu.csv` + `scripts/stats.mjs` (§9). Chỉ áp dụng cho tập mới, chưa render lại tập cũ | Lucas |
 | 2026-10-26 | Thêm Mixkit làm nguồn SFX thứ hai (§6), vì Pixabay chặn bằng kiểm tra chống bot | Lucas |
 | 2026-10-25 | Tự chấm /10 và nâng cấp trước khi trình Cổng 3, Cổng 5 (§7 mục 7; quy trình §5; skill `review-loop`) | Lucas |
 | 2026-10-24 | Sau so sánh tập EVN ↔ kịch bản bên ngoài: luật kịch bản 20–23 (§3: người xem trong hook, gỡ mâu thuẫn phạm vi số ngay, nguyên nhân đủ phần, bên được nói tới có tiếng nói) | Lucas |

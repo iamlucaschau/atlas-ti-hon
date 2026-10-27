@@ -617,9 +617,13 @@ const cmdBuild = async (keys, args) => {
     // raws: same options, our texts are a prefix of the old take's texts (checked by re-hashing)
     const oldHash = prevById.get(group[0].id)?.hash;
     if (oldHash && oldHash !== hash) {
-      const oldTexts = previous.lines.filter((l) => l.hash === oldHash).map((l) => l.text);
+      const oldLines = previous.lines.filter((l) => l.hash === oldHash);
+      const oldTexts = oldLines.map((l) => l.text);
       const same = createHash("sha1").update(JSON.stringify({ ...opts, texts: oldTexts, trim })).digest("hex").slice(0, 12) === oldHash;
-      if (same && texts.every((t, k) => t === oldTexts[k])) {
+      // only when the dropped lines left the script: if they were MOVED to a take of their own (the fix for a bad split,
+      // AGENTS "words.py"), the old cut of our last line still holds the start of the next one → record afresh (2026-10-27)
+      const moved = oldLines.slice(group.length).some((l) => script.lines.some((x) => x.id === l.id));
+      if (same && !moved && texts.every((t, k) => t === oldTexts[k])) {
         group.forEach((l, k) => {
           const old = path.join(rawDir, oldHash, `${l.id}.wav`);
           if (!fs.existsSync(raws[k]) && fs.existsSync(old)) fs.copyFileSync(old, raws[k]);

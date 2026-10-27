@@ -2,7 +2,12 @@
 Frame review of a rendered episode (Lucas 2026-10-16: after the render, Luis checks every
 frame and fixes what looks bad before handing the video over).
 
-  python -P scripts/review.py <slug> [step_seconds]   (default step 0.5 s; reads Map/<slug>/<slug>.mp4)
+  python -P scripts/review.py <slug> [step_seconds] [--draft]   (default step 0.5 s; reads Map/<slug>/<slug>.mp4,
+                                                                  or out/<slug>-draft.mp4 with --draft)
+
+B4 (Lucas 2026-10-27): run it on the DRAFT first (`npm run draft` then `--draft`), fix everything there, and render
+`npm run final` only once the draft review is clean (the Diện tích episode needed 6 finals because problems were only
+seen on the final). Then run it once more on the final.
 
 Writes out/review/<slug>/sheet-NN.png: contact sheets, 6 × 3 thumbnails each, labelled with the
 time and frame number, with the 9:16 safe zone (x 60–940, y 220–1440) drawn on every thumbnail.
@@ -30,9 +35,13 @@ COLS, ROWS = 6, 3
 SAFE = (60, 220, 940, 1440)
 
 root = Path(__file__).resolve().parent.parent
-slug = sys.argv[1]
-step = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
-video = root / "Map" / slug / f"{slug}.mp4"
+args = [a for a in sys.argv[1:] if not a.startswith("--")]
+draft = "--draft" in sys.argv
+slug = args[0]
+step = float(args[1]) if len(args) > 1 else 0.5
+video = root / "out" / f"{slug}-draft.mp4" if draft else root / "Map" / slug / f"{slug}.mp4"
+if not video.exists():
+    sys.exit(f"No {video.relative_to(root)}: render it first ({'npm run draft' if draft else 'npm run final'} -- {slug})")
 out = root / "out" / "review" / slug
 frames = out / "frames"
 frames.mkdir(parents=True, exist_ok=True)

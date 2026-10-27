@@ -108,7 +108,12 @@ export const countryPath = (name: string) => byName.get(name)?.d ?? "";
 
 // ------------------------------------------------------------------ camera
 
-export type GeoCam = { at: number; lon: number; lat: number; zoom: number };
+/**
+ * `lift`: how far a flight INTO this key rises (zooms out) at its middle, as an extra zoom-out factor
+ * (0 = straight glide, 1 = up to 2× out). Default: min(3, distance / 12), the "plane" look. Lucas 2026-10-27: the
+ * opening flight (frame 0 → 1) uses ≤ 0.3, so the first second never flashes the whole world.
+ */
+export type GeoCam = { at: number; lon: number; lat: number; zoom: number; lift?: number };
 
 const ease = Easing.inOut(Easing.cubic);
 
@@ -130,7 +135,7 @@ export const camAt = (keys: GeoCam[], f: number, push = 0, cap = 0.2): GeoCam =>
     const dur = Math.round(FLIGHT + Math.min(18, dist * 0.6));
     const p = interpolate(f, [k.at, k.at + dur], [0, 1], { ...CLAMP, easing: ease });
     if (p < 1) {
-      const lift = 1 + Math.min(3, dist / 12) * Math.sin(Math.PI * p);
+      const lift = 1 + (k.lift ?? Math.min(3, dist / 12)) * Math.sin(Math.PI * p);
       return {
         at: k.at,
         lon: from.lon + (k.lon - from.lon) * p,
@@ -1183,6 +1188,38 @@ export const PromiseTitle: React.FC<{
             </text>
           );
         })}
+      </g>
+    </svg>
+  );
+};
+
+/**
+ * Hook title (Lucas 2026-10-27, after outside feedback "simplify opening text"): the first ~3 s carry ONE punchy
+ * on-screen hook of 3–5 words instead of running subtitles. Optional small white setup line + big gold punch line (like
+ * the cover's two tiers, so the thumbnail and the first frames match). It pops in at `at` (≈ frame 2), holds, then
+ * lifts away from `out` (≈ the end of the hook line, ≤ 3 s); start the karaoke subtitles at `out` (`KaraokeSubs from`).
+ * The punch shrinks to fit the safe width; keep it ≤ ~14 characters.
+ */
+export const HookTitle: React.FC<{ setup?: string; punch: string; f: number; at?: number; out: number; y?: number; size?: number }> = ({
+  setup, punch, f, at = 2, out, y = 380, size = 132,
+}) => {
+  if (f < at) return null;
+  const leave = prog(f, out, 8, Easing.in(Easing.cubic));
+  if (leave >= 1) return null;
+  const fit = Math.min(size, (CANVAS.width - SAFE.left - SAFE.right) / (punch.length * 0.62));
+  const k = pop(f, at);
+  const k2 = pop(f, at + 4);
+  return (
+    <svg width={CANVAS.width} height={CANVAS.height} style={{ position: "absolute", opacity: 1 - leave }}>
+      <g style={{ translate: `0px ${-60 * leave}px` }}>
+        {setup && (
+          <text x={CX} y={y - fit * 0.95} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={64} fill={ATLAS.white}
+            stroke={ATLAS.ink} strokeWidth={12} strokeLinejoin="round" paintOrder="stroke" letterSpacing={1}
+            style={{ scale: k, transformBox: "fill-box", transformOrigin: "center" }}>{setup}</text>
+        )}
+        <text x={CX} y={y} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={fit} fill={ATLAS.gold}
+          stroke={ATLAS.ink} strokeWidth={18} strokeLinejoin="round" paintOrder="stroke" letterSpacing={2}
+          style={{ scale: setup ? k2 : k, transformBox: "fill-box", transformOrigin: "center" }}>{punch}</text>
       </g>
     </svg>
   );

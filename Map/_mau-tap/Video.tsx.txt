@@ -16,13 +16,16 @@ import { SafeGuide } from "../../src/series/pvr/safe";
 import { MusicBed, PILLAR_MUSIC, SfxCues, type SfxCue } from "../../src/series/pvr/sfx";
 import { KaraokeSubs } from "../../Style Library/subs";
 import {
-  ATLAS, Atlas, AtlasSub, beats, BigGold, camAt, CountryTag, DataCard, type Fill, type GeoCam, seamKeys, show, Signature, VnIslands, YearRibbon,
+  ATLAS, Atlas, AtlasSub, beats, BigGold, camAt, CountryTag, DataCard, type Fill, type GeoCam, HookTitle, seamKeys, show, Signature, VnIslands,
+  YearRibbon,
 } from "../../Style Library/I-toy-atlas/toy-atlas";
 
 const FPS = 30;
 const IMG = "images/SLUG/cut"; // TODO slug — Lucas's cut-outs (scripts/cutout.py)
 const { at } = beats(timing, FPS);
 const END = episodeDuration(timing, FPS);
+// Opening (Bible §7 mục 1, Lucas 2026-10-27): the HookTitle carries the first ~3 s, the subtitles start when it leaves.
+const HOOK_OUT = at("01", 0.95); // TODO: end of the hook line (≤ ~3 s)
 
 // Camera: one place per scene, fly only when the place changes (≥ 20 frames, eased, no shake).
 const VIEW = {
@@ -31,6 +34,7 @@ const VIEW = {
 };
 const KEYS0: GeoCam[] = [
   { at: 0, ...VIEW.home },
+  // { at: 1, ...VIEW.hookPlace, lift: 0.3 }, // TODO: from frame 1 glide into the hook's place; lift ≤ 0.3 = no world flash
   // { at: at("05") - 4, ...VIEW.detail },
   // { at: at("NN", 0.6), ...VIEW.home }, // last key = opening place (soft loop)
 ];
@@ -55,8 +59,9 @@ export const Scene: React.FC = () => {
       <CountryTag cam={cam} f={f} name="Vietnam" label="VIỆT NAM" flag="vietnam" anchor={[105.8, 21]} from={at("01", 0.2)}
         o={show(f, at("01", 0.2), at("02"))} glow={[at("01", 0.3)]} />
 
-      {/* ── 01–02 hook ── TODO */}
-      <BigGold text="HOOK" f={f} at={at("01", 0.2)} out={at("02")} y={330} size={120} />
+      {/* ── 01–02 hook ── TODO: 3–5 words, the same idea as the cover's hook */}
+      <HookTitle setup="SETUP" punch="HOOK" f={f} out={HOOK_OUT} />
+      <BigGold text="00" f={f} at={HOOK_OUT} out={at("02")} y={330} size={120} />
       <DataCard value="00" label="NHÃN" x={540} y={330} f={f} at={at("02", 0.3)} out={at("03")} />
       <YearRibbon text="2026" f={f} at={at("02", 0.1)} out={at("03")} />
 
@@ -85,7 +90,7 @@ export const Episode: React.FC = () => ( // TODO rename (e.g. P2DuongSatCaoToc) 
   <AbsoluteFill style={{ backgroundColor: ATLAS.deep }}>
     <Scene />
     <SignatureLayer />
-    <KaraokeSubs timing={timing} words={words} captions={CAPTIONS} Skin={AtlasSub} oneLine maxWords={4} maxChars={20} />
+    <KaraokeSubs timing={timing} words={words} captions={CAPTIONS} Skin={AtlasSub} oneLine maxWords={4} maxChars={20} from={HOOK_OUT} />
     <Audio name="VO" src={staticFile("voiceover/SLUG/vo.mp3")} /> {/* TODO slug */}
     <MusicBed file={PILLAR_MUSIC.P1} /> {/* TODO pillar */}
     <SfxCues timing={timing} cues={SFX} />
