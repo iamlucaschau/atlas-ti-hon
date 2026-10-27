@@ -1,0 +1,175 @@
+{
+  "durationInSeconds": 74.9255,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 3.121,
+      "text": "Trên bản đồ, nước Đức trông to gấp đôi rưỡi Việt Nam."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 3.181083333333333,
+      "end": 3.983083333333333,
+      "text": "Thực tế?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 4.232708333333333,
+      "end": 5.204708333333333,
+      "text": "Gần bằng nhau."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 5.265124999999999,
+      "end": 7.387124999999999,
+      "text": "Đức chỉ rộng hơn chừng tám phần trăm."
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "start": 7.447583333333332,
+      "end": 9.346583333333331,
+      "text": "Vậy cái gì đang làm Việt Nam nhỏ đi?"
+    },
+    {
+      "id": "06",
+      "scene": "s1",
+      "start": 9.596166666666665,
+      "end": 10.852166666666665,
+      "text": "Chính tấm bản đồ."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "start": 11.102208333333332,
+      "end": 14.006208333333332,
+      "text": "Việt Nam rộng khoảng ba trăm ba mươi mốt nghìn ki-lô-mét vuông."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "start": 14.156041666666665,
+      "end": 18.677041666666664,
+      "text": "Lớn hơn Ý, hơn cả Anh, dù trên bản đồ trông ngược lại."
+    },
+    {
+      "id": "09",
+      "scene": "s2",
+      "start": 18.73720833333333,
+      "end": 22.918208333333332,
+      "text": "Từ Lũng Cú tới Đất Mũi dài một nghìn sáu trăm năm mươi ki-lô-mét."
+    },
+    {
+      "id": "10",
+      "scene": "s2",
+      "start": 22.977749999999997,
+      "end": 26.759749999999997,
+      "text": "Đặt lên châu Âu, quãng ấy kéo từ Đan Mạch xuống tận Napoli."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "start": 27.010041666666663,
+      "end": 29.76504166666666,
+      "text": "Tấm bản đồ ấy ra đời năm một nghìn năm trăm sáu mươi chín."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "start": 29.825499999999995,
+      "end": 32.5575,
+      "text": "Gerardus Mercator vẽ nó cho người đi biển."
+    },
+    {
+      "id": "13",
+      "scene": "s3",
+      "start": 32.61729166666666,
+      "end": 35.24429166666666,
+      "text": "Cứ giữ một hướng la bàn, trên bản đồ là một đường thẳng."
+    },
+    {
+      "id": "14",
+      "scene": "s3",
+      "start": 35.30395833333333,
+      "end": 38.32695833333333,
+      "text": "Cái giá: càng xa xích đạo, đất càng bị phóng to."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "start": 38.577458333333325,
+      "end": 40.66745833333333,
+      "text": "Greenland trông to ngang châu Phi."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "start": 40.72774999999999,
+      "end": 43.470749999999995,
+      "text": "Thực ra, châu Phi lớn gấp mười bốn lần."
+    },
+    {
+      "id": "17",
+      "scene": "s4",
+      "start": 43.72062499999999,
+      "end": 45.29662499999999,
+      "text": "Do góc chụp thôi mà!"
+    },
+    {
+      "id": "18",
+      "scene": "s4",
+      "start": 45.54687499999999,
+      "end": 49.62287499999999,
+      "text": "Phần Lan rộng gần bằng Việt Nam, nhưng trên bản đồ trông to gấp năm."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "start": 49.87299999999999,
+      "end": 55.94599999999999,
+      "text": "Năm một nghìn chín trăm bảy mươi ba, sử gia Đức Arno Peters họp báo, tố bản đồ này thiên vị phương Bắc."
+    },
+    {
+      "id": "20",
+      "scene": "s5",
+      "start": 56.00637499999999,
+      "end": 60.01037499999999,
+      "text": "Giới vẽ bản đồ cãi lại: bản đồ của ông méo hình dáng, lại chẳng mới."
+    },
+    {
+      "id": "21",
+      "scene": "s5",
+      "start": 60.070291666666655,
+      "end": 61.439291666666655,
+      "text": "Bản đồ phẳng nào cũng méo."
+    },
+    {
+      "id": "22",
+      "scene": "s5",
+      "start": 61.499374999999986,
+      "end": 65.54337499999998,
+      "text": "Google Maps trên điện thoại bạn vẫn dựa trên Mercator, vì nó giữ đúng hướng."
+    },
+    {
+      "id": "23",
+      "scene": "s6",
+      "start": 65.79374999999999,
+      "end": 70.99374999999999,
+      "text": "Trớ trêu là, kéo nguyên hình Việt Nam lên châu Âu, trên bản đồ nó to gấp đôi."
+    },
+    {
+      "id": "24",
+      "scene": "s6",
+      "start": 71.05329166666665,
+      "end": 74.67529166666665,
+      "text": "Đất nước mình không nhỏ, chỉ là đứng gần xích đạo hơn nước Đức."
+    }
+  ]
+}

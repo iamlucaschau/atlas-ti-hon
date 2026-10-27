@@ -1,0 +1,191 @@
+{
+  "name": "p5-son-doong",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, ấm, như người kể chuyện phiêu lưu bằng bản đồ, có chút dí dỏm. Nhịp vừa phải: đọc con số, năm và địa danh chậm hơn một nhịp. Đoạn mở đầu kể như một câu chuyện bí ẩn, hơi hạ giọng. \"Howard Limbert\" đọc là \"Hao-ớt Lim-bớt\"; \"UNESCO\" đọc là \"U-nét-xcô\"; \"Sơn Đoòng\" đọc rõ dấu huyền. Các câu trả lời ngắn \"Sơn Đoòng.\" và \"Nước.\" ngắn, chắc, có nhịp nghỉ trước. Câu \"Chỉ có điều, không có thang máy.\" có ý cười nhẹ. Đoạn cáp treo đọc trung tính, không nghiêng bên nào. Câu cuối \"Mười tám năm để tìm lại một cửa hang, và bên trong là cả một bầu trời.\" chậm lại, hạ giọng kết, có chút ngân. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "batchBy": "take",
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Đầu những năm một nghìn chín trăm chín mươi, một người đi rừng ở Phong Nha trú mưa dưới vách đá."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Từ một cửa hang bên cạnh, gió lạnh và mây thổi ra."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Không có dây, ông không dám xuống."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Rồi ông không tìm lại được nó nữa."
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.15,
+      "text": "Cái hang ấy là gì?"
+    },
+    {
+      "id": "06",
+      "scene": "s1",
+      "take": "t01b",
+      "gapAfter": 0.15,
+      "text": "Sơn Đoòng."
+    },
+    {
+      "id": "07",
+      "scene": "s1",
+      "take": "t01b",
+      "gapAfter": 0.6,
+      "text": "Lối hang lớn nhất thế giới."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Người đi rừng tên là Hồ Khanh."
+    },
+    {
+      "id": "09",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Mười tám năm sau, ông mới tìm lại được cửa hang."
+    },
+    {
+      "id": "10",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Năm hai nghìn không trăm linh chín, ông dẫn đoàn thám hiểm Anh của Howard Limbert xuống."
+    },
+    {
+      "id": "11",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Đo bằng laser xong, cả đoàn mới biết mình đang đứng ở đâu."
+    },
+    {
+      "id": "12",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.15,
+      "text": "Có đoạn cao gần hai trăm mét, đủ chứa cả một dãy nhà chọc trời."
+    },
+    {
+      "id": "13",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.6,
+      "text": "Chỉ có điều, không có thang máy."
+    },
+    {
+      "id": "14",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.15,
+      "text": "Vì sao nó khổng lồ như vậy?"
+    },
+    {
+      "id": "15",
+      "scene": "s3",
+      "take": "t03b",
+      "gapAfter": 0.15,
+      "text": "Nước."
+    },
+    {
+      "id": "16",
+      "scene": "s3",
+      "take": "t03b",
+      "gapAfter": 0.15,
+      "text": "Khối đá vôi ở đây có từ khoảng bốn trăm triệu năm."
+    },
+    {
+      "id": "17",
+      "scene": "s3",
+      "take": "t03b",
+      "gapAfter": 0.15,
+      "text": "Một dòng sông ngầm len theo vết nứt, khoét dần suốt vài triệu năm."
+    },
+    {
+      "id": "18",
+      "scene": "s3",
+      "take": "t03b",
+      "gapAfter": 0.6,
+      "text": "Chỗ đá yếu, trần sụp xuống, ánh sáng lọt vào, rừng mọc ngay trong hang."
+    },
+    {
+      "id": "19",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "Năm hai nghìn không trăm mười bảy, Thủ tướng đồng ý chủ trương làm cáp treo tới hang Én gần đó, để đón thêm khách."
+    },
+    {
+      "id": "20",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "UNESCO đề nghị hủy mọi kế hoạch cáp treo vào Sơn Đoòng."
+    },
+    {
+      "id": "21",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.15,
+      "text": "Muốn tự vào xem?"
+    },
+    {
+      "id": "22",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.6,
+      "text": "Mỗi năm chỉ khoảng một nghìn người được đi."
+    },
+    {
+      "id": "23",
+      "scene": "s5",
+      "take": "t05b",
+      "gapAfter": 0.15,
+      "text": "Còn làn mây thổi ra năm ấy?"
+    },
+    {
+      "id": "24",
+      "scene": "s5",
+      "take": "t05b",
+      "gapAfter": 0.15,
+      "text": "Hang lớn đến mức tự sinh ra mây."
+    },
+    {
+      "id": "25",
+      "scene": "s5",
+      "take": "t05b",
+      "gapAfter": 0.6,
+      "text": "Mười tám năm để tìm lại một cửa hang, và bên trong là cả một bầu trời."
+    }
+  ]
+}

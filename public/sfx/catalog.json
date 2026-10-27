@@ -826,5 +826,32 @@
     "seconds": 3,
     "lufs": -13.4,
     "source": "https://pixabay.com/sound-effects/musical-perc-military-snare-drum-sound-effect-502886/"
+  },
+  {
+    "file": "sfx/ambience/mixkit-calm-thunderstorm-jungle-2415.mp3",
+    "category": "ambience",
+    "title": "Calm thunderstorm in the jungle (trimmed 12.5 s)",
+    "author": "Mixkit",
+    "seconds": 12,
+    "lufs": -21.8,
+    "source": "https://mixkit.co/free-sound-effects/rain/ (Mixkit Sound Effects Free License, item 2415)"
+  },
+  {
+    "file": "sfx/ambience/mixkit-water-drop-cave-3179.mp3",
+    "category": "ambience",
+    "title": "Water drop splashes in cave",
+    "author": "Mixkit",
+    "seconds": 2,
+    "lufs": -30.9,
+    "source": "https://mixkit.co/free-sound-effects/water-drop/ (Mixkit Sound Effects Free License, item 3179)"
+  },
+  {
+    "file": "sfx/ambience/mixkit-transition-windy-swoosh-1474.mp3",
+    "category": "ambience",
+    "title": "Transition windy swoosh",
+    "author": "Mixkit",
+    "seconds": 3,
+    "lufs": -10.2,
+    "source": "https://mixkit.co/free-sound-effects/wind/ (Mixkit Sound Effects Free License, item 1474)"
   }
 ]

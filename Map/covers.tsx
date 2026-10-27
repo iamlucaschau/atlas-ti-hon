@@ -30,6 +30,8 @@ import { Scene as MekongScene } from "./p4-mekong-voi-nuoc/Video";
 import { Scene as EvnScene } from "./p2-evn-gia-dien/Video";
 import { Scene as MetVuongScene } from "./p2-met-vuong-bac-ty/Video";
 import { Scene as ThuySiScene } from "./p1-thuy-si-linh-thue/Video";
+import { Scene as SonDoongScene } from "./p5-son-doong/Video";
+import { Scene as DienTichScene } from "./p3-dien-tich-viet-nam/Video";
 
 /** One hook line: "setup" lines are small and white, "punch" lines are huge and gold. */
 type Line = { text: string; punch?: boolean };
@@ -155,6 +157,12 @@ export const COVERS: CoverSpec[] = [
   // ~1.5 million in foreign service (C4); the title asks "why so rich", the cover answers with the soldiers; frame: end of line 05, arrows out of Switzerland
   { slug: "p1-thuy-si-linh-thue", Scene: ThuySiScene, frame: 380, hook: [{ text: "1,5 TRIỆU LÍNH THUÊ" }, { text: "GIỜ GIÀU NỨT VÁCH?", punch: true }], y: 170,
     mark: { x: 576, y: 740, r: 115, arrowFrom: [880, 1150] } },
+  // lost for ~18 years (C2); the passage holds a skyscraper (C4); frame: line 12, the cross-section with the tower inside
+  { slug: "p5-son-doong", Scene: SonDoongScene, frame: 872, hook: [{ text: "NHÉT VỪA NHÀ CHỌC TRỜI" }, { text: "LẠC MẤT 18 NĂM", punch: true }], y: 170,
+    mark: { x: 330, y: 880, r: 270, arrowFrom: [860, 1320] } },
+  // the twist (C10): the mainland's ghost dragged up to Europe swells ~×2 on the Mercator map; frame: line 24, ghost over Europe + Vietnam at home
+  { slug: "p3-dien-tich-viet-nam", Scene: DienTichScene, frame: 2165, hook: [{ text: "KÉO VIỆT NAM LÊN CHÂU ÂU" }, { text: "TO GẤP ĐÔI?!", punch: true }], y: 170,
+    mark: { x: 430, y: 770, r: 230, arrowFrom: [860, 1300] } },
 ];
 
 /** Props must be JSON (Remotion serialises them), so the composition passes the slug only. */

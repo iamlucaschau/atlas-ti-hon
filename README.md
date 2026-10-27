@@ -17,12 +17,12 @@ Xem `Map/_mau-tap/README.md` (5 cổng: Concept → Evidence → Script → Visu
 
 `Map/00_he-thong/`: Channel Bible (luật kênh), prompt các cổng, quy trình sản xuất, kho chủ đề, nhận diện kênh (logo, banner, mô tả, hashtag, caption).
 
-## 22 tập đã làm
+## 24 tập đã làm
 
 | Pillar | Tập | ID |
 |---|---|---|
 | P1 Vì sao bản đồ như thế này | Brunei bị cắt làm đôi · Singapore bị đuổi khỏi Malaysia · Tây Nguyên bỗng có biển · Phú Quốc sát Campuchia mà thuộc Việt Nam · Sao Thụy Sĩ giàu thế? (Không biển, không dầu) | `Map-P1-BruneiChiaDoi` · `Map-Singapore` · `Map-P1-TayNguyenCoBien` · `Map-P1-PhuQuocBrevie` · `Map-P1-ThuySiLinhThue` |
 | P2 Tiền & bản đồ | Đường sắt cao tốc 67 tỷ đô (v3) · Xứ sông nước lại khát cát · Con kênh lấy nước sông Hậu (Funan Techo, v3) · Cuộc giành khách: sân bay Long Thành · Điện hạt nhân: canh bạc hay lời giải? · Bắc Ninh xuất khẩu nhiều hơn cả TP.HCM · EVN từ lỗ 45 nghìn tỷ đến lãi 52 nghìn tỷ: nhờ trời mưa? · Mét vuông bạc tỷ chưa ai trả tiền? | `Map-P2-DuongSatCaoToc` · `Map-P2-CatMienTay` · `Map-P2-FunanTecho` · `Map-P2-LongThanh` · `Map-P2-DienHatNhan` · `Map-P2-BacNinhXuatKhau` · `Map-P2-EvnGiaDien` · `Map-P2-MetVuongBacTy` |
-| P3 Địa lý giải thích hiện tượng | Miền Tây lún (v2) · Bức tường Bạch Mã | `Map-P3-DbsclSutLun` · `Map-P3-BachMa` |
+| P3 Địa lý giải thích hiện tượng | Miền Tây lún (v2) · Bức tường Bạch Mã · Việt Nam to hơn bạn nghĩ (bản đồ Mercator) | `Map-P3-DbsclSutLun` · `Map-P3-BachMa` · `Map-P3-DienTichVietNam` |
 | P4 Tuyến đường & hành trình | Malacca – kênh Kra (v2) · Bay sang Mỹ: vì sao đường ngắn nhất vòng lên gần Alaska · Lào không có biển, cửa biển ở Hà Tĩnh · Mekong: ai giữ vòi nước của 6 quốc gia? | `Map-P4-MalaccaKra` · `Map-P4-DuongBayCong` · `Map-P4-LaoRaBien` · `Map-P4-MekongVoiNuoc` |
-| P5 Kỳ lạ & kỷ lục | Trung Quốc một múi giờ (v2) · Chỗ hẹp nhất Việt Nam · TP.HCM mới: một thành phố, ba thế giới | `Map-P5-TrungQuocMuiGio` · `Map-P5-ChoHepNhat` · `Map-P5-TphcmBaTheGioi` |
+| P5 Kỳ lạ & kỷ lục | Trung Quốc một múi giờ (v2) · Chỗ hẹp nhất Việt Nam · TP.HCM mới: một thành phố, ba thế giới · Hang lớn nhất thế giới, tìm thấy rồi lạc mất | `Map-P5-TrungQuocMuiGio` · `Map-P5-ChoHepNhat` · `Map-P5-TphcmBaTheGioi` · `Map-P5-SonDoong` |

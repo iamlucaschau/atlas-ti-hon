@@ -58,7 +58,7 @@ public/images/<slug>/ ảnh Lucas tạo (+ cut/ đã tách nền) · public/voic
 scripts/              tts.mjs, episode.mjs, words.py, cutout.py, fetch-sfx.mjs, music-list.json
 ```
 
-ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Map-P4-LaoRaBien`, `Map-P5-TphcmBaTheGioi`, `Map-P1-PhuQuocBrevie`, `Map-P2-BacNinhXuatKhau`, `Map-P4-MekongVoiNuoc`, `Map-P2-EvnGiaDien`, `Map-P2-MetVuongBacTy`, `Map-P1-ThuySiLinhThue`, `Cover-<slug>`.
+ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`, `Map-P3-DbsclSutLun`, `Map-P4-MalaccaKra`, `Map-P5-TrungQuocMuiGio`, `Map-P1-TayNguyenCoBien`, `Map-P2-CatMienTay`, `Map-P2-FunanTecho`, `Map-P3-BachMa`, `Map-P2-LongThanh`, `Map-P2-DienHatNhan`, `Map-P4-DuongBayCong`, `Map-P5-ChoHepNhat`, `Map-P4-LaoRaBien`, `Map-P5-TphcmBaTheGioi`, `Map-P1-PhuQuocBrevie`, `Map-P2-BacNinhXuatKhau`, `Map-P4-MekongVoiNuoc`, `Map-P2-EvnGiaDien`, `Map-P2-MetVuongBacTy`, `Map-P1-ThuySiLinhThue`, `Map-P5-SonDoong`, `Map-P3-DienTichVietNam`, `Cover-<slug>`.
 
 ## Luật Remotion (không được phá)
 
@@ -77,7 +77,7 @@ ID composition: `Map-Singapore`, `Map-P1-BruneiChiaDoi`, `Map-P2-DuongSatCaoToc`
 - **Tên nước:** mọi nước được gọi tên hoặc tô màu có `CountryTag` (tên + cờ + viền loé khi đọc tên); nước nền không nhãn.
 - **Hoàng Sa, Trường Sa:** khung có cả bờ biển Việt Nam / Biển Đông → chấm đảo màu Việt Nam (`VnIslands`); tên kiểu ghim chỉ hiện khi camera tới gần. Lãnh thổ tranh chấp: dừng ở Cổng 2 cho Lucas chọn cách vẽ.
 - **Số liệu:** không nguồn = không dùng; ghi loại số liệu (GDP/người ≠ thu nhập); video đối thủ, transcript không phải nguồn.
-- **Âm thanh:** chỉ SFX thật (Pixabay, `public/sfx/catalog.json`, `<Sfx>`/`SfxCues`, mức −15 LUFS), tối đa 1 SFX mỗi beat; không SFX tổng hợp/cartoon. Nhạc nền theo pillar `MusicBed` (`PILLAR_MUSIC`, −28 LUFS) — **Kevin MacLeod CC BY 4.0, ghi công bắt buộc trong mô tả** (2026-10-17; **không** dùng nhạc Pixabay: đều có Content ID, tập P4 từng bị chặn). Master: `loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.66:level=false`, AAC 256k.
+- **Âm thanh:** chỉ SFX thật (Pixabay, hoặc Mixkit từ 2026-10-26 — Bible §6; `public/sfx/catalog.json`, `<Sfx>`/`SfxCues`, mức −15 LUFS), tối đa 1 SFX mỗi beat; không SFX tổng hợp/cartoon. Nhạc nền theo pillar `MusicBed` (`PILLAR_MUSIC`, −28 LUFS) — **Kevin MacLeod CC BY 4.0, ghi công bắt buộc trong mô tả** (2026-10-17; **không** dùng nhạc Pixabay: đều có Content ID, tập P4 từng bị chặn). Master: `loudnorm=I=-14:TP=-2:LRA=11,aresample=48000,alimiter=limit=0.66:level=false`, AAC 256k.
 
 ## Giọng đọc (Gemini TTS)
 

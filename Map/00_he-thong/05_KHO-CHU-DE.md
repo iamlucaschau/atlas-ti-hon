@@ -18,6 +18,8 @@
 | Vì sao Constantinople không thuộc Hy Lạp? | | TB | ý tưởng (playbook) |
 | Vì sao Tây Nguyên bỗng có biển? (63 → 34 tỉnh, NQ 202/2025/QH15) | ✔ | TB (chính sách; Hoàng Sa, Trường Sa thuộc tỉnh có gộp) | **Đã làm** (`Map/p1-tay-nguyen-co-bien/`, 5 cổng duyệt 2026-10-18) |
 | Vì sao Phú Quốc sát Campuchia mà thuộc Việt Nam? (đường Brévié 1939 vòng qua mũi bắc đảo, hiệp định vùng nước lịch sử 1982) | ✔ | TB (chủ quyền: sơ đồ minh hoạ, không vẽ biên giới biển) | **Đã làm** (`Map/p1-phu-quoc-brevie/`, 5 cổng duyệt 2026-10-23) |
+| Sao Thụy Sĩ giàu thế? (Không biển, không dầu): từ cho thuê lính (~1,5 triệu người) tới giàu gấp 22 lần Việt Nam; Đội Cận vệ Vatican vẫn còn | ✔ | T (lịch sử nước ngoài; nguyên nhân giàu đủ phần) | **Đã làm** (`Map/p1-thuy-si-linh-thue/`, 5 cổng duyệt 2026-10-25, bản v2) |
+| Việt Nam đã chiến thắng Mỹ như thế nào (góc "Hai bước" 1973 → 1975, hoặc "Con đường không cắt được": Trường Sơn) | ✔ | CAO (chiến tranh, chính trị: trung tính, không thương vong, hai phe sử học) | **Tạm gác, cần nghiên cứu thêm** (Lucas 2026-10-25; hồ sơ `Map/cong-1_2026-10-24-chien-tranh-viet-nam.md`) |
 
 ## P2 — Tiền & bản đồ (30%, ưu tiên Việt Nam; luôn ≥ 2 nguồn, ghi loại giá)
 
@@ -37,6 +39,8 @@
 | Bài toán hoàn vốn của sân bay Long Thành: số khách thật so với dự tính của chủ đầu tư | C (tài chính doanh nghiệp niêm yết; không dự báo) | ý tưởng 2026-10-20 — chờ báo cáo khả thi gốc hoặc 1 năm khai thác |
 | Cái Mép – Thị Vải: vì sao tàu container lớn nhất cập cảng ở Vũng Tàu cũ, không vào cảng Sài Gòn? (độ sâu luồng sông) | T | ý tưởng 2026-10-18, chấm sơ bộ 36 |
 | Thâm Quyến: từ làng chài thành siêu đô thị — vì sao chọn đúng chỗ sát Hồng Kông? | T | ý tưởng 2026-10-18, chấm sơ bộ 35 |
+| Giá điện: EVN từ lỗ 45 nghìn tỷ đến lãi 52 nghìn tỷ: nhờ trời mưa? (than đắt 2022, đề xuất tính lỗ vào giá, Bộ Công Thương ↔ Bộ Tài chính, thủy điện +24,5 %, công ty mẹ còn lỗ 5.611 tỷ) | TB (doanh nghiệp nhà nước, giá điện: trung tính, hai phe) | **Đã làm** (`Map/p2-evn-gia-dien/`, 5 cổng duyệt 2026-10-24) |
+| Mét vuông bạc tỷ: Hàng Ngang 702 triệu/m² trên giấy ↔ Thủ Thiêm từng 2,44 tỷ/m² trên sàn đấu (hai loại giá, 48 Hàng Ngang, bỏ cọc 600 tỷ) | TB (giá đất, doanh nghiệp: trung tính, không nêu tên người, không gợi ý đầu tư) | **Đã làm** (`Map/p2-met-vuong-bac-ty/`, 5 cổng duyệt 2026-10-24) |
 
 ## P3 — Địa lý giải thích hiện tượng (20%)
 
@@ -50,6 +54,7 @@
 | Vì sao máy bay không bay qua Tây Tạng? | ✔ | T | ý tưởng (playbook) |
 | Bức tường Bạch Mã: chặn rét cho miền Nam, trút mưa xuống miền Trung (ghép "Sài Gòn 2 mùa" + "miền Trung lũ") | ✔ | T | **Đã làm** (`Map/p3-bach-ma/`, 5 cổng duyệt 2026-10-19) |
 | Vì sao Sa Pa có tuyết, còn gần như cả Đông Nam Á thì không? | ✔ | T | ý tưởng 2026-10-18, 35,5 (hoặc làm chi tiết trong tập Bạch Mã) |
+| Diện tích Việt Nam: bản đồ Mercator làm Việt Nam trông nhỏ (Đức ×2,5, Phần Lan ×5, kéo lên châu Âu ×2) | ✔ | T (Hoàng Sa, Trường Sa: phương án A) | **Đã làm** (`Map/p3-dien-tich-viet-nam/`, 5 cổng duyệt 2026-10-27) |
 | Vịnh Hạ Long: vì sao có gần 2.000 hòn đảo đá vôi? | ✔ | T | ý tưởng 2026-10-18, 34 |
 
 ## P4 — Tuyến đường & hành trình (10%)
@@ -60,10 +65,6 @@
 | Bay sang Mỹ: vì sao đường ngắn nhất lại vòng lên gần Alaska? (bản đồ Mercator, đường tròn lớn) | ✔ | T | **Đã làm** (`Map/p4-duong-bay-cong/`, 5 cổng duyệt 2026-10-21) |
 | Lào không có biển, nắm 60 % một cảng biển ở Hà Tĩnh (Vũng Áng, đường sắt Viêng Chăn – Vũng Áng) | ✔ | T | **Đã làm** (`Map/p4-lao-ra-bien/`, 5 cổng duyệt 2026-10-22) |
 | Mekong: ai giữ vòi nước của 6 quốc gia? (11 đập Lan Thương, nước đến từ mưa hạ lưu, hạn 2019 hai phe, Biển Hồ chảy ngược) | ✔ | TB (chính trị Trung Quốc – hạ lưu: trung tính, hai phe) | **Đã làm** (`Map/p4-mekong-voi-nuoc/`, 5 cổng duyệt 2026-10-24) |
-| Giá điện: EVN từ lỗ 45 nghìn tỷ đến lãi 52 nghìn tỷ: nhờ trời mưa? (than đắt 2022, đề xuất tính lỗ vào giá, Bộ Công Thương ↔ Bộ Tài chính, thủy điện +24,5 %, công ty mẹ còn lỗ 5.611 tỷ) | ✔ | TB (doanh nghiệp nhà nước, giá điện: trung tính, hai phe) | **Đã làm** (`Map/p2-evn-gia-dien/`, 5 cổng duyệt 2026-10-24) |
-| Mét vuông bạc tỷ: Hàng Ngang 702 triệu/m² trên giấy ↔ Thủ Thiêm từng 2,44 tỷ/m² trên sàn đấu (hai loại giá, 48 Hàng Ngang, bỏ cọc 600 tỷ) | ✔ | TB (giá đất, doanh nghiệp: trung tính, không nêu tên người, không gợi ý đầu tư) | **Đã làm** (`Map/p2-met-vuong-bac-ty/`, 5 cổng duyệt 2026-10-24) |
-| Việt Nam đã chiến thắng Mỹ như thế nào (góc "Hai bước" 1973 → 1975, hoặc "Con đường không cắt được": Trường Sơn) | ✔ | CAO (chiến tranh, chính trị: trung tính, không thương vong, hai phe sử học) | **Tạm gác, cần nghiên cứu thêm** (Lucas 2026-10-25; hồ sơ `Map/cong-1_2026-10-24-chien-tranh-viet-nam.md`) |
-| Sao Thụy Sĩ giàu thế? (Không biển, không dầu): từ cho thuê lính (~1,5 triệu người) tới giàu gấp 22 lần Việt Nam; Đội Cận vệ Vatican vẫn còn | ✔ | T (lịch sử nước ngoài; nguyên nhân giàu đủ phần) | **Đã làm** (`Map/p1-thuy-si-linh-thue/`, 5 cổng duyệt 2026-10-25, bản v2) |
 | Vì sao một con tàu mắc kẹt ở kênh Suez làm cả thế giới thiếu hàng? | | T | ý tưởng |
 | Vì sao không thể lái xe từ Bắc Mỹ xuống Nam Mỹ? (Darien Gap) | | T | ý tưởng (playbook) |
 | Vì sao tàu Thống Nhất Bắc–Nam chạy lâu như vậy? | ✔ | TB (số liệu ngành) | ý tưởng |
@@ -80,6 +81,7 @@
 | ↳ Cần Thơ mới: Cần Thơ (phố sông) – Sóc Trăng (văn hoá Khmer) – Hậu Giang (kênh rạch) | T–TB (văn hoá dân tộc: nói tích cực, có nguồn) | ý tưởng 2026-10-22 |
 | ↳ Gia Lai mới: Tây Nguyên (cao nguyên) + Bình Định (biển Quy Nhơn) — tỉnh "từ núi xuống biển" | T | ý tưởng 2026-10-22 |
 | Chỗ hẹp nhất Việt Nam: chưa đầy 50 km từ biển sang Lào (Quảng Bình, sáp nhập 2025) | T | **Đã làm** (`Map/p5-cho-hep-nhat/`, 5 cổng duyệt 2026-10-21) |
+| Hang lớn nhất thế giới, tìm thấy rồi lạc mất (Sơn Đoòng: Hồ Khanh, 18 năm, lối hang lớn nhất, mây trong hang, cáp treo hai phe) | T | **Đã làm** (`Map/p5-son-doong/`, 5 cổng duyệt 2026-10-27) |
 | Vì sao Tây Ban Nha có những biên giới kỳ lạ nhất châu Âu? | T | ý tưởng (playbook) |
 | Hòn đảo đổi quốc tịch mỗi 6 tháng (đảo Pheasant) | T | ý tưởng |
 | Thị trấn nơi biên giới cắt ngang cả quán cà phê (Baarle) | T | ý tưởng |

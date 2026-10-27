@@ -378,7 +378,7 @@ export const MapLabel: React.FC<{ text: string; x: number; y: number; o?: number
 /** Five-point star, unit radius (flag stars). */
 const STAR = "M0,-1 L0.2245,-0.309 L0.951,-0.309 L0.3633,0.118 L0.5878,0.809 L0,0.382 L-0.5878,0.809 L-0.3633,0.118 L-0.951,-0.309 L-0.2245,-0.309 Z";
 export type FlagKind = "uk" | "singapore" | "malaysia" | "vietnam" | "thailand" | "china" | "brunei" | "cambodia" | "japan" | "russia" | "usa" | "laos" | "myanmar"
-  | "switzerland" | "france" | "vatican";
+  | "switzerland" | "france" | "vatican" | "germany" | "italy" | "denmark" | "finland";
 
 export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kind, w = 64, f = 0 }) => {
   const h = w * 0.62;
@@ -490,6 +490,36 @@ export const Flag: React.FC<{ kind: FlagKind; w?: number; f?: number }> = ({ kin
             <rect width={w} height={h} fill="none" stroke="#BBB" strokeWidth={1} />
             <path d={`M${w * 0.62} ${h * 0.3} L${w * 0.88} ${h * 0.72}`} stroke="#D4A62A" strokeWidth={h * 0.08} strokeLinecap="round" />
             <path d={`M${w * 0.88} ${h * 0.3} L${w * 0.62} ${h * 0.72}`} stroke="#9EA3A8" strokeWidth={h * 0.08} strokeLinecap="round" />
+          </g>
+        )}
+        {kind === "germany" && (
+          <g>
+            <rect width={w} height={h / 3} fill="#000000" />
+            <rect y={h / 3} width={w} height={h / 3} fill="#DD0000" />
+            <rect y={(h * 2) / 3} width={w} height={h / 3} fill="#FFCE00" />
+          </g>
+        )}
+        {kind === "italy" && (
+          <g>
+            <rect width={w / 3} height={h} fill="#009246" />
+            <rect x={w / 3} width={w / 3} height={h} fill="#FFFFFF" />
+            <rect x={(w * 2) / 3} width={w / 3} height={h} fill="#CE2B37" />
+          </g>
+        )}
+        {kind === "denmark" && (
+          <g>
+            {/* red field, white Nordic cross (vertical bar towards the hoist) */}
+            <rect width={w} height={h} fill="#C8102E" />
+            <rect x={w * 0.32} width={h * 0.14} height={h} fill="#FFFFFF" />
+            <rect y={h * 0.43} width={w} height={h * 0.14} fill="#FFFFFF" />
+          </g>
+        )}
+        {kind === "finland" && (
+          <g>
+            {/* white field, blue Nordic cross */}
+            <rect width={w} height={h} fill="#FFFFFF" />
+            <rect x={w * 0.28} width={h * 0.28} height={h} fill="#002F6C" />
+            <rect y={h * 0.36} width={w} height={h * 0.28} fill="#002F6C" />
           </g>
         )}
         {kind === "japan" && (

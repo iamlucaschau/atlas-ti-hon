@@ -1,0 +1,82 @@
+﻿GÓI XUẤT BẢN – "Việt Nam to hơn bạn nghĩ (do bản đồ cả đấy)"
+Tập P3 · p3-dien-tich-viet-nam · Kênh Atlas Tí Hon
+Video: p3-dien-tich-viet-nam.mp4 (9:16, 75 giây) · Ảnh bìa: cover.jpg
+Cổng 5 – Lucas duyệt (2026-10-27)
+
+Lưu ý khi trả lời bình luận:
+- Diện tích ~331.000 km² là diện tích tự nhiên theo kiểm kê đất 31/12/2023 (QĐ 3411/QĐ-BTNMT: 33.133.831 ha), KHÔNG tính vùng biển. World Bank ghi 331.230 km². Các nguồn khác ghi 331–332 nghìn km² tùy năm và cách tính mặt nước.
+- "Trông to gấp 2,5 / gấp 5 / to gấp đôi" là Luis tính: đo diện tích từng nước trên phép chiếu Mercator chuẩn (dữ liệu Natural Earth 1:50m). Diện tích thật: Đức lớn hơn Việt Nam khoảng 8%, Phần Lan lớn hơn khoảng 2%.
+- Video KHÔNG nói "bản đồ cố tình làm nhỏ Việt Nam": phép chiếu Mercator phóng to mọi vùng xa xích đạo, đó là cái giá để giữ đúng hướng cho người đi biển.
+- Google Maps tính tọa độ bằng Mercator (Web Mercator); bản trên máy tính có chế độ quả địa cầu khi thu nhỏ.
+- Khi "kéo" Việt Nam lên châu Âu, video chỉ kéo bóng phần đất liền; Việt Nam thật cùng Hoàng Sa, Trường Sa vẫn ở nguyên chỗ.
+
+
+==================================================
+1. TIÊU ĐỀ (thử A/B)
+==================================================
+
+1. Việt Nam to hơn bạn nghĩ (do bản đồ cả đấy)   (CHÍNH)
+2. Phần Lan bằng Việt Nam, sao trông to gấp 5?
+3. Vì sao Việt Nam trông nhỏ hơn nước Đức?
+4. Việt Nam lên châu Âu: từ Đan Mạch tới Napoli
+
+
+==================================================
+2. MÔ TẢ (YouTube)
+==================================================
+
+Trên bản đồ, nước Đức trông to gấp 2,5 lần Việt Nam. Thực tế, Đức chỉ rộng hơn khoảng 8%.
+
+Việt Nam rộng khoảng 331.000 km², lớn hơn Ý và Anh. Từ Lũng Cú tới Đất Mũi dài khoảng 1.650 km đường chim bay, bằng quãng từ Copenhagen (Đan Mạch) tới Napoli (Ý). Vậy sao trên bản đồ Việt Nam trông nhỏ thế? Vì tấm bản đồ thế giới quen thuộc dùng phép chiếu Gerardus Mercator đưa ra năm 1569: vẽ cho người đi biển, giữ một hướng la bàn là một đường thẳng, nhưng càng xa xích đạo, đất càng bị phóng to. Greenland trông to ngang châu Phi, trong khi châu Phi lớn gấp khoảng 14 lần. Phần Lan rộng gần bằng Việt Nam nhưng trên bản đồ trông to gấp 5. Năm 1973, sử gia Đức Arno Peters tố bản đồ Mercator thiên vị phương Bắc và đưa ra bản đồ đúng diện tích; giới vẽ bản đồ phản bác rằng bản đồ ấy làm méo hình dáng và không mới (James Gall đã vẽ tương tự từ năm 1855). Bản đồ phẳng nào cũng méo một điều gì đó. Kéo nguyên hình Việt Nam lên châu Âu, trên bản đồ nó to gấp đôi: Việt Nam không nhỏ, chỉ là nằm gần xích đạo hơn.
+
+Theo bạn, sách giáo khoa nên dùng bản đồ đúng hình dáng (Mercator) hay đúng diện tích (Peters)?
+
+Atlas Tí Hon – bản đồ nhỏ, câu chuyện lớn.
+
+Nguồn (truy cập 27/10/2026):
+- Diện tích tự nhiên cả nước 31/12/2023 – QĐ 3411/QĐ-BTNMT (Thời báo Tài chính Việt Nam); đối chiếu QĐ 3048/2022, QĐ 719/2021
+- Diện tích và xếp hạng (Việt Nam, Đức, Ý, Anh, Phần Lan) – World Bank, chỉ số AG.SRF.TOTL.K2 (2018, qua IndexMundi); LawNet
+- Lũng Cú – Đất Mũi ~1.650 km – Đại sứ quán Việt Nam tại Berlin
+- Phép chiếu Mercator (1569), vẽ cho người đi biển – Britannica; EBSCO Research Starters
+- Greenland 2.166.086 km² – CIA World Factbook; châu Phi ~30,4 triệu km² – Britannica; WorldAtlas
+- Arno Peters (1973), phản biện của giới bản đồ, James Gall (1855) – A. Favretto, Bollettino AIC (2020); The National; Cartographer's Tale
+- Google Maps dùng phép chiếu Mercator – Google Maps Platform, "Map and Tile Coordinates"; Web Mercator (EPSG:3857)
+- Tỉ lệ "trên bản đồ" (Đức ×2,5, Phần Lan ×5, Việt Nam kéo lên châu Âu ×2,2) và khoảng cách Copenhagen – Napoli 1.654 km: Luis tính từ Natural Earth 1:50m (d3-geo)
+- Nhạc: "Floating Cities" Kevin MacLeod (incompetech.com) – Licensed under Creative Commons: By Attribution 4.0 – https://creativecommons.org/licenses/by/4.0/
+- Bản đồ: Natural Earth. Lưới vĩ tuyến, vòng tròn Tissot, bản đồ đúng diện tích (Gall–Peters), bóng Việt Nam là hình minh họa theo phép tính. Gerardus Mercator, Arno Peters là hình minh họa tôn trọng, không phải chân dung. Giọng đọc tạo bằng AI.
+
+#Shorts #AtlasTiHon #BanDo #DiaLy #VietNam #DienTich #Mercator #BanDoTheGioi #KienThuc #SuThatThuVi
+
+
+==================================================
+3. HASHTAG (YouTube)
+==================================================
+
+#Shorts #AtlasTiHon #BanDo #DiaLy #VietNam #DienTich #Mercator #BanDoTheGioi #KienThuc #SuThatThuVi
+
+
+==================================================
+4. ẢNH BÌA
+==================================================
+
+cover.jpg (1080×1920): khung giây 72,2 – bóng đất liền Việt Nam kéo lên châu Âu (từ Đan Mạch xuống Ý), số "×2,2" bên cạnh.
+Chữ trên bìa 2 tầng: "KÉO VIỆT NAM LÊN CHÂU ÂU" / "TO GẤP ĐÔI?!"; vòng đỏ quanh bóng Việt Nam.
+Tiêu đề nói "to hơn bạn nghĩ", bìa cho thấy ngay bằng hình.
+
+
+==================================================
+5. BÌNH LUẬN GHIM
+==================================================
+
+Theo bạn, sách giáo khoa nên dùng bản đồ đúng hình dáng (Mercator) hay đúng diện tích (Peters)? 👇
+
+
+==================================================
+6. CAPTION + HASHTAG (TikTok / Facebook Reels / Instagram)
+==================================================
+
+Trên bản đồ, nước Đức trông to gấp 2,5 lần Việt Nam… thực tế chỉ hơn 8% 🗺️
+Kéo nguyên hình Việt Nam lên châu Âu: dài từ Đan Mạch xuống tận Napoli, và trên bản đồ to gấp đôi.
+Bạn đã từng nghĩ Việt Nam nhỏ chưa? 👇
+
+#AtlasTiHon #BanDo #DiaLy #VietNam #DienTich #Mercator

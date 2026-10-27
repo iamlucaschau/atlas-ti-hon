@@ -44,7 +44,7 @@ node scripts/episode.mjs export "Map/<slug>" --loop --tail=0.7
 python -P scripts/words.py <slug> vi
 ```
 - ~1 request TTS / cảnh (Free Tier: 10/ngày/key/model; số key = số dòng trong `gemini_key.txt`). Đổi chữ 1 câu → chỉ tạo lại cảnh đó. Đổi tempo / khoảng nghỉ → **không tốn request**.
-- `words.py` nghe lại **file riêng của từng câu** và so chữ đầu / chữ cuối với kịch bản; `export` so tốc độ đọc từng câu. Cả hai in `⚠ check the split` khi một câu bị cắt lệch (một lượt TTS nhiều câu bị cắt lệch chỗ ngắt). Khi có cảnh báo: nghe lại câu đó; nếu lệch thì đổi `take` của các câu sau thành lượt riêng trong `voiceover/<slug>.json` (vd. `t08` → `t08b`) rồi chạy lại `npm run voiceover` (tốn 1–2 request).
+- `words.py` nghe lại **file riêng của từng câu** và so chữ đầu / chữ cuối với kịch bản; `export` so tốc độ đọc từng câu. Cả hai in `⚠ check the split` khi một câu bị cắt lệch (một lượt TTS nhiều câu bị cắt lệch chỗ ngắt). Khi có cảnh báo: nghe lại câu đó; nếu lệch thì đổi `take` của các câu sau thành lượt riêng trong `voiceover/<slug>.json` (vd. `t08` → `t08b`) rồi chạy lại `npm run voiceover` (tốn 1–2 request). ⚠️ Lượt **phía trước** (giờ chỉ còn các câu đầu) được `tts.mjs` dùng lại từ bản cắt cũ, nên câu cuối của nó vẫn dính chữ câu sau → xoá `voiceover/.cache/<slug>/<hash>/<id>.wav` của các câu lượt đó (hash trong `src/voiceover/<slug>.json`) rồi chạy lại (2026-10-27, tập diện tích).
 - Kết quả: `src/voiceover/<slug>.timing.json` (mốc thời gian từng câu), `<slug>.words.json` (mốc từng chữ cho phụ đề karaoke), `public/voiceover/<slug>/vo.mp3`.
 
 ## 2. Beat sheet (Cổng 4)

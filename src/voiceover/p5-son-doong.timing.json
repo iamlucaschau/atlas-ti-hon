@@ -1,0 +1,182 @@
+{
+  "durationInSeconds": 72.65491666666667,
+  "loop": true,
+  "tail": 0.7,
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "start": 0.05,
+      "end": 4.672,
+      "text": "Đầu những năm một nghìn chín trăm chín mươi, một người đi rừng ở Phong Nha trú mưa dưới vách đá."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "start": 4.821666666666667,
+      "end": 7.801666666666668,
+      "text": "Từ một cửa hang bên cạnh, gió lạnh và mây thổi ra."
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "start": 7.951458333333334,
+      "end": 9.796458333333334,
+      "text": "Không có dây, ông không dám xuống."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "start": 9.946166666666667,
+      "end": 11.948166666666665,
+      "text": "Rồi ông không tìm lại được nó nữa."
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "start": 12.097833333333334,
+      "end": 13.226833333333333,
+      "text": "Cái hang ấy là gì?"
+    },
+    {
+      "id": "06",
+      "scene": "s1",
+      "start": 13.376791666666668,
+      "end": 14.029791666666668,
+      "text": "Sơn Đoòng."
+    },
+    {
+      "id": "07",
+      "scene": "s1",
+      "start": 14.179958333333333,
+      "end": 15.667958333333333,
+      "text": "Lối hang lớn nhất thế giới."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "start": 16.267916666666668,
+      "end": 17.75391666666667,
+      "text": "Người đi rừng tên là Hồ Khanh."
+    },
+    {
+      "id": "09",
+      "scene": "s2",
+      "start": 17.903708333333334,
+      "end": 20.387708333333336,
+      "text": "Mười tám năm sau, ông mới tìm lại được cửa hang."
+    },
+    {
+      "id": "10",
+      "scene": "s2",
+      "start": 20.53725,
+      "end": 24.73825,
+      "text": "Năm hai nghìn không trăm linh chín, ông dẫn đoàn thám hiểm Anh của Howard Limbert xuống."
+    },
+    {
+      "id": "11",
+      "scene": "s2",
+      "start": 24.888625,
+      "end": 27.830625,
+      "text": "Đo bằng laser xong, cả đoàn mới biết mình đang đứng ở đâu."
+    },
+    {
+      "id": "12",
+      "scene": "s2",
+      "start": 27.98079166666667,
+      "end": 31.677791666666668,
+      "text": "Có đoạn cao gần hai trăm mét, đủ chứa cả một dãy nhà chọc trời."
+    },
+    {
+      "id": "13",
+      "scene": "s2",
+      "start": 31.827958333333335,
+      "end": 33.547958333333334,
+      "text": "Chỉ có điều, không có thang máy."
+    },
+    {
+      "id": "14",
+      "scene": "s3",
+      "start": 34.14841666666667,
+      "end": 36.06741666666667,
+      "text": "Vì sao nó khổng lồ như vậy?"
+    },
+    {
+      "id": "15",
+      "scene": "s3",
+      "start": 36.21754166666667,
+      "end": 36.99854166666667,
+      "text": "Nước."
+    },
+    {
+      "id": "16",
+      "scene": "s3",
+      "start": 37.148625,
+      "end": 40.055625000000006,
+      "text": "Khối đá vôi ở đây có từ khoảng bốn trăm triệu năm."
+    },
+    {
+      "id": "17",
+      "scene": "s3",
+      "start": 40.20554166666667,
+      "end": 44.19954166666667,
+      "text": "Một dòng sông ngầm len theo vết nứt, khoét dần suốt vài triệu năm."
+    },
+    {
+      "id": "18",
+      "scene": "s3",
+      "start": 44.349375,
+      "end": 49.702375,
+      "text": "Chỗ đá yếu, trần sụp xuống, ánh sáng lọt vào, rừng mọc ngay trong hang."
+    },
+    {
+      "id": "19",
+      "scene": "s4",
+      "start": 50.302458333333334,
+      "end": 56.076458333333335,
+      "text": "Năm hai nghìn không trăm mười bảy, Thủ tướng đồng ý chủ trương làm cáp treo tới hang Én gần đó, để đón thêm khách."
+    },
+    {
+      "id": "20",
+      "scene": "s4",
+      "start": 56.22679166666667,
+      "end": 59.56479166666667,
+      "text": "UNESCO đề nghị hủy mọi kế hoạch cáp treo vào Sơn Đoòng."
+    },
+    {
+      "id": "21",
+      "scene": "s4",
+      "start": 59.71520833333334,
+      "end": 60.78120833333334,
+      "text": "Muốn tự vào xem?"
+    },
+    {
+      "id": "22",
+      "scene": "s4",
+      "start": 60.93116666666667,
+      "end": 62.86816666666667,
+      "text": "Mỗi năm chỉ khoảng một nghìn người được đi."
+    },
+    {
+      "id": "23",
+      "scene": "s5",
+      "start": 63.46854166666667,
+      "end": 65.03954166666666,
+      "text": "Còn làn mây thổi ra năm ấy?"
+    },
+    {
+      "id": "24",
+      "scene": "s5",
+      "start": 65.18941666666667,
+      "end": 67.11641666666668,
+      "text": "Hang lớn đến mức tự sinh ra mây."
+    },
+    {
+      "id": "25",
+      "scene": "s5",
+      "start": 67.266625,
+      "end": 72.054625,
+      "text": "Mười tám năm để tìm lại một cửa hang, và bên trong là cả một bầu trời."
+    }
+  ]
+}

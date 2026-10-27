@@ -1,0 +1,191 @@
+{
+  "name": "p3-dien-tich-viet-nam",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Orus",
+  "style": "Giọng nam Việt Nam trưởng thành, giọng miền Bắc chuẩn, trầm vừa, ấm, như người kể chuyện bản đồ đang chỉ ra một điều bất ngờ, có chút dí dỏm. Nhịp vừa phải: đọc con số, năm và địa danh chậm hơn một nhịp. \"Gerardus Mercator\" đọc là \"Giê-rác-đút Méc-ca-to\"; \"Mercator\" đọc là \"Méc-ca-to\"; \"Arno Peters\" đọc là \"A-nô Pê-tớt\"; \"Greenland\" đọc là \"Grin-len\"; \"Napoli\" đọc là \"Na-pô-li\"; \"Google Maps\" đọc là \"Gu-gồ Máp\". Các câu trả lời ngắn \"Gần bằng nhau.\" và \"Chính tấm bản đồ.\" ngắn, chắc, có nhịp nghỉ trước. Đoạn Peters và giới vẽ bản đồ đọc trung tính, không nghiêng bên nào. Câu cuối \"Đất nước mình không nhỏ, chỉ là đứng gần xích đạo hơn nước Đức.\" chậm lại, hạ giọng kết, có chút tự hào nhẹ. Không cường điệu.",
+  "trimSilence": true,
+  "tempo": 1.1,
+  "gaps": {
+    "sentence": 0.06,
+    "paragraph": 0.12,
+    "scene": 0.25
+  },
+  "batchBy": "take",
+  "cast": {
+    "greenland": {
+      "voice": "Puck",
+      "style": "Giọng nam trẻ, giọng miền Nam Việt Nam, bông đùa, hơi chống chế như bị bắt quả tang chỉnh ảnh, cười nhẹ. Nói tự nhiên, nhanh, ngắn. Không cường điệu, không chế giễu."
+    }
+  },
+  "lines": [
+    {
+      "id": "01",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.06,
+      "text": "Trên bản đồ, nước Đức trông to gấp đôi rưỡi Việt Nam."
+    },
+    {
+      "id": "02",
+      "scene": "s1",
+      "take": "t01",
+      "gapAfter": 0.25,
+      "text": "Thực tế?"
+    },
+    {
+      "id": "03",
+      "scene": "s1",
+      "take": "t01b",
+      "gapAfter": 0.06,
+      "text": "Gần bằng nhau."
+    },
+    {
+      "id": "04",
+      "scene": "s1",
+      "take": "t01b",
+      "gapAfter": 0.06,
+      "text": "Đức chỉ rộng hơn chừng tám phần trăm."
+    },
+    {
+      "id": "05",
+      "scene": "s1",
+      "take": "t01b",
+      "gapAfter": 0.25,
+      "text": "Vậy cái gì đang làm Việt Nam nhỏ đi?"
+    },
+    {
+      "id": "06",
+      "scene": "s1",
+      "take": "t01c",
+      "gapAfter": 0.25,
+      "text": "Chính tấm bản đồ."
+    },
+    {
+      "id": "07",
+      "scene": "s2",
+      "take": "t01c",
+      "gapAfter": 0.15,
+      "text": "Việt Nam rộng khoảng ba trăm ba mươi mốt nghìn ki-lô-mét vuông."
+    },
+    {
+      "id": "08",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Lớn hơn Ý, hơn cả Anh, dù trên bản đồ trông ngược lại."
+    },
+    {
+      "id": "09",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.06,
+      "text": "Từ Lũng Cú tới Đất Mũi dài một nghìn sáu trăm năm mươi ki-lô-mét."
+    },
+    {
+      "id": "10",
+      "scene": "s2",
+      "take": "t02",
+      "gapAfter": 0.25,
+      "text": "Đặt lên châu Âu, quãng ấy kéo từ Đan Mạch xuống tận Napoli."
+    },
+    {
+      "id": "11",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Tấm bản đồ ấy ra đời năm một nghìn năm trăm sáu mươi chín."
+    },
+    {
+      "id": "12",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Gerardus Mercator vẽ nó cho người đi biển."
+    },
+    {
+      "id": "13",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.06,
+      "text": "Cứ giữ một hướng la bàn, trên bản đồ là một đường thẳng."
+    },
+    {
+      "id": "14",
+      "scene": "s3",
+      "take": "t03",
+      "gapAfter": 0.25,
+      "text": "Cái giá: càng xa xích đạo, đất càng bị phóng to."
+    },
+    {
+      "id": "15",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.06,
+      "text": "Greenland trông to ngang châu Phi."
+    },
+    {
+      "id": "16",
+      "scene": "s4",
+      "take": "t04",
+      "gapAfter": 0.25,
+      "text": "Thực ra, châu Phi lớn gấp mười bốn lần."
+    },
+    {
+      "id": "17",
+      "scene": "s4",
+      "take": "t04g",
+      "gapAfter": 0.25,
+      "text": "Do góc chụp thôi mà!",
+      "who": "greenland"
+    },
+    {
+      "id": "18",
+      "scene": "s4",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Phần Lan rộng gần bằng Việt Nam, nhưng trên bản đồ trông to gấp năm."
+    },
+    {
+      "id": "19",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Năm một nghìn chín trăm bảy mươi ba, sử gia Đức Arno Peters họp báo, tố bản đồ này thiên vị phương Bắc."
+    },
+    {
+      "id": "20",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Giới vẽ bản đồ cãi lại: bản đồ của ông méo hình dáng, lại chẳng mới."
+    },
+    {
+      "id": "21",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.06,
+      "text": "Bản đồ phẳng nào cũng méo."
+    },
+    {
+      "id": "22",
+      "scene": "s5",
+      "take": "t05",
+      "gapAfter": 0.25,
+      "text": "Google Maps trên điện thoại bạn vẫn dựa trên Mercator, vì nó giữ đúng hướng."
+    },
+    {
+      "id": "23",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.06,
+      "text": "Trớ trêu là, kéo nguyên hình Việt Nam lên châu Âu, trên bản đồ nó to gấp đôi."
+    },
+    {
+      "id": "24",
+      "scene": "s6",
+      "take": "t06",
+      "gapAfter": 0.25,
+      "text": "Đất nước mình không nhỏ, chỉ là đứng gần xích đạo hơn nước Đức."
+    }
+  ]
+}

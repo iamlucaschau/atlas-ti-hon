@@ -151,6 +151,7 @@ Giữ của Engine V2: một hành động bản đồ chính mỗi beat; nhãn 
 
   **Content ID:** nhạc Kevin MacLeod cũng đã đăng ký Content ID; khiếu nại thường do **thiếu ghi công** → thêm dòng ghi công vào mô tả rồi kháng nghị (gỡ trong ~72 giờ), nhiều video thì dùng form gỡ hàng loạt trên trang incompetech "YouTube Content ID" hoặc email help@incompetech.com. **Không** dùng lại nhạc Pixabay: 2026-10-17 cả 10 bài cũ đều "Content ID Registered", tập P4 bị chặn toàn cầu (khiếu nại "Seaside Morning" — Aleksey Chistilin / Elite Alliance Music); dò 120 bài Pixabay chỉ 2 bài chưa đăng ký. **Trước khi chọn nhạc mới:** kiểm trang bài có "Content ID" / chính sách khiếu nại của tác giả, và đưa dòng ghi công vào `xuat-ban.txt`.
 - SFX thật Pixabay: whoosh mỗi cú bay, click khi sticker hiện, deep hit ở con số chốt; không pop/ding hoạt hình; master −14 LUFS / −1,5 dBTP.
+- **Nguồn SFX thứ hai: Mixkit** (Lucas 2026-10-26, khi Pixabay chặn bằng kiểm tra chống bot). Giấy phép *Mixkit Sound Effects Free License*: dùng được trong video YouTube và mạng xã hội, kể cả có kiếm tiền, **không cần ghi công**; **không** phát tán file riêng lẻ, **không** đăng ký Content ID. File để ở `public/sfx/ambience/mixkit-*.mp3` (git bỏ qua như SFX Pixabay), ghi nguồn + số item trong `public/sfx/catalog.json`. SFX dài (mưa, gió) cắt sẵn ≤ 15 s, có fade, đặt mức thấp hơn (−20 đến −24 LUFS) để làm nền dưới giọng đọc.
 
 ## 7. Cấu trúc bắt buộc mọi tập
 
@@ -207,6 +208,7 @@ Ghi số liệu ở **24 h · 7 ngày · 30 ngày** cho YouTube / Facebook / Ins
 
 | Ngày | Quyết định | Người |
 |---|---|---|
+| 2026-10-26 | Thêm Mixkit làm nguồn SFX thứ hai (§6), vì Pixabay chặn bằng kiểm tra chống bot | Lucas |
 | 2026-10-25 | Tự chấm /10 và nâng cấp trước khi trình Cổng 3, Cổng 5 (§7 mục 7; quy trình §5; skill `review-loop`) | Lucas |
 | 2026-10-24 | Sau so sánh tập EVN ↔ kịch bản bên ngoài: luật kịch bản 20–23 (§3: người xem trong hook, gỡ mâu thuẫn phạm vi số ngay, nguyên nhân đủ phần, bên được nói tới có tiếng nói) | Lucas |
 | 2026-10-24 | Chữ ký kênh chống reup `Signature` (phương án B: đổi chỗ ở mỗi cú bay camera), áp dụng từ tập Mekong trở đi (§5) | Lucas |
