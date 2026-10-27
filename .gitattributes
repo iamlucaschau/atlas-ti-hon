@@ -1,0 +1,10 @@
+# Line endings (Lucas 2026-10-27, project review C2): LF in the repo for every text file; CRLF only for the publish
+# pack, which Lucas opens in Windows Notepad. Binary media are never touched.
+* text=auto eol=lf
+Map/**/xuat-ban.txt text eol=crlf
+*.png binary
+*.jpg binary
+*.webp binary
+*.mp3 binary
+*.wav binary
+*.mp4 binary
